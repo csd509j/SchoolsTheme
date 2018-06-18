@@ -1,0 +1,16 @@
+/*
+Theme Name: Corvallis School District Schools
+Theme URI: https://abidewebdesign.com
+Author: Abide Web Design
+Author URI: https://abidewebdesign.com
+Description: The official theme for schools in the Corvallis School District
+Version: 1.0.0
+Text Domain: csdschools
+*/
+@import "global-helpers";
+@import "global-colors";
+@import "../assets/stylesheets/bootstrap";
+@import "global-gravityforms";
+@import "global-template";
+@import "global-calendar";
+@import "global-widget-calendar"; 
