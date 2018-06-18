@@ -1,10 +1,24 @@
 <?php 
 /*
+ * Theme update checker
+ *
+ * @since CSD Schools 1.1
+ */
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/csd509j',
+	__FILE__,
+	'SchoolsTheme'
+);
+
+$myUpdateChecker->setBranch('master'); 
+
+/*
  * Enqueue styles
  *
  * @since CSD Schools 1.0
  */
- 
+
 function csd_enqueue_style() {
 	
 	wp_enqueue_style( 'print.css', get_template_directory_uri() . '/assets/stylesheets/print.css' ); 
