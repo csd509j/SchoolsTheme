@@ -4,9 +4,9 @@
  *
  * @since CSD Schools 1.1
  */
-require 'plugin-update-checker/plugin-update-checker.php';
+require WP_CONTENT_DIR . '/plugins/plugin-update-checker-master/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/csd509j',
+	'https://github.com/csd509j/SchoolsTheme',
 	__FILE__,
 	'SchoolsTheme'
 );
