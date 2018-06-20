@@ -5,7 +5,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 1.1.5
+Version: 1.1.6
 Text Domain: csdschools
 */
 .margin-top-none { margin-top: 0; }
@@ -3453,6 +3453,14 @@ a:focus, a:active { background-color: inherit; }
 
 #tribe-events-content.tribe-events-list { padding-top: 2em; }
 
+.tribe-this-week-widget-day-wrap { background-color: white; padding: 20px 10px; }
+
+#footer-top .tribe-this-week-event { border-left: none; padding-left: 0px; padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid #ddd; border-color: #ddd; }
+
+#footer-top .tribe-this-week-event:last-child { margin-bottom: 0; border-bottom: none; padding-bottom: 0; }
+
+#footer-top .event-today-time { font-size: 13px; color: #333; }
+
 /* Tribe Single Event */
 .tribe-events-single-event-description h3 { padding-bottom: 20px; }
 
@@ -3530,6 +3538,27 @@ a:focus, a:active { background-color: inherit; }
 #tribe-events a.tribe-events-gcal, #tribe-events a.tribe-events-ical { display: none; }
 
 #tribe-this-week-events-widget-1001 .tribe-this-week-event { border-color: #000; }
+
+/* Mini Calendar */
+.tribe-mini-calendar-event { border-bottom: none; margin-bottom: 12px; padding-bottom: 0; }
+
+.tribe-mini-calendar-event .list-date:first-child { margin-top: 0; }
+
+.tribe-mini-calendar-event .list-info { margin-top: 0; font-size: 14px; width: 75%; background: white; min-height: 86px; padding: 10px; }
+
+.tribe-events-widget-link { margin-bottom: 0; font-size: 14px; }
+
+.tribe-events-widget-link a { text-transform: uppercase; color: #333; font-weight: bold; }
+
+.tribe-mini-calendar-event .list-date .list-daynumber { font-size: 20px; padding: 9px 0; }
+
+.tribe-mini-calendar-event .list-date .list-dayname { font-size: 15px; text-transform: uppercase; padding: 5px 0; }
+
+.tribe-mini-calendar-event .list-date { padding: 5px 5px 0 5px; width: 25%; margin: 0; }
+
+.tribe-mini-calendar-event .list-info h2 { font-size: 15px; line-height: 20px; }
+
+.tribe-events-title-wrap { max-height: 40px; overflow: hidden; display: block; }
 
 .tribe-mini-calendar-event { border-bottom: none; }
 
