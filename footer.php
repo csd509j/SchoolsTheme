@@ -28,7 +28,7 @@
 										</div>
 									</div>
 								</div>
-								<?php echo do_shortcode('[tribe_this_week layout="vertical" count="10" hide_weekends="true" highlight_color="#FCB644"]'); ?>
+								<?php echo do_shortcode('[tribe_this_week layout="vertical" count="10" hide_weekends="true"]'); ?>
 							</div>
 						</div>
 					</div>
