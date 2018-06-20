@@ -3231,6 +3231,8 @@ a:focus, a:active { background-color: inherit; }
 
 .sidebar-callouts .sidebar-callout-inner a:hover { text-decoration: none; }
 
+.sidebar-contact-wrap:not(:first-child) { margin-top: 20px; }
+
 .sidebar-contact, .sidebar-calendar { border-top: 1px solid #cccccc; padding-top: 30px; margin-bottom: 30px; }
 
 .sidebar-calendar h4, .sidebar-contact h4 { margin-bottom: 20px; }
