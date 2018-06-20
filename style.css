@@ -8,136 +8,6 @@ Description: The official theme for schools in the Corvallis School District
 Version: 1.1.6
 Text Domain: csdschools
 */
-.margin-top-none { margin-top: 0; }
-
-.margin-top-quarter { margin-top: 0.25em; }
-
-.margin-top-half { margin-top: 0.5em; }
-
-.margin-top-one { margin-top: 1em; }
-
-.margin-top-two { margin-top: 2em; }
-
-.padding-top-none { padding-top: 0; }
-
-.padding-top-quarter { padding-top: 0.25em; }
-
-.padding-top-half { padding-top: 0.5em; }
-
-.padding-top-one { padding-top: 1em; }
-
-.padding-top-two { padding-top: 2em; }
-
-.padding-top-four { padding-top: 4em; }
-
-.margin-bottom-none { margin-bottom: 0; }
-
-.margin-bottom-quarter { margin-bottom: 0.25em; }
-
-.margin-bottom-half { margin-bottom: 0.5em; }
-
-.margin-bottom-one { margin-bottom: 1em; }
-
-.margin-bottom-two, .card-vertical-block { margin-bottom: 2em; }
-
-.margin-bottom-four { margin-bottom: 4em; }
-
-.padding-bottom-none { padding-bottom: 0; }
-
-.padding-bottom-quarter { padding-bottom: 0.25em; }
-
-.padding-bottom-half { padding-bottom: 0.5em; }
-
-.padding-bottom-one { padding-bottom: 1em; }
-
-.padding-bottom-two { padding-bottom: 2em; }
-
-.padding-bottom-four { padding-bottom: 4em; }
-
-.margin-none { margin: 0; }
-
-.margin-quarter { margin: 0.25em; }
-
-.margin-half { margin: 0.5em; }
-
-.margin-one { margin: 1em; }
-
-.margin-two { margin: 2em; }
-
-.padding-none { padding: 0; }
-
-.padding-quarter { padding: 0.25em; }
-
-.padding-half { padding: 0.5em; }
-
-.padding-one { padding: 1em; }
-
-.padding-two { padding: 2em; }
-
-.padding-four { padding: 4em; }
-
-.margin-vertical-none { margin-top: 0; margin-bottom: 0; }
-
-.margin-vertical-quarter { margin-top: 0.25em; margin-bottom: 0.25em; }
-
-.margin-vertical-half { margin-top: 0.5em; margin-bottom: 0.5em; }
-
-.margin-vertical-one { margin-top: 1em; margin-bottom: 1em; }
-
-.margin-vertical-two { margin-top: 2em; margin-bottom: 2em; }
-
-.margin-vertical-four { margin-top: 4em; margin-bottom: 4em; }
-
-.padding-vertical-none { padding-top: 0; padding-bottom: 0; }
-
-.padding-vertical-quarter { padding-top: 0.25em; padding-bottom: 0.25em; }
-
-.padding-vertical-half { padding-top: 0.5em; padding-bottom: 0.5em; }
-
-.padding-vertical-one { padding-top: 1em; padding-bottom: 1em; }
-
-.padding-vertical-two { padding-top: 2em; padding-bottom: 2em; }
-
-.padding-vertical-four { padding-top: 4em; padding-bottom: 4em; }
-
-.text-white { color: white !important; }
-
-h1.entry-title, h3 { color: #333333; }
-
-#search-bar { background: #222222; }
-
-#search-bar input::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: #222222; }
-
-#search-bar input::-moz-placeholder { /* Firefox 19+ */ color: #222222; }
-
-#search-bar input:-ms-input-placeholder { /* IE 10+ */ color: #222222; }
-
-#search-bar input:-moz-placeholder { /* Firefox 18- */ color: #222222; }
-
-#search-bar .fa { color: #222222; }
-
-#header-global .ubermenu-skin-vanilla .ubermenu-item-level-0 > .ubermenu-target { color: #696969; }
-
-#header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target { color: #ffffff; }
-
-#header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target:hover { color: #bfbfbf; }
-
-#header-global .ubermenu-skin-vanilla .ubermenu-submenu .ubermenu-item-header > .ubermenu-target { color: #ffffff; }
-
-#header-global .ubermenu-skin-vanilla .ubermenu-submenu { color: #ffffff; }
-
-#header-global .ubermenu-skin-vanilla .ubermenu-item-level-0 > .ubermenu-target:hover, #header-global .ubermenu-skin-vanilla .ubermenu-active > .ubermenu-target { color: #ffffff; }
-
-.single-events-header, #tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type=submit], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] > a { background-color: #555555; }
-
-.tribe-events-list .type-tribe_events { border-bottom: 1px solid #cccccc; }
-
-#footer-top .tribe-events-viewmore, #footer-top .this-week-no-events-msg { color: #cccccc; }
-
-.tribe-mini-calendar-event, #tribe-this-week-events-widget-1001 .tribe-this-week-event { border-bottom: 1px solid #cccccc; }
-
-.single-tribe_events a.tribe-events-gcal, .single-tribe_events a.tribe-events-ical, .single-events-header h4, .single-events-header h2 { color: white; }
-
 /*! Bootstrap v3.3.6 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
@@ -773,7 +643,7 @@ td, th { padding: 0; }
 
 html { font-size: 10px; -webkit-tap-highlight-color: transparent; }
 
-body { font-family: "proxima-nova", Arial, sans-serif; font-size: 16px; line-height: 1.428571429; color: #696969; background-color: #fff; }
+body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.428571429; color: #333333; background-color: #fff; }
 
 input, button, select, textarea { font-family: inherit; font-size: inherit; line-height: inherit; }
 
@@ -795,7 +665,7 @@ img { vertical-align: middle; }
 
 .img-circle { border-radius: 50%; }
 
-hr { margin-top: 22px; margin-bottom: 22px; border: 0; border-top: 1px solid #eeeeee; }
+hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #eeeeee; }
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 
@@ -807,33 +677,33 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: inherit; fon
 
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small { font-weight: normal; line-height: 1; color: #777777; }
 
-h1, .h1, h2, .h2, h3, .h3 { margin-top: 22px; margin-bottom: 11px; }
+h1, .h1, h2, .h2, h3, .h3 { margin-top: 20px; margin-bottom: 10px; }
 
 h1 small, h1 .small, .h1 small, .h1 .small, h2 small, h2 .small, .h2 small, .h2 .small, h3 small, h3 .small, .h3 small, .h3 .small { font-size: 65%; }
 
-h4, .h4, h5, .h5, h6, .h6 { margin-top: 11px; margin-bottom: 11px; }
+h4, .h4, h5, .h5, h6, .h6 { margin-top: 10px; margin-bottom: 10px; }
 
 h4 small, h4 .small, .h4 small, .h4 .small, h5 small, h5 .small, .h5 small, .h5 .small, h6 small, h6 .small, .h6 small, .h6 .small { font-size: 75%; }
 
-h1, .h1 { font-size: 44px; }
+h1, .h1 { font-size: 36px; }
 
 h2, .h2 { font-size: 30px; }
 
-h3, .h3 { font-size: 23px; }
+h3, .h3 { font-size: 24px; }
 
 h4, .h4 { font-size: 18px; }
 
-h5, .h5 { font-size: 16px; }
+h5, .h5 { font-size: 14px; }
 
-h6, .h6 { font-size: 14px; }
+h6, .h6 { font-size: 12px; }
 
-p { margin: 0 0 11px; }
+p { margin: 0 0 10px; }
 
-.lead { margin-bottom: 22px; font-size: 18px; font-weight: 300; line-height: 1.4; }
+.lead { margin-bottom: 20px; font-size: 16px; font-weight: 300; line-height: 1.4; }
 
-@media (min-width: 768px) { .lead { font-size: 24px; } }
+@media (min-width: 768px) { .lead { font-size: 21px; } }
 
-small, .small { font-size: 87%; }
+small, .small { font-size: 85%; }
 
 mark, .mark { background-color: #fcf8e3; padding: .2em; }
 
@@ -897,9 +767,9 @@ a.bg-warning:hover, a.bg-warning:focus { background-color: #f7ecb5; }
 
 a.bg-danger:hover, a.bg-danger:focus { background-color: #e4b9b9; }
 
-.page-header { padding-bottom: 10px; margin: 44px 0 22px; border-bottom: 1px solid #eeeeee; }
+.page-header { padding-bottom: 9px; margin: 40px 0 20px; border-bottom: 1px solid #eeeeee; }
 
-ul, ol { margin-top: 0; margin-bottom: 11px; }
+ul, ol { margin-top: 0; margin-bottom: 10px; }
 
 ul ul, ul ol, ol ul, ol ol { margin-bottom: 0; }
 
@@ -909,7 +779,7 @@ ul ul, ul ol, ol ul, ol ol { margin-bottom: 0; }
 
 .list-inline > li { display: inline-block; padding-left: 5px; padding-right: 5px; }
 
-dl { margin-top: 0; margin-bottom: 22px; }
+dl { margin-top: 0; margin-bottom: 20px; }
 
 dt, dd { line-height: 1.428571429; }
 
@@ -928,7 +798,7 @@ abbr[title], abbr[data-original-title] { cursor: help; border-bottom: 1px dotted
 
 .initialism { font-size: 90%; }
 
-blockquote { padding: 11px 22px; margin: 0 0 22px; font-size: 20px; border-left: 5px solid #eeeeee; }
+blockquote { padding: 10px 20px; margin: 0 0 20px; font-size: 17.5px; border-left: 5px solid #eeeeee; }
 
 blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child { margin-bottom: 0; }
 
@@ -942,7 +812,7 @@ blockquote footer:before, blockquote small:before, blockquote .small:before { co
 
 .blockquote-reverse footer:after, .blockquote-reverse small:after, .blockquote-reverse .small:after, blockquote.pull-right footer:after, blockquote.pull-right small:after, blockquote.pull-right .small:after { content: '\00A0 \2014'; }
 
-address { margin-bottom: 22px; font-style: normal; line-height: 1.428571429; }
+address { margin-bottom: 20px; font-style: normal; line-height: 1.428571429; }
 
 code, kbd, pre, samp { font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
 
@@ -952,7 +822,7 @@ kbd { padding: 2px 4px; font-size: 90%; color: #fff; background-color: #333; bor
 
 kbd kbd { padding: 0; font-size: 100%; font-weight: bold; box-shadow: none; }
 
-pre { display: block; padding: 10.5px; margin: 0 0 11px; font-size: 15px; line-height: 1.428571429; word-break: break-all; word-wrap: break-word; color: #333333; background-color: #f5f5f5; border: 1px solid #ccc; border-radius: 4px; }
+pre { display: block; padding: 9.5px; margin: 0 0 10px; font-size: 13px; line-height: 1.428571429; word-break: break-all; word-wrap: break-word; color: #333333; background-color: #f5f5f5; border: 1px solid #ccc; border-radius: 4px; }
 
 pre code { padding: 0; font-size: inherit; color: inherit; white-space: pre-wrap; background-color: transparent; border-radius: 0; }
 
@@ -1253,7 +1123,7 @@ caption { padding-top: 8px; padding-bottom: 8px; color: #777777; text-align: lef
 
 th { text-align: left; }
 
-.table { width: 100%; max-width: 100%; margin-bottom: 22px; }
+.table { width: 100%; max-width: 100%; margin-bottom: 20px; }
 
 .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td { padding: 8px; line-height: 1.428571429; vertical-align: top; border-top: 1px solid #ddd; }
 
@@ -1303,7 +1173,7 @@ table td[class*="col-"], table th[class*="col-"] { position: static; float: none
 
 .table-responsive { overflow-x: auto; min-height: 0.01%; }
 
-@media screen and (max-width: 767px) { .table-responsive { width: 100%; margin-bottom: 16.5px; overflow-y: hidden; -ms-overflow-style: -ms-autohiding-scrollbar; border: 1px solid #ddd; }
+@media screen and (max-width: 767px) { .table-responsive { width: 100%; margin-bottom: 15px; overflow-y: hidden; -ms-overflow-style: -ms-autohiding-scrollbar; border: 1px solid #ddd; }
   .table-responsive > .table { margin-bottom: 0; }
   .table-responsive > .table > thead > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > tfoot > tr > td { white-space: nowrap; }
   .table-responsive > .table-bordered { border: 0; }
@@ -1313,7 +1183,7 @@ table td[class*="col-"], table th[class*="col-"] { position: static; float: none
 
 fieldset { padding: 0; margin: 0; border: 0; min-width: 0; }
 
-legend { display: block; width: 100%; padding: 0; margin-bottom: 22px; font-size: 24px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5; }
+legend { display: block; width: 100%; padding: 0; margin-bottom: 20px; font-size: 21px; line-height: inherit; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5; }
 
 label { display: inline-block; max-width: 100%; margin-bottom: 5px; font-weight: bold; }
 
@@ -1329,9 +1199,9 @@ select[multiple], select[size] { height: auto; }
 
 input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
 
-output { display: block; padding-top: 7px; font-size: 16px; line-height: 1.428571429; color: #555555; }
+output { display: block; padding-top: 7px; font-size: 14px; line-height: 1.428571429; color: #555555; }
 
-.form-control, .ginput_container input[type=text], .ginput_container input[type=email], .ginput_container input[type=number], .ginput_container input[type=url], .ginput_container input[type=tel], .ginput_container input[type=date], .ginput_container input[type=password], .ginput_container select, .ginput_container textarea, #loginform input[type="text"], #loginform input[type="password"], .acf-form .acf-input-wrap input { display: block; width: 100%; height: 36px; padding: 6px 12px; font-size: 16px; line-height: 1.428571429; color: #555555; background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+.form-control, .ginput_container input[type=text], .ginput_container input[type=email], .ginput_container input[type=number], .ginput_container input[type=url], .ginput_container input[type=tel], .ginput_container input[type=date], .ginput_container input[type=password], .ginput_container select, .ginput_container textarea, #loginform input[type="text"], #loginform input[type="password"], .acf-form .acf-input-wrap input { display: block; width: 100%; height: 34px; padding: 6px 12px; font-size: 14px; line-height: 1.428571429; color: #555555; background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
 
 .form-control:focus, .ginput_container input[type=text]:focus, .ginput_container input[type=email]:focus, .ginput_container input[type=number]:focus, .ginput_container input[type=url]:focus, .ginput_container input[type=tel]:focus, .ginput_container input[type=date]:focus, .ginput_container input[type=password]:focus, .ginput_container select:focus, .ginput_container textarea:focus, #loginform input[type="text"]:focus, #loginform input[type="password"]:focus, .acf-form .acf-input-wrap input:focus { border-color: #66afe9; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
 
@@ -1351,15 +1221,15 @@ textarea.form-control, .ginput_container textarea { height: auto; }
 
 input[type="search"] { -webkit-appearance: none; }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) { input[type="date"].form-control, .ginput_container input[type="date"][type=text], .ginput_container input[type="date"][type=email], .ginput_container input[type="date"][type=number], .ginput_container input[type="date"][type=url], .ginput_container input[type="date"][type=tel], .ginput_container input[type="date"][type=date], .ginput_container input[type="date"][type=password], #loginform input[type="date"][type="text"], #loginform input[type="date"][type="password"], .acf-form .acf-input-wrap input[type="date"], input[type="time"].form-control, .ginput_container input[type="time"][type=text], .ginput_container input[type="time"][type=email], .ginput_container input[type="time"][type=number], .ginput_container input[type="time"][type=url], .ginput_container input[type="time"][type=tel], .ginput_container input[type="time"][type=date], .ginput_container input[type="time"][type=password], #loginform input[type="time"][type="text"], #loginform input[type="time"][type="password"], .acf-form .acf-input-wrap input[type="time"], input[type="datetime-local"].form-control, .ginput_container input[type="datetime-local"][type=text], .ginput_container input[type="datetime-local"][type=email], .ginput_container input[type="datetime-local"][type=number], .ginput_container input[type="datetime-local"][type=url], .ginput_container input[type="datetime-local"][type=tel], .ginput_container input[type="datetime-local"][type=date], .ginput_container input[type="datetime-local"][type=password], #loginform input[type="datetime-local"][type="text"], #loginform input[type="datetime-local"][type="password"], .acf-form .acf-input-wrap input[type="datetime-local"], input[type="month"].form-control, .ginput_container input[type="month"][type=text], .ginput_container input[type="month"][type=email], .ginput_container input[type="month"][type=number], .ginput_container input[type="month"][type=url], .ginput_container input[type="month"][type=tel], .ginput_container input[type="month"][type=date], .ginput_container input[type="month"][type=password], #loginform input[type="month"][type="text"], #loginform input[type="month"][type="password"], .acf-form .acf-input-wrap input[type="month"] { line-height: 36px; }
-  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, .ginput_container .input-group-sm > input[type="date"][type=text], .ginput_container .input-group-sm > input[type="date"][type=email], .ginput_container .input-group-sm > input[type="date"][type=number], .ginput_container .input-group-sm > input[type="date"][type=url], .ginput_container .input-group-sm > input[type="date"][type=tel], .ginput_container .input-group-sm > input[type="date"][type=date], .ginput_container .input-group-sm > input[type="date"][type=password], #loginform .input-group-sm > input[type="date"][type="text"], #loginform .input-group-sm > input[type="date"][type="password"], .acf-form .acf-input-wrap .input-group-sm > input[type="date"], .input-group-sm > input[type="date"].input-group-addon, .input-group-sm > .input-group-btn > input[type="date"].btn, .input-group-sm > .input-group-btn > input[type="date"].gform_button, #loginform .input-group-sm > .input-group-btn > input[type="date"]#wp-submit, .acf-form .input-group-sm > .input-group-btn > input[type="date"].acf-button, .input-group-sm input[type="date"], input[type="time"].input-sm, .input-group-sm > input[type="time"].form-control, .ginput_container .input-group-sm > input[type="time"][type=text], .ginput_container .input-group-sm > input[type="time"][type=email], .ginput_container .input-group-sm > input[type="time"][type=number], .ginput_container .input-group-sm > input[type="time"][type=url], .ginput_container .input-group-sm > input[type="time"][type=tel], .ginput_container .input-group-sm > input[type="time"][type=date], .ginput_container .input-group-sm > input[type="time"][type=password], #loginform .input-group-sm > input[type="time"][type="text"], #loginform .input-group-sm > input[type="time"][type="password"], .acf-form .acf-input-wrap .input-group-sm > input[type="time"], .input-group-sm > input[type="time"].input-group-addon, .input-group-sm > .input-group-btn > input[type="time"].btn, .input-group-sm > .input-group-btn > input[type="time"].gform_button, #loginform .input-group-sm > .input-group-btn > input[type="time"]#wp-submit, .acf-form .input-group-sm > .input-group-btn > input[type="time"].acf-button, .input-group-sm input[type="time"], input[type="datetime-local"].input-sm, .input-group-sm > input[type="datetime-local"].form-control, .ginput_container .input-group-sm > input[type="datetime-local"][type=text], .ginput_container .input-group-sm > input[type="datetime-local"][type=email], .ginput_container .input-group-sm > input[type="datetime-local"][type=number], .ginput_container .input-group-sm > input[type="datetime-local"][type=url], .ginput_container .input-group-sm > input[type="datetime-local"][type=tel], .ginput_container .input-group-sm > input[type="datetime-local"][type=date], .ginput_container .input-group-sm > input[type="datetime-local"][type=password], #loginform .input-group-sm > input[type="datetime-local"][type="text"], #loginform .input-group-sm > input[type="datetime-local"][type="password"], .acf-form .acf-input-wrap .input-group-sm > input[type="datetime-local"], .input-group-sm > input[type="datetime-local"].input-group-addon, .input-group-sm > .input-group-btn > input[type="datetime-local"].btn, .input-group-sm > .input-group-btn > input[type="datetime-local"].gform_button, #loginform .input-group-sm > .input-group-btn > input[type="datetime-local"]#wp-submit, .acf-form .input-group-sm > .input-group-btn > input[type="datetime-local"].acf-button, .input-group-sm input[type="datetime-local"], input[type="month"].input-sm, .input-group-sm > input[type="month"].form-control, .ginput_container .input-group-sm > input[type="month"][type=text], .ginput_container .input-group-sm > input[type="month"][type=email], .ginput_container .input-group-sm > input[type="month"][type=number], .ginput_container .input-group-sm > input[type="month"][type=url], .ginput_container .input-group-sm > input[type="month"][type=tel], .ginput_container .input-group-sm > input[type="month"][type=date], .ginput_container .input-group-sm > input[type="month"][type=password], #loginform .input-group-sm > input[type="month"][type="text"], #loginform .input-group-sm > input[type="month"][type="password"], .acf-form .acf-input-wrap .input-group-sm > input[type="month"], .input-group-sm > input[type="month"].input-group-addon, .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm > .input-group-btn > input[type="month"].gform_button, #loginform .input-group-sm > .input-group-btn > input[type="month"]#wp-submit, .acf-form .input-group-sm > .input-group-btn > input[type="month"].acf-button, .input-group-sm input[type="month"] { line-height: 33px; }
-  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, .ginput_container .input-group-lg > input[type="date"][type=text], .ginput_container .input-group-lg > input[type="date"][type=email], .ginput_container .input-group-lg > input[type="date"][type=number], .ginput_container .input-group-lg > input[type="date"][type=url], .ginput_container .input-group-lg > input[type="date"][type=tel], .ginput_container .input-group-lg > input[type="date"][type=date], .ginput_container .input-group-lg > input[type="date"][type=password], .input-group-lg > input[type="date"].input-group-addon, .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg > .input-group-btn > input[type="date"].gform_button, #loginform .input-group-lg > .input-group-btn > input[type="date"]#wp-submit, .acf-form .input-group-lg > .input-group-btn > input[type="date"].acf-button, #loginform input[type="date"][type="text"], #loginform input[type="date"][type="password"], .acf-form .acf-input-wrap input[type="date"], .input-group-lg input[type="date"], input[type="time"].input-lg, .input-group-lg > input[type="time"].form-control, .ginput_container .input-group-lg > input[type="time"][type=text], .ginput_container .input-group-lg > input[type="time"][type=email], .ginput_container .input-group-lg > input[type="time"][type=number], .ginput_container .input-group-lg > input[type="time"][type=url], .ginput_container .input-group-lg > input[type="time"][type=tel], .ginput_container .input-group-lg > input[type="time"][type=date], .ginput_container .input-group-lg > input[type="time"][type=password], .input-group-lg > input[type="time"].input-group-addon, .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg > .input-group-btn > input[type="time"].gform_button, #loginform .input-group-lg > .input-group-btn > input[type="time"]#wp-submit, .acf-form .input-group-lg > .input-group-btn > input[type="time"].acf-button, #loginform input[type="time"][type="text"], #loginform input[type="time"][type="password"], .acf-form .acf-input-wrap input[type="time"], .input-group-lg input[type="time"], input[type="datetime-local"].input-lg, .input-group-lg > input[type="datetime-local"].form-control, .ginput_container .input-group-lg > input[type="datetime-local"][type=text], .ginput_container .input-group-lg > input[type="datetime-local"][type=email], .ginput_container .input-group-lg > input[type="datetime-local"][type=number], .ginput_container .input-group-lg > input[type="datetime-local"][type=url], .ginput_container .input-group-lg > input[type="datetime-local"][type=tel], .ginput_container .input-group-lg > input[type="datetime-local"][type=date], .ginput_container .input-group-lg > input[type="datetime-local"][type=password], .input-group-lg > input[type="datetime-local"].input-group-addon, .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg > .input-group-btn > input[type="datetime-local"].gform_button, #loginform .input-group-lg > .input-group-btn > input[type="datetime-local"]#wp-submit, .acf-form .input-group-lg > .input-group-btn > input[type="datetime-local"].acf-button, #loginform input[type="datetime-local"][type="text"], #loginform input[type="datetime-local"][type="password"], .acf-form .acf-input-wrap input[type="datetime-local"], .input-group-lg input[type="datetime-local"], input[type="month"].input-lg, .input-group-lg > input[type="month"].form-control, .ginput_container .input-group-lg > input[type="month"][type=text], .ginput_container .input-group-lg > input[type="month"][type=email], .ginput_container .input-group-lg > input[type="month"][type=number], .ginput_container .input-group-lg > input[type="month"][type=url], .ginput_container .input-group-lg > input[type="month"][type=tel], .ginput_container .input-group-lg > input[type="month"][type=date], .ginput_container .input-group-lg > input[type="month"][type=password], .input-group-lg > input[type="month"].input-group-addon, .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg > .input-group-btn > input[type="month"].gform_button, #loginform .input-group-lg > .input-group-btn > input[type="month"]#wp-submit, .acf-form .input-group-lg > .input-group-btn > input[type="month"].acf-button, #loginform input[type="month"][type="text"], #loginform input[type="month"][type="password"], .acf-form .acf-input-wrap input[type="month"], .input-group-lg input[type="month"] { line-height: 49px; } }
+@media screen and (-webkit-min-device-pixel-ratio: 0) { input[type="date"].form-control, .ginput_container input[type="date"][type=text], .ginput_container input[type="date"][type=email], .ginput_container input[type="date"][type=number], .ginput_container input[type="date"][type=url], .ginput_container input[type="date"][type=tel], .ginput_container input[type="date"][type=date], .ginput_container input[type="date"][type=password], #loginform input[type="date"][type="text"], #loginform input[type="date"][type="password"], .acf-form .acf-input-wrap input[type="date"], input[type="time"].form-control, .ginput_container input[type="time"][type=text], .ginput_container input[type="time"][type=email], .ginput_container input[type="time"][type=number], .ginput_container input[type="time"][type=url], .ginput_container input[type="time"][type=tel], .ginput_container input[type="time"][type=date], .ginput_container input[type="time"][type=password], #loginform input[type="time"][type="text"], #loginform input[type="time"][type="password"], .acf-form .acf-input-wrap input[type="time"], input[type="datetime-local"].form-control, .ginput_container input[type="datetime-local"][type=text], .ginput_container input[type="datetime-local"][type=email], .ginput_container input[type="datetime-local"][type=number], .ginput_container input[type="datetime-local"][type=url], .ginput_container input[type="datetime-local"][type=tel], .ginput_container input[type="datetime-local"][type=date], .ginput_container input[type="datetime-local"][type=password], #loginform input[type="datetime-local"][type="text"], #loginform input[type="datetime-local"][type="password"], .acf-form .acf-input-wrap input[type="datetime-local"], input[type="month"].form-control, .ginput_container input[type="month"][type=text], .ginput_container input[type="month"][type=email], .ginput_container input[type="month"][type=number], .ginput_container input[type="month"][type=url], .ginput_container input[type="month"][type=tel], .ginput_container input[type="month"][type=date], .ginput_container input[type="month"][type=password], #loginform input[type="month"][type="text"], #loginform input[type="month"][type="password"], .acf-form .acf-input-wrap input[type="month"] { line-height: 34px; }
+  input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, .ginput_container .input-group-sm > input[type="date"][type=text], .ginput_container .input-group-sm > input[type="date"][type=email], .ginput_container .input-group-sm > input[type="date"][type=number], .ginput_container .input-group-sm > input[type="date"][type=url], .ginput_container .input-group-sm > input[type="date"][type=tel], .ginput_container .input-group-sm > input[type="date"][type=date], .ginput_container .input-group-sm > input[type="date"][type=password], #loginform .input-group-sm > input[type="date"][type="text"], #loginform .input-group-sm > input[type="date"][type="password"], .acf-form .acf-input-wrap .input-group-sm > input[type="date"], .input-group-sm > input[type="date"].input-group-addon, .input-group-sm > .input-group-btn > input[type="date"].btn, .input-group-sm > .input-group-btn > input[type="date"].gform_button, #loginform .input-group-sm > .input-group-btn > input[type="date"]#wp-submit, .acf-form .input-group-sm > .input-group-btn > input[type="date"].acf-button, .input-group-sm input[type="date"], input[type="time"].input-sm, .input-group-sm > input[type="time"].form-control, .ginput_container .input-group-sm > input[type="time"][type=text], .ginput_container .input-group-sm > input[type="time"][type=email], .ginput_container .input-group-sm > input[type="time"][type=number], .ginput_container .input-group-sm > input[type="time"][type=url], .ginput_container .input-group-sm > input[type="time"][type=tel], .ginput_container .input-group-sm > input[type="time"][type=date], .ginput_container .input-group-sm > input[type="time"][type=password], #loginform .input-group-sm > input[type="time"][type="text"], #loginform .input-group-sm > input[type="time"][type="password"], .acf-form .acf-input-wrap .input-group-sm > input[type="time"], .input-group-sm > input[type="time"].input-group-addon, .input-group-sm > .input-group-btn > input[type="time"].btn, .input-group-sm > .input-group-btn > input[type="time"].gform_button, #loginform .input-group-sm > .input-group-btn > input[type="time"]#wp-submit, .acf-form .input-group-sm > .input-group-btn > input[type="time"].acf-button, .input-group-sm input[type="time"], input[type="datetime-local"].input-sm, .input-group-sm > input[type="datetime-local"].form-control, .ginput_container .input-group-sm > input[type="datetime-local"][type=text], .ginput_container .input-group-sm > input[type="datetime-local"][type=email], .ginput_container .input-group-sm > input[type="datetime-local"][type=number], .ginput_container .input-group-sm > input[type="datetime-local"][type=url], .ginput_container .input-group-sm > input[type="datetime-local"][type=tel], .ginput_container .input-group-sm > input[type="datetime-local"][type=date], .ginput_container .input-group-sm > input[type="datetime-local"][type=password], #loginform .input-group-sm > input[type="datetime-local"][type="text"], #loginform .input-group-sm > input[type="datetime-local"][type="password"], .acf-form .acf-input-wrap .input-group-sm > input[type="datetime-local"], .input-group-sm > input[type="datetime-local"].input-group-addon, .input-group-sm > .input-group-btn > input[type="datetime-local"].btn, .input-group-sm > .input-group-btn > input[type="datetime-local"].gform_button, #loginform .input-group-sm > .input-group-btn > input[type="datetime-local"]#wp-submit, .acf-form .input-group-sm > .input-group-btn > input[type="datetime-local"].acf-button, .input-group-sm input[type="datetime-local"], input[type="month"].input-sm, .input-group-sm > input[type="month"].form-control, .ginput_container .input-group-sm > input[type="month"][type=text], .ginput_container .input-group-sm > input[type="month"][type=email], .ginput_container .input-group-sm > input[type="month"][type=number], .ginput_container .input-group-sm > input[type="month"][type=url], .ginput_container .input-group-sm > input[type="month"][type=tel], .ginput_container .input-group-sm > input[type="month"][type=date], .ginput_container .input-group-sm > input[type="month"][type=password], #loginform .input-group-sm > input[type="month"][type="text"], #loginform .input-group-sm > input[type="month"][type="password"], .acf-form .acf-input-wrap .input-group-sm > input[type="month"], .input-group-sm > input[type="month"].input-group-addon, .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm > .input-group-btn > input[type="month"].gform_button, #loginform .input-group-sm > .input-group-btn > input[type="month"]#wp-submit, .acf-form .input-group-sm > .input-group-btn > input[type="month"].acf-button, .input-group-sm input[type="month"] { line-height: 30px; }
+  input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, .ginput_container .input-group-lg > input[type="date"][type=text], .ginput_container .input-group-lg > input[type="date"][type=email], .ginput_container .input-group-lg > input[type="date"][type=number], .ginput_container .input-group-lg > input[type="date"][type=url], .ginput_container .input-group-lg > input[type="date"][type=tel], .ginput_container .input-group-lg > input[type="date"][type=date], .ginput_container .input-group-lg > input[type="date"][type=password], .input-group-lg > input[type="date"].input-group-addon, .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg > .input-group-btn > input[type="date"].gform_button, #loginform .input-group-lg > .input-group-btn > input[type="date"]#wp-submit, .acf-form .input-group-lg > .input-group-btn > input[type="date"].acf-button, #loginform input[type="date"][type="text"], #loginform input[type="date"][type="password"], .acf-form .acf-input-wrap input[type="date"], .input-group-lg input[type="date"], input[type="time"].input-lg, .input-group-lg > input[type="time"].form-control, .ginput_container .input-group-lg > input[type="time"][type=text], .ginput_container .input-group-lg > input[type="time"][type=email], .ginput_container .input-group-lg > input[type="time"][type=number], .ginput_container .input-group-lg > input[type="time"][type=url], .ginput_container .input-group-lg > input[type="time"][type=tel], .ginput_container .input-group-lg > input[type="time"][type=date], .ginput_container .input-group-lg > input[type="time"][type=password], .input-group-lg > input[type="time"].input-group-addon, .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg > .input-group-btn > input[type="time"].gform_button, #loginform .input-group-lg > .input-group-btn > input[type="time"]#wp-submit, .acf-form .input-group-lg > .input-group-btn > input[type="time"].acf-button, #loginform input[type="time"][type="text"], #loginform input[type="time"][type="password"], .acf-form .acf-input-wrap input[type="time"], .input-group-lg input[type="time"], input[type="datetime-local"].input-lg, .input-group-lg > input[type="datetime-local"].form-control, .ginput_container .input-group-lg > input[type="datetime-local"][type=text], .ginput_container .input-group-lg > input[type="datetime-local"][type=email], .ginput_container .input-group-lg > input[type="datetime-local"][type=number], .ginput_container .input-group-lg > input[type="datetime-local"][type=url], .ginput_container .input-group-lg > input[type="datetime-local"][type=tel], .ginput_container .input-group-lg > input[type="datetime-local"][type=date], .ginput_container .input-group-lg > input[type="datetime-local"][type=password], .input-group-lg > input[type="datetime-local"].input-group-addon, .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg > .input-group-btn > input[type="datetime-local"].gform_button, #loginform .input-group-lg > .input-group-btn > input[type="datetime-local"]#wp-submit, .acf-form .input-group-lg > .input-group-btn > input[type="datetime-local"].acf-button, #loginform input[type="datetime-local"][type="text"], #loginform input[type="datetime-local"][type="password"], .acf-form .acf-input-wrap input[type="datetime-local"], .input-group-lg input[type="datetime-local"], input[type="month"].input-lg, .input-group-lg > input[type="month"].form-control, .ginput_container .input-group-lg > input[type="month"][type=text], .ginput_container .input-group-lg > input[type="month"][type=email], .ginput_container .input-group-lg > input[type="month"][type=number], .ginput_container .input-group-lg > input[type="month"][type=url], .ginput_container .input-group-lg > input[type="month"][type=tel], .ginput_container .input-group-lg > input[type="month"][type=date], .ginput_container .input-group-lg > input[type="month"][type=password], .input-group-lg > input[type="month"].input-group-addon, .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg > .input-group-btn > input[type="month"].gform_button, #loginform .input-group-lg > .input-group-btn > input[type="month"]#wp-submit, .acf-form .input-group-lg > .input-group-btn > input[type="month"].acf-button, #loginform input[type="month"][type="text"], #loginform input[type="month"][type="password"], .acf-form .acf-input-wrap input[type="month"], .input-group-lg input[type="month"] { line-height: 46px; } }
 
 .form-group, .gform_wrapper li, #loginform p, .acf-form .acf-fields > .acf-field { margin-bottom: 15px; }
 
 .radio, .checkbox { position: relative; display: block; margin-top: 10px; margin-bottom: 10px; }
 
-.radio label, .checkbox label { min-height: 22px; padding-left: 20px; margin-bottom: 0; font-weight: normal; cursor: pointer; }
+.radio label, .checkbox label { min-height: 20px; padding-left: 20px; margin-bottom: 0; font-weight: normal; cursor: pointer; }
 
 .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] { position: absolute; margin-left: -20px; margin-top: 4px \9; }
 
@@ -1375,47 +1245,47 @@ input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] 
 
 .radio.disabled label, fieldset[disabled] .radio label, .checkbox.disabled label, fieldset[disabled] .checkbox label { cursor: not-allowed; }
 
-.form-control-static { padding-top: 7px; padding-bottom: 7px; margin-bottom: 0; min-height: 38px; }
+.form-control-static { padding-top: 7px; padding-bottom: 7px; margin-bottom: 0; min-height: 34px; }
 
 .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control, .ginput_container .input-group-lg > input.form-control-static[type=text], .ginput_container .input-group-lg > input.form-control-static[type=email], .ginput_container .input-group-lg > input.form-control-static[type=number], .ginput_container .input-group-lg > input.form-control-static[type=url], .ginput_container .input-group-lg > input.form-control-static[type=tel], .ginput_container .input-group-lg > input.form-control-static[type=date], .ginput_container .input-group-lg > input.form-control-static[type=password], .ginput_container .input-group-lg > select.form-control-static, .ginput_container .input-group-lg > textarea.form-control-static, .input-group-lg > .form-control-static.input-group-addon, .input-group-lg > .input-group-btn > .form-control-static.btn, .input-group-lg > .input-group-btn > .form-control-static.gform_button, #loginform .input-group-lg > .input-group-btn > .form-control-static#wp-submit, .acf-form .input-group-lg > .input-group-btn > .form-control-static.acf-button, #loginform input.form-control-static[type="text"], #loginform input.form-control-static[type="password"], .acf-form .acf-input-wrap input.form-control-static, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control, .ginput_container .input-group-sm > input.form-control-static[type=text], .ginput_container .input-group-sm > input.form-control-static[type=email], .ginput_container .input-group-sm > input.form-control-static[type=number], .ginput_container .input-group-sm > input.form-control-static[type=url], .ginput_container .input-group-sm > input.form-control-static[type=tel], .ginput_container .input-group-sm > input.form-control-static[type=date], .ginput_container .input-group-sm > input.form-control-static[type=password], .ginput_container .input-group-sm > select.form-control-static, .ginput_container .input-group-sm > textarea.form-control-static, #loginform .input-group-sm > input.form-control-static[type="text"], #loginform .input-group-sm > input.form-control-static[type="password"], .acf-form .acf-input-wrap .input-group-sm > input.form-control-static, .input-group-sm > .form-control-static.input-group-addon, .input-group-sm > .input-group-btn > .form-control-static.btn, .input-group-sm > .input-group-btn > .form-control-static.gform_button, #loginform .input-group-sm > .input-group-btn > .form-control-static#wp-submit, .acf-form .input-group-sm > .input-group-btn > .form-control-static.acf-button { padding-left: 0; padding-right: 0; }
 
-.input-sm, .input-group-sm > .form-control, .ginput_container .input-group-sm > input[type=text], .ginput_container .input-group-sm > input[type=email], .ginput_container .input-group-sm > input[type=number], .ginput_container .input-group-sm > input[type=url], .ginput_container .input-group-sm > input[type=tel], .ginput_container .input-group-sm > input[type=date], .ginput_container .input-group-sm > input[type=password], .ginput_container .input-group-sm > select, .ginput_container .input-group-sm > textarea, #loginform .input-group-sm > input[type="text"], #loginform .input-group-sm > input[type="password"], .acf-form .acf-input-wrap .input-group-sm > input, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn, .input-group-sm > .input-group-btn > .gform_button, #loginform .input-group-sm > .input-group-btn > #wp-submit, .acf-form .input-group-sm > .input-group-btn > .acf-button { height: 33px; padding: 5px 10px; font-size: 14px; line-height: 1.5; border-radius: 3px; }
+.input-sm, .input-group-sm > .form-control, .ginput_container .input-group-sm > input[type=text], .ginput_container .input-group-sm > input[type=email], .ginput_container .input-group-sm > input[type=number], .ginput_container .input-group-sm > input[type=url], .ginput_container .input-group-sm > input[type=tel], .ginput_container .input-group-sm > input[type=date], .ginput_container .input-group-sm > input[type=password], .ginput_container .input-group-sm > select, .ginput_container .input-group-sm > textarea, #loginform .input-group-sm > input[type="text"], #loginform .input-group-sm > input[type="password"], .acf-form .acf-input-wrap .input-group-sm > input, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn, .input-group-sm > .input-group-btn > .gform_button, #loginform .input-group-sm > .input-group-btn > #wp-submit, .acf-form .input-group-sm > .input-group-btn > .acf-button { height: 30px; padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; }
 
-select.input-sm, .input-group-sm > select.form-control, .ginput_container .input-group-sm > select, .input-group-sm > select.input-group-addon, .input-group-sm > .input-group-btn > select.btn, .input-group-sm > .input-group-btn > select.gform_button, #loginform .input-group-sm > .input-group-btn > select#wp-submit, .acf-form .input-group-sm > .input-group-btn > select.acf-button { height: 33px; line-height: 33px; }
+select.input-sm, .input-group-sm > select.form-control, .ginput_container .input-group-sm > select, .input-group-sm > select.input-group-addon, .input-group-sm > .input-group-btn > select.btn, .input-group-sm > .input-group-btn > select.gform_button, #loginform .input-group-sm > .input-group-btn > select#wp-submit, .acf-form .input-group-sm > .input-group-btn > select.acf-button { height: 30px; line-height: 30px; }
 
 textarea.input-sm, .input-group-sm > textarea.form-control, .ginput_container .input-group-sm > textarea, .input-group-sm > textarea.input-group-addon, .input-group-sm > .input-group-btn > textarea.btn, .input-group-sm > .input-group-btn > textarea.gform_button, #loginform .input-group-sm > .input-group-btn > textarea#wp-submit, .acf-form .input-group-sm > .input-group-btn > textarea.acf-button, select[multiple].input-sm, .input-group-sm > select[multiple].form-control, .ginput_container .input-group-sm > select[multiple], .input-group-sm > select[multiple].input-group-addon, .input-group-sm > .input-group-btn > select[multiple].btn, .input-group-sm > .input-group-btn > select[multiple].gform_button, #loginform .input-group-sm > .input-group-btn > select[multiple]#wp-submit, .acf-form .input-group-sm > .input-group-btn > select[multiple].acf-button { height: auto; }
 
-.form-group-sm .form-control, .form-group-sm .ginput_container input[type=text], .ginput_container .form-group-sm input[type=text], .form-group-sm .ginput_container input[type=email], .ginput_container .form-group-sm input[type=email], .form-group-sm .ginput_container input[type=number], .ginput_container .form-group-sm input[type=number], .form-group-sm .ginput_container input[type=url], .ginput_container .form-group-sm input[type=url], .form-group-sm .ginput_container input[type=tel], .ginput_container .form-group-sm input[type=tel], .form-group-sm .ginput_container input[type=date], .ginput_container .form-group-sm input[type=date], .form-group-sm .ginput_container input[type=password], .ginput_container .form-group-sm input[type=password], .form-group-sm .ginput_container select, .ginput_container .form-group-sm select, .form-group-sm .ginput_container textarea, .ginput_container .form-group-sm textarea, .form-group-sm #loginform input[type="text"], #loginform .form-group-sm input[type="text"], .form-group-sm #loginform input[type="password"], #loginform .form-group-sm input[type="password"], .form-group-sm .acf-form .acf-input-wrap input, .acf-form .acf-input-wrap .form-group-sm input { height: 33px; padding: 5px 10px; font-size: 14px; line-height: 1.5; border-radius: 3px; }
+.form-group-sm .form-control, .form-group-sm .ginput_container input[type=text], .ginput_container .form-group-sm input[type=text], .form-group-sm .ginput_container input[type=email], .ginput_container .form-group-sm input[type=email], .form-group-sm .ginput_container input[type=number], .ginput_container .form-group-sm input[type=number], .form-group-sm .ginput_container input[type=url], .ginput_container .form-group-sm input[type=url], .form-group-sm .ginput_container input[type=tel], .ginput_container .form-group-sm input[type=tel], .form-group-sm .ginput_container input[type=date], .ginput_container .form-group-sm input[type=date], .form-group-sm .ginput_container input[type=password], .ginput_container .form-group-sm input[type=password], .form-group-sm .ginput_container select, .ginput_container .form-group-sm select, .form-group-sm .ginput_container textarea, .ginput_container .form-group-sm textarea, .form-group-sm #loginform input[type="text"], #loginform .form-group-sm input[type="text"], .form-group-sm #loginform input[type="password"], #loginform .form-group-sm input[type="password"], .form-group-sm .acf-form .acf-input-wrap input, .acf-form .acf-input-wrap .form-group-sm input { height: 30px; padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; }
 
-.form-group-sm select.form-control, .form-group-sm .ginput_container select, .ginput_container .form-group-sm select { height: 33px; line-height: 33px; }
+.form-group-sm select.form-control, .form-group-sm .ginput_container select, .ginput_container .form-group-sm select { height: 30px; line-height: 30px; }
 
 .form-group-sm textarea.form-control, .form-group-sm .ginput_container textarea, .ginput_container .form-group-sm textarea, .form-group-sm select[multiple].form-control, .form-group-sm .ginput_container select[multiple], .ginput_container .form-group-sm select[multiple] { height: auto; }
 
-.form-group-sm .form-control-static { height: 33px; min-height: 36px; padding: 6px 10px; font-size: 14px; line-height: 1.5; }
+.form-group-sm .form-control-static { height: 30px; min-height: 32px; padding: 6px 10px; font-size: 12px; line-height: 1.5; }
 
-.input-lg, .input-group-lg > .form-control, .ginput_container .input-group-lg > input[type=text], .ginput_container .input-group-lg > input[type=email], .ginput_container .input-group-lg > input[type=number], .ginput_container .input-group-lg > input[type=url], .ginput_container .input-group-lg > input[type=tel], .ginput_container .input-group-lg > input[type=date], .ginput_container .input-group-lg > input[type=password], .ginput_container .input-group-lg > select, .ginput_container .input-group-lg > textarea, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn, .input-group-lg > .input-group-btn > .gform_button, #loginform .input-group-lg > .input-group-btn > #wp-submit, .acf-form .input-group-lg > .input-group-btn > .acf-button, #loginform input[type="text"], #loginform input[type="password"], .acf-form .acf-input-wrap input { height: 49px; padding: 10px 16px; font-size: 20px; line-height: 1.3333333; border-radius: 6px; }
+.input-lg, .input-group-lg > .form-control, .ginput_container .input-group-lg > input[type=text], .ginput_container .input-group-lg > input[type=email], .ginput_container .input-group-lg > input[type=number], .ginput_container .input-group-lg > input[type=url], .ginput_container .input-group-lg > input[type=tel], .ginput_container .input-group-lg > input[type=date], .ginput_container .input-group-lg > input[type=password], .ginput_container .input-group-lg > select, .ginput_container .input-group-lg > textarea, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn, .input-group-lg > .input-group-btn > .gform_button, #loginform .input-group-lg > .input-group-btn > #wp-submit, .acf-form .input-group-lg > .input-group-btn > .acf-button, #loginform input[type="text"], #loginform input[type="password"], .acf-form .acf-input-wrap input { height: 46px; padding: 10px 16px; font-size: 18px; line-height: 1.3333333; border-radius: 6px; }
 
-select.input-lg, .input-group-lg > select.form-control, .ginput_container .input-group-lg > select, .input-group-lg > select.input-group-addon, .input-group-lg > .input-group-btn > select.btn, .input-group-lg > .input-group-btn > select.gform_button, #loginform .input-group-lg > .input-group-btn > select#wp-submit, .acf-form .input-group-lg > .input-group-btn > select.acf-button { height: 49px; line-height: 49px; }
+select.input-lg, .input-group-lg > select.form-control, .ginput_container .input-group-lg > select, .input-group-lg > select.input-group-addon, .input-group-lg > .input-group-btn > select.btn, .input-group-lg > .input-group-btn > select.gform_button, #loginform .input-group-lg > .input-group-btn > select#wp-submit, .acf-form .input-group-lg > .input-group-btn > select.acf-button { height: 46px; line-height: 46px; }
 
 textarea.input-lg, .input-group-lg > textarea.form-control, .ginput_container .input-group-lg > textarea, .input-group-lg > textarea.input-group-addon, .input-group-lg > .input-group-btn > textarea.btn, .input-group-lg > .input-group-btn > textarea.gform_button, #loginform .input-group-lg > .input-group-btn > textarea#wp-submit, .acf-form .input-group-lg > .input-group-btn > textarea.acf-button, select[multiple].input-lg, .input-group-lg > select[multiple].form-control, .ginput_container .input-group-lg > select[multiple], .input-group-lg > select[multiple].input-group-addon, .input-group-lg > .input-group-btn > select[multiple].btn, .input-group-lg > .input-group-btn > select[multiple].gform_button, #loginform .input-group-lg > .input-group-btn > select[multiple]#wp-submit, .acf-form .input-group-lg > .input-group-btn > select[multiple].acf-button { height: auto; }
 
-.form-group-lg .form-control, .form-group-lg .ginput_container input[type=text], .ginput_container .form-group-lg input[type=text], .form-group-lg .ginput_container input[type=email], .ginput_container .form-group-lg input[type=email], .form-group-lg .ginput_container input[type=number], .ginput_container .form-group-lg input[type=number], .form-group-lg .ginput_container input[type=url], .ginput_container .form-group-lg input[type=url], .form-group-lg .ginput_container input[type=tel], .ginput_container .form-group-lg input[type=tel], .form-group-lg .ginput_container input[type=date], .ginput_container .form-group-lg input[type=date], .form-group-lg .ginput_container input[type=password], .ginput_container .form-group-lg input[type=password], .form-group-lg .ginput_container select, .ginput_container .form-group-lg select, .form-group-lg .ginput_container textarea, .ginput_container .form-group-lg textarea, .form-group-lg #loginform input[type="text"], #loginform .form-group-lg input[type="text"], .form-group-lg #loginform input[type="password"], #loginform .form-group-lg input[type="password"], .form-group-lg .acf-form .acf-input-wrap input, .acf-form .acf-input-wrap .form-group-lg input { height: 49px; padding: 10px 16px; font-size: 20px; line-height: 1.3333333; border-radius: 6px; }
+.form-group-lg .form-control, .form-group-lg .ginput_container input[type=text], .ginput_container .form-group-lg input[type=text], .form-group-lg .ginput_container input[type=email], .ginput_container .form-group-lg input[type=email], .form-group-lg .ginput_container input[type=number], .ginput_container .form-group-lg input[type=number], .form-group-lg .ginput_container input[type=url], .ginput_container .form-group-lg input[type=url], .form-group-lg .ginput_container input[type=tel], .ginput_container .form-group-lg input[type=tel], .form-group-lg .ginput_container input[type=date], .ginput_container .form-group-lg input[type=date], .form-group-lg .ginput_container input[type=password], .ginput_container .form-group-lg input[type=password], .form-group-lg .ginput_container select, .ginput_container .form-group-lg select, .form-group-lg .ginput_container textarea, .ginput_container .form-group-lg textarea, .form-group-lg #loginform input[type="text"], #loginform .form-group-lg input[type="text"], .form-group-lg #loginform input[type="password"], #loginform .form-group-lg input[type="password"], .form-group-lg .acf-form .acf-input-wrap input, .acf-form .acf-input-wrap .form-group-lg input { height: 46px; padding: 10px 16px; font-size: 18px; line-height: 1.3333333; border-radius: 6px; }
 
-.form-group-lg select.form-control, .form-group-lg .ginput_container select, .ginput_container .form-group-lg select { height: 49px; line-height: 49px; }
+.form-group-lg select.form-control, .form-group-lg .ginput_container select, .ginput_container .form-group-lg select { height: 46px; line-height: 46px; }
 
 .form-group-lg textarea.form-control, .form-group-lg .ginput_container textarea, .ginput_container .form-group-lg textarea, .form-group-lg select[multiple].form-control, .form-group-lg .ginput_container select[multiple], .ginput_container .form-group-lg select[multiple] { height: auto; }
 
-.form-group-lg .form-control-static { height: 49px; min-height: 42px; padding: 11px 16px; font-size: 20px; line-height: 1.3333333; }
+.form-group-lg .form-control-static { height: 46px; min-height: 38px; padding: 11px 16px; font-size: 18px; line-height: 1.3333333; }
 
 .has-feedback { position: relative; }
 
-.has-feedback .form-control, .has-feedback .ginput_container input[type=text], .ginput_container .has-feedback input[type=text], .has-feedback .ginput_container input[type=email], .ginput_container .has-feedback input[type=email], .has-feedback .ginput_container input[type=number], .ginput_container .has-feedback input[type=number], .has-feedback .ginput_container input[type=url], .ginput_container .has-feedback input[type=url], .has-feedback .ginput_container input[type=tel], .ginput_container .has-feedback input[type=tel], .has-feedback .ginput_container input[type=date], .ginput_container .has-feedback input[type=date], .has-feedback .ginput_container input[type=password], .ginput_container .has-feedback input[type=password], .has-feedback .ginput_container select, .ginput_container .has-feedback select, .has-feedback .ginput_container textarea, .ginput_container .has-feedback textarea, .has-feedback #loginform input[type="text"], #loginform .has-feedback input[type="text"], .has-feedback #loginform input[type="password"], #loginform .has-feedback input[type="password"], .has-feedback .acf-form .acf-input-wrap input, .acf-form .acf-input-wrap .has-feedback input { padding-right: 45px; }
+.has-feedback .form-control, .has-feedback .ginput_container input[type=text], .ginput_container .has-feedback input[type=text], .has-feedback .ginput_container input[type=email], .ginput_container .has-feedback input[type=email], .has-feedback .ginput_container input[type=number], .ginput_container .has-feedback input[type=number], .has-feedback .ginput_container input[type=url], .ginput_container .has-feedback input[type=url], .has-feedback .ginput_container input[type=tel], .ginput_container .has-feedback input[type=tel], .has-feedback .ginput_container input[type=date], .ginput_container .has-feedback input[type=date], .has-feedback .ginput_container input[type=password], .ginput_container .has-feedback input[type=password], .has-feedback .ginput_container select, .ginput_container .has-feedback select, .has-feedback .ginput_container textarea, .ginput_container .has-feedback textarea, .has-feedback #loginform input[type="text"], #loginform .has-feedback input[type="text"], .has-feedback #loginform input[type="password"], #loginform .has-feedback input[type="password"], .has-feedback .acf-form .acf-input-wrap input, .acf-form .acf-input-wrap .has-feedback input { padding-right: 42.5px; }
 
-.form-control-feedback { position: absolute; top: 0; right: 0; z-index: 2; display: block; width: 36px; height: 36px; line-height: 36px; text-align: center; pointer-events: none; }
+.form-control-feedback { position: absolute; top: 0; right: 0; z-index: 2; display: block; width: 34px; height: 34px; line-height: 34px; text-align: center; pointer-events: none; }
 
-.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .ginput_container .input-group-lg > input[type=text] + .form-control-feedback, .ginput_container .input-group-lg > input[type=email] + .form-control-feedback, .ginput_container .input-group-lg > input[type=number] + .form-control-feedback, .ginput_container .input-group-lg > input[type=url] + .form-control-feedback, .ginput_container .input-group-lg > input[type=tel] + .form-control-feedback, .ginput_container .input-group-lg > input[type=date] + .form-control-feedback, .ginput_container .input-group-lg > input[type=password] + .form-control-feedback, .ginput_container .input-group-lg > select + .form-control-feedback, .ginput_container .input-group-lg > textarea + .form-control-feedback, #loginform .input-group-lg > input[type="text"] + .form-control-feedback, #loginform .input-group-lg > input[type="password"] + .form-control-feedback, .acf-form .acf-input-wrap .input-group-lg > input + .form-control-feedback, .input-group-lg > .input-group-addon + .form-control-feedback, .input-group-lg > .input-group-btn > .btn + .form-control-feedback, .input-group-lg > .input-group-btn > .gform_button + .form-control-feedback, #loginform .input-group-lg > .input-group-btn > #wp-submit + .form-control-feedback, .acf-form .input-group-lg > .input-group-btn > .acf-button + .form-control-feedback, #loginform input[type="text"] + .form-control-feedback, #loginform input[type="password"] + .form-control-feedback, .acf-form .acf-input-wrap input + .form-control-feedback, .input-group-lg + .form-control-feedback, .form-group-lg .form-control + .form-control-feedback, .form-group-lg .ginput_container input[type=text] + .form-control-feedback, .ginput_container .form-group-lg input[type=text] + .form-control-feedback, .form-group-lg .ginput_container input[type=email] + .form-control-feedback, .ginput_container .form-group-lg input[type=email] + .form-control-feedback, .form-group-lg .ginput_container input[type=number] + .form-control-feedback, .ginput_container .form-group-lg input[type=number] + .form-control-feedback, .form-group-lg .ginput_container input[type=url] + .form-control-feedback, .ginput_container .form-group-lg input[type=url] + .form-control-feedback, .form-group-lg .ginput_container input[type=tel] + .form-control-feedback, .ginput_container .form-group-lg input[type=tel] + .form-control-feedback, .form-group-lg .ginput_container input[type=date] + .form-control-feedback, .ginput_container .form-group-lg input[type=date] + .form-control-feedback, .form-group-lg .ginput_container input[type=password] + .form-control-feedback, .ginput_container .form-group-lg input[type=password] + .form-control-feedback, .form-group-lg .ginput_container select + .form-control-feedback, .ginput_container .form-group-lg select + .form-control-feedback, .form-group-lg .ginput_container textarea + .form-control-feedback, .ginput_container .form-group-lg textarea + .form-control-feedback, .form-group-lg #loginform input[type="text"] + .form-control-feedback, #loginform .form-group-lg input[type="text"] + .form-control-feedback, .form-group-lg #loginform input[type="password"] + .form-control-feedback, #loginform .form-group-lg input[type="password"] + .form-control-feedback, .form-group-lg .acf-form .acf-input-wrap input + .form-control-feedback, .acf-form .acf-input-wrap .form-group-lg input + .form-control-feedback { width: 49px; height: 49px; line-height: 49px; }
+.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .ginput_container .input-group-lg > input[type=text] + .form-control-feedback, .ginput_container .input-group-lg > input[type=email] + .form-control-feedback, .ginput_container .input-group-lg > input[type=number] + .form-control-feedback, .ginput_container .input-group-lg > input[type=url] + .form-control-feedback, .ginput_container .input-group-lg > input[type=tel] + .form-control-feedback, .ginput_container .input-group-lg > input[type=date] + .form-control-feedback, .ginput_container .input-group-lg > input[type=password] + .form-control-feedback, .ginput_container .input-group-lg > select + .form-control-feedback, .ginput_container .input-group-lg > textarea + .form-control-feedback, #loginform .input-group-lg > input[type="text"] + .form-control-feedback, #loginform .input-group-lg > input[type="password"] + .form-control-feedback, .acf-form .acf-input-wrap .input-group-lg > input + .form-control-feedback, .input-group-lg > .input-group-addon + .form-control-feedback, .input-group-lg > .input-group-btn > .btn + .form-control-feedback, .input-group-lg > .input-group-btn > .gform_button + .form-control-feedback, #loginform .input-group-lg > .input-group-btn > #wp-submit + .form-control-feedback, .acf-form .input-group-lg > .input-group-btn > .acf-button + .form-control-feedback, #loginform input[type="text"] + .form-control-feedback, #loginform input[type="password"] + .form-control-feedback, .acf-form .acf-input-wrap input + .form-control-feedback, .input-group-lg + .form-control-feedback, .form-group-lg .form-control + .form-control-feedback, .form-group-lg .ginput_container input[type=text] + .form-control-feedback, .ginput_container .form-group-lg input[type=text] + .form-control-feedback, .form-group-lg .ginput_container input[type=email] + .form-control-feedback, .ginput_container .form-group-lg input[type=email] + .form-control-feedback, .form-group-lg .ginput_container input[type=number] + .form-control-feedback, .ginput_container .form-group-lg input[type=number] + .form-control-feedback, .form-group-lg .ginput_container input[type=url] + .form-control-feedback, .ginput_container .form-group-lg input[type=url] + .form-control-feedback, .form-group-lg .ginput_container input[type=tel] + .form-control-feedback, .ginput_container .form-group-lg input[type=tel] + .form-control-feedback, .form-group-lg .ginput_container input[type=date] + .form-control-feedback, .ginput_container .form-group-lg input[type=date] + .form-control-feedback, .form-group-lg .ginput_container input[type=password] + .form-control-feedback, .ginput_container .form-group-lg input[type=password] + .form-control-feedback, .form-group-lg .ginput_container select + .form-control-feedback, .ginput_container .form-group-lg select + .form-control-feedback, .form-group-lg .ginput_container textarea + .form-control-feedback, .ginput_container .form-group-lg textarea + .form-control-feedback, .form-group-lg #loginform input[type="text"] + .form-control-feedback, #loginform .form-group-lg input[type="text"] + .form-control-feedback, .form-group-lg #loginform input[type="password"] + .form-control-feedback, #loginform .form-group-lg input[type="password"] + .form-control-feedback, .form-group-lg .acf-form .acf-input-wrap input + .form-control-feedback, .acf-form .acf-input-wrap .form-group-lg input + .form-control-feedback { width: 46px; height: 46px; line-height: 46px; }
 
-.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .ginput_container .input-group-sm > input[type=text] + .form-control-feedback, .ginput_container .input-group-sm > input[type=email] + .form-control-feedback, .ginput_container .input-group-sm > input[type=number] + .form-control-feedback, .ginput_container .input-group-sm > input[type=url] + .form-control-feedback, .ginput_container .input-group-sm > input[type=tel] + .form-control-feedback, .ginput_container .input-group-sm > input[type=date] + .form-control-feedback, .ginput_container .input-group-sm > input[type=password] + .form-control-feedback, .ginput_container .input-group-sm > select + .form-control-feedback, .ginput_container .input-group-sm > textarea + .form-control-feedback, #loginform .input-group-sm > input[type="text"] + .form-control-feedback, #loginform .input-group-sm > input[type="password"] + .form-control-feedback, .acf-form .acf-input-wrap .input-group-sm > input + .form-control-feedback, .input-group-sm > .input-group-addon + .form-control-feedback, .input-group-sm > .input-group-btn > .btn + .form-control-feedback, .input-group-sm > .input-group-btn > .gform_button + .form-control-feedback, #loginform .input-group-sm > .input-group-btn > #wp-submit + .form-control-feedback, .acf-form .input-group-sm > .input-group-btn > .acf-button + .form-control-feedback, .input-group-sm + .form-control-feedback, .form-group-sm .form-control + .form-control-feedback, .form-group-sm .ginput_container input[type=text] + .form-control-feedback, .ginput_container .form-group-sm input[type=text] + .form-control-feedback, .form-group-sm .ginput_container input[type=email] + .form-control-feedback, .ginput_container .form-group-sm input[type=email] + .form-control-feedback, .form-group-sm .ginput_container input[type=number] + .form-control-feedback, .ginput_container .form-group-sm input[type=number] + .form-control-feedback, .form-group-sm .ginput_container input[type=url] + .form-control-feedback, .ginput_container .form-group-sm input[type=url] + .form-control-feedback, .form-group-sm .ginput_container input[type=tel] + .form-control-feedback, .ginput_container .form-group-sm input[type=tel] + .form-control-feedback, .form-group-sm .ginput_container input[type=date] + .form-control-feedback, .ginput_container .form-group-sm input[type=date] + .form-control-feedback, .form-group-sm .ginput_container input[type=password] + .form-control-feedback, .ginput_container .form-group-sm input[type=password] + .form-control-feedback, .form-group-sm .ginput_container select + .form-control-feedback, .ginput_container .form-group-sm select + .form-control-feedback, .form-group-sm .ginput_container textarea + .form-control-feedback, .ginput_container .form-group-sm textarea + .form-control-feedback, .form-group-sm #loginform input[type="text"] + .form-control-feedback, #loginform .form-group-sm input[type="text"] + .form-control-feedback, .form-group-sm #loginform input[type="password"] + .form-control-feedback, #loginform .form-group-sm input[type="password"] + .form-control-feedback, .form-group-sm .acf-form .acf-input-wrap input + .form-control-feedback, .acf-form .acf-input-wrap .form-group-sm input + .form-control-feedback { width: 33px; height: 33px; line-height: 33px; }
+.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .ginput_container .input-group-sm > input[type=text] + .form-control-feedback, .ginput_container .input-group-sm > input[type=email] + .form-control-feedback, .ginput_container .input-group-sm > input[type=number] + .form-control-feedback, .ginput_container .input-group-sm > input[type=url] + .form-control-feedback, .ginput_container .input-group-sm > input[type=tel] + .form-control-feedback, .ginput_container .input-group-sm > input[type=date] + .form-control-feedback, .ginput_container .input-group-sm > input[type=password] + .form-control-feedback, .ginput_container .input-group-sm > select + .form-control-feedback, .ginput_container .input-group-sm > textarea + .form-control-feedback, #loginform .input-group-sm > input[type="text"] + .form-control-feedback, #loginform .input-group-sm > input[type="password"] + .form-control-feedback, .acf-form .acf-input-wrap .input-group-sm > input + .form-control-feedback, .input-group-sm > .input-group-addon + .form-control-feedback, .input-group-sm > .input-group-btn > .btn + .form-control-feedback, .input-group-sm > .input-group-btn > .gform_button + .form-control-feedback, #loginform .input-group-sm > .input-group-btn > #wp-submit + .form-control-feedback, .acf-form .input-group-sm > .input-group-btn > .acf-button + .form-control-feedback, .input-group-sm + .form-control-feedback, .form-group-sm .form-control + .form-control-feedback, .form-group-sm .ginput_container input[type=text] + .form-control-feedback, .ginput_container .form-group-sm input[type=text] + .form-control-feedback, .form-group-sm .ginput_container input[type=email] + .form-control-feedback, .ginput_container .form-group-sm input[type=email] + .form-control-feedback, .form-group-sm .ginput_container input[type=number] + .form-control-feedback, .ginput_container .form-group-sm input[type=number] + .form-control-feedback, .form-group-sm .ginput_container input[type=url] + .form-control-feedback, .ginput_container .form-group-sm input[type=url] + .form-control-feedback, .form-group-sm .ginput_container input[type=tel] + .form-control-feedback, .ginput_container .form-group-sm input[type=tel] + .form-control-feedback, .form-group-sm .ginput_container input[type=date] + .form-control-feedback, .ginput_container .form-group-sm input[type=date] + .form-control-feedback, .form-group-sm .ginput_container input[type=password] + .form-control-feedback, .ginput_container .form-group-sm input[type=password] + .form-control-feedback, .form-group-sm .ginput_container select + .form-control-feedback, .ginput_container .form-group-sm select + .form-control-feedback, .form-group-sm .ginput_container textarea + .form-control-feedback, .ginput_container .form-group-sm textarea + .form-control-feedback, .form-group-sm #loginform input[type="text"] + .form-control-feedback, #loginform .form-group-sm input[type="text"] + .form-control-feedback, .form-group-sm #loginform input[type="password"] + .form-control-feedback, #loginform .form-group-sm input[type="password"] + .form-control-feedback, .form-group-sm .acf-form .acf-input-wrap input + .form-control-feedback, .acf-form .acf-input-wrap .form-group-sm input + .form-control-feedback { width: 30px; height: 30px; line-height: 30px; }
 
 .has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label { color: #3c763d; }
 
@@ -1447,11 +1317,11 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .ginput_container .i
 
 .has-error .form-control-feedback { color: #a94442; }
 
-.has-feedback label ~ .form-control-feedback { top: 27px; }
+.has-feedback label ~ .form-control-feedback { top: 25px; }
 
 .has-feedback label.sr-only ~ .form-control-feedback { top: 0; }
 
-.help-block { display: block; margin-top: 5px; margin-bottom: 10px; color: darkgray; }
+.help-block { display: block; margin-top: 5px; margin-bottom: 10px; color: #737373; }
 
 @media (min-width: 768px) { .form-inline .form-group, .form-inline .gform_wrapper li, .gform_wrapper .form-inline li, .form-inline #loginform p, #loginform .form-inline p, .form-inline .acf-form .acf-fields > .acf-field, .acf-form .form-inline .acf-fields > .acf-field { display: inline-block; margin-bottom: 0; vertical-align: middle; }
   .form-inline .form-control, .form-inline .ginput_container input[type=text], .ginput_container .form-inline input[type=text], .form-inline .ginput_container input[type=email], .ginput_container .form-inline input[type=email], .form-inline .ginput_container input[type=number], .ginput_container .form-inline input[type=number], .form-inline .ginput_container input[type=url], .ginput_container .form-inline input[type=url], .form-inline .ginput_container input[type=tel], .ginput_container .form-inline input[type=tel], .form-inline .ginput_container input[type=date], .ginput_container .form-inline input[type=date], .form-inline .ginput_container input[type=password], .ginput_container .form-inline input[type=password], .form-inline .ginput_container select, .ginput_container .form-inline select, .form-inline .ginput_container textarea, .ginput_container .form-inline textarea, .form-inline #loginform input[type="text"], #loginform .form-inline input[type="text"], .form-inline #loginform input[type="password"], #loginform .form-inline input[type="password"], .form-inline .acf-form .acf-input-wrap input, .acf-form .acf-input-wrap .form-inline input { display: inline-block; width: auto; vertical-align: middle; }
@@ -1467,7 +1337,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .ginput_container .i
 
 .form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline { margin-top: 0; margin-bottom: 0; padding-top: 7px; }
 
-.form-horizontal .radio, .form-horizontal .checkbox { min-height: 29px; }
+.form-horizontal .radio, .form-horizontal .checkbox { min-height: 27px; }
 
 .form-horizontal .form-group, .form-horizontal .gform_wrapper li, .gform_wrapper .form-horizontal li, .form-horizontal #loginform p, #loginform .form-horizontal p, .form-horizontal .acf-form .acf-fields > .acf-field, .acf-form .form-horizontal .acf-fields > .acf-field { margin-left: -15px; margin-right: -15px; }
 
@@ -1479,11 +1349,11 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .ginput_container .i
 
 .form-horizontal .has-feedback .form-control-feedback { right: 15px; }
 
-@media (min-width: 768px) { .form-horizontal .form-group-lg .control-label { padding-top: 11px; font-size: 20px; } }
+@media (min-width: 768px) { .form-horizontal .form-group-lg .control-label { padding-top: 11px; font-size: 18px; } }
 
-@media (min-width: 768px) { .form-horizontal .form-group-sm .control-label { padding-top: 6px; font-size: 14px; } }
+@media (min-width: 768px) { .form-horizontal .form-group-sm .control-label { padding-top: 6px; font-size: 12px; } }
 
-.btn, .gform_button, #loginform #wp-submit, .acf-form .acf-button { display: inline-block; margin-bottom: 0; font-weight: normal; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; padding: 6px 12px; font-size: 16px; line-height: 1.428571429; border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.btn, .gform_button, #loginform #wp-submit, .acf-form .acf-button { display: inline-block; margin-bottom: 0; font-weight: normal; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; padding: 6px 12px; font-size: 14px; line-height: 1.428571429; border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
 .btn:focus, .gform_button:focus, #loginform #wp-submit:focus, .acf-form .acf-button:focus, .btn.focus, .focus.gform_button, #loginform .focus#wp-submit, .acf-form .focus.acf-button, .btn:active:focus, .gform_button:active:focus, #loginform #wp-submit:active:focus, .acf-form .acf-button:active:focus, .btn:active.focus, .gform_button:active.focus, #loginform #wp-submit:active.focus, .acf-form .acf-button:active.focus, .btn.active:focus, .active.gform_button:focus, #loginform .active#wp-submit:focus, .acf-form .active.acf-button:focus, .btn.active.focus, .active.focus.gform_button, #loginform .active.focus#wp-submit, .acf-form .active.focus.acf-button { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
 
@@ -1601,11 +1471,11 @@ a.btn.disabled, a.disabled.gform_button, #loginform a.disabled#wp-submit, .acf-f
 
 .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus { color: #777777; text-decoration: none; }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .gform_button, .acf-form .btn-group-lg > .acf-button, #loginform #wp-submit { padding: 10px 16px; font-size: 20px; line-height: 1.3333333; border-radius: 6px; }
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .gform_button, .acf-form .btn-group-lg > .acf-button, #loginform #wp-submit { padding: 10px 16px; font-size: 18px; line-height: 1.3333333; border-radius: 6px; }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .gform_button, #loginform .btn-group-sm > #wp-submit, .acf-form .btn-group-sm > .acf-button { padding: 5px 10px; font-size: 14px; line-height: 1.5; border-radius: 3px; }
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .gform_button, #loginform .btn-group-sm > #wp-submit, .acf-form .btn-group-sm > .acf-button { padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; }
 
-.btn-xs, .btn-group-xs > .btn, .btn-group-xs > .gform_button, #loginform .btn-group-xs > #wp-submit, .acf-form .btn-group-xs > .acf-button { padding: 1px 5px; font-size: 14px; line-height: 1.5; border-radius: 3px; }
+.btn-xs, .btn-group-xs > .btn, .btn-group-xs > .gform_button, #loginform .btn-group-xs > #wp-submit, .acf-form .btn-group-xs > .acf-button { padding: 1px 5px; font-size: 12px; line-height: 1.5; border-radius: 3px; }
 
 .btn-block, #loginform #wp-submit { display: block; width: 100%; }
 
@@ -1633,17 +1503,17 @@ tbody.collapse.in { display: table-row-group; }
 
 .dropdown-toggle:focus { outline: 0; }
 
-.dropdown-menu { position: absolute; top: 100%; left: 0; z-index: 1000; display: none; float: left; min-width: 160px; padding: 5px 0; margin: 2px 0 0; list-style: none; font-size: 16px; text-align: left; background-color: #fff; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 4px; -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); background-clip: padding-box; }
+.dropdown-menu { position: absolute; top: 100%; left: 0; z-index: 1000; display: none; float: left; min-width: 160px; padding: 5px 0; margin: 2px 0 0; list-style: none; font-size: 14px; text-align: left; background-color: #fff; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 4px; -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); background-clip: padding-box; }
 
 .dropdown-menu.pull-right { right: 0; left: auto; }
 
-.dropdown-menu .divider { height: 1px; margin: 10px 0; overflow: hidden; background-color: #e5e5e5; }
+.dropdown-menu .divider { height: 1px; margin: 9px 0; overflow: hidden; background-color: #e5e5e5; }
 
 .dropdown-menu > li > a { display: block; padding: 3px 20px; clear: both; font-weight: normal; line-height: 1.428571429; color: #333333; white-space: nowrap; }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus { text-decoration: none; color: #262626; background-color: #f5f5f5; }
 
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus { color: #fff; text-decoration: none; outline: 0; background-color: #fff; }
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus { color: #fff; text-decoration: none; outline: 0; background-color: #337ab7; }
 
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus { color: #777777; }
 
@@ -1657,7 +1527,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .dropdown-menu-left { left: 0; right: auto; }
 
-.dropdown-header { display: block; padding: 3px 20px; font-size: 14px; line-height: 1.428571429; color: #777777; white-space: nowrap; }
+.dropdown-header { display: block; padding: 3px 20px; font-size: 12px; line-height: 1.428571429; color: #777777; white-space: nowrap; }
 
 .dropdown-backdrop { position: fixed; left: 0; right: 0; bottom: 0; top: 0; z-index: 990; }
 
@@ -1766,11 +1636,11 @@ tbody.collapse.in { display: table-row-group; }
 
 .input-group-addon, .input-group-btn { width: 1%; white-space: nowrap; vertical-align: middle; }
 
-.input-group-addon { padding: 6px 12px; font-size: 16px; font-weight: normal; line-height: 1; color: #555555; text-align: center; background-color: #eeeeee; border: 1px solid #ccc; border-radius: 4px; }
+.input-group-addon { padding: 6px 12px; font-size: 14px; font-weight: normal; line-height: 1; color: #555555; text-align: center; background-color: #eeeeee; border: 1px solid #ccc; border-radius: 4px; }
 
-.input-group-addon.input-sm, .ginput_container .input-group-sm > input.input-group-addon[type=text], .ginput_container .input-group-sm > input.input-group-addon[type=email], .ginput_container .input-group-sm > input.input-group-addon[type=number], .ginput_container .input-group-sm > input.input-group-addon[type=url], .ginput_container .input-group-sm > input.input-group-addon[type=tel], .ginput_container .input-group-sm > input.input-group-addon[type=date], .ginput_container .input-group-sm > input.input-group-addon[type=password], .ginput_container .input-group-sm > select.input-group-addon, .ginput_container .input-group-sm > textarea.input-group-addon, #loginform .input-group-sm > input.input-group-addon[type="text"], #loginform .input-group-sm > input.input-group-addon[type="password"], .acf-form .acf-input-wrap .input-group-sm > input.input-group-addon, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .input-group-addon.btn, .input-group-sm > .input-group-btn > .input-group-addon.gform_button, #loginform .input-group-sm > .input-group-btn > .input-group-addon#wp-submit, .acf-form .input-group-sm > .input-group-btn > .input-group-addon.acf-button { padding: 5px 10px; font-size: 14px; border-radius: 3px; }
+.input-group-addon.input-sm, .ginput_container .input-group-sm > input.input-group-addon[type=text], .ginput_container .input-group-sm > input.input-group-addon[type=email], .ginput_container .input-group-sm > input.input-group-addon[type=number], .ginput_container .input-group-sm > input.input-group-addon[type=url], .ginput_container .input-group-sm > input.input-group-addon[type=tel], .ginput_container .input-group-sm > input.input-group-addon[type=date], .ginput_container .input-group-sm > input.input-group-addon[type=password], .ginput_container .input-group-sm > select.input-group-addon, .ginput_container .input-group-sm > textarea.input-group-addon, #loginform .input-group-sm > input.input-group-addon[type="text"], #loginform .input-group-sm > input.input-group-addon[type="password"], .acf-form .acf-input-wrap .input-group-sm > input.input-group-addon, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .input-group-addon.btn, .input-group-sm > .input-group-btn > .input-group-addon.gform_button, #loginform .input-group-sm > .input-group-btn > .input-group-addon#wp-submit, .acf-form .input-group-sm > .input-group-btn > .input-group-addon.acf-button { padding: 5px 10px; font-size: 12px; border-radius: 3px; }
 
-.input-group-addon.input-lg, .ginput_container .input-group-lg > input.input-group-addon[type=text], .ginput_container .input-group-lg > input.input-group-addon[type=email], .ginput_container .input-group-lg > input.input-group-addon[type=number], .ginput_container .input-group-lg > input.input-group-addon[type=url], .ginput_container .input-group-lg > input.input-group-addon[type=tel], .ginput_container .input-group-lg > input.input-group-addon[type=date], .ginput_container .input-group-lg > input.input-group-addon[type=password], .ginput_container .input-group-lg > select.input-group-addon, .ginput_container .input-group-lg > textarea.input-group-addon, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .input-group-addon.btn, .input-group-lg > .input-group-btn > .input-group-addon.gform_button, #loginform .input-group-lg > .input-group-btn > .input-group-addon#wp-submit, .acf-form .input-group-lg > .input-group-btn > .input-group-addon.acf-button, #loginform input.input-group-addon[type="text"], #loginform input.input-group-addon[type="password"], .acf-form .acf-input-wrap input.input-group-addon { padding: 10px 16px; font-size: 20px; border-radius: 6px; }
+.input-group-addon.input-lg, .ginput_container .input-group-lg > input.input-group-addon[type=text], .ginput_container .input-group-lg > input.input-group-addon[type=email], .ginput_container .input-group-lg > input.input-group-addon[type=number], .ginput_container .input-group-lg > input.input-group-addon[type=url], .ginput_container .input-group-lg > input.input-group-addon[type=tel], .ginput_container .input-group-lg > input.input-group-addon[type=date], .ginput_container .input-group-lg > input.input-group-addon[type=password], .ginput_container .input-group-lg > select.input-group-addon, .ginput_container .input-group-lg > textarea.input-group-addon, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .input-group-addon.btn, .input-group-lg > .input-group-btn > .input-group-addon.gform_button, #loginform .input-group-lg > .input-group-btn > .input-group-addon#wp-submit, .acf-form .input-group-lg > .input-group-btn > .input-group-addon.acf-button, #loginform input.input-group-addon[type="text"], #loginform input.input-group-addon[type="password"], .acf-form .acf-input-wrap input.input-group-addon { padding: 10px 16px; font-size: 18px; border-radius: 6px; }
 
 .input-group-addon input[type="radio"], .input-group-addon input[type="checkbox"] { margin-top: 0; }
 
@@ -1812,7 +1682,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus { background-color: #eeeeee; border-color: #337ab7; }
 
-.nav .nav-divider { height: 1px; margin: 10px 0; overflow: hidden; background-color: #e5e5e5; }
+.nav .nav-divider { height: 1px; margin: 9px 0; overflow: hidden; background-color: #e5e5e5; }
 
 .nav > li > a > img { max-width: none; }
 
@@ -1832,7 +1702,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .nav-pills > li + li { margin-left: 2px; }
 
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus { color: #fff; background-color: #fff; }
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus { color: #fff; background-color: #337ab7; }
 
 .nav-stacked > li { float: none; }
 
@@ -1864,13 +1734,13 @@ tbody.collapse.in { display: table-row-group; }
 
 .nav-tabs .dropdown-menu { margin-top: -1px; border-top-right-radius: 0; border-top-left-radius: 0; }
 
-.navbar { position: relative; min-height: 50px; margin-bottom: 0px; border: 1px solid transparent; }
+.navbar { position: relative; min-height: 50px; margin-bottom: 20px; border: 1px solid transparent; }
 
 .navbar:before, .navbar:after { content: " "; display: table; }
 
 .navbar:after { clear: both; }
 
-@media (min-width: 768px) { .navbar { border-radius: 0px; } }
+@media (min-width: 768px) { .navbar { border-radius: 4px; } }
 
 .navbar-header:before, .navbar-header:after { content: " "; display: table; }
 
@@ -1878,7 +1748,7 @@ tbody.collapse.in { display: table-row-group; }
 
 @media (min-width: 768px) { .navbar-header { float: left; } }
 
-.navbar-collapse { overflow-x: visible; padding-right: 0px; padding-left: 0px; border-top: 1px solid transparent; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); -webkit-overflow-scrolling: touch; }
+.navbar-collapse { overflow-x: visible; padding-right: 15px; padding-left: 15px; border-top: 1px solid transparent; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); -webkit-overflow-scrolling: touch; }
 
 .navbar-collapse:before, .navbar-collapse:after { content: " "; display: table; }
 
@@ -1895,7 +1765,7 @@ tbody.collapse.in { display: table-row-group; }
 
 @media (max-device-width: 480px) and (orientation: landscape) { .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse { max-height: 200px; } }
 
-.container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse { margin-right: 0px; margin-left: 0px; }
+.container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse { margin-right: -15px; margin-left: -15px; }
 
 @media (min-width: 768px) { .container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse { margin-right: 0; margin-left: 0; } }
 
@@ -1911,15 +1781,15 @@ tbody.collapse.in { display: table-row-group; }
 
 .navbar-fixed-bottom { bottom: 0; margin-bottom: 0; border-width: 1px 0 0; }
 
-.navbar-brand { float: left; padding: 14px 0px; font-size: 20px; line-height: 22px; height: 50px; }
+.navbar-brand { float: left; padding: 15px 15px; font-size: 18px; line-height: 20px; height: 50px; }
 
 .navbar-brand:hover, .navbar-brand:focus { text-decoration: none; }
 
 .navbar-brand > img { display: block; }
 
-@media (min-width: 768px) { .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand { margin-left: 0px; } }
+@media (min-width: 768px) { .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand { margin-left: -15px; } }
 
-.navbar-toggle { position: relative; float: right; margin-right: 0px; padding: 9px 10px; margin-top: 8px; margin-bottom: 8px; background-color: transparent; background-image: none; border: 1px solid transparent; border-radius: 4px; }
+.navbar-toggle { position: relative; float: right; margin-right: 15px; padding: 9px 10px; margin-top: 8px; margin-bottom: 8px; background-color: transparent; background-image: none; border: 1px solid transparent; border-radius: 4px; }
 
 .navbar-toggle:focus { outline: 0; }
 
@@ -1929,20 +1799,20 @@ tbody.collapse.in { display: table-row-group; }
 
 @media (min-width: 768px) { .navbar-toggle { display: none; } }
 
-.navbar-nav { margin: 7px 0px; }
+.navbar-nav { margin: 7.5px -15px; }
 
-.navbar-nav > li > a { padding-top: 10px; padding-bottom: 10px; line-height: 22px; }
+.navbar-nav > li > a { padding-top: 10px; padding-bottom: 10px; line-height: 20px; }
 
 @media (max-width: 767px) { .navbar-nav .open .dropdown-menu { position: static; float: none; width: auto; margin-top: 0; background-color: transparent; border: 0; box-shadow: none; }
   .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header { padding: 5px 15px 5px 25px; }
-  .navbar-nav .open .dropdown-menu > li > a { line-height: 22px; }
+  .navbar-nav .open .dropdown-menu > li > a { line-height: 20px; }
   .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus { background-image: none; } }
 
 @media (min-width: 768px) { .navbar-nav { float: left; margin: 0; }
   .navbar-nav > li { float: left; }
-  .navbar-nav > li > a { padding-top: 14px; padding-bottom: 14px; } }
+  .navbar-nav > li > a { padding-top: 15px; padding-bottom: 15px; } }
 
-.navbar-form { margin-left: 0px; margin-right: 0px; padding: 10px 0px; border-top: 1px solid transparent; border-bottom: 1px solid transparent; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); margin-top: 7px; margin-bottom: 7px; }
+.navbar-form { margin-left: -15px; margin-right: -15px; padding: 10px 15px; border-top: 1px solid transparent; border-bottom: 1px solid transparent; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); margin-top: 8px; margin-bottom: 8px; }
 
 @media (min-width: 768px) { .navbar-form .form-group, .navbar-form .gform_wrapper li, .gform_wrapper .navbar-form li, .navbar-form #loginform p, #loginform .navbar-form p, .navbar-form .acf-form .acf-fields > .acf-field, .acf-form .navbar-form .acf-fields > .acf-field { display: inline-block; margin-bottom: 0; vertical-align: middle; }
   .navbar-form .form-control, .navbar-form .ginput_container input[type=text], .ginput_container .navbar-form input[type=text], .navbar-form .ginput_container input[type=email], .ginput_container .navbar-form input[type=email], .navbar-form .ginput_container input[type=number], .ginput_container .navbar-form input[type=number], .navbar-form .ginput_container input[type=url], .ginput_container .navbar-form input[type=url], .navbar-form .ginput_container input[type=tel], .ginput_container .navbar-form input[type=tel], .navbar-form .ginput_container input[type=date], .ginput_container .navbar-form input[type=date], .navbar-form .ginput_container input[type=password], .ginput_container .navbar-form input[type=password], .navbar-form .ginput_container select, .ginput_container .navbar-form select, .navbar-form .ginput_container textarea, .ginput_container .navbar-form textarea, .navbar-form #loginform input[type="text"], #loginform .navbar-form input[type="text"], .navbar-form #loginform input[type="password"], #loginform .navbar-form input[type="password"], .navbar-form .acf-form .acf-input-wrap input, .acf-form .acf-input-wrap .navbar-form input { display: inline-block; width: auto; vertical-align: middle; }
@@ -1963,20 +1833,20 @@ tbody.collapse.in { display: table-row-group; }
 
 .navbar-nav > li > .dropdown-menu { margin-top: 0; border-top-right-radius: 0; border-top-left-radius: 0; }
 
-.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu { margin-bottom: 0; border-top-right-radius: 0px; border-top-left-radius: 0px; border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu { margin-bottom: 0; border-top-right-radius: 4px; border-top-left-radius: 4px; border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
 
-.navbar-btn { margin-top: 7px; margin-bottom: 7px; }
+.navbar-btn { margin-top: 8px; margin-bottom: 8px; }
 
-.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .btn-group-sm > .navbar-btn.gform_button, #loginform .btn-group-sm > .navbar-btn#wp-submit, .acf-form .btn-group-sm > .navbar-btn.acf-button { margin-top: 8.5px; margin-bottom: 8.5px; }
+.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .btn-group-sm > .navbar-btn.gform_button, #loginform .btn-group-sm > .navbar-btn#wp-submit, .acf-form .btn-group-sm > .navbar-btn.acf-button { margin-top: 10px; margin-bottom: 10px; }
 
 .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .btn-group-xs > .navbar-btn.gform_button, #loginform .btn-group-xs > .navbar-btn#wp-submit, .acf-form .btn-group-xs > .navbar-btn.acf-button { margin-top: 14px; margin-bottom: 14px; }
 
-.navbar-text { margin-top: 14px; margin-bottom: 14px; }
+.navbar-text { margin-top: 15px; margin-bottom: 15px; }
 
-@media (min-width: 768px) { .navbar-text { float: left; margin-left: 0px; margin-right: 0px; } }
+@media (min-width: 768px) { .navbar-text { float: left; margin-left: 15px; margin-right: 15px; } }
 
 @media (min-width: 768px) { .navbar-left { float: left !important; }
-  .navbar-right { float: right !important; margin-right: 0px; }
+  .navbar-right { float: right !important; margin-right: -15px; }
   .navbar-right ~ .navbar-right { margin-right: 0; } }
 
 .navbar-default { background-color: #f8f8f8; border-color: #e7e7e7; }
@@ -1985,7 +1855,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus { color: #5e5d5d; background-color: transparent; }
 
-.navbar-default .navbar-text { color: #ffffff; }
+.navbar-default .navbar-text { color: #777; }
 
 .navbar-default .navbar-nav > li > a { color: #777; }
 
@@ -2063,7 +1933,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse .btn-link[disabled]:focus, fieldset[disabled] .navbar-inverse .btn-link:hover, fieldset[disabled] .navbar-inverse .btn-link:focus { color: #444; }
 
-.breadcrumb { padding: 8px 15px; margin-bottom: 22px; list-style: none; background-color: #f5f5f5; border-radius: 4px; }
+.breadcrumb { padding: 8px 15px; margin-bottom: 20px; list-style: none; background-color: #f5f5f5; border-radius: 4px; }
 
 .breadcrumb > li { display: inline-block; }
 
@@ -2071,7 +1941,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .breadcrumb > .active { color: #777777; }
 
-.pagination { display: inline-block; padding-left: 0; margin: 22px 0; border-radius: 4px; }
+.pagination { display: inline-block; padding-left: 0; margin: 20px 0; border-radius: 4px; }
 
 .pagination > li { display: inline; }
 
@@ -2087,19 +1957,19 @@ tbody.collapse.in { display: table-row-group; }
 
 .pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus { color: #777777; background-color: #fff; border-color: #ddd; cursor: not-allowed; }
 
-.pagination-lg > li > a, .pagination-lg > li > span { padding: 10px 16px; font-size: 20px; line-height: 1.3333333; }
+.pagination-lg > li > a, .pagination-lg > li > span { padding: 10px 16px; font-size: 18px; line-height: 1.3333333; }
 
 .pagination-lg > li:first-child > a, .pagination-lg > li:first-child > span { border-bottom-left-radius: 6px; border-top-left-radius: 6px; }
 
 .pagination-lg > li:last-child > a, .pagination-lg > li:last-child > span { border-bottom-right-radius: 6px; border-top-right-radius: 6px; }
 
-.pagination-sm > li > a, .pagination-sm > li > span { padding: 5px 10px; font-size: 14px; line-height: 1.5; }
+.pagination-sm > li > a, .pagination-sm > li > span { padding: 5px 10px; font-size: 12px; line-height: 1.5; }
 
 .pagination-sm > li:first-child > a, .pagination-sm > li:first-child > span { border-bottom-left-radius: 3px; border-top-left-radius: 3px; }
 
 .pagination-sm > li:last-child > a, .pagination-sm > li:last-child > span { border-bottom-right-radius: 3px; border-top-right-radius: 3px; }
 
-.pager { padding-left: 0; margin: 22px 0; list-style: none; text-align: center; }
+.pager { padding-left: 0; margin: 20px 0; list-style: none; text-align: center; }
 
 .pager:before, .pager:after { content: " "; display: table; }
 
@@ -2149,7 +2019,7 @@ a.label:hover, a.label:focus { color: #fff; text-decoration: none; cursor: point
 
 .label-danger[href]:hover, .label-danger[href]:focus { background-color: #c9302c; }
 
-.badge { display: inline-block; min-width: 10px; padding: 3px 7px; font-size: 14px; font-weight: bold; color: #fff; line-height: 1; vertical-align: middle; white-space: nowrap; text-align: center; background-color: #777777; border-radius: 10px; }
+.badge { display: inline-block; min-width: 10px; padding: 3px 7px; font-size: 12px; font-weight: bold; color: #fff; line-height: 1; vertical-align: middle; white-space: nowrap; text-align: center; background-color: #777777; border-radius: 10px; }
 
 .badge:empty { display: none; }
 
@@ -2171,7 +2041,7 @@ a.badge:hover, a.badge:focus { color: #fff; text-decoration: none; cursor: point
 
 .jumbotron h1, .jumbotron .h1 { color: inherit; }
 
-.jumbotron p { margin-bottom: 15px; font-size: 24px; font-weight: 200; }
+.jumbotron p { margin-bottom: 15px; font-size: 21px; font-weight: 200; }
 
 .jumbotron > hr { border-top-color: #d5d5d5; }
 
@@ -2181,17 +2051,17 @@ a.badge:hover, a.badge:focus { color: #fff; text-decoration: none; cursor: point
 
 @media screen and (min-width: 768px) { .jumbotron { padding-top: 48px; padding-bottom: 48px; }
   .container .jumbotron, .container-fluid .jumbotron { padding-left: 60px; padding-right: 60px; }
-  .jumbotron h1, .jumbotron .h1 { font-size: 72px; } }
+  .jumbotron h1, .jumbotron .h1 { font-size: 63px; } }
 
-.thumbnail { display: block; padding: 4px; margin-bottom: 22px; line-height: 1.428571429; background-color: #fff; border: 1px solid #ddd; border-radius: 4px; -webkit-transition: border 0.2s ease-in-out; -o-transition: border 0.2s ease-in-out; transition: border 0.2s ease-in-out; }
+.thumbnail { display: block; padding: 4px; margin-bottom: 20px; line-height: 1.428571429; background-color: #fff; border: 1px solid #ddd; border-radius: 4px; -webkit-transition: border 0.2s ease-in-out; -o-transition: border 0.2s ease-in-out; transition: border 0.2s ease-in-out; }
 
 .thumbnail > img, .thumbnail a > img { display: block; max-width: 100%; height: auto; margin-left: auto; margin-right: auto; }
 
-.thumbnail .caption { padding: 9px; color: #696969; }
+.thumbnail .caption { padding: 9px; color: #333333; }
 
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active { border-color: #337ab7; }
 
-.alert, .validation_error, #gforms_confirmation_message { padding: 15px; margin-bottom: 22px; border: 1px solid transparent; border-radius: 4px; }
+.alert, .validation_error, #gforms_confirmation_message { padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; }
 
 .alert h4, .validation_error h4, #gforms_confirmation_message h4 { margin-top: 0; color: inherit; }
 
@@ -2235,9 +2105,9 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active { border-color: #337ab7
 @keyframes progress-bar-stripes { from { background-position: 40px 0; }
   to { background-position: 0 0; } }
 
-.progress { overflow: hidden; height: 22px; margin-bottom: 22px; background-color: #f5f5f5; border-radius: 4px; -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
+.progress { overflow: hidden; height: 20px; margin-bottom: 20px; background-color: #f5f5f5; border-radius: 4px; -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
 
-.progress-bar { float: left; width: 0%; height: 100%; font-size: 14px; line-height: 22px; color: #fff; text-align: center; background-color: #337ab7; -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); -webkit-transition: width 0.6s ease; -o-transition: width 0.6s ease; transition: width 0.6s ease; }
+.progress-bar { float: left; width: 0%; height: 100%; font-size: 12px; line-height: 20px; color: #fff; text-align: center; background-color: #337ab7; -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); -webkit-transition: width 0.6s ease; -o-transition: width 0.6s ease; transition: width 0.6s ease; }
 
 .progress-striped .progress-bar, .progress-bar-striped { background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); background-size: 40px 40px; }
 
@@ -2307,11 +2177,11 @@ button.list-group-item { width: 100%; text-align: left; }
 
 .list-group-item.disabled .list-group-item-text, .list-group-item.disabled:hover .list-group-item-text, .list-group-item.disabled:focus .list-group-item-text { color: #777777; }
 
-.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus { z-index: 2; color: #fff; background-color: #fff; border-color: #fff; }
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus { z-index: 2; color: #fff; background-color: #337ab7; border-color: #337ab7; }
 
 .list-group-item.active .list-group-item-heading, .list-group-item.active .list-group-item-heading > small, .list-group-item.active .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading, .list-group-item.active:hover .list-group-item-heading > small, .list-group-item.active:hover .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading, .list-group-item.active:focus .list-group-item-heading > small, .list-group-item.active:focus .list-group-item-heading > .small { color: inherit; }
 
-.list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text { color: white; }
+.list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text { color: #c7ddef; }
 
 .list-group-item-success { color: #3c763d; background-color: #dff0d8; }
 
@@ -2357,7 +2227,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .list-group-item-text { margin-bottom: 0; line-height: 1.3; }
 
-.panel { margin-bottom: 22px; background-color: #fff; border: 1px solid transparent; border-radius: 4px; -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+.panel { margin-bottom: 20px; background-color: #fff; border: 1px solid transparent; border-radius: 4px; -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
 
 .panel-body { padding: 15px; }
 
@@ -2369,7 +2239,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel-heading > .dropdown .dropdown-toggle { color: inherit; }
 
-.panel-title { margin-top: 0; margin-bottom: 0; font-size: 18px; color: inherit; }
+.panel-title { margin-top: 0; margin-bottom: 0; font-size: 16px; color: inherit; }
 
 .panel-title > a, .panel-title > small, .panel-title > .small, .panel-title > small > a, .panel-title > .small > a { color: inherit; }
 
@@ -2425,7 +2295,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel > .table-responsive { border: 0; margin-bottom: 0; }
 
-.panel-group { margin-bottom: 22px; }
+.panel-group { margin-bottom: 20px; }
 
 .panel-group .panel { margin-bottom: 0; border-radius: 4px; }
 
@@ -2515,7 +2385,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .well-sm { padding: 9px; border-radius: 3px; }
 
-.close { float: right; font-size: 24px; font-weight: bold; line-height: 1; color: #000; text-shadow: 0 1px 0 #fff; opacity: 0.2; filter: alpha(opacity=20); }
+.close { float: right; font-size: 21px; font-weight: bold; line-height: 1; color: #000; text-shadow: 0 1px 0 #fff; opacity: 0.2; filter: alpha(opacity=20); }
 
 .close:hover, .close:focus { color: #000; text-decoration: none; cursor: pointer; opacity: 0.5; filter: alpha(opacity=50); }
 
@@ -2573,7 +2443,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 @media (min-width: 992px) { .modal-lg { width: 900px; } }
 
-.tooltip { position: absolute; z-index: 1070; display: block; font-family: "proxima-nova", Arial, sans-serif; font-style: normal; font-weight: normal; letter-spacing: normal; line-break: auto; line-height: 1.428571429; text-align: left; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; white-space: normal; word-break: normal; word-spacing: normal; word-wrap: normal; font-size: 14px; opacity: 0; filter: alpha(opacity=0); }
+.tooltip { position: absolute; z-index: 1070; display: block; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-style: normal; font-weight: normal; letter-spacing: normal; line-break: auto; line-height: 1.428571429; text-align: left; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; white-space: normal; word-break: normal; word-spacing: normal; word-wrap: normal; font-size: 12px; opacity: 0; filter: alpha(opacity=0); }
 
 .tooltip.in { opacity: 0.9; filter: alpha(opacity=90); }
 
@@ -2605,7 +2475,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .tooltip.bottom-right .tooltip-arrow { top: 0; left: 5px; margin-top: -5px; border-width: 0 5px 5px; border-bottom-color: #000; }
 
-.popover { position: absolute; top: 0; left: 0; z-index: 1060; display: none; max-width: 276px; padding: 1px; font-family: "proxima-nova", Arial, sans-serif; font-style: normal; font-weight: normal; letter-spacing: normal; line-break: auto; line-height: 1.428571429; text-align: left; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; white-space: normal; word-break: normal; word-spacing: normal; word-wrap: normal; font-size: 16px; background-color: #fff; background-clip: padding-box; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 6px; -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+.popover { position: absolute; top: 0; left: 0; z-index: 1060; display: none; max-width: 276px; padding: 1px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-style: normal; font-weight: normal; letter-spacing: normal; line-break: auto; line-height: 1.428571429; text-align: left; text-align: start; text-decoration: none; text-shadow: none; text-transform: none; white-space: normal; word-break: normal; word-spacing: normal; word-wrap: normal; font-size: 14px; background-color: #fff; background-clip: padding-box; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 6px; -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
 .popover.top { margin-top: -10px; }
 
@@ -2615,7 +2485,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .popover.left { margin-left: -10px; }
 
-.popover-title { margin: 0; padding: 8px 14px; font-size: 16px; background-color: #f7f7f7; border-bottom: 1px solid #ebebeb; border-radius: 5px 5px 0 0; }
+.popover-title { margin: 0; padding: 8px 14px; font-size: 14px; background-color: #f7f7f7; border-bottom: 1px solid #ebebeb; border-radius: 5px 5px 0 0; }
 
 .popover-content { padding: 9px 14px; }
 
@@ -2670,7 +2540,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .carousel-inner > .active.right { left: 100%; }
 
-.carousel-control { position: absolute; top: 0; left: 0; bottom: 0; width: 15%; opacity: 0.5; filter: alpha(opacity=50); font-size: 20px; color: #fff; text-align: center; text-shadow: 0px; background-color: transparent; }
+.carousel-control { position: absolute; top: 0; left: 0; bottom: 0; width: 15%; opacity: 0.5; filter: alpha(opacity=50); font-size: 20px; color: #fff; text-align: center; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); background-color: transparent; }
 
 .carousel-control.left { background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%); background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%); background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
 
@@ -2696,7 +2566,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .carousel-indicators .active { margin: 0; width: 12px; height: 12px; background-color: #fff; }
 
-.carousel-caption { position: absolute; left: 15%; right: 15%; bottom: 20px; z-index: 10; padding-top: 20px; padding-bottom: 20px; color: #fff; text-align: center; text-shadow: 0px; }
+.carousel-caption { position: absolute; left: 15%; right: 15%; bottom: 20px; z-index: 10; padding-top: 20px; padding-bottom: 20px; color: #fff; text-align: center; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
 
 .carousel-caption .btn, .carousel-caption .gform_button, .carousel-caption #loginform #wp-submit, #loginform .carousel-caption #wp-submit, .carousel-caption .acf-form .acf-button, .acf-form .carousel-caption .acf-button { text-shadow: none; }
 
@@ -2813,6 +2683,136 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 @media print { .hidden-print { display: none !important; } }
 
+.margin-top-none { margin-top: 0; }
+
+.margin-top-quarter { margin-top: 0.25em; }
+
+.margin-top-half { margin-top: 0.5em; }
+
+.margin-top-one { margin-top: 1em; }
+
+.margin-top-two { margin-top: 2em; }
+
+.padding-top-none { padding-top: 0; }
+
+.padding-top-quarter { padding-top: 0.25em; }
+
+.padding-top-half { padding-top: 0.5em; }
+
+.padding-top-one { padding-top: 1em; }
+
+.padding-top-two { padding-top: 2em; }
+
+.padding-top-four { padding-top: 4em; }
+
+.margin-bottom-none { margin-bottom: 0; }
+
+.margin-bottom-quarter { margin-bottom: 0.25em; }
+
+.margin-bottom-half { margin-bottom: 0.5em; }
+
+.margin-bottom-one { margin-bottom: 1em; }
+
+.margin-bottom-two, .card-vertical-block { margin-bottom: 2em; }
+
+.margin-bottom-four { margin-bottom: 4em; }
+
+.padding-bottom-none { padding-bottom: 0; }
+
+.padding-bottom-quarter { padding-bottom: 0.25em; }
+
+.padding-bottom-half { padding-bottom: 0.5em; }
+
+.padding-bottom-one { padding-bottom: 1em; }
+
+.padding-bottom-two { padding-bottom: 2em; }
+
+.padding-bottom-four { padding-bottom: 4em; }
+
+.margin-none { margin: 0; }
+
+.margin-quarter { margin: 0.25em; }
+
+.margin-half { margin: 0.5em; }
+
+.margin-one { margin: 1em; }
+
+.margin-two { margin: 2em; }
+
+.padding-none { padding: 0; }
+
+.padding-quarter { padding: 0.25em; }
+
+.padding-half { padding: 0.5em; }
+
+.padding-one { padding: 1em; }
+
+.padding-two { padding: 2em; }
+
+.padding-four { padding: 4em; }
+
+.margin-vertical-none { margin-top: 0; margin-bottom: 0; }
+
+.margin-vertical-quarter { margin-top: 0.25em; margin-bottom: 0.25em; }
+
+.margin-vertical-half { margin-top: 0.5em; margin-bottom: 0.5em; }
+
+.margin-vertical-one { margin-top: 1em; margin-bottom: 1em; }
+
+.margin-vertical-two { margin-top: 2em; margin-bottom: 2em; }
+
+.margin-vertical-four { margin-top: 4em; margin-bottom: 4em; }
+
+.padding-vertical-none { padding-top: 0; padding-bottom: 0; }
+
+.padding-vertical-quarter { padding-top: 0.25em; padding-bottom: 0.25em; }
+
+.padding-vertical-half { padding-top: 0.5em; padding-bottom: 0.5em; }
+
+.padding-vertical-one { padding-top: 1em; padding-bottom: 1em; }
+
+.padding-vertical-two { padding-top: 2em; padding-bottom: 2em; }
+
+.padding-vertical-four { padding-top: 4em; padding-bottom: 4em; }
+
+.text-white { color: white !important; }
+
+h1.entry-title, h3 { color: #333333; }
+
+small a, #footer-top small a, small a:hover, #footer-top small a:hover { color: #333333; }
+
+h4 { color: #333333; }
+
+#search-bar { background: #222222; }
+
+#search-bar input::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: #222222; }
+
+#search-bar input::-moz-placeholder { /* Firefox 19+ */ color: #222222; }
+
+#search-bar input:-ms-input-placeholder { /* IE 10+ */ color: #222222; }
+
+#search-bar input:-moz-placeholder { /* Firefox 18- */ color: #222222; }
+
+#search-bar .fa { color: #222222; }
+
+#header-global .ubermenu-skin-vanilla .ubermenu-item-level-0 > .ubermenu-target { color: #333333; }
+
+#header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target:hover { color: #373737; }
+
+#header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target, #header-global .ubermenu-skin-vanilla .ubermenu-item-level-0 > .ubermenu-target:hover, #header-global .ubermenu-skin-vanilla .ubermenu-active > .ubermenu-target, #header-global .ubermenu-skin-vanilla .ubermenu-submenu .ubermenu-item-header > .ubermenu-target, #header-global .ubermenu-skin-vanilla .ubermenu-submenu { color: #fff; }
+
+.single-events-header, #tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type=submit], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] > a { background-color: #555555; }
+
+#footer-top .tribe-events-viewmore, #footer-top .this-week-no-events-msg { color: #cccccc; }
+
+#footer-top .event-today-time, .tribe-events-calendar .tribe-events-tooltip h3 { color: #333333; }
+
+#tribe-events .tribe-mini-calendar-event, #tribe-this-week-events-widget-1001 .tribe-this-week-event, .tribe-events-list .type-tribe_events, #footer-top .tribe-this-week-event { border-bottom: 1px solid #cccccc; }
+
+.single-tribe_events a.tribe-events-gcal, .single-tribe_events a.tribe-events-ical, .single-events-header h4, .single-events-header h2 { color: white; }
+
+#footer-top .tribe-this-week-widget-day-wrap { background-color: white; }
+
 .gform_wrapper form { margin-bottom: 0; }
 
 .gfield { clear: both; }
@@ -2831,9 +2831,9 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .gform_wrapper .gfield_required { color: #a94442; padding-left: 1px; }
 
-.ginput_container input[type=text], .ginput_container input[type=email], .ginput_container input[type=number], .ginput_container input[type=url], .ginput_container input[type=tel], .ginput_container input[type=date], .ginput_container input[type=password], .ginput_container select, .ginput_container textarea { color: #696969; font-size: 18px; line-height: 1.1; font-weight: 500; font-family: "proxima-nova", Arial, sans-serif; border-radius: 0; padding: 20px; }
+.ginput_container input[type=text], .ginput_container input[type=email], .ginput_container input[type=number], .ginput_container input[type=url], .ginput_container input[type=tel], .ginput_container input[type=date], .ginput_container input[type=password], .ginput_container select, .ginput_container textarea { color: #333333; font-size: 18px; line-height: 1.1; font-weight: 500; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; border-radius: 0; padding: 20px; }
 
-.gform_button { border-radius: 0; font-size: 18px; line-height: 1.1; font-weight: 500; font-family: "proxima-nova", Arial, sans-serif; padding: 20px 60px; }
+.gform_button { border-radius: 0; font-size: 18px; line-height: 1.1; font-weight: 500; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; padding: 20px 60px; }
 
 .gform_wrapper .gfield_error .gfield_label { color: #a94442; }
 
@@ -2997,7 +2997,7 @@ a:focus, a:active { background-color: inherit; }
 
 #header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target { padding: 10px 25px 0 25px; }
 
-#header-global .shiftnav-toggle-button { background: #ffffff; color: #696969; padding: 0; height: 62px; line-height: 62px; font-size: 20px; }
+#header-global .shiftnav-toggle-button { background: #ffffff; color: #333333; padding: 0; height: 62px; line-height: 62px; font-size: 20px; }
 
 #shiftnav-main.shiftnav.shiftnav-skin-light ul.shiftnav-menu li.menu-item .shiftnav-target { font-size: 18px; color: inherit; border-bottom: 1px solid #cccccc; }
 
@@ -3051,7 +3051,7 @@ a:focus, a:active { background-color: inherit; }
 
 .carousel-wrap .item .carousel-caption .carousel-title h3 { font-size: 1.8em; font-weight: 500; line-height: 1em; margin: 0px; padding: 0px; text-shadow: none; }
 
-.carousel-wrap .item .carousel-caption .carousel-caption-bg { font-size: 1.1em; background-color: white; padding: 15px 20px; color: #696969; }
+.carousel-wrap .item .carousel-caption .carousel-caption-bg { font-size: 1.1em; background-color: white; padding: 15px 20px; color: #333333; }
 
 .carousel-wrap .item .carousel-caption .carousel-caption-bg p { margin-bottom: 0; text-shadow: none; }
 
@@ -3145,7 +3145,7 @@ a:focus, a:active { background-color: inherit; }
 
 .profile-content .submeta { line-height: 180%; }
 
-.profile-content .submeta a { color: #696969; }
+.profile-content .submeta a { color: #333333; }
 
 .profile-bio { padding-top: 10px; margin-top: 10px; border-top: 1px solid #eeeeee; }
 
@@ -3296,7 +3296,7 @@ a:focus, a:active { background-color: inherit; }
   #header-mobile .ubermenu .ubermenu-item:last-child { border-bottom: none; }
   #header-mobile .ubermenu .ubermenu-submenu { background-color: white; }
   #header-mobile .ubermenu .ubermenu-submenu .ubermenu-item { border-bottom-color: #eeeeee; }
-  #header-mobile .ubermenu .ubermenu-submenu .ubermenu-target { color: #696969; line-height: .5em; }
+  #header-mobile .ubermenu .ubermenu-submenu .ubermenu-target { color: #333333; line-height: .5em; }
   #header-mobile .ubermenu .ubermenu-target { color: white; }
   #header-mobile .ubermenu.ubermenu-responsive .ubermenu-column, .ubermenu.ubermenu-responsive .ubermenu-column-auto, .ubermenu-submenu.ubermenu-submenu-drop { width: 100%; }
   #mainmenu { margin: 0; }
@@ -3453,13 +3453,13 @@ a:focus, a:active { background-color: inherit; }
 
 #tribe-events-content.tribe-events-list { padding-top: 2em; }
 
-.tribe-this-week-widget-day-wrap { background-color: white; padding: 20px 10px; }
+#footer-top .tribe-this-week-widget-day-wrap { padding: 20px 10px; }
 
-#footer-top .tribe-this-week-event { border-left: none; padding-left: 0px; padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid #ddd; border-color: #ddd; }
+#footer-top .tribe-this-week-event { border-left: none; padding-left: 0px; padding-bottom: 15px; margin-bottom: 15px; }
 
 #footer-top .tribe-this-week-event:last-child { margin-bottom: 0; border-bottom: none; padding-bottom: 0; }
 
-#footer-top .event-today-time { font-size: 13px; color: #333; }
+#footer-top .event-today-time { font-size: 13px; }
 
 /* Tribe Single Event */
 .tribe-events-single-event-description h3 { padding-bottom: 20px; }
@@ -3481,8 +3481,6 @@ a:focus, a:active { background-color: inherit; }
 
 .tribe-events-list-separator-month + .type-tribe_events.tribe-events-first { padding-top: 0; }
 
-.tribe-events-list .type-tribe_events { border-bottom: 1px solid #cccccc; }
-
 .single-tribe_venue #tribe-events-content h2.list-title { display: none; }
 
 #tribe-events #tribe-events-content .tribe-events-page-title { text-align: left; margin: 0; }
@@ -3501,8 +3499,6 @@ a:focus, a:active { background-color: inherit; }
 
 #tribe-events .tribe_events_bar .tribe-bar-search-filter { width: 75%; padding: 0; }
 
-#tribe-events .tribe-mini-calendar-event { border-bottom: 1px solid #cccccc; }
-
 #tribe-events .tribe-mini-calendar-event .list-info { font-size: 14px; }
 
 #tribe-events-sub-nav-wrap .tribe-events-sub-nav { list-style: none; text-align: right; margin: 10px 0 0 0; }
@@ -3517,9 +3513,11 @@ a:focus, a:active { background-color: inherit; }
 
 #tribe-bar-form.tribe-bar-collapse #tribe-bar-views { width: 40%; }
 
-#tribe-events-content .tribe-events-tooltip h4 { font-size: 16px; }
+#tribe-events-content .tribe-events-tooltip h4, .tribe-events-calendar .tribe-events-tooltip h3 { font-size: 16px; }
 
-.tribe-events-tooltip .tribe-events-event-body { padding: 4px 0px 8px 0px; font-size: 13px; }
+.tribe-events-tooltip .tribe-events-event-body { padding: 4px 0px 8px 0px; }
+
+.tribe-events-tooltip .tribe-events-event-body p { font-size: 13px; line-height: 18px; padding-top: 10px; }
 
 @media (max-width: 767px) { .events-month #tribe-events-footer ~ a.tribe-events-ical.tribe-events-button { display: none; }
   .tribe-events-event-meta .tribe-events-meta-group-gmap, #tribe-events-sub-nav-wrap, #tribe-events-footer ~ a.tribe-events-ical.tribe-events-button { display: none; } }
@@ -3536,8 +3534,6 @@ a:focus, a:active { background-color: inherit; }
 #footer-top .tribe-events-viewmore, #footer-top .this-week-no-events-msg { font-size: 13px; }
 
 #tribe-events a.tribe-events-gcal, #tribe-events a.tribe-events-ical { display: none; }
-
-#tribe-this-week-events-widget-1001 .tribe-this-week-event { border-color: #000; }
 
 /* Mini Calendar */
 .tribe-mini-calendar-event { border-bottom: none; margin-bottom: 12px; padding-bottom: 0; }
