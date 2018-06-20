@@ -5,7 +5,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 1.1.3
+Version: 1.1.4
 Text Domain: csdschools
 */
 .margin-top-none { margin-top: 0; }
@@ -99,6 +99,44 @@ Text Domain: csdschools
 .padding-vertical-two { padding-top: 2em; padding-bottom: 2em; }
 
 .padding-vertical-four { padding-top: 4em; padding-bottom: 4em; }
+
+.text-white { color: white !important; }
+
+h1.entry-title, h3 { color: #333333; }
+
+#search-bar { background: #222222; }
+
+#search-bar input::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: #222222; }
+
+#search-bar input::-moz-placeholder { /* Firefox 19+ */ color: #222222; }
+
+#search-bar input:-ms-input-placeholder { /* IE 10+ */ color: #222222; }
+
+#search-bar input:-moz-placeholder { /* Firefox 18- */ color: #222222; }
+
+#search-bar .fa { color: #222222; }
+
+#header-global .ubermenu-skin-vanilla .ubermenu-item-level-0 > .ubermenu-target { color: #696969; }
+
+#header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target { color: #ffffff; }
+
+#header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target:hover { color: #bfbfbf; }
+
+#header-global .ubermenu-skin-vanilla .ubermenu-submenu .ubermenu-item-header > .ubermenu-target { color: #ffffff; }
+
+#header-global .ubermenu-skin-vanilla .ubermenu-submenu { color: #ffffff; }
+
+#header-global .ubermenu-skin-vanilla .ubermenu-item-level-0 > .ubermenu-target:hover, #header-global .ubermenu-skin-vanilla .ubermenu-active > .ubermenu-target { color: #ffffff; }
+
+.single-events-header, #tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type=submit], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] > a { background-color: #555555; }
+
+.tribe-events-list .type-tribe_events { border-bottom: 1px solid #cccccc; }
+
+#footer-top .tribe-events-viewmore, #footer-top .this-week-no-events-msg { color: #cccccc; }
+
+.tribe-mini-calendar-event { border-bottom: 1px solid #cccccc; }
+
+.single-tribe_events a.tribe-events-gcal, .single-tribe_events a.tribe-events-ical, .single-events-header h4, .single-events-header h2 { color: white; }
 
 /*! Bootstrap v3.3.6 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -2886,8 +2924,6 @@ small, .small { font-size: 14px; }
 .list-bordered li:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
 
 small a, #footer-top small a { text-transform: uppercase; color: #333333; font-weight: bold; }
-
-small a:hover, #footer-top small a:hover { color: #337ab7; }
 
 a { -webkit-transition-property: all; transition-property: all; -webkit-transition-duration: 0.2s; transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; transition-timing-function: ease-in-out; }
 
