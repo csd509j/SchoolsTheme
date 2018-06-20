@@ -128,6 +128,7 @@ add_action( 'widgets_init', 'csd_widgets_init' );
 function custom_admin_css() {
   echo '<style>
     #wp-admin-bar-wpfc-toolbar-parent > .ab-empty-item::before { content: ""; padding: 0; margin:0; }
+    .installer-plugin-update-tr { display:none; }
   </style>';
 }
 add_action('admin_head', 'custom_admin_css');
