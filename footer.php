@@ -13,7 +13,7 @@
 								<strong>Address:</strong> <?php the_field('street_address', 'option'); ?></p>
 								<p><strong>Principal:</strong><br><?php the_field('principal', 'option'); ?>, <a href="mailto:<?php the_field('principal_email', 'option'); ?>"><?php the_field('principal_email', 'option'); ?></a><br/>
 								<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_1', 'option'); ?>, <a href="mailto:<?php the_field('assistant_principle_1_email', 'option'); ?>"><?php the_field('assistant_principal_1_email', 'option'); ?></a><br>
-								<?php if(get_field('assistant_principal_2')): ?>
+								<?php if(get_field('assistant_principal_2', 'option')): ?>
 								<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_2', 'option'); ?>, <a href="mailto:<?php the_field('assistant_principle_2_email', 'option'); ?>"><?php the_field('assistant_principal_2_email', 'option'); ?></a><br>
 								<?php endif; ?>
 							</div>
@@ -83,7 +83,7 @@
 								</ul>
 							</div>
 							<div id="credits" class="col-sm-6 col-xs-12 text-right">
-								Made with <i class="fa fa-heart"></i> by <a href="http://abidewebdesign.com" target="_blank">Abide Web Design</a>
+								Website Built & Maintained by <a href="http://abidewebdesign.com" target="_blank">Abide Web Design</a>
 							</div>
 						</div>
 					</div>
