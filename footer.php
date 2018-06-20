@@ -13,12 +13,15 @@
 								<strong>Address:</strong> <?php the_field('street_address', 'option'); ?></p>
 								<p><strong>Principal:</strong><br><?php the_field('principal', 'option'); ?>, <a href="mailto:<?php the_field('principal_email', 'option'); ?>"><?php the_field('principal_email', 'option'); ?></a><br/>
 								<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_1', 'option'); ?>, <a href="mailto:<?php the_field('assistant_principle_1_email', 'option'); ?>"><?php the_field('assistant_principal_1_email', 'option'); ?></a><br>
+								<?php if(get_field('assistant_principal_2')): ?>
+								<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_2', 'option'); ?>, <a href="mailto:<?php the_field('assistant_principle_2_email', 'option'); ?>"><?php the_field('assistant_principal_2_email', 'option'); ?></a><br>
+								<?php endif; ?>
 							</div>
 							<div class="col-sm-6">
 								<div class="headline">
 									<div class="row">
 										<div class="col-sm-8">
-											<h2>Today at Linus Pauling</h2>
+											<h2>Today at <?php echo bloginfo('name'); ?></h2>
 										</div>
 										<div class="col-sm-4 text-right padding-top-quarter">
 											<a href="<?php echo home_url('/events'); ?>">View Full Calendar</a>
