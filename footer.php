@@ -21,7 +21,7 @@
 								<div class="headline">
 									<div class="row">
 										<div class="col-sm-8">
-											<h2>Today at <?php echo bloginfo('name'); ?></h2>
+											<h2>Today at <?php bloginfo('name'); ?></h2>
 										</div>
 										<div class="col-sm-4 text-right padding-top-quarter">
 											<a href="<?php echo home_url('/events'); ?>">View Full Calendar</a>
