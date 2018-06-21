@@ -9,7 +9,9 @@
 								<p class="margin-bottom-three"><strong>Phone:</strong> <?php the_field('primary_phone', 'option'); ?><br/>
 								<strong>Fax:</strong> <?php the_field('fax_number', 'option'); ?><br/>
 								<strong>Attendance:</strong> <?php the_field('attendance_phone', 'option'); ?><br/>
-								<strong>Email:</strong> <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a><br/>
+								<?php if(get_field('email', 'option')): ?>
+									<strong>Email:</strong> <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a><br/>
+								<?php endif; ?>
 								<strong>Address:</strong> <?php the_field('street_address', 'option'); ?></p>
 								<p><strong>Principal:</strong><br><?php the_field('principal', 'option'); ?>
 									<?php if(get_field('principal_email', 'option')): ?>
