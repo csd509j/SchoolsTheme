@@ -12,21 +12,22 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
+$site_name = get_bloginfo('name');
 ?>
 <div class="row">
-	<div class="col-sm-8">
-		<h1><?php the_field('calendar_title', 'options'); ?></h1>
-		<?php the_field('calendar_text', 'options'); ?>
+	<div class="col-sm-7">
+		<h1><?php the_field('calendar_title', 'option'); ?></h1>
+		<?php the_field('calendar_text', 'option'); ?>
 	</div>
-	<div class="col-sm-4">
+	<div class="col-sm-5">
 		<div class="well">
 			<h4><i class="fa fa-download"></i> Calendars</h4>
 			<ul class="list list-unstyled margin-none">
 				<?php
-				if( have_rows('calendars', 'options') ):
+				if( have_rows('calendars', 'option') ):
 
 				 	// loop through the rows of data
-				    while ( have_rows('calendars', 'options') ) : the_row(); ?>
+				    while ( have_rows('calendars', 'option') ) : the_row(); ?>
 					
 						<li><a href="<?php the_sub_field('calendar_file'); ?>" target="_blank"><?php the_sub_field('calendar_name'); ?></a></li>
 				        
@@ -54,11 +55,17 @@ do_action( 'tribe_events_after_template' );?>
 	<div class="col-sm-12">
 		<div class="well well-sm">
 			<ul class="list-inline margin-none">
-				<li><strong>Subscribe to Calendars:</strong></li>
+				<?php if( have_rows('calendars_subscribe', 'option' )): ?>
+					
+					<li><strong>Subscribe to Calendars:</strong></li>
+					
+					<?php while ( have_rows('calendars_subscribe', 'option' )) : the_row(); ?>
+						
+						<li><a href="<?php the_sub_field('calendar_url', 'option'); ?>" target="_blank"><?php the_sub_field('calendar_name', 'option'); ?></a></li>
+						
+					<?php endwhile; ?>
 				
-				<li><a target="_blank" href="http://www.google.com/calendar/render?cid=https://calendar.google.com/calendar/ical/corvallis.k12.or.us_225fi880u67dljur5cp3iutr70%40group.calendar.google.com/public/basic.ics">District Calendar</a></li>
-				<li><a target="_blank" href="http://www.google.com/calendar/render?cid=https://calendar.google.com/calendar/ical/corvallis.k12.or.us_2d38393638363535343938%40resource.calendar.google.com/public/basic.ics">School Year Calendar</a></li>
-				<li><a target="_blank" href="http://www.google.com/calendar/render?cid=https://calendar.google.com/calendar/ical/corvallis.k12.or.us_2d3733313630363234383133%40resource.calendar.google.com/public/basic.ics">Odd/Even Calendar</a></li>			
+				<?php endif; ?>
 			</ul>
 		</div>
 	</div>
