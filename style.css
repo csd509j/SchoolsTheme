@@ -5,7 +5,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 1.1.8
+Version: 1.1.9
 Text Domain: csdschools
 */
 /*! Bootstrap v3.3.6 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
@@ -2799,7 +2799,9 @@ h4 { color: #333333; }
 
 #header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target:hover { color: #373737; }
 
-#header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target, #header-global .ubermenu-skin-vanilla .ubermenu-item-level-0 > .ubermenu-target:hover, #header-global .ubermenu-skin-vanilla .ubermenu-active > .ubermenu-target, #header-global .ubermenu-skin-vanilla .ubermenu-submenu .ubermenu-item-header > .ubermenu-target, #header-global .ubermenu-skin-vanilla .ubermenu-submenu { color: #fff; }
+#header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target, #header-global .ubermenu-skin-vanilla .ubermenu-item-level-0 > .ubermenu-target:hover, #header-global .ubermenu-skin-vanilla .ubermenu-active > .ubermenu-target, #header-global .ubermenu-skin-vanilla .ubermenu-submenu .ubermenu-item-header > .ubermenu-target, #header-global .ubermenu-skin-vanilla .ubermenu-submenu { color: #ffffff; }
+
+#header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target:hover { color: #e6e5e5; }
 
 .single-events-header, #tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type=submit], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] > a { background-color: #555555; }
 
@@ -2995,7 +2997,9 @@ a:focus, a:active { background-color: inherit; }
 
 #header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target { padding: 10px 25px; }
 
-#header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target { padding: 10px 25px 0 25px; }
+#header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target { padding: 10px 10px 0 10px; }
+
+#header-global .ubermenu .ubermenu-autocolumn { padding-top: 0; }
 
 #header-global .shiftnav-toggle-button { background: #ffffff; color: #333333; padding: 0; height: 62px; line-height: 62px; font-size: 20px; }
 
