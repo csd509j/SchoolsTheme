@@ -61,7 +61,7 @@ do_action( 'tribe_events_after_template' );?>
 					
 					<?php while ( have_rows('calendars_subscribe', 'option' )) : the_row(); ?>
 						
-						<li><a href="<?php the_sub_field('calendar_url', 'option'); ?>" target="_blank"><?php the_sub_field('calendar_name', 'option'); ?></a></li>
+						<li><a href="http://www.google.com/calendar/render?cid=<?php the_sub_field('calendar_url', 'option'); ?>" target="_blank"><?php the_sub_field('calendar_name', 'option'); ?></a></li>
 						
 					<?php endwhile; ?>
 				
