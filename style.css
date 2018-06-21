@@ -5,7 +5,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 1.1.9
+Version: 1.2.1
 Text Domain: csdschools
 */
 /*! Bootstrap v3.3.6 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
@@ -2803,6 +2803,8 @@ h4 { color: #333333; }
 
 #header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target:hover { color: #e6e5e5; }
 
+body .shiftnav.shiftnav-skin-standard-dark ul.shiftnav-menu li.menu-item.current-menu-item > .shiftnav-target { background: transparent; }
+
 .single-events-header, #tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type=submit], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] > a { background-color: #555555; }
 
 #footer-top .tribe-events-viewmore, #footer-top .this-week-no-events-msg { color: #cccccc; }
@@ -2976,6 +2978,8 @@ a:focus, a:active { background-color: inherit; }
 #header-top-global .menu-top-links-container, #header-top-global .menu-top-links-search-container { float: right; }
 
 #header-top-global .fa { margin-left: 5px; }
+
+#header-top-global .ubermenu .ubermenu-submenu-drop.ubermenu-submenu-align-left_edge_item { left: 0; }
 
 #header-global { width: 100%; padding: 30px 0 25px 0; }
 
