@@ -1,6 +1,6 @@
 <?php 
 /*
- * Theme update checker
+ * Theme update checker and auto update 
  *
  * @since CSD Schools 1.1
  */
@@ -12,6 +12,8 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 );
 
 $myUpdateChecker->setBranch('master'); 
+
+add_filter( 'auto_update_theme', '__return_true' );
 
 /*
  * Enqueue styles
