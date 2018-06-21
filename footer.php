@@ -11,10 +11,21 @@
 								<strong>Attendance:</strong> <?php the_field('attendance_phone', 'option'); ?><br/>
 								<strong>Email:</strong> <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a><br/>
 								<strong>Address:</strong> <?php the_field('street_address', 'option'); ?></p>
-								<p><strong>Principal:</strong><br><?php the_field('principal', 'option'); ?>, <a href="mailto:<?php the_field('principal_email', 'option'); ?>"><?php the_field('principal_email', 'option'); ?></a><br/>
-								<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_1', 'option'); ?>, <a href="mailto:<?php the_field('assistant_principle_1_email', 'option'); ?>"><?php the_field('assistant_principal_1_email', 'option'); ?></a><br>
+								<p><strong>Principal:</strong><br><?php the_field('principal', 'option'); ?>
+									<?php if(get_field('principal_email', 'option')): ?>
+										, <a href="mailto:<?php the_field('principal_email', 'option'); ?>"><?php the_field('principal_email', 'option'); ?></a>
+									<?php endif; ?>
+								<br/>
+								<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_1', 'option'); ?>
+									<?php if(get_field('assistant_principal_1_email', 'option')): ?>
+										, <a href="mailto:<?php the_field('assistant_principal_1_email', 'option'); ?>"><?php the_field('assistant_principal_1_email', 'option'); ?></a>
+									<?php endif; ?>
 								<?php if(get_field('assistant_principal_2', 'option')): ?>
-								<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_2', 'option'); ?>, <a href="mailto:<?php the_field('assistant_principle_2_email', 'option'); ?>"><?php the_field('assistant_principal_2_email', 'option'); ?></a><br>
+									<br>	
+									<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_2', 'option'); ?>
+									<?php if(get_field('assistant_principal_2_email', 'option')): ?>
+										, <a href="mailto:<?php the_field('assistant_principal_2_email', 'option'); ?>"><?php the_field('assistant_principal_2_email', 'option'); ?></a>
+									<?php endif; ?>
 								<?php endif; ?>
 							</div>
 							<div class="col-sm-6">
