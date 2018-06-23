@@ -8,46 +8,32 @@
  */
 
 if ( 'page' === get_post_type() || 'news' === get_post_type() ):
-	
 	$title = get_the_title();
-	
-	if( have_rows('page_content_blocks', get_the_ID()) ):
-			
-		while( have_rows('page_content_blocks') ): the_row(); 
-			
-			if( get_sub_field('lead_text_block') ): 
-				
-				$text = get_sub_field('lead_text_block');
-			
-			endif;
-		
-		endwhile;
-	
-	endif;
-
 elseif ( 'attachment' === get_post_type() ):
-	
-	$icon = '<i class="fa fa-file-text-o"></i>';
 	$char = array('-', '_');
 	$title = get_the_title();
 	$title = str_replace($char, ' ', $title);
-				
 elseif ( 'tribe_events' === get_post_type() ):
-	
-	$icon = '<i class="fa fa-calendar"></i>';
-	$title = get_the_title() . ' - ' . tribe_get_start_date();
-
+	$title = get_the_title();
+	$date = tribe_get_start_date();
 endif;
 
 ?>
 
 <div class="search-results">
 	<header class="entry-header">
-		<h3 class="margin-bottom-none">
-			<?php echo $icon; ?>
+		<h4 class="margin-bottom-none">
 			<a href="<?php the_permalink(); ?>" <?php if ('attachment' === get_post_type($post)): ?>target="_blank" <?php endif; ?>rel="bookmark"><?php echo $title; ?></a>
-		</h3>
+		</h4>
+		<p class="search-link"><?php the_permalink(); ?></p>
+		<?php if ('attachment' === get_post_type()): ?>
+			<p class="search-meta"><a href="<?php the_permalink(); ?>" target="_blank"><i class="fa fa-download"></i> Media File</a></p>
+		<?php endif; ?>
+		<?php if ('tribe_events' === get_post_type()): ?>
+			<p class="search-meta"><i class="fa fa-calendar"></i> <?php echo tribe_get_start_date( null, false, 'F j, Y' ); ?> <?php if(tribe_get_start_date( null, false, 'g:ia' ) != '12:00am'): echo tribe_get_start_date( null, false, 'g:ia' ); endif;?></p>
+		<?php endif; ?>
+
 	</header><!-- .entry-header -->
-	<?php echo $text; ?>
+	<?php the_excerpt(); ?>
 </div><!-- #search-result-## -->
 

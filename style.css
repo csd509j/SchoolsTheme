@@ -5,7 +5,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 1.2.5
+Version: 1.2.6
 Text Domain: csdschools
 */
 /*! Bootstrap v3.3.6 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
@@ -2817,6 +2817,20 @@ body .shiftnav.shiftnav-skin-standard-dark ul.shiftnav-menu li.menu-item.current
 
 #footer-top .tribe-this-week-widget-day-wrap { background-color: white; }
 
+#search-header { border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; }
+
+#search-results-wrap article { border-bottom: 1px solid #eeeeee; }
+
+.search-results { border-bottom: 1px solid #eeeeee; }
+
+.search-results:last-child { border-bottom: none; }
+
+.search-results .fa, .search-link, .search-meta, .search-meta a, .search-meta a:hover { color: #777777; }
+
+body ul.page-numbers span.current, body ul.page-numbers a:hover, .page-links-pro a { background-color: #777777; border-color: #777777; color: white; }
+
+body ul.page-numbers span, body ul.page-numbers a, .view-more { color: #777777; background-color: white; border: 1px solid #777777; }
+
 .gform_wrapper form { margin-bottom: 0; }
 
 .gfield { clear: both; }
@@ -2961,8 +2975,6 @@ a:focus, a:active { background-color: inherit; }
 
 #search-bar .fa { font-size: 20px; }
 
-#search-form #search-text { padding: 12px 20px; font-size: 16px; border: 1px solid #D9D9D9; width: 80%; }
-
 #header-top-global { padding-right: 20px; }
 
 #header-top-global ul { margin: 0; line-height: 100%; }
@@ -2983,9 +2995,9 @@ a:focus, a:active { background-color: inherit; }
 
 .home #header-global, .page-template-page-parent #header-global { padding: 30px 0; }
 
-#header-global .ubermenu { height: 100%; float: right; }
+#header-global .ubermenu { height: 100%; float: right; padding-top: 10px; }
 
-#header-global .ubermenu .ubermenu-item.ubermenu-item-level-0 { float: left; padding: 0; display: table; height: 62px; }
+#header-global .ubermenu .ubermenu-item.ubermenu-item-level-0 { float: left; padding: 0; display: table; height: 52px; }
 
 #header-global .ubermenu-skin-vanilla .ubermenu-item-level-0 > .ubermenu-target { padding: 0 25px; display: table-cell; vertical-align: middle; font-weight: 500; font-size: 18px; }
 
@@ -3089,11 +3101,29 @@ a:focus, a:active { background-color: inherit; }
 
 #teacher-search input { color: #696969; font-size: 16px; line-height: 1.1; font-weight: 500; border-radius: 0; height: 45px; }
 
-#search-header { border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; }
+#search-form #search-text { padding: 12px 20px; font-size: 16px; border: 1px solid #D9D9D9; width: 83%; }
 
-#search-results-wrap article { margin: 20px 0; padding: 20px 0; border-bottom: 1px solid #eeeeee; }
+#search-results-wrap article { margin: 20px 0; padding: 20px 0; }
 
-.search-results { padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid #333333; }
+.search-results { padding-bottom: 20px; margin-bottom: 20px; }
+
+.search-results:last-child { padding: 0; margin: 0; }
+
+.search-results header { margin-bottom: 7px; }
+
+.search-meta a:hover { text-decoration: none; }
+
+.search-results p { margin-bottom: 0px; font-size: 14px; line-height: 1.4em; }
+
+.searchwp-highlight { font-weight: bold; }
+
+ul.page-numbers { margin: 20px 0px 30px 0px; text-align: center; }
+
+ul.page-numbers li { margin: 0px; padding: 0px; display: inline; text-transform: uppercase; }
+
+body ul.page-numbers span, body ul.page-numbers a, .view-more { text-decoration: none; line-height: 1; cursor: pointer; display: inline-block; padding: 15px 18px 14px 18px; font-size: 85%; font-weight: 700; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; margin-right: 6px; }
+
+body ul.page-numbers span.current { cursor: default; }
 
 #cta-form .gform_wrapper { max-width: 100%; }
 

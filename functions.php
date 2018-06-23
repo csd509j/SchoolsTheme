@@ -160,3 +160,33 @@ function new_excerpt_more( $more ) {
 
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+/*
+ * Custom pagination function
+ *
+ * @since CSD Schools 1.2.6
+ */
+function show_pagination_links()
+{
+    global $wp_query;
+
+    $page_tot   = $wp_query->max_num_pages;
+    $page_cur   = get_query_var( 'paged' );
+    $big        = 999999999;
+
+    if ( $page_tot == 1 ) return;
+
+    echo paginate_links( array(
+            'base'      => str_replace( $big, '%#%',get_pagenum_link( 999999999, false ) ), // need an unlikely integer cause the url can contains a number
+            'format'    => '?paged=%#%',
+            'current'   => max( 1, $page_cur ),
+            'total'     => $page_tot,
+            'prev_next' => true,
+			'prev_text'    => __('&lsaquo; Previous', 'progression'),
+			'next_text'    => __('Next &rsaquo;', 'progression'),
+            'end_size'  => 1,
+            'mid_size'  => 2,
+            'type'      => 'list'
+        )
+    );
+}

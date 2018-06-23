@@ -15,10 +15,10 @@ $total_results = $wp_query->found_posts;
 <div id="primary" class="content-area padding-vertical-two">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-8">
+				<h1 class="entry-title padding-bottom-quarter">Search</h1>
 				<div class="well">
-					<h1 class="entry-title padding-bottom-quarter">Search</h1>
-					<div class="padding-bottom-one" id="search-form">
+					<div id="search-form">
 						<form role="search" id="sites-search" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 							 <label class="sr-only" for="search-text">Search</label>
 							 <input type="text" class="search-field input-lg" id="search-text" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s">
@@ -30,11 +30,8 @@ $total_results = $wp_query->found_posts;
 		</div>
 		<?php if ( have_posts() ) : ?>
 	
-		<header class="page-header">
-			<h2 class="page-title"><?php printf( __( 'Results for %s', 'csd' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?> <small>Total Results: <?php echo $total_results; ?></small></h2>
-		</header><!-- .page-header -->
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-8">
 				<?php
 				// Start the loop.
 				while ( have_posts() ) : the_post();
@@ -50,12 +47,8 @@ $total_results = $wp_query->found_posts;
 				endwhile;
 	
 				// Previous/next page navigation.
-				the_posts_pagination( array(
-					'mid_size'				=> 8,
-					'prev_text'          => '<i class="fa fa-caret-left"></i>',
-					'next_text'          => '<i class="fa fa-caret-right"></i>',
-					'screen_reader_text' => ' ',
-				) );
+				show_pagination_links( );
+
 	
 			// If no content, include the "No posts found" template.
 			else :
