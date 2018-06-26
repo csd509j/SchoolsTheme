@@ -13,15 +13,16 @@
 									<strong>Email:</strong> <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a><br/>
 								<?php endif; ?>
 								<strong>Address:</strong> <?php the_field('street_address', 'option'); ?></p>
-								<p><strong>Principal:</strong><br><?php the_field('principal', 'option'); ?>
-									<?php if(get_field('principal_email', 'option')): ?>, <a href="mailto:<?php the_field('principal_email', 'option'); ?>"><?php the_field('principal_email', 'option'); ?></a><?php endif; ?>
+								<p><strong>Principal:</strong>
 								<br/>
-								<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_1', 'option'); ?>
-									<?php if(get_field('assistant_principal_1_email', 'option')): ?>, <a href="mailto:<?php the_field('assistant_principal_1_email', 'option'); ?>"><?php the_field('assistant_principal_1_email', 'option'); ?></a><?php endif; ?>
+								<?php the_field('principal', 'option'); ?><?php if(get_field('principal_email', 'option')): ?>, <a href="mailto:<?php the_field('principal_email', 'option'); ?>"><?php the_field('principal_email', 'option'); ?></a><?php endif; ?>
+								<br/>
+								<strong>Assistant Principal:</strong>
+								<br>
+								<?php the_field('assistant_principal_1', 'option'); ?><?php if(get_field('assistant_principal_1_email', 'option')): ?>, <a href="mailto:<?php the_field('assistant_principal_1_email', 'option'); ?>"><?php the_field('assistant_principal_1_email', 'option'); ?></a><?php endif; ?>
 								<?php if(get_field('assistant_principal_2', 'option')): ?>
 									<br>	
-									<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_2', 'option'); ?>
-									<?php if(get_field('assistant_principal_2_email', 'option')): ?>, <a href="mailto:<?php the_field('assistant_principal_2_email', 'option'); ?>"><?php the_field('assistant_principal_2_email', 'option'); ?></a><?php endif; ?>
+									<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_2', 'option'); ?><?php if(get_field('assistant_principal_2_email', 'option')): ?>, <a href="mailto:<?php the_field('assistant_principal_2_email', 'option'); ?>"><?php the_field('assistant_principal_2_email', 'option'); ?></a><?php endif; ?>
 								<?php endif; ?>
 							</div>
 							<div class="col-sm-6">
