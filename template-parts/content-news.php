@@ -143,7 +143,7 @@
 					endwhile;
 					
 				endif; ?>
-				<div class="padding-top-four">
+				<div class="padding-top-one">
 					<div class="post-meta">
 						<span id="post-date"><?php the_time( get_option( 'date_format' ) ); ?>,</span>
 						<span id="post-author"> by <?php the_author(); ?></span>

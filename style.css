@@ -5,7 +5,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 1.2.8
+Version: 1.2.9
 Text Domain: csdschools
 */
 /*! Bootstrap v3.3.6 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
@@ -2831,6 +2831,12 @@ body ul.page-numbers span.current, body ul.page-numbers a:hover, .page-links-pro
 
 body ul.page-numbers span, body ul.page-numbers a, .view-more { color: #777777; background-color: white; border: 1px solid #777777; }
 
+.entry-content .gform_wrapper { background-color: #eeeeee; border: 1px solid #777777; }
+
+.post-meta { border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; }
+
+.news-item-list { border-bottom: 1px solid #eeeeee; }
+
 .gform_wrapper form { margin-bottom: 0; }
 
 .gfield { clear: both; }
@@ -3007,13 +3013,13 @@ a:focus, a:active { background-color: inherit; }
 
 #header-global .ubermenu-skin-vanilla .ubermenu-item-level-0:last-child { padding-right: 0; }
 
-#header-global .ubermenu-transition-fade .ubermenu-item .ubermenu-submenu-drop { top: 62px; border: none; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); padding: 10px 25px; }
-
-#header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target { padding: 10px 25px; }
+#header-global .ubermenu-transition-fade .ubermenu-item .ubermenu-submenu-drop { top: 62px; border: none; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); padding: 10px 15px; }
 
 #header-global .ubermenu .ubermenu-submenu-type-stack > .ubermenu-item-normal > .ubermenu-target { padding: 10px 10px 0 10px; }
 
-#header-global .ubermenu .ubermenu-autocolumn { padding-top: 0; }
+#header-global .ubermenu .ubermenu-autocolumn, .ubermenu #header-global .ubermenu-item-type-column > .ubermenu-submenu-type-stack { padding: 0; }
+
+#header-global .ubermenu .ubermenu-item-type-column > .ubermenu-submenu-type-stack > .ubermenu-item-normal:first-child { margin-top: 0; }
 
 #header-global .shiftnav-toggle-button { background: #ffffff; color: #333333; padding: 0; height: 62px; line-height: 62px; font-size: 20px; }
 
@@ -3131,17 +3137,17 @@ body ul.page-numbers span.current { cursor: default; }
 
 #cta-form .gform_button { color: white; float: right; }
 
-.entry-content .gform_wrapper { padding: 15px; background-color: #eeeeee; border: 1px solid #dddddd; }
+.entry-content .gform_wrapper { padding: 15px; }
 
 .entry-content .gform_wrapper ul li:before { display: none; }
 
 .entry-content .ginput_complex label, .entry-content .gfield_label { display: none; }
 
-.entry-content ul { list-style: none; }
+.entry-content ul, .news-footer-content ul { list-style: none; }
 
-.entry-content ul li:before { font-family: FontAwesome; content: '\F105'; margin: 0 10px 0 -15px; font-size: 13px; }
+.entry-content ul li:before, .news-footer-content ul li:before { font-family: FontAwesome; content: '\F105'; margin: 0 10px 0 -15px; font-size: 13px; }
 
-.entry-content ul.list-unstyled li:before, .entry-content .gform_wrapper ul li:before, .gform_wrapper .entry-content ul li:before, .entry-content #footer-top ul li:before, #footer-top .entry-content ul li:before { content: none; }
+.entry-content ul.list-unstyled li:before, .entry-content .gform_wrapper ul li:before, .gform_wrapper .entry-content ul li:before, .entry-content #footer-top ul li:before, #footer-top .entry-content ul li:before, .news-footer-content ul.list-unstyled li:before, .news-footer-content .gform_wrapper ul li:before, .gform_wrapper .news-footer-content ul li:before, .news-footer-content #footer-top ul li:before, #footer-top .news-footer-content ul li:before { content: none; }
 
 .entry-lead { margin-bottom: 40px; color: #777777; }
 
@@ -3287,13 +3293,11 @@ body ul.page-numbers span.current { cursor: default; }
 
 #carousel-news .item .carousel-caption { width: 60%; }
 
-.post-title { font-size: 56px; line-height: 1.2em; }
+.post-title { font-size: 56px; line-height: 1.6em; }
 
-.post-meta { font-size: 14px; margin: 6px 0 20px; padding: 8px 0; border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc; }
+.post-meta { font-size: 14px; margin: 6px 0 20px; padding: 8px 0; }
 
 .post-meta-sm { font-size: 12px; border-top: 0; border-bottom: 0; color: #777777; padding: 0; margin-bottom: 5px; }
-
-.news-item-list { border-bottom: 1px solid #cccccc; }
 
 .news-item-title { margin-bottom: 5px; }
 
@@ -3304,6 +3308,10 @@ body ul.page-numbers span.current { cursor: default; }
 .blockquote { border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc; padding: 20px 0; margin: 0 0 1.675em 0; }
 
 .blockquote p { font-size: 2em; line-height: 1.2em; }
+
+.news-footer-content ul { margin-bottom: 0; padding-left: 15px; }
+
+.news-footer-content a { font-size: 18px; }
 
 #login { background-color: #cccccc; }
 
