@@ -67,6 +67,7 @@ add_image_size('Staff Directory', 326, 453);
 add_image_size('Callout Block', 586, 416);
 add_image_size('Page Builder Image', 825, 315);
 add_image_size('Carousel Image', 1140, 425);
+add_image_size('Card Image', 184, 184, true);
 
 /*
  * Register menus
@@ -78,16 +79,7 @@ function register_my_menus() {
 	
 	register_nav_menus( array(
 		'header-menu' => __( 'Header Menu' ),
-		'header-menu-mobile' => __( 'Header Menu Mobile' ),      
 		'header-toplinks' => __( 'Header Top Links Menu' ),
-		'footer-topmenu-col-1-1' => __( 'Footer Menu Column 1.1' ),   
-		'footer-topmenu-col-1-2' => __( 'Footer Menu Column 1.2' ), 
-		'footer-topmenu-col-1-3' => __( 'Footer Menu Column 1.3' ),              
-		'footer-topmenu-col-2-1' => __( 'Footer Menu Column 2.1' ),
-		'footer-topmenu-col-3-1' => __( 'Footer Menu Column 3.1' ),
-		'footer-topmenu-col-3-2' => __( 'Footer Menu Column 3.2' ),
-		'footer-topmenu-col-4-1' => __( 'Footer Menu Column 4.1' ),
-		'footer-bottommenu' => __( 'Header Bottom Menu' ),
     ) );
     
 }
