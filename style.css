@@ -2923,7 +2923,7 @@ ul, ol { margin: 0; }
 
 html, body { margin: 0px; padding: 0px; overflow-x: hidden; font-size: 16px; }
 
-a:active, a:focus, :focus { outline: 0; border: none; -moz-outline-style: none; }
+a:active, a:focus, :focus { outline: 0; border: none; -moz-outline-style: none; text-decoration: none; }
 
 body { font-family: "proxima-nova", Arial, sans-serif; }
 
@@ -3293,13 +3293,15 @@ body ul.page-numbers span.current { cursor: default; }
 
 #carousel-news .item .carousel-caption { width: 60%; }
 
-.post-title { font-size: 56px; line-height: 1.6em; }
+.post-title { font-size: 56px; line-height: 1.2em; margin-bottom: .6em; }
 
 .post-meta { font-size: 14px; margin: 6px 0 20px; padding: 8px 0; }
 
 .post-meta-sm { font-size: 12px; border-top: 0; border-bottom: 0; color: #777777; padding: 0; margin-bottom: 5px; }
 
 .news-item-title { margin-bottom: 5px; }
+
+.news-item-title a:hover, .news-item-title a:active, .news-item-title a:focus { text-decoration: none; }
 
 .entry-content .post-image { margin: 0 0 1.675em 0; }
 
@@ -3312,6 +3314,8 @@ body ul.page-numbers span.current { cursor: default; }
 .news-footer-content ul { margin-bottom: 0; padding-left: 15px; }
 
 .news-footer-content a { font-size: 18px; }
+
+.news-footer-content a:focus { text-decoration: none; }
 
 #login { background-color: #cccccc; }
 
