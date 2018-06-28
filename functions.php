@@ -59,6 +59,8 @@ add_action( 'wp_enqueue_scripts', 'csd_enqueue_script' );
  
 add_theme_support('post-thumbnails');
 add_image_size('square', 600, 600);
+add_image_size('square-md-col-4', 258, 258, true);
+add_image_size('square-xs-col-4', 100, 100, true);
 add_image_size('News Image Small', 262, 175);
 add_image_size('News Image Medium', 410, 273);
 add_image_size('News Image Large', 750, 500);
@@ -66,8 +68,10 @@ add_image_size('News Image Featured', 824, 425);
 add_image_size('Staff Directory', 326, 453);
 add_image_size('Callout Block', 586, 416);
 add_image_size('Page Builder Image', 825, 315);
-add_image_size('Carousel Image', 1140, 425);
-add_image_size('Card Image', 184, 184, true);
+add_image_size('carousel-lg', 1600, 596, true);
+add_image_size('carousel-md', 1140, 425, true);
+add_image_size('carousel-sm', 768, 286, true);
+add_image_size('card', 184, 184, true);
 
 /*
  * Register menus

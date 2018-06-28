@@ -40,8 +40,8 @@ get_header(); ?>
 									<?php if (get_field('link', $image['id'])): ?>
 										<a href="<?php the_field('link', $image['id']); ?>" class="headline-link">
 									<?php endif; ?>
-							  		<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-							  		<div class="container">
+									<?php echo wp_get_attachment_image($image['id'], 'Carousel Image', 0, array('class' => 'img img-responsive', 'alt' => $image['alt'] )); ?>							  		
+									<div class="container">
 								  		<div class="row">
 									  		<div class="col-sm-12">
 										  		<div class="carousel-caption">

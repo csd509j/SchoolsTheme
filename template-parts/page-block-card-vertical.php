@@ -35,13 +35,13 @@
 								
 			endif;
 	?>
-		<li class="col-sm-4 card-vertical-block-wrap">
+		<li class="col-xs-4 card-vertical-block-wrap">
 			<div class="card-vertical-block">
 					
 			<?php $image = get_sub_field('card_vertical_image'); ?>
 			
 				<div class="card-vertical-img">
-					<a href="<?php echo $link; ?>" <?php if ( get_sub_field('card_vertical_link_type') == 'Media File' ): ?>target="_blank"<?php endif; ?>><?php echo wp_get_attachment_image($image['id'], 'full', 0, array('class' => 'img img-responsive')); ?></a>
+					<a href="<?php echo $link; ?>" <?php if ( get_sub_field('card_vertical_link_type') == 'Media File' ): ?>target="_blank"<?php endif; ?>><?php echo wp_get_attachment_image($image['id'], 'square-md-col-4', 0, array('class' => 'img img-responsive')); ?></a>
 				</div>
 					
 				<div class="card-vertical-content">
@@ -49,7 +49,7 @@
 				</div>
 										
 			</div>
-		</li>
+		</li>	
 	
 	<?php endwhile; endif; ?>
 	 
