@@ -5,7 +5,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 1.3.4
+Version: 1.3.5
 Text Domain: csdschools
 */
 /*! Bootstrap v3.3.6 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
@@ -2999,6 +2999,8 @@ a:focus, a:active { background-color: inherit; }
 
 #header-top-global .fa { margin-left: 5px; }
 
+@media (max-width: 767px) { #header-top-global { padding-right: 0; } }
+
 #header-global { width: 100%; padding: 30px 0 25px 0; }
 
 .home #header-global, .page-template-page-parent #header-global { padding: 30px 0; }
@@ -3394,6 +3396,20 @@ body ul.page-numbers span.current { cursor: default; }
   #search-form #search-text { width: 100%; margin-bottom: 10px; }
   #search-form .btn, #search-form .gform_button, #search-form #loginform #wp-submit, #loginform #search-form #wp-submit, #search-form .acf-form .acf-button, .acf-form #search-form .acf-button { width: 100%; }
   .inner-page-banner img { width: auto; } }
+
+.translated-btn { display: inline-block; margin-left: 10px; }
+
+.translated-btn .btn, .translated-btn .gform_button, .translated-btn #loginform #wp-submit, #loginform .translated-btn #wp-submit, .translated-btn .acf-form .acf-button, .acf-form .translated-btn .acf-button { padding: 9px 10px; text-transform: uppercase; font-size: 12px; }
+
+.translated-btn .btn:focus, .translated-btn .gform_button:focus, .translated-btn #loginform #wp-submit:focus, #loginform .translated-btn #wp-submit:focus, .translated-btn .acf-form .acf-button:focus, .acf-form .translated-btn .acf-button:focus { outline: none; }
+
+.translated-btn .dropdown-menu { border: none; border-radius: 0; margin-top: 0; min-width: inherit; width: 100%; }
+
+.translated-btn .dropdown-menu > li > a { padding: 0; }
+
+@media (max-width: 767px) { .translated-btn { position: relative; top: 0; }
+  .translated-btn .dropdown-menu { text-align: center; }
+  .translated-btn .btn, .translated-btn .gform_button, .translated-btn #loginform #wp-submit, #loginform .translated-btn #wp-submit, .translated-btn .acf-form .acf-button, .acf-form .translated-btn .acf-button { width: 100%; } }
 
 .card { position: relative; display: block; margin-bottom: 0.75rem; background-color: #fff; border: 1px solid #e5e5e5; border-radius: 0.25rem; }
 
