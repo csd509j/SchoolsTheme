@@ -6,23 +6,23 @@
 								<div class="headline">
 									<h2>Contact Us</h2>
 								</div>
-								<p class="margin-bottom-three"><strong>Phone:</strong> <?php the_field('primary_phone', 'option'); ?><br/>
-								<strong>Fax:</strong> <?php the_field('fax_number', 'option'); ?><br/>
-								<strong>Attendance:</strong> <?php the_field('attendance_phone', 'option'); ?><br/>
+								<p class="margin-bottom-three"><strong>Phone:</strong> <?php the_field('primary_phone', 'options'); ?><br/>
+								<strong>Fax:</strong> <?php the_field('fax_number', 'options'); ?><br/>
+								<strong>Attendance:</strong> <?php the_field('attendance_phone', 'options'); ?><br/>
 								<?php if(get_field('email', 'option')): ?>
-									<strong>Email:</strong> <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a><br/>
+									<strong>Email:</strong> <a href="mailto:<?php the_field('email', 'options'); ?>"><?php the_field('email', 'options'); ?></a><br/>
 								<?php endif; ?>
-								<strong>Address:</strong> <?php the_field('street_address', 'option'); ?></p>
+								<strong>Address:</strong> <?php the_field('street_address', 'options'); ?></p>
 								<p><strong>Principal:</strong>
 								<br/>
-								<?php the_field('principal', 'option'); ?><?php if(get_field('principal_email', 'option')): ?>, <a href="mailto:<?php the_field('principal_email', 'option'); ?>"><?php the_field('principal_email', 'option'); ?></a><?php endif; ?>
+								<?php the_field('principal', 'options'); ?><?php if(get_field('principal_email', 'options')): ?>, <a href="mailto:<?php the_field('principal_email', 'options'); ?>"><?php the_field('principal_email', 'options'); ?></a><?php endif; ?>
 								<br/>
 								<strong>Assistant Principal:</strong>
 								<br>
-								<?php the_field('assistant_principal_1', 'option'); ?><?php if(get_field('assistant_principal_1_email', 'option')): ?>, <a href="mailto:<?php the_field('assistant_principal_1_email', 'option'); ?>"><?php the_field('assistant_principal_1_email', 'option'); ?></a><?php endif; ?>
-								<?php if(get_field('assistant_principal_2', 'option')): ?>
+								<?php the_field('assistant_principal_1', 'options'); ?><?php if(get_field('assistant_principal_1_email', 'options')): ?>, <a href="mailto:<?php the_field('assistant_principal_1_email', 'options'); ?>"><?php the_field('assistant_principal_1_email', 'options'); ?></a><?php endif; ?>
+								<?php if(get_field('assistant_principal_2', 'options')): ?>
 									<br>	
-									<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_2', 'option'); ?><?php if(get_field('assistant_principal_2_email', 'option')): ?>, <a href="mailto:<?php the_field('assistant_principal_2_email', 'option'); ?>"><?php the_field('assistant_principal_2_email', 'option'); ?></a><?php endif; ?>
+									<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_2', 'option'); ?><?php if(get_field('assistant_principal_2_email', 'options')): ?>, <a href="mailto:<?php the_field('assistant_principal_2_email', 'options'); ?>"><?php the_field('assistant_principal_2_email', 'options'); ?></a><?php endif; ?>
 								<?php endif; ?>
 							</div>
 							<div class="col-sm-6">

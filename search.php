@@ -8,8 +8,7 @@
  */
 
 get_header(); 
-global $wp_query;
-$total_results = $wp_query->found_posts;
+
 ?>
 
 <div id="primary" class="content-area padding-vertical-two">
