@@ -47,7 +47,7 @@ function csd_enqueue_script() {
 	
 	wp_enqueue_script( 'core.js', get_template_directory_uri() . '/assets/js/core.js', '', null, true );
 	
-	if ( is_page_template( 'page-calendar.php' ) || is_singular( 'tribe_events' ) || is_singular( 'news' ) || is_singular('tribe_venue') ) {
+	if ( is_singular( 'news' ) ) {
 
 		wp_enqueue_script( 'addthis_widget.js', '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c3954e3471722a' );	
 			

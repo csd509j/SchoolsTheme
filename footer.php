@@ -32,11 +32,11 @@
 											<h2>Today at <?php bloginfo('name'); ?></h2>
 										</div>
 										<div class="col-sm-4 text-right padding-top-quarter">
-											<a href="<?php echo home_url('/events'); ?>">View Full Calendar</a>
+											<a href="<?php echo home_url('/calendar'); ?>">View Full Calendar</a>
 										</div>
 									</div>
 								</div>
-								<?php echo do_shortcode('[tribe_this_week layout="vertical" count="10" hide_weekends="true"]'); ?>
+								<?php render_list_view(); ?>
 							</div>
 						</div>
 					</div>
@@ -91,7 +91,7 @@
 								</ul>
 							</div>
 							<div id="credits" class="col-sm-6 col-xs-12 text-right">
-								Website Built & Maintained by <a href="http://abidewebdesign.com" target="_blank">Abide Web Design</a>
+								<a href="http://abidewebdesign.com" target="_blank">Website Design & Maintenance by Abide Web Design</a>
 							</div>
 						</div>
 					</div>

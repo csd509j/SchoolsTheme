@@ -14,7 +14,7 @@
 			<?php get_template_part('template-parts/content', 'breadcrumbs'); ?>
 			<div class="row">
 				<div class="col-sm-12">
-					<h1 class="margin-bottom-none"><?php the_field('calendar_title'); ?></h1>
+					<h1 class="margin-bottom-none"><?php the_field('calendar_title', 'options'); ?></h1>
 				</div>
 			</div>
 		</div>
@@ -23,10 +23,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-7">
-					<p class="lead"><?php the_field('calendar_text'); ?></p>
+					<p class="lead"><?php the_field('calendar_text', 'options'); ?></p>
 				</div>
 				<div class="col-sm-5">
-					<h3>Key Dates</h3>
 					<?php get_template_part('template-parts/page-block', 'table-dates'); ?>
 					<?php get_template_part('template-parts/page-block', 'table-calendar-downloads'); ?>
 				</div>

@@ -1,9 +1,9 @@
 <?php
-$table = get_field( 'calendar_dates' );
+$table = get_field( 'calendar_dates', 'options' );
 
 if ( $table ) {
 
-    echo '<div class="table-responsive"><table class="table table-white table-bordered">';
+    echo '<h3>Key Dates</h3><div class="table-responsive"><table class="table table-white table-bordered">';
 
         if ( $table['header'] ) {
 
