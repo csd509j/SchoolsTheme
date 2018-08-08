@@ -11,7 +11,6 @@
 <div id="primary" class="content-area">
 	<div class="padding-vertical-four bg-primary">
 		<div class="container">
-			<?php get_template_part('template-parts/content', 'breadcrumbs'); ?>
 			<div class="row">
 				<div class="col-sm-12">
 					<h1 class="margin-bottom-none"><?php the_field('calendar_title', 'options'); ?></h1>
