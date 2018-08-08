@@ -2805,6 +2805,8 @@ h4 { color: #333333; }
 
 body .shiftnav.shiftnav-skin-standard-dark ul.shiftnav-menu li.menu-item.current-menu-item > .shiftnav-target { background: transparent; }
 
+.menu-btn .btn, .menu-btn .gform_button, .menu-btn #loginform #wp-submit, #loginform .menu-btn #wp-submit, .menu-btn .acf-form .acf-button, .acf-form .menu-btn .acf-button { background-color: white; }
+
 .carousel-caption { text-shadow: none; }
 
 .single-events-header, #tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type=submit], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] > a { background-color: #555555; }
