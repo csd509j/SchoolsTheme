@@ -44,8 +44,8 @@
 	<div id="header-top-global">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-md-4 col-sm-10 col-xs-10 menu-top-block-container <?php echo $hidden; ?>"><?php echo $block; ?></div>
-				<div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 text-right">
+				<div class="col-lg-5 col-md-4 col-sm-10 col-xs-10 menu-top-block-container <?php echo $hidden; ?>"><?php echo $block; ?></div>
+				<div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 text-right">
 					<div class="menu-top-links-search-container">
 						<a href="#" id="search-toggle"><i class="fa fa-search fa-lg"></i></a>
 						<?php languages_toggle(); ?>
