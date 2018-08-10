@@ -1,4 +1,4 @@
-				<!-- Contact Section Start -->
+s				<!-- Contact Section Start -->
 				<section id="footer-top"  class="padding-vertical-two">
 					<div class="container">
 						<div class="row">
@@ -9,7 +9,7 @@
 								<p class="margin-bottom-three"><strong>Phone:</strong> <?php the_field('primary_phone', 'options'); ?><br/>
 								<strong>Fax:</strong> <?php the_field('fax_number', 'options'); ?><br/>
 								<strong>Attendance:</strong> <?php the_field('attendance_phone', 'options'); ?><br/>
-								<?php if(get_field('email', 'option')): ?>
+								<?php if(get_field('email', 'options')): ?>
 									<strong>Email:</strong> <a href="mailto:<?php the_field('email', 'options'); ?>"><?php the_field('email', 'options'); ?></a><br/>
 								<?php endif; ?>
 								<strong>Address:</strong> <?php the_field('street_address', 'options'); ?></p>
@@ -29,7 +29,7 @@
 								<div class="headline">
 									<div class="row">
 										<div class="col-sm-8">
-											<h2>Today at <?php bloginfo('name'); ?></h2>
+											<h2>Events Today</h2>
 										</div>
 										<div class="col-sm-4 text-right padding-top-quarter">
 											<a href="<?php echo home_url('/calendar'); ?>">View Full Calendar</a>
