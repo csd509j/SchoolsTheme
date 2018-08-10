@@ -45,9 +45,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-4 col-sm-10 col-xs-10 menu-top-block-container <?php echo $hidden; ?>"><?php echo $block; ?></div>
-				<div class="col-lg-6 col-md-8 col-sm-2 col-xs-2 text-right">
+				<div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 text-right">
 					<div class="menu-top-links-search-container">
 						<a href="#" id="search-toggle"><i class="fa fa-search fa-lg"></i></a>
+						<?php languages_toggle(); ?>
 					</div>
 					<div class="hidden-sm hidden-xs">
 						<?php wp_nav_menu( array('theme_location' => 'header-toplinks', 'items_wrap' => '<ul class="list list-unstyled list-inline hidden-xs" aria-label="Top Links">%3$s</ul>' )); ?>
@@ -85,7 +86,7 @@
 					<div class="row">
 						<div class="col-lg-4 col-xs-10">
 							<div id="logo" class="clearfix">
-								<a href="<?php echo get_home_url(); ?>"><img style="height: 75px;" class="img-responsive" src="<?php the_field('logo', 'option'); ?>" alt="<?php bloginfo('name'); ?>" /></a>
+								<a href="<?php echo get_home_url(); ?>"><img class="img-responsive" src="<?php the_field('logo', 'option'); ?>" alt="<?php bloginfo('name'); ?>" /></a>
 							</div>
 						</div>
 						<div class="col-lg-8 col-xs-2">
