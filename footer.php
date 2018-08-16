@@ -1,4 +1,4 @@
-s				<!-- Contact Section Start -->
+				<!-- Contact Section Start -->
 				<section id="footer-top"  class="padding-vertical-two">
 					<div class="container">
 						<div class="row">
