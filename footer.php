@@ -29,7 +29,7 @@
 								<div class="headline">
 									<div class="row">
 										<div class="col-sm-8">
-											<h2>Events Today</h2>
+											<h2>Upcoming Events</h2>
 										</div>
 										<div class="col-sm-4 text-right padding-top-quarter">
 											<a href="<?php echo home_url('/calendar'); ?>">View Full Calendar</a>
