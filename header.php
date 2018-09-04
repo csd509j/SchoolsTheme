@@ -47,7 +47,7 @@
 				<div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 menu-top-block-container">
 					<ul id="calendar-block-wrap" class="list-inline">
 						<li><i class="fa fa-calendar"></i></li>
-						<li><?php render_block_calendar('corvallis.k12.or.us_225fi880u67dljur5cp3iutr70@group.calendar.google.com'); ?></li>
+						<li><?php render_block_calendar(get_field('block_calendar', 'options')); ?></li>
 					</ul>
 				</div>
 				<div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 text-right">
