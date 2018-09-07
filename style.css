@@ -5,7 +5,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 1.5.7
+Version: 1.5.8
 Text Domain: csdschools
 */
 /*! Bootstrap v3.3.6 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
@@ -3005,11 +3005,13 @@ a:focus, a:active { background-color: inherit; }
 
 #header-top-global .fa { margin-left: 5px; }
 
-#calendar-block-header { display: inline-block; vertical-align: middle; text-transform: uppercase; font-size: 12px; }
-
 #header-top-global .list-inline li { padding: 0; height: 35px; line-height: 35px; }
 
-#header-top-global .fa-calendar { margin-left: 0; padding-right: 4px; }
+#header-top-global .fa-calendar, #header-top-global .fa-phone-square { margin-left: 0; padding-right: 2px; }
+
+#calendar-block-wrap { text-transform: uppercase; font-size: 12px; }
+
+#header-top-global #calendar-block-wrap.list-inline li { padding-right: 10px; }
 
 #header-top-global #calendar-block-wrap li:hover, #header-top-global #calendar-block-wrap .fa:hover, #calendar-block-header.fc-unthemed .fc-list-empty { background-color: transparent; }
 
@@ -3018,12 +3020,6 @@ a:focus, a:active { background-color: inherit; }
 #calendar-block-header .fc-scroller { height: auto !important; }
 
 #calendar-block-header .fc-list-heading { display: none; }
-
-#calendar-block-header .fc-list-table td { padding: 0; border: none; }
-
-#calendar-block-header.fc-unthemed .fc-list-item:hover td { background-color: transparent; }
-
-#calendar-block-header .fc-list-empty-wrap2 { position: relative; }
 
 @media (max-width: 767px) { #header-top-global { padding-right: 0; } }
 

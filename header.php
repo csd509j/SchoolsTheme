@@ -44,13 +44,10 @@
 	<div id="header-top-global">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5 col-md-4 col-sm-12 col-xs-12 menu-top-block-container">
-					<ul id="calendar-block-wrap" class="list-inline">
-						<li><i class="fa fa-calendar"></i></li>
-						<li><?php render_block_calendar(get_field('block_calendar', 'options')); ?></li>
-					</ul>
+				<div class="col-lg-5 col-md-4 col-sm-12 col-xs-6 menu-top-block-container">
+					<?php render_block_calendar(get_field('block_calendar', 'options')); ?>
 				</div>
-				<div class="col-lg-7 col-md-8 col-sm-12 col-xs-12 text-right">
+				<div class="col-lg-7 col-md-8 col-sm-12 col-xs-6 text-right">
 					<div class="menu-top-links-search-container">
 						<a href="#" id="search-toggle"><i class="fa fa-search fa-lg"></i></a>
 						<?php languages_toggle(); ?>
