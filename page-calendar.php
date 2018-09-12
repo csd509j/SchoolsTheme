@@ -25,7 +25,6 @@
 					<p class="lead"><?php the_field('calendar_text', 'options'); ?></p>
 				</div>
 				<div class="col-sm-5">
-					<?php get_template_part('template-parts/page-block', 'table-dates'); ?>
 					<?php get_template_part('template-parts/page-block', 'table-calendar-downloads'); ?>
 				</div>
 			</div>

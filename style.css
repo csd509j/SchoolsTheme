@@ -5,7 +5,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 1.5.8
+Version: 1.5.9
 Text Domain: csdschools
 */
 /*! Bootstrap v3.3.6 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
@@ -2977,7 +2977,7 @@ a:focus, a:active { background-color: inherit; }
 
 .btn, .gform_button, #header-global .menu-btn .btn, #loginform #wp-submit, .acf-form .acf-button { padding: 10px 28px; border: none; border-radius: 0; }
 
-.open > .btn-primary.dropdown-toggle:hover, .open > .dropdown-toggle.gform_button:hover, #loginform .open > .dropdown-toggle#wp-submit:hover, .acf-form .open > .dropdown-toggle.acf-button:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .dropdown-toggle.gform_button:focus, #loginform .open > .dropdown-toggle#wp-submit:focus, .acf-form .open > .dropdown-toggle.acf-button:focus, .open > .btn-primary.dropdown-toggle, .open > .dropdown-toggle.gform_button, #loginform .open > .dropdown-toggle#wp-submit, .acf-form .open > .dropdown-toggle.acf-button, .btn-primary:active:hover, .gform_button:active:hover, #loginform #wp-submit:active:hover, .acf-form .acf-button:active:hover, .btn-primary:active:focus, .gform_button:active:focus, #loginform #wp-submit:active:focus, .acf-form .acf-button:active:focus, .btn:active:focus, .gform_button:active:focus, #header-global .menu-btn .btn:active:focus, #loginform #wp-submit:active:focus, .acf-form .acf-button:active:focus { box-shadow: none; outline: none; }
+.btn:focus, .gform_button:focus, #header-global .menu-btn .btn:focus, #loginform #wp-submit:focus, .acf-form .acf-button:focus, .open > .btn-primary.dropdown-toggle:hover, .open > .dropdown-toggle.gform_button:hover, #loginform .open > .dropdown-toggle#wp-submit:hover, .acf-form .open > .dropdown-toggle.acf-button:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .dropdown-toggle.gform_button:focus, #loginform .open > .dropdown-toggle#wp-submit:focus, .acf-form .open > .dropdown-toggle.acf-button:focus, .open > .btn-primary.dropdown-toggle, .open > .dropdown-toggle.gform_button, #loginform .open > .dropdown-toggle#wp-submit, .acf-form .open > .dropdown-toggle.acf-button, .btn-primary:active:hover, .gform_button:active:hover, #loginform #wp-submit:active:hover, .acf-form .acf-button:active:hover, .btn-primary:active:focus, .gform_button:active:focus, #loginform #wp-submit:active:focus, .acf-form .acf-button:active:focus, .btn:active:focus, .gform_button:active:focus, #header-global .menu-btn .btn:active:focus, #loginform #wp-submit:active:focus, .acf-form .acf-button:active:focus { box-shadow: none; outline: none; }
 
 #search-bar { position: relative; display: none; height: 75px; }
 
@@ -3535,145 +3535,3 @@ body ul.page-numbers span.current { cursor: default; }
 
 @media (min-width: 544px) { .card-columns { column-count: 3; column-gap: 1.25rem; }
   .card-columns .card { display: inline-block; width: 100%; } }
-
-.events-list .tribe-events-loop, .single-tribe_organizer .tribe-events-loop, .single-tribe_venue .tribe-events-loop, .tribe-events-day .tribe-events-loop { max-width: 100%; }
-
-.tribe-events-list-separator-month { margin: .25em auto; }
-
-.tribe-events-list-separator-month + .type-tribe_events.tribe-events-first { padding-top: 0; }
-
-.single-tribe_venue #tribe-events-content h2.list-title { display: none; }
-
-#tribe-events #tribe-events-content { margin: 0; }
-
-#tribe-events #tribe-events-content .tribe-events-page-title { text-align: left; margin: 0; }
-
-#tribe-events .tribe-events-content p { font-size: 16px; line-height: 1.675; margin-bottom: 20px; }
-
-#tribe-events a.tribe-events-gcal, #tribe-events a.tribe-events-ical { margin-top: 0; }
-
-#tribe-events .tribe-events-event-meta .tribe-events-meta-group-gmap { width: 66.66%; }
-
-#tribe-events .tribe-events-venue address.venue-address { margin-bottom: 0; }
-
-#tribe-events .tribe_events_bar .tribe-bar-search-filter { width: 75%; padding: 0; }
-
-#tribe-events .tribe-mini-calendar-event .list-info { font-size: 14px; padding: 0 0 0 10px; }
-
-/* Tribe events day */
-.tribe-events-day { padding: 0; }
-
-#tribe-events-content.tribe-events-list { padding-top: 2em; }
-
-#footer-top .tribe-this-week-widget-day-wrap { padding: 20px 10px; }
-
-#footer-top .tribe-this-week-event { border-left: none; padding-left: 0px; padding-bottom: 15px; margin-bottom: 15px; }
-
-#footer-top .tribe-this-week-event:last-child { margin-bottom: 0; border-bottom: none; padding-bottom: 0; }
-
-#footer-top .event-today-time { font-size: 13px; }
-
-/* Tribe Single Event */
-.tribe-events-single-event-description h3 { padding-bottom: 20px; }
-
-@media (max-width: 767px) { .events-month #tribe-events-footer ~ a.tribe-events-ical.tribe-events-button { display: none; }
-  .tribe-events-event-meta .tribe-events-meta-group-gmap { display: none; } }
-
-.single-events-header { padding: 20px; margin-bottom: 20px; }
-
-.single-events-header h4 { padding-bottom: 5px; }
-
-.single-events-header h2 { margin-bottom: 0; }
-
-.events-list .tribe-events-loop, .single-tribe_organizer .tribe-events-loop, .single-tribe_venue .tribe-events-loop, .tribe-events-day .tribe-events-loop { max-width: 100%; }
-
-.tribe-events-list-separator-month { margin: .25em auto; }
-
-.type-tribe_events { padding-top: 1em; border: none; }
-
-.tribe-events-list-separator-month + .type-tribe_events.tribe-events-first { padding-top: 0; }
-
-.single-tribe_venue #tribe-events-content h2.list-title { display: none; }
-
-#tribe-events #tribe-events-content .tribe-events-page-title { text-align: left; margin: 0; }
-
-#tribe-events .tribe-events-content p { font-size: 16px; line-height: 1.675; margin-bottom: 20px; }
-
-#tribe-events .tribe-single-meta h4 { margin-bottom: 0; }
-
-#tribe-events .tribe-single-meta .addthis_sharing_toolbox { margin-top: -10px; }
-
-#tribe-events a.tribe-events-gcal, #tribe-events a.tribe-events-ical { margin-top: 0; }
-
-#tribe-events .tribe-events-event-meta .tribe-events-meta-group-gmap { width: 66.66%; }
-
-#tribe-events .tribe-events-venue address.venue-address { margin-bottom: 0; }
-
-#tribe-events .tribe_events_bar .tribe-bar-search-filter { width: 75%; padding: 0; }
-
-#tribe-events .tribe-mini-calendar-event .list-info { font-size: 14px; }
-
-#tribe-events-sub-nav-wrap .tribe-events-sub-nav { list-style: none; text-align: right; margin: 10px 0 0 0; }
-
-#tribe-events-sub-nav-wrap .tribe-events-sub-nav li { display: inline-block; padding-left: 20px; }
-
-#tribe-events-bar { margin-bottom: 10px; }
-
-#tribe-bar-form.tribe-bar-collapse #tribe-bar-views + .tribe-bar-filters { display: block !important; }
-
-.tribe-bar-collapse #tribe-bar-collapse-toggle { width: 60%; }
-
-#tribe-bar-form.tribe-bar-collapse #tribe-bar-views { width: 40%; }
-
-#tribe-events-content .tribe-events-tooltip h4, .tribe-events-calendar .tribe-events-tooltip h3 { font-size: 16px; }
-
-.tribe-events-tooltip .tribe-events-event-body { padding: 4px 0px 8px 0px; }
-
-.tribe-events-tooltip .tribe-events-event-body p { font-size: 13px; line-height: 18px; padding-top: 10px; }
-
-@media (max-width: 767px) { .events-month #tribe-events-footer ~ a.tribe-events-ical.tribe-events-button { display: none; }
-  .tribe-events-event-meta .tribe-events-meta-group-gmap, #tribe-events-sub-nav-wrap, #tribe-events-footer ~ a.tribe-events-ical.tribe-events-button { display: none; } }
-
-@media print { #mainmenu, #tribe-events-bar, #tribe-events-footer, #tribe-events-button, #tribe_events_filters_wrapper, #footer-top, #footer-bottom, #footer-social, #header-global, #header-mobile { display: none; }
-  .tribe-events-ical, .tribe-events-button { display: none !important; }
-  .main-nav { display: none; }
-  .tribe-events-month-event-title, .print-only { display: block; } }
-
-#tribe-bar-views .tribe-bar-views-list { z-index: 1; }
-
-#footer-top .tribe-events-page-title, #footer-top .tribe-this-week-widget-wrapper .tribe-this-week-widget-day .duration, #footer-top .tribe-this-week-widget-wrapper .tribe-this-week-widget-day .tribe-venue, #footer-top .tribe-events-sub-nav { display: none; }
-
-#footer-top .tribe-events-viewmore, #footer-top .this-week-no-events-msg { font-size: 13px; }
-
-#tribe-events a.tribe-events-gcal, #tribe-events a.tribe-events-ical { display: none; }
-
-/* Mini Calendar */
-.tribe-mini-calendar-event { border-bottom: none; margin-bottom: 12px; padding-bottom: 0; }
-
-.tribe-mini-calendar-event .list-date:first-child { margin-top: 0; }
-
-.tribe-mini-calendar-event .list-info { margin-top: 0; font-size: 14px; width: 75%; background: white; min-height: 86px; padding: 10px; }
-
-.tribe-events-widget-link { margin-bottom: 0; font-size: 14px; }
-
-.tribe-events-widget-link a { text-transform: uppercase; color: #333; font-weight: bold; }
-
-.tribe-mini-calendar-event .list-date .list-daynumber { font-size: 20px; padding: 9px 0; }
-
-.tribe-mini-calendar-event .list-date .list-dayname { font-size: 15px; text-transform: uppercase; padding: 5px 0; }
-
-.tribe-mini-calendar-event .list-date { padding: 5px 5px 0 5px; width: 25%; margin: 0; }
-
-.tribe-mini-calendar-event .list-info h2 { font-size: 15px; line-height: 20px; }
-
-.tribe-events-title-wrap { max-height: 40px; overflow: hidden; display: block; }
-
-.tribe-mini-calendar-event { border-bottom: none; }
-
-.tribe-mini-calendar-event .list-date:first-child { margin-top: 0; }
-
-.tribe-mini-calendar-event .list-info { margin-top: 0; font-size: 14px; }
-
-.tribe-events-widget-link { margin-bottom: 0; font-size: 16px; }
-
-.tribe-events-widget-link a { text-transform: uppercase; color: #555555; font-weight: bold; font-size: 92%; }
