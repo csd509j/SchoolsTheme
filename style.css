@@ -5,7 +5,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 1.6.4
+Version: 1.6.5
 Text Domain: csdschools
 */
 /*! Bootstrap v3.3.6 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
@@ -3093,7 +3093,7 @@ a:focus, a:active { background-color: inherit; }
 
 #footer-bottom a { font-size: 14px; color: white; }
 
-.footer-text, #footer-bottom .footer-text a { font-size: 12px; }
+.footer-text, #footer-bottom .footer-text a, .footer-text p { font-size: 12px; }
 
 #footer-social { background-color: #292929; color: white; }
 

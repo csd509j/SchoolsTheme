@@ -54,7 +54,7 @@
 									<li><a href="mailto:communications@corvallis.k12.or.us">Report an Accessibility Issue</a></li>
 								</ul>
 								
-								<p class="footer-text padding-top-one"><?php the_field('harassment_statement', 'options'); ?></p>
+								<div class="footer-text padding-top-one"><?php the_field('harassment_statement', 'options'); ?></div>
 								<p class="footer-text padding-top-two">
 									&#169; Corvallis School District. Corvallis, Oregon 97333
 								</p>
