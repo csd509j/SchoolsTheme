@@ -54,15 +54,13 @@
 									<li><a href="mailto:communications@corvallis.k12.or.us">Report an Accessibility Issue</a></li>
 								</ul>
 								
-								<p class="footer-text padding-top-one">
-									Report bullying, harassment or intimidation at your school. The Harassment, Intimidation and Bullying Compliance Officer is <a href="mailto:kevin.bogatin@corvallis.k12.or.us" target="_blank">Kevin Bogatin</a>. The Title IX Compliance Officer is <a href="mailto:jennifer.duval@corvallis.k12.or.us" target="_blank">Jennifer Duvall</a>. The Section 504 & ADA Compliance Officer is <a href="mailto:rynda.gregory@corvallis.k12.or.us" target="blank">Rynda Gregory</a>.  
-								</p>
+								<p class="footer-text padding-top-one"><?php the_field('harassment_statement', 'options'); ?></p>
 								<p class="footer-text padding-top-two">
 									&#169; Corvallis School District. Corvallis, Oregon 97333
 								</p>
 							</div>
 							<div class="col-sm-5 col-xs-12">
-								<p class="footer-text">The Corvallis School District does not discriminate on the basis of age, citizenship, color, disability, gender expression, gender identity, national origin, parental or marital status, race, religion, sex, or sexual orientation in its programs and activities, and provides equal access to designated youth groups. The following person has been designated to handle inquiries regarding discrimination: Jennifer Duvall Human Resources Director, <a href="mailto:jennifer.duvall@corvallis.k12.or.us">jennifer.duvall@corvallis.k12.or.us</a> 541-757-5840</p>
+								<p class="footer-text"><?php the_field('statement', 'options'); ?> <?php the_field('statement_contact_name', 'options'); ?> <?php the_field('statement_contact_title', 'options'): ?>, <a href="mailto:<?php the_field('statement_contact_email', 'options'); ?>"><?php the_field('statement_contact_email', 'options'); ?></a> <?php the_field('statement_contact_phone', 'options'); ?></p>
 							</div>
 						</div>
 					</div>
