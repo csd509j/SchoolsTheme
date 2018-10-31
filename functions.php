@@ -13,8 +13,6 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 
 $myUpdateChecker->setBranch('master'); 
 
-add_filter( 'auto_update_theme', '__return_true' );
-
 /*
  * Enqueue styles
  *
