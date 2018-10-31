@@ -42,7 +42,7 @@
 				if ( get_field('profile_image', get_the_ID()) ) {
 					$image = get_field( 'profile_image', get_the_ID() );
 				} else {
-					$image = home_url('/wp-content/themes/csdschools/assets/images/profile_avatar_placeholder_large.png');
+					$image = '/wp-content/themes/csdschools/assets/images/profile_avatar_placeholder_large.png';
 				}
 				
 				$meta = get_field('title', get_the_ID());
