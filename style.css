@@ -5,7 +5,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 1.6.1
+Version: 1.6.2
 Text Domain: csdschools
 */
 /*! Bootstrap v3.3.6 (http://getbootstrap.com) Copyright 2011-2015 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
@@ -2975,7 +2975,7 @@ a:focus, a:active { background-color: inherit; }
 
 .table-white { background-color: white; }
 
-.btn, .gform_button, #header-global .menu-btn .btn, #loginform #wp-submit, .acf-form .acf-button { padding: 10px 28px; border: none; border-radius: 0; }
+.btn, .gform_button, #header-global .menu-btn .btn, #loginform #wp-submit, .acf-form .acf-button { padding: 10px 28px; border: none; border-radius: 0; white-space: normal; }
 
 .btn:focus, .gform_button:focus, #header-global .menu-btn .btn:focus, #loginform #wp-submit:focus, .acf-form .acf-button:focus, .open > .btn-primary.dropdown-toggle:hover, .open > .dropdown-toggle.gform_button:hover, #loginform .open > .dropdown-toggle#wp-submit:hover, .acf-form .open > .dropdown-toggle.acf-button:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .dropdown-toggle.gform_button:focus, #loginform .open > .dropdown-toggle#wp-submit:focus, .acf-form .open > .dropdown-toggle.acf-button:focus, .open > .btn-primary.dropdown-toggle, .open > .dropdown-toggle.gform_button, #loginform .open > .dropdown-toggle#wp-submit, .acf-form .open > .dropdown-toggle.acf-button, .btn-primary:active:hover, .gform_button:active:hover, #loginform #wp-submit:active:hover, .acf-form .acf-button:active:hover, .btn-primary:active:focus, .gform_button:active:focus, #loginform #wp-submit:active:focus, .acf-form .acf-button:active:focus, .btn:active:focus, .gform_button:active:focus, #header-global .menu-btn .btn:active:focus, #loginform #wp-submit:active:focus, .acf-form .acf-button:active:focus { box-shadow: none; outline: none; }
 
