@@ -357,7 +357,7 @@ function languages_toggle(){
 			<?php endif; ?>
 			
 			<?php foreach($google_languages as $key => $val): ?>
-				<?php if ($current_url == 'https://linuspauling.csd509j.net/'): ?>
+				<?php if ($current_url == 'https://linuspauling.csd509j.net/' || $current_url == 'https://linuspauling.csd509j.net/es/'): ?>
 					<?php if($val != 'Spanish'): ?>
 						<li><a href="<?php echo home_url(); ?>/#<?php echo $key; ?>" target="_blank"><?php echo $val; ?></a></li>
 					<?php endif; ?>
