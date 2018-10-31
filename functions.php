@@ -311,11 +311,10 @@ add_filter( 'acf/update_value/name=featured_image', 'acf_set_featured_image', 10
  * @since CSD Schools 1.4.5
  */
 function languages_toggle(){
-/*
 	global $wp;
+	$current_url = home_url('/');
 	$url = $wp->request;
   	$languages = icl_get_languages('skip_missing=1');
-*/
   	
   	$google_languages = array(
 	  	'googtrans(en|es)' => 'Spanish',
@@ -327,7 +326,6 @@ function languages_toggle(){
 	  	'googtrans(en|vi)' => 'Vietnamese'
   	);
   	
-/*
 	if(1 < count($languages)){
 		foreach($languages as $l) {
 			if($l['active']) {
@@ -335,14 +333,13 @@ function languages_toggle(){
 			}
 		}
 	} else {
-*/
 		if(strpos($url, "#") === false) {
 			$active = "English";
 		} else {
 			$key = explode("#", $url)[0];
 			$active = $google_languages[$key];
 		}		
-// 	}
+	}
 	?>
 
   	<div class="translated-btn">
@@ -351,7 +348,6 @@ function languages_toggle(){
 				<i class="fa fa-comment"></i> Translate <span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-<!--
 			<?php if(1 < count($languages)): ?>
 				<?php foreach($languages as $l): ?>
 					<?php if(!$l['active']): ?>
@@ -359,10 +355,15 @@ function languages_toggle(){
 					<?php endif; ?>
 				<?php endforeach; ?>
 			<?php endif; ?>
--->
 			
 			<?php foreach($google_languages as $key => $val): ?>
-				<li><a href="<?php echo home_url(); ?>/#<?php echo $key; ?>" target="_blank"><?php echo $val; ?></a></li>
+				<?php if ($current_url == 'https://linuspauling.csd509j.net/'): ?>
+					<?php if($val != 'Spanish'): ?>
+						<li><a href="<?php echo home_url(); ?>/#<?php echo $key; ?>" target="_blank"><?php echo $val; ?></a></li>
+					<?php endif; ?>
+				<?php else: ?>
+					<li><a href="<?php echo home_url(); ?>/#<?php echo $key; ?>" target="_blank"><?php echo $val; ?></a></li>
+				<?php endif; ?>
 			<?php endforeach; ?>
 			</ul>
 		</div>
