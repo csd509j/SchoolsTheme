@@ -40,7 +40,7 @@ get_header(); ?>
 									<?php if (get_field('link', $image['id'])): ?>
 										<a href="<?php the_field('link', $image['id']); ?>" class="headline-link">
 									<?php endif; ?>
-									<?php echo wp_get_attachment_image($image['id'], 'Carousel Image', 0, array('class' => 'img img-responsive', 'alt' => $image['alt'] )); ?>							  		
+									<?php echo wp_get_attachment_image($image['id'], 'carousel-md', 0, array('class' => 'img img-responsive', 'alt' => $image['alt'] )); ?>							  		
 									<div class="container">
 								  		<div class="row">
 									  		<div class="col-sm-12">
