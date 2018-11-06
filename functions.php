@@ -314,7 +314,13 @@ function languages_toggle(){
 	global $wp;
 	$current_url = home_url('/');
 	$url = $wp->request;
-  	$languages = icl_get_languages('skip_missing=1');
+  	
+  	if (function_exists('icl_object_id')) {
+		$languages = icl_get_languages('skip_missing=1');
+  	} else {
+	  	$languages = null;
+  	}
+  	
   	
   	$google_languages = array(
 	  	'googtrans(en|es)' => 'Spanish',
