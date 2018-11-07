@@ -1,0 +1,118 @@
+{
+    "key": "group_5be32e4d16f77",
+    "title": "Options - Non-Discrimination Statement",
+    "fields": [
+        {
+            "key": "field_5be32e5557e06",
+            "label": "Statement",
+            "name": "statement",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "The Corvallis School District does not discriminate on the basis of age, citizenship, color, disability, gender expression, gender identity, national origin, parental or marital status, race, religion, sex, or sexual orientation in its programs and activities, and provides equal access to designated youth groups. The following person has been designated to handle inquiries regarding discrimination:",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5be32e6757e07",
+            "label": "Contact Name",
+            "name": "statement_contact_name",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Jennifer Duvall",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5be32e8657e08",
+            "label": "Contact Title",
+            "name": "statement_contact_title",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Human Resources Director",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5be32ea257e09",
+            "label": "Contact Email",
+            "name": "statement_contact_email",
+            "type": "email",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "jennifer.duvall@corvallis.k12.or.us",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5be32ec157e0a",
+            "label": "Contact Phone",
+            "name": "statement_contact_phone",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "541-757-5840",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-footer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1541615326
+}

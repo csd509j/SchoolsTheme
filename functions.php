@@ -210,6 +210,26 @@ if( function_exists('acf_add_options_sub_page') ) {
 }
 
 /**
+ * Add ACF JSON
+ *
+ * @since CSD Schools 1.7.1
+ */
+add_filter('acf/settings/save_json', function() {
+	return get_stylesheet_directory() . '/acf-json';
+});
+
+add_filter('acf/settings/load_json', function($paths) {
+  $paths = array();
+
+  if(is_child_theme())
+  {
+    $paths[] = get_stylesheet_directory() . '/acf-json';
+  }
+  $paths[] = get_template_directory() . '/acf-json';
+
+  return $paths;
+});
+/**
  * Load sidebar select fields with callout blocks from options
  *
  * @since CSD Schools 1.0
