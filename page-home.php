@@ -208,5 +208,26 @@ get_header(); ?>
 		</div>
 	</section>
 	<!-- News Section End -->
+	<?php if(get_field('include_video_section')): ?>
+		<!-- Video Section Start -->
+		<section id="cta" class="bg-primary text-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 text-center">
+						<div id="cta-text" class="padding-vertical-four">
+							<h1 class="text-white strong margin-bottom-one"><?php the_field('video_section_heading'); ?></h1>
+							<p class="lead"><?php the_field('video_section_text'); ?></p>
+							<div class="embed-responsive embed-responsive-16by9">
+								<?php $video_url = get_field('video_url'); ?>
+								<?php $v = substr($video_url, strpos($video_url, "v=") + 2); ?>
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $v; ?>?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Video Section End -->
+	<?php endif; ?>
 </div>
 <?php get_footer(); ?>
