@@ -2809,18 +2809,6 @@ body .shiftnav.shiftnav-skin-standard-dark ul.shiftnav-menu li.menu-item.current
 
 .carousel-caption { text-shadow: none; }
 
-.single-events-header, #tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type=submit], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] > a { background-color: #555555; }
-
-#footer-top .tribe-events-viewmore, #footer-top .this-week-no-events-msg { color: #cccccc; }
-
-#footer-top .event-today-time, .tribe-events-calendar .tribe-events-tooltip h3 { color: #333333; }
-
-#tribe-events .tribe-mini-calendar-event, #tribe-this-week-events-widget-1001 .tribe-this-week-event, .tribe-events-list .type-tribe_events, #footer-top .tribe-this-week-event { border-bottom: 1px solid #cccccc; }
-
-.single-tribe_events a.tribe-events-gcal, .single-tribe_events a.tribe-events-ical, .single-events-header h4, .single-events-header h2 { color: white; }
-
-#footer-top .tribe-this-week-widget-day-wrap { background-color: white; }
-
 #search-header { border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; }
 
 #search-results-wrap article { border-bottom: 1px solid #eeeeee; }
@@ -2928,6 +2916,12 @@ ul, ol { margin: 0; }
 html, body { margin: 0px; padding: 0px; overflow-x: hidden; font-size: 16px; }
 
 a:active, a:focus, :focus { outline: 0; border: none; -moz-outline-style: none; text-decoration: none; }
+
+.modal { text-align: center; padding: 0 !important; }
+
+.modal:before { content: ''; display: inline-block; height: 100%; vertical-align: middle; margin-right: -4px; }
+
+.modal-dialog { display: inline-block; text-align: left; vertical-align: middle; }
 
 body { font-family: "proxima-nova", Arial, sans-serif; }
 
@@ -3452,6 +3446,36 @@ body ul.page-numbers span.current { cursor: default; }
 @media (max-width: 767px) { .translated-btn { position: relative; top: 0; }
   .translated-btn .dropdown-menu { text-align: center; }
   .translated-btn .btn, .translated-btn .gform_button, .translated-btn #header-global .menu-btn .btn, #header-global .menu-btn .translated-btn .btn, .translated-btn #loginform #wp-submit, #loginform .translated-btn #wp-submit, .translated-btn .acf-form .acf-button, .acf-form .translated-btn .acf-button { width: 100%; } }
+
+#page-language { background-image: url("/wp-content/themes/csdschools/assets/images/map-bg.png"); background-color: #445C71; background-size: contain; height: 100%; }
+
+#page-language .modal { display: block; }
+
+#page-language .modal .modal-dialog { width: 450px; }
+
+#page-language .modal .modal-dialog .modal-header { padding: 20px 35px; background-color: #004D8E; }
+
+#page-language .modal .modal-dialog .modal-header h3 { color: white; font-size: 16px; text-transform: uppercase; float: left; }
+
+#page-language .modal .modal-dialog .modal-header .icons { float: right; }
+
+#page-language .modal .modal-dialog .modal-body { padding: 0; }
+
+#page-language .modal .modal-dialog .modal-body .list-group { margin-bottom: 0; }
+
+#page-language .modal .modal-dialog .modal-body .list-group .list-group-item { border-top-right-radius: 0; border-top-left-radius: 0; border-left: 0; border-right: 0; padding: 20px 35px; text-transform: uppercase; color: #555555; font-size: 14px; font-weight: bold; }
+
+#page-language .modal .modal-dialog .modal-body .list-group .list-group-item label { margin-bottom: 0; }
+
+#page-language .modal .modal-dialog .modal-body .list-group .list-group-item input[type="radio"] + .fa, #page-language .modal .modal-dialog .modal-body .list-group .list-group-item input[type="radio"] + label > .fa { cursor: pointer; font-size: 1.3em; }
+
+#page-language .modal .modal-dialog .modal-body .list-group .list-group-item input[type="radio"] + .fa-dot-circle-o:before, #page-language .modal .modal-dialog .modal-body .list-group .list-group-item input[type="radio"] + label > .fa-dot-circle-o:before, #page-language .modal .modal-dialog .modal-body .list-group .list-group-item input[type="radio"] + .fa-check-circle-o:before, #page-language .modal .modal-dialog .modal-body .list-group .list-group-item input[type="radio"] + label > .fa-check-circle-o:before { content: "\f10c"; }
+
+#page-language .modal .modal-dialog .modal-body .list-group .list-group-item input[type="radio"]:checked + .fa-dot-circle-o:before, #page-language .modal .modal-dialog .modal-body .list-group .list-group-item input[type="radio"]:checked + label > .fa-dot-circle-o:before { content: "\f192"; }
+
+#page-language .modal .modal-dialog .modal-body .list-group .list-group-item:first-child { border-top: 0; }
+
+@media (max-width: 767px) { #page-language .modal .modal-dialog { width: 100%; } }
 
 .card { position: relative; display: block; margin-bottom: 0.75rem; background-color: #fff; border: 1px solid #e5e5e5; border-radius: 0.25rem; }
 

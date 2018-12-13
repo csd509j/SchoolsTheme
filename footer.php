@@ -101,13 +101,20 @@
 				</section>
 			</div>
 		</div>
-	
 		<?php wp_footer(); ?>
 		<div id="google_translate_element" class="hidden"></div>
 		<script type="text/javascript">
 			function googleTranslateElementInit() {
 			  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 			}
+			
+			$(function() {
+				$('#menu-top-language a').click(function() {
+					if ($(this).data('lang')) {
+						Cookies.set('csd_translation_preference', $(this).data('lang'), { expires: 365 });
+					}
+				});
+			});
 		</script>
 		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	</body>

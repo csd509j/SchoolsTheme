@@ -50,7 +50,9 @@
 				<div class="col-lg-7 col-md-8 col-sm-12 col-xs-6 text-right">
 					<div class="menu-top-links-search-container">
 						<a href="#" id="search-toggle"><i class="fa fa-search fa-lg"></i></a>
-						<?php languages_toggle(); ?>
+						<div id="menu-top-language">
+							<?php languages_toggle(); ?>
+						</div>
 					</div>
 					<div class="hidden-sm hidden-xs">
 						<?php wp_nav_menu( array('theme_location' => 'header-toplinks', 'items_wrap' => '<ul class="list list-unstyled list-inline hidden-xs" aria-label="Top Links">%3$s</ul>' )); ?>

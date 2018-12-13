@@ -44,7 +44,9 @@ function csd_enqueue_script() {
 	wp_enqueue_script( 'bootstrap.min.js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', 'jquery', null, true );
 	
 	wp_enqueue_script( 'core.js', get_template_directory_uri() . '/assets/js/core.js', '', null, true );
-	
+
+	wp_enqueue_script( 'js.cookie', 'https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js', '', null, true );
+
 	if ( is_singular( 'news' ) ) {
 
 		wp_enqueue_script( 'addthis_widget.js', '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c3954e3471722a' );	
@@ -367,7 +369,6 @@ function languages_toggle(){
 		}		
 	}
 	?>
-
   	<div class="translated-btn">
 		<div class="dropdown">
 			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -377,7 +378,7 @@ function languages_toggle(){
 			<?php if(1 < count($languages)): ?>
 				<?php foreach($languages as $l): ?>
 					<?php if(!$l['active']): ?>
-						<li><a href="<?php echo $l['url']; ?>"><?php echo $l['translated_name']; ?></a></li>
+						<li><a data-lang="<?php echo $l['code']; ?>" href="<?php echo $l['url']; ?>"><?php echo $l['translated_name']; ?></a></li>
 					<?php endif; ?>
 				<?php endforeach; ?>
 			<?php endif; ?>
