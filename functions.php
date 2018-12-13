@@ -16,21 +16,23 @@ $myUpdateChecker->setBranch('master');
 /*
  * Enqueue styles
  *
- * @since CSD Schools 1.0
+ * @since CSD Schools 2.0
  */
 
 function csd_enqueue_style() {
 	
 	wp_enqueue_style( 'print.css', get_template_directory_uri() . '/assets/stylesheets/print.css' ); 
+	
 	wp_enqueue_style( 'ie10-viewport-bug-workaround.css', get_template_directory_uri() . '/assets/stylesheets/ie10-viewport-bug-workaround.css' ); 
 
+	wp_enqueue_style( 'font-awesome-5', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css' ); 
 }
 add_action( 'wp_enqueue_scripts', 'csd_enqueue_style', 100 );
 
 /*
  * Enqueue Scripts
  *
- * @since CSD Schools 1.0
+ * @since CSD Schools 2.0
  */
  
 function csd_enqueue_script() {
@@ -41,7 +43,9 @@ function csd_enqueue_script() {
 	
 	wp_enqueue_script('jquery');
 	
-	wp_enqueue_script( 'bootstrap.min.js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', 'jquery', null, true );
+	wp_enqueue_script( 'popper.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', 'jquery', '', true );
+	
+	wp_enqueue_script( 'bootstrap.min.js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', 'jquery', '', true );
 	
 	wp_enqueue_script( 'core.js', get_template_directory_uri() . '/assets/js/core.js', '', null, true );
 
