@@ -10,85 +10,65 @@
 get_header(); ?>
 <div id="content" role="main" tabindex="0">
 	<!-- Carousel Section Start -->
-	<section class="carousel-wrap">
-		<div class="row">
-			<div class="col-md-12 padding-none">
-				<div id="carousel" class="carousel slide" data-ride="carousel">
+	<section class="carousel-wrap mb-0">
+		<div id="carousel" class="carousel slide" data-ride="carousel">
+		
+		<?php 
+
+			$images = get_field('carousel_images');
+
+			if( $images ): ?>
+			
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<?php for($i = 0; $i < count($images); ++$i){ ?>
+							<li data-target="#carousel" data-slide-to="<?php echo $i; ?>" <?php if ($i == 0): ?>class="active"<?php endif; ?>></li>
+					<?php } ?>
+				</ol>
 				
-				<?php 
-
-					$images = get_field('carousel_images');
-
-					if( $images ): ?>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<?php 
 					
-						<!-- Indicators -->
-						<ol class="carousel-indicators">
-							<?php for($i = 0; $i < count($images); ++$i){ ?>
-									<li data-target="#carousel" data-slide-to="<?php echo $i; ?>" <?php if ($i == 0): ?>class="active"<?php endif; ?>></li>
-							<?php } ?>
-						</ol>
+					$x = 0;	
+					
+					foreach( $images as $image ): ?>
 						
-						<!-- Wrapper for slides -->
-						<div class="carousel-inner" role="listbox">
-							<?php 
-							
-							$x = 0;	
-							
-							foreach( $images as $image ): ?>
-								
-								<div class="item <?php if ($x == 0): ?>active<?php endif; ?>">
-									<?php if (get_field('link', $image['id'])): ?>
-										<a href="<?php the_field('link', $image['id']); ?>" class="headline-link">
-									<?php endif; ?>
-									<?php echo wp_get_attachment_image($image['id'], 'carousel-md', 0, array('class' => 'img img-responsive', 'alt' => $image['alt'] )); ?>							  		
-									<div class="container">
-								  		<div class="row">
-									  		<div class="col-sm-12">
-										  		<div class="carousel-caption">
-											  		<div class="carousel-title">
-											  			<h3><?php echo $image['title']; ?></h3>
-											  		</div>
-											  		<?php if ($image['caption']): ?>
-											  		<div class="carousel-caption-bg">
-										  				<p><?php echo $image['caption']; ?></p>
-										  			</div>
-										  			<?php endif; ?>
-										  		</div>
-									  		</div>
-								  		</div>
-							  		</div>
-							  		<?php if (get_field('link', $image['id'])): ?>
-										</a>
-									<?php endif; ?>
-								</div>
-							<?php 
-							
-							$x ++;
-							
-							endforeach; ?>
-							
+						<div class="carousel-item <?php if ($x == 0): ?>active<?php endif; ?>">
+							<?php if (get_field('link', $image['id'])): ?>
+								<a href="<?php the_field('link', $image['id']); ?>" class="headline-link">
+							<?php endif; ?>
+					  		<?php echo wp_get_attachment_image($image['id'], 'Home Slider', false, array('class'=>'d-block w-100 img-fluid')); ?>
+					  		<div class="carousel-caption">
+						  		<div class="carousel-title">
+						  			<h3><?php echo $image['title']; ?></h3>
+						  		</div>
+						  		<?php if ($image['caption']): ?>
+						  		<div class="carousel-caption-bg">
+					  				<p><?php echo $image['caption']; ?></p>
+					  			</div>
+					  			<?php endif; ?>
+					  		</div>
+					  		<?php if (get_field('link', $image['id'])): ?>
+								</a>
+							<?php endif; ?>
 						</div>
-						<!-- Controls -->
-						<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
-						
-					<?php endif; ?>
-				
+					<?php 
+					
+					$x ++;
+					
+					endforeach; ?>
+					
 				</div>
-			</div>
+								
+			<?php endif; ?>
 		</div>
 	</section>
-	<!-- Carousel Section End -->
+	<!-- Carousel Section End -->	
 	<!-- News Section Start -->
-	<section class="container padding-vertical-two">
+	<section class="container py-3">
 		<div class="row">
-			<div id="news" class="col-sm-9 col-xs-12">
+			<div id="news" class="col-lg-9">
 				<div class="headline">
 					<h2>Latest News</h2>
 				</div>
@@ -118,20 +98,20 @@ get_header(); ?>
 					
 				?>
 				
-					<div class="col-sm-4 col-xs-12 news-item">
+					<div class="col-md-6 col-xl-4 news-item">
 						<div class="row">
-							<div class="col-sm-12 col-xs-3 padding-bottom-one news-img">
+							<div class="col-3 col-md-12 pb-1 news-img">
 								<a href="<?php the_permalink(); ?>">
-									<?php echo wp_get_attachment_image($image['id'], 'News Image Small', 0, array('class' => 'img img-responsive')); ?>
+									<?php echo wp_get_attachment_image($image['id'], 'News Image Small', 0, array('class' => 'img-fluid')); ?>
 								</a>
 							</div>
-							<div class="col-sm-12 col-xs-9 news-content">
+							<div class="col-9 col-md-12 news-content">
 								<h4>
 									<a href="<?php the_permalink(); ?>">
 										<?php the_title(); ?>
 									</a>
 								</h4>
-								<p><?php the_field('featured_text', $post->ID); ?></p>
+								<?php the_field('featured_text', $post->ID); ?>
 							</div>
 						</div>
 					</div> 
@@ -144,11 +124,11 @@ get_header(); ?>
 		 			
 		 			?>
 	 				
-	 				<div id="news-more" class="col-sm-4 col-xs-12">
+	 				<div id="news-more" class="col-xl-4 mt-2 mt-xl-0">
 	 					<div class="subhead">
 	 						<h5>School Updates</h5>
 	 					</div>
-	 					<ul>
+	 					<ul class="fa-ul">
 	 					
 	 					<?php 
 
@@ -167,7 +147,7 @@ get_header(); ?>
 								$link = get_permalink();
 							endif;
 						?>
-							<li>
+							<li><span class="fa-li" ><i class="fas fa-chevron-right fa-xs"></i></span>
 								<a href="<?php echo $link; ?>" <?php if ( get_field('news_post_source', $post->ID) == 'External' ): ?> target="_blank" <?php endif; ?>><?php the_title(); ?></a>
 							</li>
 						
@@ -178,7 +158,7 @@ get_header(); ?>
 	 				</div>
 	 			</div>
  			</div>
- 			<div class="col-sm-3 col-xs-12">
+ 			<div class="col-lg-3">
  				<div id="secondary-search">
 	 				<form role="search" id="sites-search" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 		 				<label class="sr-only" for="search-text">Search...</label>
@@ -188,21 +168,21 @@ get_header(); ?>
 	 				</form>
 				</div>
 				<div id="quick-links">
-					<ul class="list list-unstyled">
-				<?php for( $x = 1; $x < 5; $x++ ): ?>
-					<li>
-						<?php if ( get_field('home_quick_link_' . $x . '_type') == "External Link" ): ?>
-							<a href="<?php the_field('home_quick_link_' . $x . '_link'); ?>" target="_blank" class="btn btn-secondary btn-block btn-lg">
-						<?php elseif ( get_field('home_quick_link_' . $x . '_type') == "Media File" ): ?>
-							<a href="<?php the_field('home_quick_link_' . $x . '_media'); ?>" target="_blank" class="btn btn-secondary btn-block btn-lg">
-						<?php elseif ( get_field('home_quick_link_' . $x . '_type') == "Page" ): ?>
-							<a href="<?php the_field('home_quick_link_' . $x . '_page'); ?>" class="btn btn-secondary btn-block btn-lg">
-						<?php endif; ?>
-						<?php the_field('home_quick_link_' . $x . '_text'); ?>
-						</a>
-					</li>
-				<?php endfor; ?>
-					</ul>
+					<div class="row">
+					<?php for( $x = 1; $x < 5; $x++ ): ?>
+						<div class="quick-link col-sm-6 col-md-12"> 
+								<?php if ( get_field('home_quick_link_' . $x . '_type') == "External Link" ): ?>
+									<a href="<?php the_field('home_quick_link_' . $x . '_link'); ?>" target="_blank" class="btn btn-secondary btn-block btn-lg">
+								<?php elseif ( get_field('home_quick_link_' . $x . '_type') == "Media File" ): ?>
+									<a href="<?php the_field('home_quick_link_' . $x . '_media'); ?>" target="_blank" class="btn btn-secondary btn-block btn-lg">
+								<?php elseif ( get_field('home_quick_link_' . $x . '_type') == "Page" ): ?>
+									<a href="<?php the_field('home_quick_link_' . $x . '_page'); ?>" class="btn btn-secondary btn-block btn-lg">
+								<?php endif; ?>
+								<h4><?php the_field('home_quick_link_' . $x . '_text'); ?></h4>
+							</a>
+						</div>
+					<?php endfor; ?>
+					</div>
 				</div>			
  			</div>			
 		</div>
@@ -212,10 +192,10 @@ get_header(); ?>
 		<!-- Video Section Start -->
 		<section id="cta" class="bg-primary text-white">
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-8 col-sm-offset-2 text-center">
-						<div id="cta-text" class="padding-vertical-four">
-							<h1 class="text-white strong margin-bottom-one"><?php the_field('video_section_heading'); ?></h1>
+				<div class="row justify-content-center">
+					<div class="col-sm-8 text-center">
+						<div id="cta-text" class="py-3">
+							<h2 class="text-white mb-1"><?php the_field('video_section_heading'); ?></h2>
 							<p class="lead"><?php the_field('video_section_text'); ?></p>
 							<div class="embed-responsive embed-responsive-16by9">
 								<?php $video_url = get_field('video_url'); ?>

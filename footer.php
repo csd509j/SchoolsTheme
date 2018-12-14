@@ -1,12 +1,12 @@
 				<!-- Contact Section Start -->
-				<section id="footer-top"  class="padding-vertical-two">
+				<section id="footer-top"  class="py-2">
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="headline">
 									<h2><?php echo (ICL_LANGUAGE_CODE=='es' ? 'Contáctenos' : 'Contact Us'); ?></h2>
 								</div>
-								<p class="margin-bottom-three"><strong>Phone:</strong> <?php the_field('primary_phone', 'options'); ?><br/>
+								<p class="mb-2"><strong>Phone:</strong> <?php the_field('primary_phone', 'options'); ?><br/>
 								<strong>Fax:</strong> <?php the_field('fax_number', 'options'); ?><br/>
 								<strong>Attendance:</strong> <?php the_field('attendance_phone', 'options'); ?><br/>
 								<?php if(get_field('email', 'options')): ?>
@@ -31,7 +31,7 @@
 										<div class="col-sm-8">
 											<h2><?php echo (ICL_LANGUAGE_CODE=='es' ? 'Eventos próximos' : 'Upcoming Events'); ?></h2>
 										</div>
-										<div class="col-sm-4 text-right padding-top-quarter">
+										<div class="col-sm-4 d-flex align-items-center justify-content-left justify-content-sm-end my-1 my-sm-0">
 											<a href="<?php echo home_url('/calendar'); ?>">View Full Calendar</a>
 										</div>
 									</div>
@@ -44,56 +44,54 @@
 				<section id="footer-bottom">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-2 col-xs-8">
-								<a href="/"><img class="img-responsive" src="https://www.csd509j.net/wp-content/uploads/csd_logo.png" alt="Corvallis School District" /></a>						
+							<div class="col-8 col-sm-2">
+								<a href="/"><img class="img-fluid" src="https://www.csd509j.net/wp-content/uploads/csd_logo.png" alt="Corvallis School District" /></a>						
 							</div>
-							<div class="col-sm-5 col-xs-12">
-								
+							<div class="col-sm-5">
 								<ul class="list list-inline">
-									<li><a href="mailto:communications@corvallis.k12.or.us">Webmaster</a></li>
-									<li><a href="mailto:communications@corvallis.k12.or.us">Report an Accessibility Issue</a></li>
+									<li class="list-inline-item"><a href="mailto:communications@corvallis.k12.or.us">Webmaster</a></li>
+									<li class="list-inline-item"><a href="mailto:communications@corvallis.k12.or.us">Report an Accessibility Issue</a></li>
 								</ul>
-								
-								<div class="footer-text padding-top-one"><?php the_field('harassment_statement', 'options'); ?></div>
-								<p class="footer-text padding-top-two">
+								<div class="footer-text pt-1"><?php the_field('harassment_statement', 'options'); ?></div>
+								<p class="footer-text pt-2">
 									&#169; Corvallis School District. Corvallis, Oregon 97333
 								</p>
 							</div>
-							<div class="col-sm-5 col-xs-12">
+							<div class="col-sm-5">
 								<p class="footer-text"><?php the_field('statement', 'options'); ?> <?php the_field('statement_contact_name', 'options'); ?> <?php the_field('statement_contact_title', 'options'); ?>, <a href="mailto:<?php the_field('statement_contact_email', 'options'); ?>"><?php the_field('statement_contact_email', 'options'); ?></a> <?php the_field('statement_contact_phone', 'options'); ?></p>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section id="footer-social" class="padding-vertical-two">
+				<section id="footer-social" class="py-2">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-6 col-xs-12">
+							<div class="col-lg-6 mb-1 mb-lg-0">
 								<ul class="social-media-links">
 									<p>Connect with Us</p>
 									<li>
 										<a href="https://www.twitter.com/SuptNoss" target="_blank" class="social">
-											<i class="fa fa-twitter-square fa-2x"></i>
+											<i class="fab fa-twitter-square fa-2x"></i>
 										</a>	
 									</li>
 									<li>
 										<a href="https://www.facebook.com/csd509j" target="_blank" class="social">
-											<i class="fa fa-facebook-square fa-2x"></i>
+											<i class="fab fa-facebook-square fa-2x"></i>
 										</a>
 									</li>
 									<li>
 										<a href="https://www.instagram.com/corvallis.schools/" target="_blank" class="social">
-											<i class="fa fa-instagram fa-2x"></i>
+											<i class="fab fa-instagram fa-2x"></i>
 										</a>
 									</li>
 									<li>
 										<a href="https://www.linkedin.com/company/corvallis-school-district-509j" target="_blank" class="social">
-											<i class="fa fa-linkedin-square fa-2x"></i>
+											<i class="fab fa-linkedin-square fa-2x"></i>
 										</a>
 									</li>
 								</ul>
 							</div>
-							<div id="credits" class="col-sm-6 col-xs-12 text-right">
+							<div id="credits" class="col-lg-6 text-center text-lg-right">
 								<a href="http://abidewebdesign.com" target="_blank">Website Design & Maintenance by Abide Web Design</a>
 							</div>
 						</div>

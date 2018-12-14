@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area padding-vertical-two">
+<div id="primary" class="content-area py-2">
 	<main id="main" class="site-main" role="main">
 		<div class="container">
 			<div class="row">

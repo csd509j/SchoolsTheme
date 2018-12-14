@@ -44,34 +44,34 @@
 	<div id="header-top-global">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5 col-md-4 col-sm-12 col-xs-6 menu-top-block-container">
+				<div class="col-6 col-sm-12 col-md-4 col-lg-5 menu-top-block-container">
 					<?php render_block_calendar(get_field('block_calendar', 'options')); ?>
 				</div>
-				<div class="col-lg-7 col-md-8 col-sm-12 col-xs-6 text-right">
-					<div class="menu-top-links-search-container">
-						<a href="#" id="search-toggle"><i class="fa fa-search fa-lg"></i></a>
-						<div id="menu-top-language">
-							<?php languages_toggle(); ?>
-						</div>
+				<div class="col-6 col-sm-12 col-md-8 col-lg-7 d-flex justify-content-end">
+					<div class="d-none d-md-block">
+						<?php wp_nav_menu( array('theme_location' => 'header-toplinks', 'items_wrap' => '<ul class="list list-unstyled d-none d-md-block" aria-label="Top Links">%3$s</ul>' )); ?>
 					</div>
-					<div class="hidden-sm hidden-xs">
-						<?php wp_nav_menu( array('theme_location' => 'header-toplinks', 'items_wrap' => '<ul class="list list-unstyled list-inline hidden-xs" aria-label="Top Links">%3$s</ul>' )); ?>
+					<div class="mr-1">
+						<a href="#" id="search-toggle"><i class="fa fa-search fa-lg"></i></a>
+					</div>
+					<div id="menu-top-language">
+						<?php languages_toggle(); ?>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="search" class="hidden-xs">
+	<div class="search" class="d-sm-none">
 		<div id="search-bar">
 			<div class="search-bar-inner">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-12">
+						<div class="col-12">
 							<p>Enter Search Below</p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-12">
+						<div class="col-12">
 							<form role="search" id="sites-search" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 								 <label class="sr-only" for="search-text">Search...</label>
 								 <input type="text" class="search-field" id="search-text" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s">
@@ -85,19 +85,19 @@
 	</div>
 	<div class="wrapper">
 		<div class="wrapper-inner">
-			<div id="header-global">
+			<div id="header-global" class="my-2">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 col-xs-10">
+					<div class="row align-items-center">
+						<div class="col-10 col-lg-4">
 							<div id="logo" class="clearfix">
-								<a href="<?php echo get_home_url(); ?>"><img class="img-responsive" src="<?php the_field('logo', 'option'); ?>" alt="<?php bloginfo('name'); ?>" /></a>
+								<a href="<?php echo get_home_url(); ?>"><img class="img-fluid" src="<?php the_field('logo', 'option'); ?>" alt="<?php bloginfo('name'); ?>" /></a>
 							</div>
 						</div>
-						<div class="col-lg-8 col-xs-2">
-							<div class="visible-lg">
+						<div class="col-2 col-lg-8 d-flex justify-content-end">
+							<div class="d-none d-lg-block">
 								<?php wp_nav_menu( array('theme_location' => 'header-menu', 'items_wrap' => '<ul class="nav navbar-nav pull-right" aria-label="primary navigation">%3$s</ul>' )); ?>						
 							</div>
-							<div class="hidden-lg pull-right">
+							<div class="d-lg-none">
 								<?php shiftnav_toggle( 'shiftnav-main' , '' , array( 'icon' => 'bars' , 'class' => 'shiftnav-toggle-button') ); ?>
 							</div>
 						</div>
