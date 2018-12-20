@@ -1,4 +1,4 @@
-<div class="padding-vertical-two directory-wrap">
+<div class="py-2 directory-wrap">
 	<?php
 	
 	$cats = get_terms('directory-category');
@@ -27,7 +27,7 @@
 			$i = 0;
 			$departmentID = "";
 			
-			echo '<h2 class="padding-top-one">' . $cat->name . '</h2>';
+			echo '<h2 class="pt-1">' . $cat->name . '</h2>';
 			
 			while ( $cat_query->have_posts() ): $cat_query->the_post(); 
 				
@@ -48,32 +48,32 @@
 				$meta = get_field('title', get_the_ID());
 				
 				if ( get_field('email', get_the_ID()) ){
-					$contact = '<i class="fa fa-envelope"></i> <a href="mailto:' . get_field( 'email', get_the_ID() ) . '">' . get_field( 'email', get_the_ID() ) . '</a><br>';
+					$contact = '<i class="fas fa-envelope"></i> <a href="mailto:' . get_field( 'email', get_the_ID() ) . '">' . get_field( 'email', get_the_ID() ) . '</a><br>';
 				}
 				if ( get_field( 'phone' , get_the_ID()) ){
-					$contact .= '<i class="fa fa-phone"></i> <a href="tel:' . get_field( 'phone', get_the_ID() ) . '">' . get_field( 'phone', get_the_ID() ) . '</a>';
+					$contact .= '<i class="fas fa-phone"></i> <a href="tel:' . get_field( 'phone', get_the_ID() ) . '">' . get_field( 'phone', get_the_ID() ) . '</a>';
 				}
 				if ( get_field('class_website', get_the_ID()) ){
-					$website = '<i class="fa fa-globe"></i> <a href="' . get_field( 'class_website', get_the_ID() ) . '">View Website</a>';
+					$website = '<i class="fas fa-globe"></i> <a href="' . get_field( 'class_website', get_the_ID() ) . '">View Website</a>';
 				}
 				if ( get_field('class_website_2', get_the_ID()) ){
-					$website .= '<br><i class="fa fa-globe"></i> <a href="' . get_field( 'class_website_2', get_the_ID() ) . '">' . get_field( 'class_website_2_label', get_the_ID() ) . '</a>';
+					$website .= '<br><i class="fas fa-globe"></i> <a href="' . get_field( 'class_website_2', get_the_ID() ) . '">' . get_field( 'class_website_2_label', get_the_ID() ) . '</a>';
 				}
 		
 				$bio = get_field( 'bio', get_the_ID() );
 				
 				?>
 		
-				<div class="col-sm-6 col-xs-12 padding-vertical-one">
+				<div class="col-sm-6 py-1">
 					<div class="row">
-						<div class="col-sm-3 hidden-xs profile-image">
+						<div class="col-md-3 d-none d-md-block profile-image">
 							<?php if ( get_field( 'profile_image', get_the_ID() ) ): ?>
-								<?php echo wp_get_attachment_image($image['id'], 'Staff Directory', 0, array('class' => 'img img-responsive')); ?>
+								<?php echo wp_get_attachment_image($image['id'], 'Staff Directory', 0, array('class' => 'img-fluid')); ?>
 							<?php else: ?>
-								<img src="<?php echo $image; ?>" class="img img-responsive" />
+								<img src="<?php echo $image; ?>" class="img-fluid" />
 							<?php endif; ?>
 						</div>				
-						<div class="col-sm-9 col-xs-12 profile-content">
+						<div class="col-md-9 profile-content">
 							<div class="subhead">
 								<h4><?php the_title(); ?></h4>
 							</div>
@@ -81,9 +81,11 @@
 								<?php echo $meta; ?>
 							</div>
 							<div class="submeta">
-								<ul class="list-unstyled list-inline margin-none">
-									<li class="col-xs-12 small"><?php echo $contact; ?></li>
-									<li class="col-xs-12 small"><?php echo $website; ?></li>
+								<ul class="list-unstyled list-inline mb-0">
+									<li class="col-12 list-inline-item small p-0 m-0"><?php echo $contact; ?></li>
+									<?php if($website): ?>
+										<li class="col-12 list-inline-item small p-0 m-0"><?php echo $website; ?></li>
+									<?php endif; ?>
 								</ul>
 							</div>
 						</div>

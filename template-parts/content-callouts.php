@@ -36,8 +36,7 @@ if ( get_field('sidebar_callout_blocks') ):
 						if ( $valid == true ):
 						
 						?>
-					
-							<div class="sidebar-callouts">
+						<div class="row align-items-center sidebar-callouts">
 								
 								<?php 
 								
@@ -59,24 +58,22 @@ if ( get_field('sidebar_callout_blocks') ):
 								
 								?>
 								
-								<div class="row">
-								
 								<?php
 								
 								if ( !empty($image) ):
 								
 								?>
 								
-									<div class="col-md-12 col-xs-12">
+									<div class="col-12 col-sm-4 col-md-3 col-lg-12">
 										<div class="sidebar-callout-image">
 										
 											<?php if ($link): ?>
 											
-												<a <?php if ( get_sub_field('callout_block_link_type') == 'External' ): ?> target="_blank" <?php endif; ?> href="<?php echo $link; ?>"><?php echo wp_get_attachment_image($image['id'], 'full', 0, array('class' => 'img img-responsive')); ?></a>
+												<a <?php if ( get_sub_field('callout_block_link_type') == 'External' ): ?> target="_blank" <?php endif; ?> href="<?php echo $link; ?>"><?php echo wp_get_attachment_image($image['id'], 'Callout Block', 0, array('class' => 'img-fluid')); ?></a>
 											
 											<?php else: ?>
 												
-												<?php echo wp_get_attachment_image($image['id'], 'full', 0, array('class' => 'img img-responsive')); ?>
+												<?php echo wp_get_attachment_image($image['id'], 'Callout Block', 0, array('class' => 'img-fluid')); ?>
 											
 											<?php endif; ?>
 											
@@ -85,8 +82,8 @@ if ( get_field('sidebar_callout_blocks') ):
 								
 								<?php endif; ?>
 								
-									<div class="col-md-12 col-xs-12">
-										<div class="sidebar-callout-inner">
+									<div class="col-12 col-sm-8 col-md-9 col-lg-12">
+										<div class="sidebar-callout-inner pt-2 pt-sm-0 pt-md-0 pt-lg-1">
 											
 											<?php if ($link): ?>
 											
@@ -107,7 +104,6 @@ if ( get_field('sidebar_callout_blocks') ):
 											<?php endif; ?>
 										</div>
 									</div>
-								</div>
 							</div>
 							
 							<?php

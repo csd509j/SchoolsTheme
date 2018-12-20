@@ -1,4 +1,4 @@
-<div id="sidebar-first" class="pull-left">
+<div id="sidebar-first">
 	<div class="navbar navbar-default" role="navigation">
 		<?php 
 		
@@ -9,15 +9,13 @@
 		<?php 
 		
 		endif;
-		// If the page has a parent
-		if( $post->post_parent ):
-		  	//Get array of post_id's of parents
+		
+		if($post->post_parent):
 		  	$parents = get_post_ancestors( $post->ID );
-		  	// This is a second level page
+
 		  	if ( empty($parents) || count($parents) == 1 ):
-		  		$root_page_id = $parents[0];
-		  		$titlenamer = get_the_title($parents[0]);
-		  	// This is more than a second level page
+		  		$root_page_id = $post->post_parent;
+		  		$titlenamer = get_the_title($post->ID);
 		  	else:
 		  		$x = $post->ancestors;
 		  		end($x);
@@ -25,6 +23,7 @@
 		  		$titlenamer = get_the_title($root_page_id);
 		  	endif;
 		  		
+		  	
 			$walker = new Razorback_Walker_Page_Selective_Children();
 			$children = wp_list_pages( array(
 			    'title_li' => '',
@@ -33,9 +32,8 @@
 			    'echo'	=> 0,
 			    'sort_column' => 'post_title'
 			));
-		// If the page is a top-level parent	
+			
 		else:
-		
 			$children = wp_list_pages( array (
 				'title_li' => '',
 				'depth' => 1,
@@ -44,32 +42,28 @@
 				'sort_column' => 'post_title'
 			));
 			
+			$root_page_id = $post->ID;
 			$titlenamer = get_the_title($post->ID);
-			
 		
 		endif;
 			  
 		if ($children): ?>
 		
-		<div class="navbar-header">
+		<div class="navbar-header d-block d-lg-none w-100">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
 				<i class="fa fa-1x fa-chevron-down"></i>
 			</button>
-			<span class="visible-xs">
-				<h2>
-					<span <?php if ( is_page_template( 'page-parent.php' ) ): ?> class="sidebar-parent-title" <?php endif; ?>><a href="<?php the_permalink($root_page_id); ?>"><?php echo $titlenamer; ?></a></span>
-				</h2>
-			</span>
+			<h2>
+				<span <?php if ( is_page_template( 'page-parent.php' ) ): ?> class="sidebar-parent-title" <?php endif; ?>><a href="<?php the_permalink($root_page_id); ?>"><?php echo $titlenamer; ?></a></span>
+			</h2>
 		</div>
-		<h2 class="hidden-xs">
+		<h2 class="d-none d-lg-block w-100">
 			<span<?php if ( is_page_template( 'page-parent.php' ) ): ?> class="sidebar-parent-title" <?php endif; ?>><a href="<?php the_permalink($root_page_id); ?>"><?php echo $titlenamer; ?></a></span>
 		</h2>
 		<div class="navbar-collapse collapse sidebar-navbar-collapse">
 			<ul class="nav navbar-nav">
-		  		
-		  		<?php echo $children; ?>
-		  		
+		  		<?php echo $children; ?>		  		
 			</ul>
 		</div>		
 		

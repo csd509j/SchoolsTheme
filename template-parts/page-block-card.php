@@ -1,52 +1,20 @@
-<div class="card-left row padding-bottom-two">
-					
-	<?php
-	
-	if( get_sub_field('card_image') ): $image = get_sub_field('card_image'); ?>
-	
-	<div class="card-image col-sm-3 hidden-xs">
-		<?php echo wp_get_attachment_image($image['id'], 'card', 0, array('class' => 'img img-responsive')); ?>
-	</div>
-		
+<div class="row pb-2">
+	<?php if( get_sub_field('card_image') ): ?>
+		<?php $image = get_sub_field('card_image'); ?>
+		<div class="col-sm-4 col-md-3">
+			<?php echo wp_get_attachment_image($image['id'], 'Square Column 3', 0, array('class' => 'img-fluid mb-1 mb-sm-0')); ?>
+		</div>
 	<?php endif; ?>
-	
-	<div class="card-text col-sm-9 col-xs-12">
+	<div class="col-sm-8 col-md-9 card-text ">
 		<div class="subhead">
 			<h3><?php the_sub_field('card_title'); ?></h3>
 		</div>
-		
-		<?php the_sub_field('card_text'); ?>	
-		
-		<?php 
-			
-		if ( get_sub_field('card_links_col_1') ): ?>
-			
-			<div class="card-links">
-			
-			<?php 
-				
-				the_sub_field('card_links_col_1'); ?>
-				
-			</div>
-			
-		<?php
-		
-		endif; 
-			
-		if ( get_sub_field('card_links_col_2') ): ?>
-			
-			<div class="card-links">
-			
-			<?php 
-				
-				the_sub_field('card_links_col_2'); ?>
-				
-			</div>
-			
-		<?php
-		
-		endif; ?>
-	
-	</div>
-							
+		<?php the_sub_field('card_text'); ?>			
+		<?php if ( get_sub_field('card_links_col_1') ): ?>
+			<div class="card-links"><?php the_sub_field('card_links_col_1'); ?></div>
+		<?php endif; ?>			
+		<?php if ( get_sub_field('card_links_col_2') ): ?>
+			<div class="card-links"><?php the_sub_field('card_links_col_2'); ?></div>
+		<?php endif; ?>
+	</div>							
 </div>

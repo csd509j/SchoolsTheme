@@ -76,6 +76,7 @@ add_image_size('News Image Featured', 824, 425, true);
 add_image_size('Staff Directory', 326, 453, true);
 add_image_size('Callout Block', 586, 416, true);
 add_image_size('Page Builder Image', 825, 315, true);
+add_image_size('Parent Header', 1400, 275, true);
 add_image_size('carousel-lg', 1600, 596, true);
 add_image_size('carousel-md', 1140, 425, true);
 add_image_size('carousel-sm', 768, 286, true);

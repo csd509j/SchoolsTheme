@@ -6,7 +6,7 @@ if ( get_field('sidebar_contact_block') ):
 	
 	if ($values): ?>
 		
-		<div class="sidebar-contact">
+		<div class="sidebar-contact py-2">
 			<h4>Contact Information</h4>
 		
 		<?php

@@ -15,20 +15,19 @@ if (isset($_GET['referrer'])) {
 }
 
 ?>
-
 <div id="page-language">
 	<div class="container">
 		<div class="modal" id="lang-splash" tabindex="-1" role="dialog" aria-labelledby="lang-splash" aria-hidden="false">
 			<div class="modal-dialog">
 		    	<div class="modal-content">
-			    	<div class="modal-header">
-				    	<div class="pull-left">
+			    	<div class="modal-header d-flex">
+				    	<div class="d-flex justify-content-start">
 							<h3 class="modal-title">Preferred Language</h3>
 				    	</div>
-						<div class="pull-right">
-							<ul class="list-inline margin-bottom-none">
-								<li><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/american-flag.jpg'); ?>" width="45px" /></li>
-								<li><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/mexico-flag.jpg'); ?>" width="45px" /></li>
+						<div class="d-flex justify-content-end">
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/american-flag.jpg'); ?>" width="45px" /></li>
+								<li class="list-inline-item"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/mexico-flag.jpg'); ?>" width="45px" /></li>
 							</ul>
 						</div>
 					</div>
@@ -37,11 +36,11 @@ if (isset($_GET['referrer'])) {
 					        <a href="#" class="lang-link" data-id="en" data-referrer="<?php echo $referrer; ?>">
 						        <div class="list-group-item">
 							        <div class="row">
-								        <div class="col-xs-8">English</div>
-								        <div class="col-xs-4 text-right">
+								        <div class="col-8">English</div>
+								        <div class="col-4 text-right">
 									        <label for="en">
-												<input id="en" type="radio" class="hide" name="language" value="0"/>
-												<i class="fa fa-fw fa-dot-circle-o"></i>
+												<input id="en" type="radio" class="d-none" name="language" value="0"/>
+												<i class="far fa-dot-circle"></i>
 											</label>
 								        </div>
 							        </div> 
@@ -50,19 +49,19 @@ if (isset($_GET['referrer'])) {
 						    <a href="#" class="lang-link" data-id="es" data-referrer="<?php echo $referrer; ?>">
 						        <div class="list-group-item">
 							        <div class="row">
-								        <div class="col-xs-8">Spanish</div>
-								        <div class="col-xs-4 text-right">
+								        <div class="col-8">Spanish</div>
+								        <div class="col-4 text-right">
 									        <label for="es">
-												<input id="es" type="radio" class="hide" name="language" value="0"/>
-												<i class="fa fa-fw fa-dot-circle-o"></i>
+												<input id="es" type="radio" class="d-none" name="language" value="0"/>
+												<i class="far fa-dot-circle"></i>
 											</label>
 								        </div>
 							        </div> 
 						        </div>
 						    </a>
 				        </div>
-				        <div class="margin-vertical-two">
-					    	<img src="<?php the_field('logo', 'option'); ?>" class="center-block img-responsive" width="200px" />	
+				        <div class="my-1 text-center">
+					    	<img src="<?php the_field('logo', 'option'); ?>" class="img-fluid" width="200px" />	
 				        </div>
 		      		</div>
 		    	</div>
