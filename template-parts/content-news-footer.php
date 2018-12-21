@@ -4,7 +4,7 @@
 	$loop = new WP_Query( $args );
 ?>
 <div class="row">
-	<div class="col-sm-9 padding-top-two">
+	<div class="col-lg-9 pt-1">
 		<div class="headline">
 			<h3>Featured News</h3>
 		</div>
