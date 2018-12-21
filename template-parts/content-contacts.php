@@ -4,31 +4,26 @@ if ( get_field('sidebar_contact_block') ):
 
 	$values = get_field('sidebar_contact_block');	
 	
-	if ($values): ?>
+	if ($values):
 		
-		<div class="sidebar-contact py-2">
-			<h4>Contact Information</h4>
-		
-		<?php
-			
 		foreach ($values as $value):
 	
-			if( have_rows('contact_blocks', 'option') ): ?>
+			if( have_rows('contact_blocks', 'option') ):	
 			
-				<div class="sidebar-contact-wrap">
+				while( have_rows('contact_blocks', 'option') ): the_row();
 					
-				<?php while( have_rows('contact_blocks', 'option') ): the_row(); ?>
-				
-					<?php if( get_sub_field('contact_name') == $value ): ?>
+					if( get_sub_field('contact_name') == $value ): ?>
 					
+					<div class="sidebar-contact">
 						<div class="sidebar-contact-department">
+							<h4>Contact Information</h4>
 							<p class="small subhead"><strong><?php the_sub_field('contact_name'); ?></strong></p>
 							<p class="small">
 								<?php 
 								
 								if( get_sub_field('contact_email') ): ?>
 								
-									<i class="fa fa-envelope"></i> <a href="mailto:<?php the_sub_field('contact_email'); ?>" target="_blank"><?php the_sub_field('contact_email'); ?></a>
+									<i class="fas fa-envelope"></i> <a href="mailto:<?php the_sub_field('contact_email'); ?>" target="_blank"><?php the_sub_field('contact_email'); ?></a>
 									<br>
 								
 								<?php 
@@ -37,7 +32,7 @@ if ( get_field('sidebar_contact_block') ):
 								
 								if ( get_sub_field('contact_phone') ): ?>
 								
-									<i class="fa fa-phone"></i> <?php the_sub_field('contact_phone'); ?>
+									<i class="fas fa-phone"></i> <?php the_sub_field('contact_phone'); ?>
 									<br>
 								
 								<?php 
@@ -46,7 +41,7 @@ if ( get_field('sidebar_contact_block') ):
 								
 								if( get_sub_field('contact_fax') ): ?>
 								
-									<i class="fa fa-fax"></i> <?php the_sub_field('contact_fax'); ?>
+									<i class="fas fa-fax"></i> <?php the_sub_field('contact_fax'); ?>
 									<br>
 								
 								<?php 
@@ -55,7 +50,7 @@ if ( get_field('sidebar_contact_block') ):
 								
 								if ( get_sub_field('contact_address') ): ?>
 								
-									<i class="fa fa-map-marker"></i> <?php the_sub_field('contact_address'); ?>
+									<i class="fas fa-map-marker"></i> <?php the_sub_field('contact_address'); ?>
 									<br>
 								
 								<?php 
@@ -69,7 +64,7 @@ if ( get_field('sidebar_contact_block') ):
 								<?php endif; ?>
 								
 							</p>
-						</div> <!-- .sidebar-contact-department end -->
+						</div>
 						
 						<?php 
 						
@@ -102,24 +97,22 @@ if ( get_field('sidebar_contact_block') ):
 									
 								<?php endwhile; ?> 
 								
-							</div> <!-- .sidebar-contact-staff end -->
+							</div>
 							
-							<?php endif; ?>	
-											
-							<?php endif; ?>
+						<?php endif; ?>	
+						
+					</div>
 					
-					<?php endwhile; ?>
+					<?php
+						
+					endif;
+				
+				endwhile;
 			
-				</div>	<!-- .sidebar-contact-wrap end -->		
+			endif;
 			
-				<?php endif; ?>
-			
-				<?php endforeach; ?>
-
-			</div> <!-- .sidebar-contact end -->
+		endforeach; 
 	
-	<?php
-		
 	endif;
 
 endif; ?>

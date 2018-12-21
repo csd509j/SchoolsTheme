@@ -15,27 +15,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "left",
+            "placement": "top",
             "endpoint": 0
-        },
-        {
-            "key": "field_5bae733c130fc",
-            "label": "Video URL",
-            "name": "video_url",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         },
         {
             "key": "field_567b2f68fc4b9",
@@ -57,8 +38,32 @@
             "button_label": "Add Callout Block",
             "sub_fields": [
                 {
-                    "key": "field_567b2f73fc4ba",
+                    "key": "field_5c1d6b4d88c26",
                     "label": "Callout Block Image",
+                    "name": "callout_block_img",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_567b2f73fc4ba",
+                    "label": "Callout Block Image - Legacy",
                     "name": "callout_block_image",
                     "type": "image_crop",
                     "instructions": "",
@@ -333,7 +338,7 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "left",
+            "placement": "top",
             "endpoint": 0
         },
         {
@@ -583,8 +588,8 @@
             ]
         },
         {
-            "key": "field_5733916e22a42",
-            "label": "Card Blocks",
+            "key": "field_5c1c2b23e39fd",
+            "label": "Search Results Page",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -595,13 +600,67 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "left",
+            "placement": "top",
             "endpoint": 0
         },
         {
-            "key": "field_5681d11639500",
-            "label": "Card Blocks",
-            "name": "card_blocks",
+            "key": "field_5c1c2b33e39fe",
+            "label": "Search Sidebar Title",
+            "name": "search_sidebar_title",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Need Help?",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c1c2b4ae39ff",
+            "label": "Search Sidebar Text",
+            "name": "search_sidebar_text",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "We are here to help you find what you need.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c1d6b3388c25",
+            "label": "Video Block",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5bae733c130fc",
+            "label": "Video URL",
+            "name": "video_url",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -615,9 +674,7 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
+            "maxlength": ""
         }
     ],
     "location": [
@@ -637,5 +694,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1541614956
+    "modified": 1545432157
 }

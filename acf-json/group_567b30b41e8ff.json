@@ -132,7 +132,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
+                            "return_format": "id",
                             "preview_size": "News Image Small",
                             "library": "all",
                             "min_width": "",
@@ -497,15 +497,39 @@
                             "min": 0,
                             "max": 0,
                             "layout": "block",
-                            "button_label": "Add Row",
+                            "button_label": "Add Card",
                             "sub_fields": [
                                 {
-                                    "key": "field_57a1239d55dd3",
+                                    "key": "field_5c1d69790f9fd",
                                     "label": "Image",
+                                    "name": "card_vertical_img",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_57a1239d55dd3",
+                                    "label": "Image - Legacy",
                                     "name": "card_vertical_image",
                                     "type": "image_crop",
                                     "instructions": "",
-                                    "required": 1,
+                                    "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "",
@@ -630,36 +654,6 @@
                                     "multiple": 0,
                                     "return_format": "object",
                                     "ui": 1
-                                },
-                                {
-                                    "key": "field_57a1242f55dd8",
-                                    "label": "Link",
-                                    "name": "event_category_link",
-                                    "type": "taxonomy",
-                                    "instructions": "",
-                                    "required": 1,
-                                    "conditional_logic": [
-                                        [
-                                            {
-                                                "field": "field_57a123cc55dd5",
-                                                "operator": "==",
-                                                "value": "Event Category"
-                                            }
-                                        ]
-                                    ],
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "taxonomy": "tribe_events_cat",
-                                    "field_type": "select",
-                                    "allow_null": 1,
-                                    "add_term": 0,
-                                    "save_terms": 0,
-                                    "load_terms": 0,
-                                    "return_format": "object",
-                                    "multiple": 0
                                 },
                                 {
                                     "key": "field_57bca25bec9a6",
@@ -1035,7 +1029,7 @@
     ],
     "menu_order": 0,
     "position": "acf_after_title",
-    "style": "seamless",
+    "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
@@ -1054,5 +1048,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1541614897
+    "modified": 1545431564
 }

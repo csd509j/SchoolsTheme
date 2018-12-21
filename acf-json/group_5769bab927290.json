@@ -15,8 +15,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "left",
-            "endpoint": 1
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_599d9fde0ac04",
@@ -98,8 +98,32 @@
             "maxlength": ""
         },
         {
-            "key": "field_5769bb0d2edb8",
+            "key": "field_5c1d6638bd9f8",
             "label": "Profile Image",
+            "name": "profile_img",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5769bb0d2edb8",
+            "label": "Profile Image - Legacy",
             "name": "profile_image",
             "type": "image_crop",
             "instructions": "",
@@ -153,8 +177,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "left",
-            "endpoint": 1
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_5769bc0c2edc2",
@@ -291,7 +315,7 @@
     ],
     "menu_order": 0,
     "position": "acf_after_title",
-    "style": "seamless",
+    "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
@@ -312,5 +336,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1542310698
+    "modified": 1545430661
 }

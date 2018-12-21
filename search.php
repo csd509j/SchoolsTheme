@@ -11,26 +11,32 @@ get_header();
 
 ?>
 
-<div id="primary" class="content-area padding-vertical-two">
+<div id="primary" class="content-area py-2">
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-8">
-				<h1 class="entry-title padding-bottom-quarter">Search</h1>
-				<div class="well">
-					<div id="search-form">
-						<form role="search" id="sites-search" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
-							 <label class="sr-only" for="search-text">Search</label>
-							 <input type="text" class="search-field input-lg" id="search-text" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s">
-							 <button type="submit" class="btn btn-primary btn-lg">Search</button>
-						</form>
-					</div>	
+		<div class="row justify-content-center mb-2">
+			<div class="col-12">
+				<h2 class="mb-1">Search</h2>
+				<div class="bg-gray p-1">
+					<div class="well">
+						<div id="search-form">
+							<form role="search" id="sites-search" class="row no-gutters" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
+								<div class="form-group col-md-9 col-lg-10 mb-1 mb-md-0">
+									<label class="sr-only" for="search-text">Search</label>
+									<input type="text" class="form-control-lg w-100" id="search-text" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s">
+								</div>
+								<div class="col-md-3 col-lg-2 d-flex align-items-stretch">
+									<button type="submit" class="btn btn-primary btn-block">Search</button>
+								</div>
+							</form>
+						</div>	
+					</div>
 				</div>
 			</div>
 		</div>
 		<?php if ( have_posts() ) : ?>
 	
-		<div class="row">
-			<div class="col-sm-8">
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
 				<?php
 				// Start the loop.
 				while ( have_posts() ) : the_post();
@@ -55,6 +61,13 @@ get_header();
 	
 			endif;
 			?>
+			</div>
+			<div class="col-md-6 col-lg-4">
+				<div class="bg-gray p-1 text-center">
+					<h3><?php the_field('search_sidebar_title', 'options'); ?></h3>
+					<p class="small mb-1"><?php the_field('search_sidebar_text', 'options'); ?></p>
+					<a class="btn btn-primary btn-sm btn-block" href="<?php echo home_url(); ?>/contact">Contact Us</a>
+				</div>
 			</div>
 		</div>
 	</div>

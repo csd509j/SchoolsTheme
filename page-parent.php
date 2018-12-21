@@ -50,11 +50,11 @@ $image = get_field('banner_image');
 				endwhile;
 				?>			
 			</div>
-			<div class="d-block d-lg-none">
+			<div class="col-12 d-block d-lg-none">
 				<?php get_template_part( 'template-parts/content', 'callouts' ); ?>
 				<?php get_template_part( 'template-parts/content', 'calendar' ); ?>
 				<?php get_template_part( 'template-parts/content', 'contacts' ); ?>
-			</div>	
+			</div>		
 		</div>
 	</div>
 </div>

@@ -54,13 +54,29 @@ if ( get_field('sidebar_callout_blocks') ):
 								
 								endif;
 								
-								$image = get_sub_field('callout_block_image');
+								if ( get_sub_field('callout_block_img') ) {
+							
+									$image = get_sub_field('callout_block_img'); 
+									$imageID = $image['id'];
+									
+								} else {
+									
+									// For legacy images added by ACF-Crop
+									
+									if ( is_array(get_sub_field('callout_block_image')) ) {
+							
+										$image = get_sub_field('callout_block_image');
+										$imageID = $image['id'];
+									
+									} else {
+									
+										$imageID = get_string_between(get_sub_field('callout_block_image'), '"cropped_image":', '}');
+									
+									}
+											
+								}
 								
-								?>
-								
-								<?php
-								
-								if ( !empty($image) ):
+								if ($imageID):
 								
 								?>
 								
@@ -73,7 +89,7 @@ if ( get_field('sidebar_callout_blocks') ):
 											
 											<?php else: ?>
 												
-												<?php echo wp_get_attachment_image($image['id'], 'Callout Block', 0, array('class' => 'img-fluid')); ?>
+												<?php echo wp_get_attachment_image($imageID, 'Callout Block', 0, array('class' => 'img-fluid')); ?>
 											
 											<?php endif; ?>
 											

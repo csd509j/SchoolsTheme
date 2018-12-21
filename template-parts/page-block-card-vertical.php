@@ -21,12 +21,7 @@
 						wp_reset_postdata();
 					
 					endif;
-				
-				elseif ( get_sub_field('card_vertical_link_type') == 'Event Category' ):
-				
-					$tax_object = get_sub_field('event_category_link');
-					$link = home_url('/events/list?tribe_eventcategory=') . $tax_object->term_taxonomy_id;
-				
+								
 				elseif ( get_sub_field('card_vertical_link_type') == 'Media File' ):
 					
 					$link = get_sub_field('media_link');
@@ -36,10 +31,34 @@
 				<li class="list-inline-item col-6 col-sm-4 card-vertical-block-wrap">
 					<div class="card-vertical-block">
 							
-					<?php $image = get_sub_field('card_vertical_image'); ?>
+					<?php 
+						
+						if ( get_sub_field('card_vertical_img') ) {
+							
+							$image = get_sub_field('card_vertical_img'); 
+							$imageID = $image['id'];
+							
+						} else {
+							
+							// For legacy images added by ACF-Crop
+							
+							if ( is_array(get_sub_field('card_vertical_image')) ) {
+					
+								$image = get_sub_field('card_vertical_image');
+								$imageID = $image['id'];
+							
+							} else {
+							
+								$imageID = get_string_between(get_sub_field('card_vertical_image'), '"cropped_image":', '}');
+							
+							}
+									
+						}
+						
+					?>
 					
 						<div class="card-vertical-img">
-							<a href="<?php echo $link; ?>" <?php if ( get_sub_field('card_vertical_link_type') == 'Media File' ): ?>target="_blank"<?php endif; ?>><?php echo wp_get_attachment_image($image['id'], 'square-md-col-4', 0, array('class' => 'img img-responsive')); ?></a>
+							<a href="<?php echo $link; ?>" <?php if ( get_sub_field('card_vertical_link_type') == 'Media File' ): ?>target="_blank"<?php endif; ?>><?php echo wp_get_attachment_image($imageID, 'Square Column 4', 0, array('class' => 'img-fluid')); ?></a>
 						</div>
 							
 						<div class="card-vertical-content">

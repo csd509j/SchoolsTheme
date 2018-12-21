@@ -2,17 +2,18 @@
 				<section id="footer-top"  class="py-2">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-6">
+							<div class="col-md-6">
 								<div class="headline">
 									<h2><?php echo (ICL_LANGUAGE_CODE=='es' ? 'Contáctenos' : 'Contact Us'); ?></h2>
 								</div>
-								<p class="mb-2"><strong>Phone:</strong> <?php the_field('primary_phone', 'options'); ?><br/>
-								<strong>Fax:</strong> <?php the_field('fax_number', 'options'); ?><br/>
-								<strong>Attendance:</strong> <?php the_field('attendance_phone', 'options'); ?><br/>
-								<?php if(get_field('email', 'options')): ?>
-									<strong>Email:</strong> <a href="mailto:<?php the_field('email', 'options'); ?>"><?php the_field('email', 'options'); ?></a><br/>
-								<?php endif; ?>
-								<strong>Address:</strong> <?php the_field('street_address', 'options'); ?></p>
+								<p class="mb-1"><strong>Phone:</strong> <?php the_field('primary_phone', 'options'); ?><br/>
+									<strong>Fax:</strong> <?php the_field('fax_number', 'options'); ?><br/>
+									<strong>Attendance:</strong> <?php the_field('attendance_phone', 'options'); ?><br/>
+									<?php if(get_field('email', 'options')): ?>
+										<strong>Email:</strong> <a href="mailto:<?php the_field('email', 'options'); ?>"><?php the_field('email', 'options'); ?></a><br/>
+									<?php endif; ?>
+									<strong>Address:</strong> <?php the_field('street_address', 'options'); ?>
+								</p>
 								<p><strong>Principal:</strong>
 								<br/>
 								<?php the_field('principal', 'options'); ?><?php if(get_field('principal_email', 'options')): ?>, <a href="mailto:<?php the_field('principal_email', 'options'); ?>"><?php the_field('principal_email', 'options'); ?></a><?php endif; ?>
@@ -25,14 +26,14 @@
 									<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_2', 'option'); ?><?php if(get_field('assistant_principal_2_email', 'options')): ?>, <a href="mailto:<?php the_field('assistant_principal_2_email', 'options'); ?>"><?php the_field('assistant_principal_2_email', 'options'); ?></a><?php endif; ?>
 								<?php endif; ?>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-md-6">
 								<div class="headline">
 									<div class="row">
-										<div class="col-sm-8">
+										<div class="col-lg-8">
 											<h2><?php echo (ICL_LANGUAGE_CODE=='es' ? 'Eventos próximos' : 'Upcoming Events'); ?></h2>
 										</div>
-										<div class="col-sm-4 d-flex align-items-center justify-content-left justify-content-sm-end my-1 my-sm-0">
-											<a href="<?php echo home_url('/calendar'); ?>">View Full Calendar</a>
+										<div class="col-lg-4 d-flex align-items-center justify-content-left justify-content-lg-end">
+											<a href="<?php echo home_url('/calendar'); ?>">View Calendar</a>
 										</div>
 									</div>
 								</div>
@@ -100,7 +101,7 @@
 			</div>
 		</div>
 		<?php wp_footer(); ?>
-		<div id="google_translate_element" class="hidden"></div>
+		<div id="google_translate_element" class="d-none"></div>
 		<script type="text/javascript">
 			function googleTranslateElementInit() {
 			  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');

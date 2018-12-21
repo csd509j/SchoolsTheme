@@ -39,16 +39,19 @@ get_header(); ?>
 								<a href="<?php the_field('link', $image['id']); ?>" class="headline-link">
 							<?php endif; ?>
 					  		<?php echo wp_get_attachment_image($image['id'], 'Home Slider', false, array('class'=>'d-block w-100 img-fluid')); ?>
-					  		<div class="carousel-caption">
-						  		<div class="carousel-title">
-						  			<h3><?php echo $image['title']; ?></h3>
+					  		<?php if ( $image['title'] || $image['caption'] ): ?>
+						  		<div class="carousel-caption">
+							  		<div class="carousel-title">
+							  			<h3><?php echo $image['title']; ?></h3>
+							  		</div>
+							  		<?php if ( $image['caption'] ): ?>
+							  		<div class="carousel-caption-bg">
+						  				<p><?php echo $image['caption']; ?></p>
+						  			</div>
+						  			<?php endif; ?>
 						  		</div>
-						  		<?php if ($image['caption']): ?>
-						  		<div class="carousel-caption-bg">
-					  				<p><?php echo $image['caption']; ?></p>
-					  			</div>
-					  			<?php endif; ?>
-					  		</div>
+						  	<?php endif; ?>
+
 					  		<?php if (get_field('link', $image['id'])): ?>
 								</a>
 							<?php endif; ?>
@@ -60,7 +63,14 @@ get_header(); ?>
 					endforeach; ?>
 					
 				</div>
-								
+				<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>												
 			<?php endif; ?>
 		</div>
 	</section>
@@ -94,7 +104,19 @@ get_header(); ?>
  				while ( $loop->have_posts() ) : $loop->the_post();
 					
 					$featured_ids[] = $post->ID;
-					$image = get_field('featured_image', $post->ID);
+					
+					if ( get_field('featured_img', $post->ID) ) {
+						$image = get_field('featured_img', $post->ID);
+						$imageID = $image['id'];
+					} else {
+						// For legacy images added by ACF-Crop
+						if ( is_array(get_field('featured_image')) ) {
+							$image = get_field('featured_image');
+							$imageID = $image['id'];
+						} else {
+							$imageID = get_string_between(get_field('featured_image', $post->ID), '"cropped_image":', '}');
+						}					
+					}
 					
 				?>
 				
@@ -102,7 +124,7 @@ get_header(); ?>
 						<div class="row">
 							<div class="col-3 col-md-12 pb-1 news-img">
 								<a href="<?php the_permalink(); ?>">
-									<?php echo wp_get_attachment_image($image['id'], 'News Image Small', 0, array('class' => 'img-fluid')); ?>
+									<?php echo wp_get_attachment_image($imageID, 'News Image Small', 0, array('class' => 'img-fluid')); ?>
 								</a>
 							</div>
 							<div class="col-9 col-md-12 news-content">

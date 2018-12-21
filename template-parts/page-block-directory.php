@@ -1,4 +1,4 @@
-<div class="py-2 directory-wrap">
+<div class="mb-1 directory-wrap">
 	<?php
 	
 	$cats = get_terms('directory-category');
@@ -27,7 +27,7 @@
 			$i = 0;
 			$departmentID = "";
 			
-			echo '<h2 class="pt-1">' . $cat->name . '</h2>';
+			echo '<h2 class="pt-1 mb-1">' . $cat->name . '</h2>';
 			
 			while ( $cat_query->have_posts() ): $cat_query->the_post(); 
 				
@@ -39,9 +39,28 @@
 				$contact = '';
 				$website = '';
 				
-				if ( get_field('profile_image', get_the_ID()) ) {
-					$image = get_field( 'profile_image', get_the_ID() );
+				if ( get_field('profile_img', get_the_ID()) ) {
+					
+					$image = get_field('profile_img', get_the_ID());
+					$imageID = $image['id'];
+					
+				} elseif ( get_field('profile_image', get_the_ID()) ) {
+					
+					// For legacy images added by ACF-Crop
+					
+					if ( is_array(get_field('profile_image')) ) {
+					
+						$image = get_field('profile_image');
+						$imageID = $image['id'];
+					
+					} else {
+					
+						$imageID = get_string_between(get_field('profile_image', $post->ID), '"cropped_image":', '}');
+					
+					}
+								
 				} else {
+					$imageID = '';
 					$image = '/wp-content/themes/csdschools/assets/images/profile_avatar_placeholder_large.png';
 				}
 				
@@ -67,8 +86,8 @@
 				<div class="col-sm-6 py-1">
 					<div class="row">
 						<div class="col-md-3 d-none d-md-block profile-image">
-							<?php if ( get_field( 'profile_image', get_the_ID() ) ): ?>
-								<?php echo wp_get_attachment_image($image['id'], 'Staff Directory', 0, array('class' => 'img-fluid')); ?>
+							<?php if ( $imageID ): ?>
+								<?php echo wp_get_attachment_image($imageID, 'Staff Directory', 0, array('class' => 'img-fluid')); ?>
 							<?php else: ?>
 								<img src="<?php echo $image; ?>" class="img-fluid" />
 							<?php endif; ?>

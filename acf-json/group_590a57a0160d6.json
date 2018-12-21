@@ -15,8 +15,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "left",
-            "endpoint": 1
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_590a57a87bcce",
@@ -125,8 +125,8 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "left",
-            "endpoint": 1
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_590a592f7bcd4",
@@ -257,5 +257,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1541614948
+    "modified": 1545432259
 }

@@ -30,11 +30,11 @@ get_header(); ?>
 					// End of the loop.
 				endwhile;
 				?>
-			</div>
-			<div class="d-block d-lg-none">
-				<?php get_template_part( 'template-parts/content', 'callouts' ); ?>
-				<?php get_template_part( 'template-parts/content', 'contacts' ); ?>
-			</div>		
+				<div class="d-block d-lg-none">
+					<?php get_template_part( 'template-parts/content', 'callouts' ); ?>
+					<?php get_template_part( 'template-parts/content', 'contacts' ); ?>
+				</div>	
+			</div>	
 		</div>
 	</div>
 </div>

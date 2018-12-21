@@ -67,8 +67,8 @@ add_action( 'wp_enqueue_scripts', 'csd_enqueue_script' );
  
 add_theme_support('post-thumbnails');
 add_image_size('square', 600, 600, true);
-add_image_size('square-md-col-4', 258, 258, true);
-add_image_size('square-xs-col-4', 100, 100, true);
+add_image_size('Square Column 3', 285, 285, true);
+add_image_size('Square Column 4', 380, 380, true);
 add_image_size('News Image Small', 262, 175, true);
 add_image_size('News Image Medium', 410, 273, true);
 add_image_size('News Image Large', 750, 500, true);
@@ -76,11 +76,11 @@ add_image_size('News Image Featured', 824, 425, true);
 add_image_size('Staff Directory', 326, 453, true);
 add_image_size('Callout Block', 586, 416, true);
 add_image_size('Page Builder Image', 825, 315, true);
-add_image_size('Parent Header', 1400, 275, true);
-add_image_size('carousel-lg', 1600, 596, true);
-add_image_size('carousel-md', 1140, 425, true);
-add_image_size('carousel-sm', 768, 286, true);
+add_image_size('Parent Header', 1600, 314, true);
+add_image_size('Home Slider', 1600, 500, true);
+add_image_size('Full Width', 1170);
 add_image_size('card', 184, 184, true);
+add_image_size('Text Block', 530, 640, true);
 
 /*
  * Register menus
@@ -136,6 +136,14 @@ function custom_admin_css() {
   echo '<style>
     #wp-admin-bar-wpfc-toolbar-parent > .ab-empty-item::before { content: ""; padding: 0; margin:0; }
     .installer-plugin-update-tr { display:none; }
+    
+    
+    /* 
+	** Plugin: ACF-Crop
+	*/
+	.acf-field-image-crop {
+		display: none;
+	}
   </style>';
 }
 add_action('admin_head', 'custom_admin_css');
@@ -402,4 +410,14 @@ function languages_toggle(){
 	</div>
 	
 <?php
+}
+
+// Helper function to help migrate away from ACF-Crop
+function get_string_between($string, $start, $end){
+	$string = ' ' . $string;
+	$ini = strpos($string, $start);
+	if ($ini == 0) return '';
+	$ini += strlen($start);
+	$len = strpos($string, $end, $ini) - $ini;
+	return substr($string, $ini, $len);
 }
