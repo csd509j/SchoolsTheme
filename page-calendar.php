@@ -9,11 +9,11 @@
  get_header();
 ?>
 <div id="primary" class="content-area">
-	<div class="bg-orange py-3">
+	<div class="bg-primary py-3">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h1 class="mb-0"><?php the_field('calendar_title', 'options'); ?></h1>
+					<h1 class="mb-0 text-white"><?php the_field('calendar_title', 'options'); ?></h1>
 				</div>
 			</div>
 		</div>
