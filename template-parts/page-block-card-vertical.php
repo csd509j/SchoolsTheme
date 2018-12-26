@@ -1,5 +1,4 @@
-<div class="pb-1">
-	<ul class="list-inline">
+<div class="row justify-content-center pb-1">
 		<?php 		
 		if( have_rows('card_vertical_blocks') ): 
 			
@@ -28,8 +27,8 @@
 									
 				endif;
 				?>
-				<li class="list-inline-item col-6 col-sm-4 card-vertical-block-wrap">
-					<div class="card-vertical-block">
+				<div class="col-6 col-sm-4 d-flex align-items-stretch card-vertical-block-wrap">
+					<div class="card card-vertical-block">
 							
 					<?php 
 						
@@ -61,13 +60,12 @@
 							<a href="<?php echo $link; ?>" <?php if ( get_sub_field('card_vertical_link_type') == 'Media File' ): ?>target="_blank"<?php endif; ?>><?php echo wp_get_attachment_image($imageID, 'Square Column 4', 0, array('class' => 'img-fluid')); ?></a>
 						</div>
 							
-						<div class="card-vertical-content">
+						<div class="card-body card-vertical-content">
 							<a href="<?php echo $link; ?>" <?php if ( get_sub_field('card_vertical_link_type') == 'Media File' ): ?>target="_blank"<?php endif; ?>><h4><?php the_sub_field('card_vertical_title'); ?></h4></a>
 						</div>
 												
 					</div>
-				</li>	
+				</div>	
 			<?php endwhile; ?>
 		<?php endif; ?>
-	</ul>
 </div>

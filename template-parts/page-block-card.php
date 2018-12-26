@@ -2,7 +2,7 @@
 	<?php if( get_sub_field('card_image') ): ?>
 		<?php $image = get_sub_field('card_image'); ?>
 		<div class="col-sm-6 col-md-4">
-			<?php echo wp_get_attachment_image($image['id'], 'Square Column 3', 0, array('class' => 'img-fluid mb-1 mb-sm-0')); ?>
+			<?php echo wp_get_attachment_image($image['id'], 'Square Column 3', 0, array('class' => 'img-fluid w-100 mb-1 mb-sm-0')); ?>
 		</div>
 	<?php endif; ?>
 	<div class="col-sm-6 col-md-8 card-text ">

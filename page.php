@@ -7,7 +7,7 @@
  * @since CSD Schools 1.0
  */
 get_header(); ?>
-<div id="primary" class="content-area py-2">
+<div id="primary" class="py-2">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3">
@@ -17,7 +17,7 @@ get_header(); ?>
 					<?php get_template_part( 'template-parts/content', 'contacts' ); ?>
 				</div>
 			</div>
-			<div class="col-lg-9">
+			<div class="col-lg-9 entry-content">
 				<?php get_template_part('template-parts/content', 'breadcrumbs'); ?>
 				<?php
 				

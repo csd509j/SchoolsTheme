@@ -20,7 +20,7 @@ $image = get_field('banner_image');
 	<div class="inner-page-banner-gradient-right"></div>
 	<div class="inner-page-banner-overlay"></div>
 </div>
-<div id="primary" class="content-area pb-2">
+<div id="primary" class="pb-2">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3">
@@ -31,7 +31,7 @@ $image = get_field('banner_image');
 					<?php get_template_part( 'template-parts/content', 'contacts' ); ?>
 				</div>
 			</div>
-			<div class="col-lg-9">
+			<div class="col-lg-9 entry-content">
 				<?php 
 				
 				if ( function_exists('yoast_breadcrumb') ):

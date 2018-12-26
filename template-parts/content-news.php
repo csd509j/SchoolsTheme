@@ -1,6 +1,6 @@
 <?php the_title( '<h1 class="mb-2">', '</h1>' ); ?>
 <div class="row">
-	<div class="col-lg-9">
+	<div class="col-lg-9 entry-content">
 		<?php
 		// check for rows (parent repeater)
 		if( have_rows('post_content_blocks') ):

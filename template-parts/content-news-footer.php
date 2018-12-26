@@ -9,11 +9,11 @@
 			<h3>Featured News</h3>
 		</div>
 		<div class="news-footer-content">
-			<ul>
+			<ul class="fa-ul ml-1">
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<?php $image = get_field('featured_image', $post->ID); ?>
 					
-					<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+					<li><span class="fa-li" ><i class="fas fa-chevron-right fa-xs"></i></span><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 				
 			<?php endwhile; ?>
 			<?php wp_reset_query(); ?>		
