@@ -15,7 +15,11 @@ $args = array(
 	'meta_key'		=> 'news_post_type',
 	'meta_value'	=> 'featured'
 );
+
+$excluded_post_ids = array();
+
 ?>
+
 <div class="bg-primary py-3">
 	<div class="container">
 		<div class="row">
@@ -28,43 +32,53 @@ $args = array(
 <div id="primary" class="content-area py-2">
 	<div class="container">
 		<div class="row no-gutters">
-												
-				<?php if(!is_paged()): ?>		
-					
-					<?php //get_template_part( 'template-parts/content', 'news-archive-header' ); ?>
-				
-				<?php else: ?>
-					
-<!-- 					<h2 class='mb-2'>School News</h2> -->
-				
-				<?php endif; ?>
 			<div class="col-lg-6">
 				<div class="headline mb-2">
 					<h2>Featured News</h2>
 				</div>
 				<div class="news-list-featured bg-gray p-1 mb-2 mb-lg-0">
-					<?php $the_query = new WP_Query( $args ); ?>
-					<?php if ( $the_query->have_posts() ): ?>
+					
+					<?php 
+					
+					$the_query = new WP_Query( $args ); 
+					
+					if ( $the_query->have_posts() ): 
+					
+					?>
+						
 						<div class="row">
-							<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-								<?php 
+							
+							<?php 
+								
+							while ( $the_query->have_posts() ) : $the_query->the_post(); 
+						
+								$excluded_post_ids[] = $post->ID;
+								
+								if ( get_field('featured_img', $post->ID) ):
 									
-									if ( get_field('featured_img', $post->ID) ) {
-										$image = get_field('featured_img', $post->ID);
+									$image = get_field('featured_img', $post->ID);
+									$imageID = $image['id'];
+								
+								else:
+									
+									// For legacy images added by ACF-Crop
+									if ( is_array( get_field('featured_image') ) ):
+										
+										$image = get_field('featured_image');
 										$imageID = $image['id'];
-									} else {
-										// For legacy images added by ACF-Crop
-										if ( is_array(get_field('featured_image')) ) {
-											$image = get_field('featured_image');
-											$imageID = $image['id'];
-											$imageURL = $image['url'];
-										} else {
-											$imageID = get_string_between(get_field('featured_image', $post->ID), '"cropped_image":', '}');
-											$imageURL = wp_get_attachment_url($imageID);
-										}					
-									}
+										$imageURL = $image['url'];
+									
+									else: 
+									
+										$imageID = get_string_between(get_field('featured_image', $post->ID), '"cropped_image":', '}');
+										$imageURL = wp_get_attachment_url($imageID);
+									
+									endif;					
+								
+								endif;
 
 								?>
+								
 								<div class="col-12 mb-1">
 									<div class="bg-white">
 										<div class="row">
@@ -72,7 +86,7 @@ $args = array(
 												<div class="d-none d-md-flex d-lg-none h-100" style="background-image:url(<?php echo $imageURL; ?>); background-size: cover"></div>
 												<div class="d-block d-md-none d-lg-block">
 													<a href="<?php the_permalink(); ?>">
-														<?php echo wp_get_attachment_image($imageID, 'News Image Featured', 0, array('class' => 'img-fluid')); ?>
+														<?php echo wp_get_attachment_image($imageID, 'News Image Featured', 0, array('class' => 'img-fluid w-100')); ?>
 													</a>
 												</div>
 											</div>
@@ -86,10 +100,15 @@ $args = array(
 										</div>
 									</div>
 								</div>
+							
 							<?php endwhile; ?>
+							
 						</div>
+						
 						<?php wp_reset_postdata(); ?>
+						
 					<?php endif; ?>
+					
 				</div>
 			</div>
 			<div class="col-lg-6">		
@@ -99,24 +118,40 @@ $args = array(
 					</div>
 
 					<?php 
+
+					if ( have_posts() ):
 						
-						if ( have_posts() ) : 
 						// Start the Loop.
-						while ( have_posts() ) : the_post(); 
-			
-							get_template_part( 'template-parts/content', 'news-archive' ); 			
-			
-						// End the loop.
+						while ( have_posts() ): 
+							
+							the_post(); 
+
+							if ( !in_array($post->ID, $excluded_post_ids) ):
+								
+								get_template_part( 'template-parts/content', 'news-archive' ); 		
+							
+							endif;
+								
 						endwhile;
+						// End the loop.
+					
 					?>
+					
 					<div class="btn-container">
+						
 						<?php next_posts_link( '<span class="btn btn-primary d-block d-sm-inline">More News</span>', $the_query->max_num_pages ); ?>
+					
 					</div>
+					
 					<?php wp_reset_postdata(); ?>
+				
 				</div>
 			</div>
-		</div>			
+		</div>		
+			
 		<?php endif; ?>
+		
 	</div>
 </div>
+
 <?php get_footer(); ?>
