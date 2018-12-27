@@ -8,7 +8,7 @@ $date_now->setTimezone($tz);
 // query events
 $args = array(
 	'posts_per_page'	=> 1,
-	'post_type'			=> 'emergency-alert',
+	'post_type'			=> array('emergency-alert', 'emergency_alert'),
 	'meta_query' 		=> array(
 		'relation' 			=> 'AND',
 		array(
