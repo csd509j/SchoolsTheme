@@ -583,8 +583,8 @@
                                     },
                                     "choices": {
                                         "Page": "Page",
+                                        "External": "External",
                                         "News Post": "News Post",
-                                        "Event Category": "Event Category",
                                         "Media File": "Media File"
                                     },
                                     "default_value": [],
@@ -681,6 +681,30 @@
                                     "min_size": "",
                                     "max_size": "",
                                     "mime_types": ""
+                                },
+                                {
+                                    "key": "field_5c2500a047f67",
+                                    "label": "Link",
+                                    "name": "external_link",
+                                    "type": "url",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_57a123cc55dd5",
+                                                "operator": "==",
+                                                "value": "External"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
                                 }
                             ]
                         }
@@ -1048,5 +1072,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1545431564
+    "modified": 1545928969
 }

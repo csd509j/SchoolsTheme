@@ -24,6 +24,10 @@
 				elseif ( get_sub_field('card_vertical_link_type') == 'Media File' ):
 					
 					$link = get_sub_field('media_link');
+					
+				elseif ( get_sub_field('card_vertical_link_type') == 'External' ):
+				
+					$link = get_sub_field('external_link');
 									
 				endif;
 				?>
@@ -57,11 +61,11 @@
 					?>
 					
 						<div class="card-vertical-img">
-							<a href="<?php echo $link; ?>" <?php if ( get_sub_field('card_vertical_link_type') == 'Media File' ): ?>target="_blank"<?php endif; ?>><?php echo wp_get_attachment_image($imageID, 'Square Column 4', 0, array('class' => 'img-fluid')); ?></a>
+							<a href="<?php echo $link; ?>" <?php if ( get_sub_field('card_vertical_link_type') == 'Media File' || get_sub_field('card_vertical_link_type') == 'External' ): ?>target="_blank"<?php endif; ?>><?php echo wp_get_attachment_image($imageID, 'Square Column 4', 0, array('class' => 'img-fluid')); ?></a>
 						</div>
 							
 						<div class="card-body card-vertical-content">
-							<a href="<?php echo $link; ?>" <?php if ( get_sub_field('card_vertical_link_type') == 'Media File' ): ?>target="_blank"<?php endif; ?>><h4><?php the_sub_field('card_vertical_title'); ?></h4></a>
+							<a href="<?php echo $link; ?>" <?php if ( get_sub_field('card_vertical_link_type') == 'Media File'  || get_sub_field('card_vertical_link_type') == 'External' ): ?>target="_blank"<?php endif; ?>><h4><?php the_sub_field('card_vertical_title'); ?></h4></a>
 						</div>
 												
 					</div>
