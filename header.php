@@ -43,10 +43,12 @@
 	
 	<div id="header-top-global">
 		<div class="container">
-			<div class="row">
-				<div class="col-6 col-md-8 col-lg-6 col-xl-5 menu-top-block-container">
-					<?php render_block_calendar(get_field('block_calendar', 'options')); ?>
-				</div>
+			<div class="row justify-content-end">
+				<?php if (get_field('school_type', 'options') != 'Elementary'): ?>
+					<div class="col-6 col-md-8 col-lg-6 col-xl-5 menu-top-block-container">
+						<?php render_block_calendar(get_field('block_calendar', 'options')); ?>
+					</div>
+				<?php endif; ?>
 				<div class="col-6 col-md-4 col-lg-6 col-xl-7 d-flex justify-content-end">
 					<div class="d-none d-xl-block">
 						<?php wp_nav_menu( array('theme_location' => 'header-toplinks', 'items_wrap' => '<ul class="list list-unstyled" aria-label="Top Links">%3$s</ul>' )); ?>

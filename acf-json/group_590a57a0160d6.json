@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_590a59057bcd2",
-            "label": "Contact Information",
+            "label": "School Information",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -17,6 +17,32 @@
             },
             "placement": "top",
             "endpoint": 0
+        },
+        {
+            "key": "field_5c2a5a694fb64",
+            "label": "School Type",
+            "name": "school_type",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Elementary": "Elementary",
+                "Middle School": "Middle School",
+                "High School": "High School"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
         },
         {
             "key": "field_590a57a87bcce",
@@ -171,7 +197,7 @@
             "name": "assistant_principal_1",
             "type": "text",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -257,5 +283,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1545432259
+    "modified": 1546279669
 }
