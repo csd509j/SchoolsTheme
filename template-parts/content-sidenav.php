@@ -55,11 +55,11 @@
 				<i class="fa fa-1x fa-chevron-down"></i>
 			</button>
 			<h2>
-				<span <?php if ( is_page_template( 'page-parent.php' ) ): ?> class="sidebar-parent-title" <?php endif; ?>><a href="<?php the_permalink($root_page_id); ?>"><?php echo $titlenamer; ?></a></span>
+				<span <?php if ( is_page_template( 'page-parent.php' ) ): ?> class="sidebar-parent-title" <?php endif; ?>><a href="<?php the_permalink($root_page_id); ?>"><?php echo get_the_title($root_page_id); ?></a></span>
 			</h2>
 		</div>
 		<h2 class="d-none d-lg-block w-100">
-			<span<?php if ( is_page_template( 'page-parent.php' ) ): ?> class="sidebar-parent-title" <?php endif; ?>><a href="<?php the_permalink($root_page_id); ?>"><?php echo $titlenamer; ?></a></span>
+			<span<?php if ( is_page_template( 'page-parent.php' ) ): ?> class="sidebar-parent-title" <?php endif; ?>><a href="<?php the_permalink($root_page_id); ?>"><?php echo get_the_title($root_page_id); ?></a></span>
 		</h2>
 		<div class="navbar-collapse collapse sidebar-navbar-collapse">
 			<ul class="nav navbar-nav">

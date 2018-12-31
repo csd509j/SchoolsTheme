@@ -39,29 +39,20 @@
 						if ( get_sub_field('card_vertical_img') ) {
 							
 							$image = get_sub_field('card_vertical_img'); 
-							$imageID = $image['id'];
 							
 						} else {
 							
 							// For legacy images added by ACF-Crop
-							
-							if ( is_array(get_sub_field('card_vertical_image')) ) {
-					
-								$image = get_sub_field('card_vertical_image');
-								$imageID = $image['id'];
-							
-							} else {
-							
-								$imageID = get_string_between(get_sub_field('card_vertical_image'), '"cropped_image":', '}');
-							
-							}
+						
+							$crop = get_sub_field('card_vertical_image');
+							$image = $crop['original_image'];
 									
 						}
 						
 					?>
 					
 						<div class="card-vertical-img">
-							<a href="<?php echo $link; ?>" <?php if ( get_sub_field('card_vertical_link_type') == 'Media File' || get_sub_field('card_vertical_link_type') == 'External' ): ?>target="_blank"<?php endif; ?>><?php echo wp_get_attachment_image($imageID, 'Square Column 4', 0, array('class' => 'img-fluid')); ?></a>
+							<a href="<?php echo $link; ?>" <?php if ( get_sub_field('card_vertical_link_type') == 'Media File' || get_sub_field('card_vertical_link_type') == 'External' ): ?>target="_blank"<?php endif; ?>><?php echo wp_get_attachment_image($image['id'], 'Square Column 4', 0, array('class' => 'img-fluid')); ?></a>
 						</div>
 							
 						<div class="card-body card-vertical-content">
