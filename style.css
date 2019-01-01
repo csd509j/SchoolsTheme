@@ -3408,8 +3408,6 @@ body ul.page-numbers span.current { cursor: default; }
 
 #sidebar-first ul.nav > li.current_page_parent, #sidebar-first ul.nav > li.current_page_item, #sidebar-first ul.nav > li.current_page_ancestor { background-color: #777777; }
 
-#sidebar-first ul.nav > li.current_page_parent a, #sidebar-first ul.nav > li.current_page_item a, #sidebar-first ul.nav > li.current_page_ancestor a { color: #fff; }
-
 .page-template-page-parent #sidebar-first .block-menu { margin-top: -115px; }
 
 .page-template-page-parent #sidebar-first h2 { display: block; height: 83px; padding: 0; }
