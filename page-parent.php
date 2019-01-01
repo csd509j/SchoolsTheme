@@ -9,10 +9,12 @@
 
 get_header();
 $image = get_field('banner_image');
+$bg_image = wp_get_attachment_image_src($image['id'], 'News Image Large', false);
 ?>
 <div class="inner-page-banner mb-2 clearfix">
 	<div class="content-top">
-		<div class="content">
+		<div class="content-bg d-block d-md-none" style="background-image:url(<?php echo $bg_image[0]; ?>)"></div>
+		<div class="content d-none d-md-block">
 			<?php echo wp_get_attachment_image($image['id'], 'Parent Header', false); ?>
 		</div>
 	</div>
@@ -32,14 +34,8 @@ $image = get_field('banner_image');
 				</div>
 			</div>
 			<div class="col-lg-9 entry-content">
+				<?php get_template_part('template-parts/content', 'breadcrumbs'); ?>
 				<?php 
-				
-				if ( function_exists('yoast_breadcrumb') ):
-					
-					yoast_breadcrumb('<p class="small pb-2" id="breadcrumbs">','</p>');
-				
-				endif; 
-				
 				// Start the loop.
 				while ( have_posts() ) : the_post();
 		

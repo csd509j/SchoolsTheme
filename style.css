@@ -4,7 +4,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 3.0.5
+Version: 3.0.7
 Text Domain: csdschools
 */
 /*! Bootstrap v4.1.3 (https://getbootstrap.com/) Copyright 2011-2018 The Bootstrap Authors Copyright 2011-2018 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
@@ -706,7 +706,7 @@ textarea.form-control, .ginput_container textarea { height: auto; }
   .form-inline .custom-control { align-items: center; justify-content: center; }
   .form-inline .custom-control-label { margin-bottom: 0; } }
 
-.btn, .gform_button, #header-global .menu-btn .btn, #loginform #wp-submit, .acf-form .acf-button { display: inline-block; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.675; border-radius: 0.25rem; transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+.btn, .gform_button, #header-global .menu-btn .btn, #loginform #wp-submit, .acf-form .acf-button { display: inline-block; font-weight: 400; text-align: center; white-space: nowrap; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5rem; border-radius: 0.25rem; transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
 
 @media screen and (prefers-reduced-motion: reduce) { .btn, .gform_button, #header-global .menu-btn .btn, #loginform #wp-submit, .acf-form .acf-button { transition: none; } }
 
@@ -3326,14 +3326,6 @@ body ul.page-numbers span.current { cursor: default; }
 
 #page-links .children li { width: 33%; float: left; line-height: 1.3em; padding: 5px 0; }
 
-.entry-content .card-left { clear: both; display: table; margin-bottom: 15px; position: relative; }
-
-.entry-content .card-left > div, .entry-content .card-right > div { display: table-cell; position: relative; }
-
-.entry-content .card-image img { display: block; max-width: 100%; height: auto; }
-
-.entry-content .card-links { width: 50%; float: left; }
-
 .entry-content .card-links ul { margin-bottom: 0; }
 
 .entry-content .card-links ul li { margin-bottom: .5em; line-height: 1.3; }
@@ -3361,6 +3353,8 @@ body ul.page-numbers span.current { cursor: default; }
 .inner-page-banner { min-height: 200px; background-color: #555555; }
 
 .inner-page-banner .content { max-height: 390px; overflow: hidden; }
+
+.inner-page-banner .content-bg { height: 390px; width: 100%; background-position: center center; background-size: cover; }
 
 .inner-page-banner img { width: auto; height: auto; }
 
@@ -3559,10 +3553,7 @@ body ul.page-numbers span.current { cursor: default; }
   .inner-page-banner-overlay { display: none; }
   #sidebar-first .block-menu { margin-top: 0; }
   .entry-content #page-links .children li { width: 100%; }
-  .card-links { width: 100%; }
   .card-links li { margin-bottom: .5em; }
-  .ai1ec-agenda-widget-view .ai1ec-date { padding-bottom: 1em; }
-  .ai1ec-agenda-widget-view .ai1ec-date:last-child { padding-bottom: 0; }
   .profile-content { font-size: 100%; }
   .post-title { font-size: 2rem; }
   .profile-content .submeta { line-height: 150%; } }
