@@ -1,11 +1,11 @@
 <div class="row pb-2">
 	<?php if( get_sub_field('card_image') ): ?>
 		<?php $image = get_sub_field('card_image'); ?>
-		<div class="col-sm-4 col-md-4">
+		<div class="col-sm-4">
 			<?php echo wp_get_attachment_image($image['id'], 'Square Column 3', 0, array('class' => 'img-fluid w-100 mb-1 mb-sm-0')); ?>
 		</div>
 	<?php endif; ?>
-	<div class="col-sm-8 col-md-8 card-text ">
+	<div class="<?php echo (get_sub_field('card_image') ? 'col-sm-8' : 'col-12'); ?> card-text">
 		<div class="subhead">
 			<h3><?php the_sub_field('card_title'); ?></h3>
 		</div>
