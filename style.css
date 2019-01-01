@@ -3350,15 +3350,11 @@ body ul.page-numbers span.current { cursor: default; }
 
 .page-template-page-parent-php #mainmenu { margin-bottom: 0; }
 
-.inner-page-banner { min-height: 200px; background-color: #555555; }
+.inner-page-banner { background-color: #555555; }
 
-.inner-page-banner .content { max-height: 390px; overflow: hidden; }
+.inner-page-banner .content { height: 390px; width: 100%; background-position: center center; background-size: cover; }
 
-.inner-page-banner .content-bg { height: 390px; width: 100%; background-position: center center; background-size: cover; }
-
-.inner-page-banner img { width: auto; height: auto; }
-
-.content-top { max-width: 1600px; margin: auto; }
+.inner-page-banner img { width: 100%; height: auto; }
 
 .inner-page-banner-overlay { background: #333; background: rgba(0, 0, 0, 0.5); height: 83px; margin-top: -83px; position: relative; z-index: 5; }
 
@@ -3550,7 +3546,6 @@ body ul.page-numbers span.current { cursor: default; }
   #twitter-id-link .well { margin-bottom: 2em; }
   #twitter-id-link .fa { font-size: 2em; }
   #twitter-id-link #twitter-id { padding-left: 29px; font-size: 1.4rem; }
-  .inner-page-banner-overlay { display: none; }
   #sidebar-first .block-menu { margin-top: 0; }
   .entry-content #page-links .children li { width: 100%; }
   .card-links li { margin-bottom: .5em; }

@@ -9,18 +9,16 @@
 
 get_header();
 $image = get_field('banner_image');
-$bg_image = wp_get_attachment_image_src($image['id'], 'News Image Large', false);
+$bg_sm_image = wp_get_attachment_image_src($image['id'], 'News Image Large', false);
+$bg_lg_image = wp_get_attachment_image_src($image['id'], 'Parent Header', false);
+
 ?>
 <div class="inner-page-banner mb-2 clearfix">
 	<div class="content-top">
-		<div class="content-bg d-block d-md-none" style="background-image:url(<?php echo $bg_image[0]; ?>)"></div>
-		<div class="content d-none d-md-block">
-			<?php echo wp_get_attachment_image($image['id'], 'Parent Header', false); ?>
-		</div>
+		<div class="content d-block d-md-none" style="background-image:url(<?php echo $bg_sm_image[0]; ?>)"></div>
+		<div class="content d-none d-md-block" style="background-image:url(<?php echo $bg_lg_image[0]; ?>)"></div>
 	</div>
-	<div class="inner-page-banner-gradient-left"></div>
-	<div class="inner-page-banner-gradient-right"></div>
-	<div class="inner-page-banner-overlay"></div>
+	<div class="inner-page-banner-overlay d-none d-md-none d-lg-block"></div>
 </div>
 <div id="primary" class="pb-2">
 	<div class="container">
