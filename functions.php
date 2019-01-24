@@ -341,6 +341,18 @@ function acf_set_featured_image( $value, $post_id, $field  ){
 add_filter( 'acf/update_value/name=featured_image', 'acf_set_featured_image', 10, 3 );
 
 /**
+ * Control the number of posts for news
+ *
+ * @since CSD Schools 3.1.3
+ */
+function news_query( $query ) {
+	if ( $query->is_archive('news') && $query->is_main_query() && !is_admin() ) {
+		$query->set( 'posts_per_page', 15 );
+	}
+}
+add_action( 'pre_get_posts', 'news_query' );
+
+/**
  * Language toggle button
  *
  * @since CSD Schools 1.4.5
