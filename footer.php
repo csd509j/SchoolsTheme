@@ -27,6 +27,12 @@
 										<strong>Assistant Principal:</strong><br><?php the_field('assistant_principal_2', 'option'); ?><?php if(get_field('assistant_principal_2_email', 'options')): ?>, <a href="mailto:<?php the_field('assistant_principal_2_email', 'options'); ?>"><?php the_field('assistant_principal_2_email', 'options'); ?></a><?php endif; ?>
 									<?php endif; ?>
 								<?php endif; ?>
+								<?php if(get_field('office_manager', 'options')): ?>
+									<br/>
+									<strong>Office Manager:</strong>
+									<br>
+									<?php the_field('office_manager', 'options'); ?><?php if(get_field('office_manager_email', 'options')): ?>, <a href="mailto:<?php the_field('office_manager_email', 'options'); ?>"><?php the_field('office_manager_email', 'options'); ?></a><?php endif; ?>
+								<?php endif; ?>
 							</div>
 							<div class="col-md-6">
 								<div class="headline">

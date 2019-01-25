@@ -198,7 +198,22 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c2a5a694fb64",
+                        "operator": "==",
+                        "value": "Middle School"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5c2a5a694fb64",
+                        "operator": "==",
+                        "value": "High School"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -217,7 +232,22 @@
             "type": "email",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c2a5a694fb64",
+                        "operator": "==",
+                        "value": "Middle School"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5c2a5a694fb64",
+                        "operator": "==",
+                        "value": "High School"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -235,7 +265,22 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c2a5a694fb64",
+                        "operator": "==",
+                        "value": "Middle School"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5c2a5a694fb64",
+                        "operator": "==",
+                        "value": "High School"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -254,7 +299,75 @@
             "type": "email",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c2a5a694fb64",
+                        "operator": "==",
+                        "value": "Middle School"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5c2a5a694fb64",
+                        "operator": "==",
+                        "value": "High School"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5c4b54e6dd0a6",
+            "label": "Office Manager",
+            "name": "office_manager",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c2a5a694fb64",
+                        "operator": "==",
+                        "value": "Elementary"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c4b560005785",
+            "label": "Office Manager Email",
+            "name": "office_manager_email",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c2a5a694fb64",
+                        "operator": "==",
+                        "value": "Elementary"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -283,5 +396,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1546279669
+    "modified": 1548441163
 }
