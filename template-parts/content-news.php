@@ -109,6 +109,14 @@
 				
 				endif;
 				
+				if( get_row_layout() == 'table' ): ?>
+				
+					<?php get_template_part('template-parts/page-block', 'table'); ?>
+									
+				<?php
+				
+				endif;
+				
 			endwhile;
 			
 		endif; ?>
