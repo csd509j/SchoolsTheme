@@ -236,8 +236,7 @@ add_filter('acf/settings/save_json', function() {
 add_filter('acf/settings/load_json', function($paths) {
   $paths = array();
 
-  if(is_child_theme())
-  {
+  if(is_child_theme()) {
     $paths[] = get_stylesheet_directory() . '/acf-json';
   }
   $paths[] = get_template_directory() . '/acf-json';
@@ -322,23 +321,15 @@ add_filter('acf/load_field/name=sidebar_contact_block', 'acf_load_sidebar_contac
  * Set featured image from ACF field
  *
  * @since CSD Schools 1.0
+ * @updated CSD Schools 3.1.9
  */
 function acf_set_featured_image( $value, $post_id, $field  ){
 	
-	$id = $value;
-	
-	if( ! is_numeric( $id ) ){
-		
-		$data = json_decode( stripcslashes($id), true );
-		$id = $data['cropped_image'];
-	
-	}
-	
-	update_post_meta( $post_id, '_thumbnail_id', $id );
+	update_post_meta( $post_id, '_thumbnail_id', $value );
 	
 	return $value;
 }
-add_filter( 'acf/update_value/name=featured_image', 'acf_set_featured_image', 10, 3 );
+add_filter( 'acf/update_value/name=featured_img', 'acf_set_featured_image', 10, 3 );
 
 /**
  * Control the number of posts for news
