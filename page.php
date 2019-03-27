@@ -30,18 +30,21 @@ get_header(); ?>
 					// End of the loop.
 				endwhile;
 				?>
-				<div id="sidebar-mobile" class="d-block d-lg-none">
-					<div class="row">
+			</div>	
+			<div class="col-12 d-block d-lg-none">
+				<div class="border-top py-1"></div>
+				<div class="row">
+					<?php if (get_field('sidebar_contact_blocks')): ?>
 						<div class="col-md-4 order-2 order-mb-1">
 							<?php get_template_part( 'template-parts/content', 'contacts' ); ?>
 						</div>
-						<?php if (get_field('sidebar_callout_blocks')): ?>
-							<div class="col-md-8 order-1 order-md-2 mb-2 mb-md-0">
-								<?php get_template_part( 'template-parts/content', 'callouts' ); ?>
-							</div>
-						<?php endif; ?>
-					</div>
-				</div>	
+					<?php endif; ?>
+					<?php if (get_field('sidebar_callout_blocks')): ?>
+						<div class="<?php echo (get_field('sidebar_contact_blocks') ? 'col-md-8' : 'col-md-12'); ?> order-1 order-md-2 mb-2 mb-md-0">
+							<?php get_template_part( 'template-parts/content', 'callouts' ); ?>
+						</div>
+					<?php endif; ?>
+				</div>
 			</div>	
 		</div>
 	</div>

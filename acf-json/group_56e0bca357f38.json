@@ -73,10 +73,10 @@
                 "id": ""
             },
             "return_format": "array",
-            "preview_size": "thumbnail",
+            "preview_size": "News Image Small",
             "library": "all",
-            "min_width": "",
-            "min_height": "",
+            "min_width": 600,
+            "min_height": 356,
             "min_size": "",
             "max_width": "",
             "max_height": "",
@@ -605,5 +605,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1548444758
+    "modified": 1553715813
 }
