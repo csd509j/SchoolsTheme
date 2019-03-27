@@ -7,7 +7,7 @@
  * @since CSD Schools 1.0
  */
 get_header(); ?>
-<div id="primary" class="py-2">
+<div id="primary" class="pb-2">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3">
@@ -30,9 +30,17 @@ get_header(); ?>
 					// End of the loop.
 				endwhile;
 				?>
-				<div class="d-block d-lg-none">
-					<?php get_template_part( 'template-parts/content', 'callouts' ); ?>
-					<?php get_template_part( 'template-parts/content', 'contacts' ); ?>
+				<div id="sidebar-mobile" class="d-block d-lg-none">
+					<div class="row">
+						<div class="col-md-4 order-2 order-mb-1">
+							<?php get_template_part( 'template-parts/content', 'contacts' ); ?>
+						</div>
+						<?php if (get_field('sidebar_callout_blocks')): ?>
+							<div class="col-md-8 order-1 order-md-2 mb-2 mb-md-0">
+								<?php get_template_part( 'template-parts/content', 'callouts' ); ?>
+							</div>
+						<?php endif; ?>
+					</div>
 				</div>	
 			</div>	
 		</div>

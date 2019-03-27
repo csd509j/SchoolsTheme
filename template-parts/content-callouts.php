@@ -80,7 +80,7 @@ if ( get_field('sidebar_callout_blocks') ):
 								
 								?>
 								
-									<div class="col-12 col-sm-4 col-md-3 col-lg-12">
+									<div class="col-12 col-sm-4 col-md-3 col-lg-12 d-block d-md-none d-lg-block">
 										<div class="sidebar-callout-image">
 										
 											<?php if ($link): ?>
@@ -98,7 +98,7 @@ if ( get_field('sidebar_callout_blocks') ):
 								
 								<?php endif; ?>
 								
-									<div class="col-12 col-sm-8 col-md-9 col-lg-12">
+									<div class="col-12 col-sm-8 col-md-12 col-lg-12 align-self-center">
 										<div class="sidebar-callout-inner pt-2 pt-sm-0 pt-md-0 pt-lg-1">
 											
 											<?php if ($link): ?>

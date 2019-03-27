@@ -76,9 +76,9 @@ get_header(); ?>
 	</section>
 	<!-- Carousel Section End -->	
 	<!-- News Section Start -->
-	<section class="container py-3">
+	<section class="container py-2 py-xl-3">
 		<div class="row">
-			<div id="news" class="col-lg-9">
+			<div id="news" class="col-md-9">
 				<div class="headline">
 					<h2>Latest News</h2>
 				</div>
@@ -124,7 +124,7 @@ get_header(); ?>
 						<div class="row">
 							<div class="col-3 col-md-12 pb-1 news-img">
 								<a href="<?php the_permalink(); ?>">
-									<?php echo wp_get_attachment_image($imageID, 'News Image Small', 0, array('class' => 'img-fluid')); ?>
+									<?php echo wp_get_attachment_image($imageID, 'News Image Small', 0, array('class' => 'img-fluid w-100')); ?>
 								</a>
 							</div>
 							<div class="col-9 col-md-12 news-content">
@@ -180,7 +180,7 @@ get_header(); ?>
 	 				</div>
 	 			</div>
  			</div>
- 			<div class="col-lg-3">
+ 			<div class="col-md-3">
  				<div id="secondary-search">
 	 				<form role="search" id="sites-search" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 		 				<label class="sr-only" for="search-text">Search...</label>

@@ -67,18 +67,18 @@ add_action( 'wp_enqueue_scripts', 'csd_enqueue_script' );
  
 add_theme_support('post-thumbnails');
 add_image_size('square', 600, 600, true);
-add_image_size('Square Column 3', 285, 285, true);
-add_image_size('Square Column 4', 380, 380, true);
-add_image_size('News Image Small', 262, 175, true);
+add_image_size('Square Column 3', 295, 295, true);
+add_image_size('Square Column 4', 405, 405, true);
+add_image_size('News Image Small', 295, 175, true);
 add_image_size('News Image Medium', 410, 273, true);
 add_image_size('News Image Large', 750, 500, true);
-add_image_size('News Image Featured', 824, 425, true);
+add_image_size('News Image Featured', 600, 295, true);
 add_image_size('Staff Directory', 326, 453, true);
 add_image_size('Callout Block', 586, 416, true);
-add_image_size('Page Builder Image', 825, 315, true);
+add_image_size('Page Builder Image', 945, 315, true);
 add_image_size('Parent Header', 1600, 314, true);
 add_image_size('Home Slider', 1600, 500, true);
-add_image_size('Full Width', 1170);
+add_image_size('Full Width', 1300);
 add_image_size('card', 184, 184, true);
 add_image_size('Text Block', 530, 640, true);
 
