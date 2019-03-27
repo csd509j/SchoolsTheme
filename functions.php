@@ -72,7 +72,7 @@ add_image_size('Square Column 4', 405, 405, true);
 add_image_size('News Image Small', 295, 175, true);
 add_image_size('News Image Medium', 410, 273, true);
 add_image_size('News Image Large', 750, 500, true);
-add_image_size('News Image Featured', 600, 295, true);
+add_image_size('News Image Featured', 600, 356, true);
 add_image_size('Staff Directory', 326, 453, true);
 add_image_size('Callout Block', 586, 416, true);
 add_image_size('Page Builder Image', 945, 315, true);

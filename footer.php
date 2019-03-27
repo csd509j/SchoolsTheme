@@ -40,7 +40,7 @@
 										<div class="col-lg-8">
 											<h2><?php echo (ICL_LANGUAGE_CODE=='es' ? 'Eventos próximos' : 'Upcoming Events'); ?></h2>
 										</div>
-										<div class="col-lg-4 d-flex align-items-center justify-content-lg-end d-block d-md-none d-lg-block">
+										<div class="col-lg-4 align-self-center justify-content-lg-end d-block d-md-none d-lg-block text-lg-right">
 											<a href="<?php echo home_url('/calendar'); ?>">View Calendar</a>
 										</div>
 									</div>
