@@ -18,7 +18,13 @@ $bg_lg_image = wp_get_attachment_image_src($image['id'], 'Parent Header', false)
 		<div class="content d-block d-md-none" style="background-image:url(<?php echo $bg_sm_image[0]; ?>)"></div>
 		<div class="content d-none d-md-block" style="background-image:url(<?php echo $bg_lg_image[0]; ?>)"></div>
 	</div>
-	<div class="inner-page-banner-overlay d-none d-md-none d-lg-block"></div>
+	
+	<?php if (get_pages(array('child_of' => get_the_ID()))): // Hide for parents with no children ?>
+	
+		<div class="inner-page-banner-overlay d-none d-md-none d-lg-block"></div>
+	
+	<?php endif; ?>
+
 </div>
 <div id="primary" class="pb-2">
 	<div class="container">

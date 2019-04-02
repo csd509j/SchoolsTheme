@@ -1,41 +1,40 @@
 <?php
 	if($post->post_parent):
-		  	$parents = get_post_ancestors( $post->ID );
+	  	$parents = get_post_ancestors( $post->ID );
 
-		  	if ( empty($parents) || count($parents) == 1 ):
-		  		$root_page_id = $post->post_parent;
-		  		$titlenamer = get_the_title($post->ID);
-		  	else:
-		  		$x = $post->ancestors;
-		  		end($x);
-		  		$root_page_id = prev($x);
-		  		$titlenamer = get_the_title($root_page_id);
-		  	endif;
-		  		
-		  	
-			$walker = new Razorback_Walker_Page_Selective_Children();
-			$children = wp_list_pages( array(
-			    'title_li' => '',
-			    'child_of' => $root_page_id,
-			    'walker' => $walker,
-			    'echo'	=> 0,
-			    'sort_column' => 'post_title'
-			));
-			
-		else:
-			$children = wp_list_pages( array (
-				'title_li' => '',
-				'depth' => 1,
-				'child_of' => $post->ID,
-				'echo' => 0,
-				'sort_column' => 'post_title'
-			));
-			
-			$root_page_id = $post->ID;
-			$titlenamer = get_the_title($post->ID);
+	  	if ( empty($parents) || count($parents) == 1 ):
+	  		$root_page_id = $post->post_parent;
+	  		$titlenamer = get_the_title($post->ID);
+	  	else:
+	  		$x = $post->ancestors;
+	  		end($x);
+	  		$root_page_id = prev($x);
+	  		$titlenamer = get_the_title($root_page_id);
+	  	endif;
+	  		
+	  	
+		$walker = new Razorback_Walker_Page_Selective_Children();
+		$children = wp_list_pages( array(
+		    'title_li' => '',
+		    'child_of' => $root_page_id,
+		    'walker' => $walker,
+		    'echo'	=> 0,
+		    'sort_column' => 'post_title'
+		));
 		
-		endif;
-
+	else:
+		$children = wp_list_pages( array (
+			'title_li' => '',
+			'depth' => 1,
+			'child_of' => $post->ID,
+			'echo' => 0,
+			'sort_column' => 'post_title'
+		));
+		
+		$root_page_id = $post->ID;
+		$titlenamer = get_the_title($post->ID);
+	
+	endif;
 ?>
 
 <?php if ($children): ?>
