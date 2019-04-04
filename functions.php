@@ -356,7 +356,7 @@ function languages_toggle(){
   	if (function_exists('icl_object_id')) {
 		$languages = icl_get_languages('skip_missing=1');
   	} else {
-	  	$languages = null;
+	  	$languages = array();
   	}
   	
   	
