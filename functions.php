@@ -20,6 +20,7 @@ $myUpdateChecker->setBranch('master');
  */
 
 function csd_enqueue_style() {
+	wp_enqueue_style( 'csd-fonts', 'https://use.typekit.net/iqq6yaa.css' );
 	
 	wp_enqueue_style( 'print.css', get_template_directory_uri() . '/assets/stylesheets/print.css' ); 
 	
