@@ -7,7 +7,7 @@
  * @since CSD Schools 1.0
  */
 get_header(); ?>
-<div class="bg-primary py-2">
+<div id="news-header" class="bg-primary py-2">
 	<div class="container">
 		<?php the_title( '<h1 class="text-white mb-0">', '</h1>' ); ?>
 		<?php get_template_part('template-parts/content', 'breadcrumbs'); ?>
