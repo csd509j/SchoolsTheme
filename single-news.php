@@ -7,10 +7,14 @@
  * @since CSD Schools 1.0
  */
 get_header(); ?>
-
-<div id="primary" class="content-area mb-2">
+<div class="bg-primary py-2">
 	<div class="container">
+		<?php the_title( '<h1 class="text-white mb-0">', '</h1>' ); ?>
 		<?php get_template_part('template-parts/content', 'breadcrumbs'); ?>
+	</div>
+</div>
+<div id="primary" class="content-area my-2">
+	<div class="container">
 		<div class="row">
 			<div class="col-12">
 				<?php
@@ -22,8 +26,6 @@ get_header(); ?>
 					// End of the loop.
 				endwhile;
 				?>
-		
-				<?php get_template_part( 'template-parts/content', 'news-footer' ); ?>
 			</div>
 		</div>
 	</div>
