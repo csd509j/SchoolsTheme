@@ -1,4 +1,4 @@
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121486546-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=<?php the_field('tracking_code', 'options');?>"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
