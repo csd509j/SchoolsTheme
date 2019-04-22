@@ -83,6 +83,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_5cbdf1120ef46",
+            "label": "Athletics Hotline",
+            "name": "athletics_hotline",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "(541) xxx-xxxx",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_590a581b7bcd0",
             "label": "Fax Number",
             "name": "fax_number",
@@ -396,5 +415,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1548441163
+    "modified": 1555952444
 }
