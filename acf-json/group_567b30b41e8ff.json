@@ -977,28 +977,6 @@
             "placeholder": ""
         },
         {
-            "key": "field_572fc7805d9cb",
-            "label": "Sidebar Calendar Block",
-            "name": "sidebar_calendar_block",
-            "type": "taxonomy",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "taxonomy": "tribe_events_cat",
-            "field_type": "select",
-            "allow_null": 1,
-            "add_term": 0,
-            "save_terms": 0,
-            "load_terms": 0,
-            "return_format": "object",
-            "multiple": 0
-        },
-        {
             "key": "field_56818d824ef19",
             "label": "Sidebar Contact Block",
             "name": "sidebar_contact_block",
@@ -1070,5 +1048,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1555977481
+    "modified": 1555977591
 }
