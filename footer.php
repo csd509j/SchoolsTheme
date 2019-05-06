@@ -10,6 +10,9 @@
 									<strong>Phone:</strong> <?php the_field('primary_phone', 'options'); ?><br/>
 									<strong>Fax:</strong> <?php the_field('fax_number', 'options'); ?><br/>
 									<strong>Attendance:</strong> <?php the_field('attendance_phone', 'options'); ?><br/>
+									<?php if(get_field('attendance_email', 'options')): ?>
+										<strong>Attendance Email:</strong> <?php the_field('attendance_email', 'options'); ?><br/>
+									<?php endif; ?>
 									<?php if(get_field('athletics_hotline', 'options')): ?>
 										<strong>Athletics Hotline:</strong> <?php the_field('athletics_hotline', 'options'); ?><br/>
 									<?php endif; ?>
