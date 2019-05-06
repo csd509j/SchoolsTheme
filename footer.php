@@ -11,7 +11,7 @@
 									<strong>Fax:</strong> <?php the_field('fax_number', 'options'); ?><br/>
 									<strong>Attendance:</strong> <?php the_field('attendance_phone', 'options'); ?><br/>
 									<?php if(get_field('attendance_email', 'options')): ?>
-										<strong>Attendance Email:</strong> <?php the_field('attendance_email', 'options'); ?><br/>
+										<strong>Attendance Email:</strong> <a href="mailto:<?php the_field('attendance_email', 'options'); ?>"><?php the_field('attendance_email', 'options'); ?></a><br/>
 									<?php endif; ?>
 									<?php if(get_field('athletics_hotline', 'options')): ?>
 										<strong>Athletics Hotline:</strong> <?php the_field('athletics_hotline', 'options'); ?><br/>
