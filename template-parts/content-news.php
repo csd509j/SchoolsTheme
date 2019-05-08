@@ -16,6 +16,12 @@
 				
 				endif;
 				
+				if( get_row_layout() == 'image' ): 
+		
+					get_template_part( 'template-parts/page-block', 'image' );	
+					
+				endif;
+				
 				if( get_row_layout() == 'text_block' ):
 					
 					if( get_sub_field('heading') ): ?>
