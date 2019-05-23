@@ -3,6 +3,43 @@
     "title": "Options - School Info",
     "fields": [
         {
+            "key": "field_5ce6cce36af3d",
+            "label": "School Logo",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ce6ccf26af3e",
+            "label": "Logos",
+            "name": "logos",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5656429a07f56"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
             "key": "field_590a59057bcd2",
             "label": "School Information",
             "name": "",
@@ -433,5 +470,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1557166330
+    "modified": 1558629661
 }

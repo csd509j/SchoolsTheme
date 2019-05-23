@@ -100,9 +100,9 @@
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "post_format",
                 "operator": "==",
-                "value": "acf-options-footer"
+                "value": "aside"
             }
         ]
     ],
@@ -114,5 +114,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1541615326
+    "modified": 1558630015
 }
