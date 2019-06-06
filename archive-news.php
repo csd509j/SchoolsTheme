@@ -24,7 +24,7 @@ $excluded_post_ids = array();
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1 class='mb-0 text-white'>School News</h1>
+				<h1 class='mb-0 text-white'><?php _e('School News','csdschools'); ?></h1>
 			</div>
 		</div>
 	</div>
@@ -34,7 +34,7 @@ $excluded_post_ids = array();
 		<div class="row no-gutters">
 			<div class="col-lg-6">
 				<div class="headline mb-2">
-					<h2>Featured News</h2>
+					<h2><?php _e('Featured News','csdschools'); ?></h2>
 				</div>
 				<div class="news-list-featured bg-gray p-1 mb-2 mb-lg-0">
 					
@@ -93,7 +93,7 @@ $excluded_post_ids = array();
 											</div>
 											<div class="col-md-8 col-lg-12">
 												<div class="p-2 p-md-0 py-md-2 p-lg-2">
-													<small class="text-primary"><strong>Featured</strong></small>
+													<small class="text-primary"><strong><?php _e('Featured','csdschools'); ?></strong></small>
 													<h2 class="mb-1"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 													<p class="mb-0"><?php the_field('featured_text', $post->ID); ?></p>
 												</div>
@@ -115,7 +115,7 @@ $excluded_post_ids = array();
 			<div class="col-lg-6">		
 				<div class="news-list h-100 pl-lg-2">	
 					<div class="headline mb-2">
-						<h2>More News</h2>
+						<h2><?php _e('More News','csdschools'); ?></h2>
 					</div>
 
 					<?php 
@@ -140,7 +140,7 @@ $excluded_post_ids = array();
 					
 					<div class="btn-container">
 						
-						<?php next_posts_link( '<span class="btn btn-primary d-block d-sm-inline">More News</span>', $the_query->max_num_pages ); ?>
+						<?php next_posts_link( '<span class="btn btn-primary d-block d-sm-inline">' . __( 'Page', 'csdschools' ) . ' </span>', $the_query->max_num_pages ); ?>
 					
 					</div>
 					

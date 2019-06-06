@@ -1,1 +1,1 @@
-<hr class="padding-vertical-two">
+<hr class="py-2">

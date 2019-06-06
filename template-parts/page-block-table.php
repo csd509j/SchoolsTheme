@@ -2,6 +2,7 @@
 $table = get_sub_field( 'table' );
 
 if ( $table ) {
+	
 	echo '<div class="table-responsive">';
 	    
 	    echo '<table class="table table-striped table-bordered margin-bottom-one">';

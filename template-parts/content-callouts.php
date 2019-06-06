@@ -117,9 +117,10 @@ if ( get_field('sidebar_callout_blocks') ):
 											<a class="btn btn-block btn-primary" <?php if ( get_sub_field('callout_block_link_type') == 'External' ): ?> target="_blank" <?php endif; ?> href="<?php echo $link; ?>"><?php the_sub_field('button_label'); ?></a>
 											
 										<?php endif; ?>
+										
 									</div>
 								</div>
-						</div>
+							</div>
 						
 						<?php
 					

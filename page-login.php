@@ -17,7 +17,7 @@ get_header(); ?>
 <div id="primary" class="content-area py-2">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-sm-6 well">
+			<div class="col-sm-6 bg-light">
 				<?php
 				// Start the loop.
 				while ( have_posts() ) : the_post();
@@ -26,12 +26,12 @@ get_header(); ?>
 					
 					?>
 					
-					<h2 class="text-center pb-1">Sign in</h2>
+					<h2 class="text-center pb-1"><?php _e('Sign in','csdschools'); ?></h2>
 					
 					<?php if(isset($_GET['login']) && $_GET['login'] == 'failed'): ?>
 					
-						<div class="alert alert-danger">	
-							<strong>ERROR</strong>: Your Username and Password combination is incorrect.
+						<div class="alert alert-danger">
+							<strong>ERROR</strong>: <?php _e('Your Username and Password combination is incorrect','csdschools'); ?>.
 						</div>
 						
 					<?php endif; ?>
@@ -40,10 +40,10 @@ get_header(); ?>
 					    $args = array(
 					        'redirect' => home_url() . '/wp-admin', 
 					        'form_id' => 'loginform',
-					        'label_username' => __( 'Username' ),
-					        'label_password' => __( 'Password' ),
-					        'label_remember' => __( 'Remember Me' ),
-					        'label_log_in' => __( 'Sign in' ),
+					        'label_username' => __( 'Username', 'csdschools' ),
+					        'label_password' => __( 'Password', 'csdschools' ),
+					        'label_remember' => __( 'Remember Me', 'csdschools' ),
+					        'label_log_in' => __( 'Sign in', 'csdschools' ),
 					        'remember' => true
 					    );
 					    
@@ -51,14 +51,15 @@ get_header(); ?>
 					
 						?>
 						
-						<p class="meta text-center pt-1"><a href="<?php echo wp_lostpassword_url(); ?>" title="Lost Password">Forgot password?</a></p>
+						<p class="meta text-center pt-1"><a href="<?php echo wp_lostpassword_url(); ?>" title="Lost Password"><?php _e('Forgot password?','csdschools'); ?></a></p>
 
 					<?php
 					
-					else: // If logged in:
-						wp_redirect( home_url() ); exit;
-							//redirect logged in users to home page
-				
+					else: 
+						// If logged in:
+						
+						wp_redirect( home_url() ); 
+						exit;
 					
 					endif;
 		

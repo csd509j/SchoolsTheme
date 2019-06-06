@@ -1,11 +1,14 @@
 <?php
+
 $table = get_field( 'calendar_dates', 'options' );
 
-if ( $table ) {
+if ( $table ): ?>
 
-    echo '<h3>Key Dates</h3><div class="table-responsive"><table class="table table-white table-bordered">';
+    <h3><?php _e('Key Dates','csdschools'); ?></h3>
+    <div class="table-responsive">
+	    <table class="table table-white table-bordered">';
 
-        if ( $table['header'] ) {
+        <?php if ( $table['header'] ) {
 
             echo '<thead>';
 
@@ -42,5 +45,6 @@ if ( $table ) {
         echo '</tbody>';
 
     echo '</table></div>';
-}
+    
+endif;
 ?>

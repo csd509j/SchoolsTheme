@@ -35,7 +35,7 @@ get_header(); ?>
 						the_posts_pagination( array(
 							'prev_text'          => __( 'Previous page', 'csd' ),
 							'next_text'          => __( 'Next page', 'csd' ),
-							'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'csd' ) . ' </span>',
+							'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'csdschools' ) . ' </span>',
 						) );
 			
 					// If no content, include the "No posts found" template.

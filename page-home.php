@@ -80,7 +80,7 @@ get_header(); ?>
 		<div class="row">
 			<div id="news" class="col-md-9">
 				<div class="headline">
-					<h2>Latest News</h2>
+					<h2><?php _e('Latest News','csdschools'); ?></h2>
 				</div>
 				<div class="row">
 				
@@ -128,11 +128,7 @@ get_header(); ?>
 								</a>
 							</div>
 							<div class="col-9 col-md-12 news-content">
-								<h4>
-									<a href="<?php the_permalink(); ?>">
-										<?php the_title(); ?>
-									</a>
-								</h4>
+								<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 								<?php the_field('featured_text', $post->ID); ?>
 							</div>
 						</div>
@@ -148,7 +144,7 @@ get_header(); ?>
 	 				
 	 				<div id="news-more" class="col-xl-4 mt-2 mt-xl-0">
 	 					<div class="subhead">
-	 						<h5>School Updates</h5>
+	 						<h5><?php _e('School Updates','csdschools'); ?></h5>
 	 					</div>
 	 					<ul class="fa-ul">
 	 					
@@ -176,16 +172,16 @@ get_header(); ?>
 						<?php endwhile; wp_reset_query();?>
 						
 						</ul>
-						<small><a href="<?php home_url(); ?>/news">More Updates</a></small>	
+						<small><a href="<?php home_url(); ?>/news"><?php _e('More Updates','csdschools'); ?></a></small>	
 	 				</div>
 	 			</div>
  			</div>
  			<div class="col-md-3">
  				<div id="secondary-search">
 	 				<form role="search" id="sites-search" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
-		 				<label class="sr-only" for="search-text">Search...</label>
+		 				<label class="sr-only" for="search-text"><?php _e('Search...','csdschools'); ?></label>
 		 				<div class="form-group">
-		 					<input type="text" class="form-control" placeholder="Search Site..." value="<?php echo get_search_query(); ?>" name="s">
+		 					<input type="text" class="form-control" placeholder="<?php _e('Search Site...','csdschools'); ?>" value="<?php echo get_search_query(); ?>" name="s">
 	        			</div>
 	 				</form>
 				</div>

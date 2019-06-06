@@ -16,7 +16,7 @@ if ( get_field('sidebar_contact_block') ):
 					
 					<div class="sidebar-contact">
 						<div class="sidebar-contact-department">
-							<h4>Contact Information</h4>
+							<h4><?php _e('Contact Information','csdschools'); ?></h4>
 							<p class="small subhead"><strong><?php the_sub_field('contact_name'); ?></strong></p>
 							<p class="small">
 								<?php 
@@ -59,7 +59,7 @@ if ( get_field('sidebar_contact_block') ):
 								
 								if ( get_sub_field('contact_mailing_address') ): ?>
 									
-									Mailing Address: <?php the_sub_field('contact_address'); ?>
+									<?php _e('Mailing Address','csdschools'); ?>: <?php the_sub_field('contact_address'); ?>
 								
 								<?php endif; ?>
 								
@@ -72,7 +72,7 @@ if ( get_field('sidebar_contact_block') ):
 						if( have_rows('contact_staff') ): ?>
 						
 							<div class="sidebar-contact-staff">
-								<p class="small subhead"><strong><?php the_sub_field('contact_name'); ?> Staff</strong></p>
+								<p class="small subhead"><strong><?php the_sub_field('contact_name'); ?> <?php _e('Staff','csdschools'); ?></strong></p>
 		
 								<?php while( have_rows('contact_staff') ): the_row(); ?>
 									

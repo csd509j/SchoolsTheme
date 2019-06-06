@@ -1,5 +1,6 @@
 <div id="sidebar-first" class="pull-left">
 	<div class="navbar navbar-default" role="navigation">
+		
 		<?php 		
 	
 		$children = wp_list_pages("title_li=&depth=1&child_of=564&echo=0");
@@ -29,11 +30,7 @@
 			</ul>
 		</div>		
 		
-		<?php 
-			
-		endif; 
-		
-		?>
+		<?php endif; ?>
 		
 	</div>
 </div>

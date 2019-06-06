@@ -38,7 +38,7 @@
 					<?php if (get_field('school_type', 'options') != 'Elementary'): ?>
 						<?php render_block_calendar(get_field('block_calendar', 'options')); ?>
 					<?php else: ?>
-						<a href="tel:<?php the_field('attendance_phone', 'options'); ?>"><i class="fa fa-phone-square"></i> Attendance <?php the_field('attendance_phone', 'options'); ?></a>
+						<a href="tel:<?php the_field('attendance_phone', 'options'); ?>"><i class="fa fa-phone-square"></i> <?php _e('Attendance','csdschools'); ?> <?php the_field('attendance_phone', 'options'); ?></a>
 					<?php endif; ?>
 				</div>
 				<div class="col-5 col-md-4 col-lg-6 col-xl-7 d-flex justify-content-end">
@@ -61,14 +61,14 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<p>Enter Search Below</p>
+							<p><?php _e('Enter Search Below','csdschools'); ?></p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-12">
 							<form role="search" id="sites-search" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
-								 <label class="sr-only" for="search-text">Search...</label>
-								 <input type="text" class="search-field" id="search-text" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s">
+								 <label class="sr-only" for="search-text"><?php _e('Search...','csdschools'); ?></label>
+								 <input type="text" class="search-field" id="search-text" placeholder="<?php _e('Search...','csdschools'); ?>" value="<?php echo get_search_query(); ?>" name="s">
 								 <button type="submit" id="ss-icon"><i class="fa fa-search"></i></button>
 							</form>
 						</div>

@@ -13,7 +13,7 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3 well margin-bottom-none">
-				<h2 class="text-center">Password Reset</h2>		
+				<h2 class="text-center"><?php _e('Password Reset','csdschools'); ?></h2>		
 					<?php
 					
 					global $wpdb;
@@ -80,17 +80,17 @@ get_header(); ?>
 					endif;
 				?>
 
-					<!--html code-->
-					<form method="post">
-						<p>Please enter your username or email address. You will receive an email your new password.</p>
-						<div class="form-group">
-							<label for="user_login">Username or E-mail:</label>
-							<?php $user_login = isset( $_POST['user_login'] ) ? $_POST['user_login'] : ''; ?>
-							<input type="text" name="user_login" id="user_login" class="form-control" value="<?php echo $user_login; ?>" />
-						</div>
-						<input type="hidden" name="action" value="reset" />
-						<input type="submit" value="Get New Password" class="btn btn-primary" id="submit" />
-					</form>
+				<!--html code-->
+				<form method="post">
+					<p><?php _e('Please enter your username or email address. You will receive an email your new password.','csdschools'); ?></p>
+					<div class="form-group">
+						<label for="user_login"><?php _e('Username or Email','csdschools'); ?>:</label>
+						<?php $user_login = isset( $_POST['user_login'] ) ? $_POST['user_login'] : ''; ?>
+						<input type="text" name="user_login" id="user_login" class="form-control" value="<?php echo $user_login; ?>" />
+					</div>
+					<input type="hidden" name="action" value="reset" />
+					<input type="submit" value="<?php __('Get New Password','csdschools'); ?>" class="btn btn-primary" id="submit" />
+				</form>
 			</div>
 		</div>			
 	</div>		

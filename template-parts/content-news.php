@@ -1,5 +1,6 @@
 <div class="row">
 	<div class="col-lg-9 entry-content">
+		
 		<?php
 		// check for rows (parent repeater)
 		if( have_rows('post_content_blocks') ):
@@ -130,7 +131,7 @@
 		<div class="bg-gray p-1 mb-2">
 			<div class="post-meta">
 				<span id="post-date"><?php the_date(); ?></span><br>
-				<span id="post-author">By <?php the_author(); ?></span>
+				<span id="post-author"><?php _e('By','csdschools'); ?> <?php the_author(); ?></span>
 			</div>
 			<div class="post-social">
 				<div class="addthis_sharing_toolbox"></div>			

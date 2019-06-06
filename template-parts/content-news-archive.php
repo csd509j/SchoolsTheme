@@ -1,4 +1,5 @@
 <?php $link = ( get_field('news_post_source') == 'External' ) ? get_field('external_news_link') : get_permalink(); ?>
+
 <div class="news-item-list mb-1">
 	<div class="row news-item pb-1">
 		<div class="col-12">

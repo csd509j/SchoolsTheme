@@ -196,8 +196,8 @@ function show_pagination_links()
             'current'   => max( 1, $page_cur ),
             'total'     => $page_tot,
             'prev_next' => true,
-			'prev_text'    => __('&lsaquo; Previous', 'progression'),
-			'next_text'    => __('Next &rsaquo;', 'progression'),
+			'prev_text'    => __('&lsaquo; Previous', 'csdschools'),
+			'next_text'    => __('Next &rsaquo;', 'csdschools'),
             'end_size'  => 1,
             'mid_size'  => 2,
             'type'      => 'list'
