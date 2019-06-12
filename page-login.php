@@ -17,7 +17,7 @@ get_header(); ?>
 <div id="primary" class="content-area py-2">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-sm-6 bg-light">
+			<div class="col-sm-6 bg-light pt-2">
 				<?php
 				// Start the loop.
 				while ( have_posts() ) : the_post();
