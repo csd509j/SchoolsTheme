@@ -9,9 +9,9 @@
 								<p class="mb-1">
 									<strong><?php _e('Phone','csdschools'); ?>:</strong> <?php the_field('primary_phone', 'options'); ?><br/>
 									<strong><?php _e('Fax','csdschools'); ?>:</strong> <?php the_field('fax_number', 'options'); ?><br/>
-									<strong><?php _e('Attendence','csdschools'); ?>:</strong> <?php the_field('attendance_phone', 'options'); ?><br/>
+									<strong><?php _e('Attendance','csdschools'); ?>:</strong> <?php the_field('attendance_phone', 'options'); ?><br/>
 									<?php if(get_field('attendance_email', 'options')): ?>
-										<strong><?php _e('Attendence Email','csdschools'); ?>:</strong> <a href="mailto:<?php the_field('attendance_email', 'options'); ?>"><?php the_field('attendance_email', 'options'); ?></a><br/>
+										<strong><?php _e('Attendance Email','csdschools'); ?>:</strong> <a href="mailto:<?php the_field('attendance_email', 'options'); ?>"><?php the_field('attendance_email', 'options'); ?></a><br/>
 									<?php endif; ?>
 									<?php if(get_field('athletics_hotline', 'options')): ?>
 										<strong><?php _e('Athletics Hotline','csdschools'); ?>:</strong> <?php the_field('athletics_hotline', 'options'); ?><br/>

@@ -9,10 +9,10 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area padding-vertical-two">
+<div id="primary" class="content-area py-2">
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-sm-offset-3 well margin-bottom-none">
+		<div class="row justify-content-center">
+			<div class="col-sm-6 bg-light mb-1">
 				<h2 class="text-center"><?php _e('Password Reset','csdschools'); ?></h2>		
 					<?php
 					
