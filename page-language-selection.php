@@ -45,33 +45,31 @@ if (isset($_GET['referrer'])) {
 	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	    <![endif]-->
 	</head>
-	<body <?php body_class(); ?>>
-		<div id="page-language">
-			<div class="container">
-				<div class="modal" id="lang-splash" tabindex="-1" role="dialog" aria-labelledby="lang-splash" aria-hidden="false">
-					<div class="modal-dialog">
-				    	<div class="modal-content">
-					    	<div class="modal-header d-flex">
-						    	<div class="d-flex justify-content-start">
-									<h3 class="modal-title">Preferred Language</h3>
-						    	</div>
-							</div>
-							<div class="modal-body">
-								<div class="d-flex border-bottom">
-									<div class="flex-fill border-right">
-										<a href="#" class="lang-link" data-id="en" data-referrer="<?php echo $referrer; ?>"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/american-flag.jpg'); ?>" width="45px" /> English</a>
-									</div>
-									<div class="flex-fill">
-										<a href="#" class="lang-link" data-id="es" data-referrer="<?php echo $referrer; ?>"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/mexico-flag.jpg'); ?>" width="45px" /> Spanish</a>
-									</div>
+	<body id="page-language" <?php body_class(); ?>>
+		<div class="container">
+			<div class="modal" id="lang-splash" tabindex="-1" role="dialog" aria-labelledby="lang-splash" aria-hidden="false">
+				<div class="modal-dialog">
+			    	<div class="modal-content">
+				    	<div class="modal-header d-flex">
+					    	<div class="d-flex justify-content-start">
+								<h3 class="modal-title">Preferred Language</h3>
+					    	</div>
+						</div>
+						<div class="modal-body">
+							<div class="d-flex border-bottom">
+								<div class="flex-fill border-right">
+									<a href="#" class="lang-link" data-id="en" data-referrer="<?php echo $referrer; ?>"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/american-flag.jpg'); ?>" width="45px" /> English</a>
 								</div>
-						   		<div class="my-1 text-center">
-							    	<img src="<?php the_field('logo', 'option'); ?>" class="img-fluid" width="250px" />	
-						        </div>
-				      		</div>
-				    	</div>
-				  	</div>
-				</div>
+								<div class="flex-fill">
+									<a href="#" class="lang-link" data-id="es" data-referrer="<?php echo $referrer; ?>"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/mexico-flag.jpg'); ?>" width="45px" /> Spanish</a>
+								</div>
+							</div>
+					   		<div class="my-1 text-center">
+						    	<img src="<?php the_field('logo', 'option'); ?>" class="img-fluid" width="250px" />	
+					        </div>
+			      		</div>
+			    	</div>
+			  	</div>
 			</div>
 		</div>
 	</body>
