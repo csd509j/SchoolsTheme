@@ -24,12 +24,6 @@ if (isset($_GET['referrer'])) {
 				    	<div class="d-flex justify-content-start">
 							<h3 class="modal-title">Preferred Language</h3>
 				    	</div>
-						<div class="d-flex justify-content-end">
-							<ul class="list-inline mb-0">
-								<li class="list-inline-item"></li>
-								<li class="list-inline-item"></li>
-							</ul>
-						</div>
 					</div>
 					<div class="modal-body">
 						<div class="d-flex border-bottom">
