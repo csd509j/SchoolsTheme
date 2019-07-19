@@ -26,42 +26,22 @@ if (isset($_GET['referrer'])) {
 				    	</div>
 						<div class="d-flex justify-content-end">
 							<ul class="list-inline mb-0">
-								<li class="list-inline-item"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/american-flag.jpg'); ?>" width="45px" /></li>
-								<li class="list-inline-item"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/mexico-flag.jpg'); ?>" width="45px" /></li>
+								<li class="list-inline-item"></li>
+								<li class="list-inline-item"></li>
 							</ul>
 						</div>
 					</div>
 					<div class="modal-body">
-				        <div class="list-group">
-					        <a href="#" class="lang-link" data-id="en" data-referrer="<?php echo $referrer; ?>">
-						        <div class="list-group-item">
-							        <div class="row">
-								        <div class="col-8">English</div>
-								        <div class="col-4 text-right">
-									        <label for="en">
-												<input id="en" type="radio" class="d-none" name="language" value="0"/>
-												<i class="far fa-dot-circle"></i>
-											</label>
-								        </div>
-							        </div> 
-						        </div>
-						    </a>
-						    <a href="#" class="lang-link" data-id="es" data-referrer="<?php echo $referrer; ?>">
-						        <div class="list-group-item">
-							        <div class="row">
-								        <div class="col-8">Spanish</div>
-								        <div class="col-4 text-right">
-									        <label for="es">
-												<input id="es" type="radio" class="d-none" name="language" value="0"/>
-												<i class="far fa-dot-circle"></i>
-											</label>
-								        </div>
-							        </div> 
-						        </div>
-						    </a>
-				        </div>
-				        <div class="my-1 text-center">
-					    	<img src="<?php the_field('logo', 'option'); ?>" class="img-fluid" width="200px" />	
+						<div class="d-flex border-bottom">
+							<div class="flex-fill border-right">
+								<a href="#" class="lang-link" data-id="en" data-referrer="<?php echo $referrer; ?>"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/american-flag.jpg'); ?>" width="45px" /> English</a>
+							</div>
+							<div class="flex-fill">
+								<a href="#" class="lang-link" data-id="es" data-referrer="<?php echo $referrer; ?>"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/mexico-flag.jpg'); ?>" width="45px" /> Spanish</a>
+							</div>
+						</div>
+				   		<div class="my-1 text-center">
+					    	<img src="<?php the_field('logo', 'option'); ?>" class="img-fluid" width="250px" />	
 				        </div>
 		      		</div>
 		    	</div>
