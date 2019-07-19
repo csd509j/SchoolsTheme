@@ -33,19 +33,19 @@
 	
 	<div id="header-top-global">
 		<div class="container">
-			<div class="row justify-content-end">
-				<div class="col-7 col-md-8 col-lg-6 col-xl-5 menu-top-block-container">				
+			<div class="row justify-content-between">
+				<div class="col-auto col-md-8 col-lg-6 col-xl-5 menu-top-block-container">				
 					<?php if (get_field('school_type', 'options') != 'Elementary'): ?>
 						<?php render_block_calendar(get_field('block_calendar', 'options')); ?>
 					<?php else: ?>
-						<a href="tel:<?php the_field('attendance_phone', 'options'); ?>"><i class="fa fa-phone-square"></i> <?php _e('Attendance','csdschools'); ?> <?php the_field('attendance_phone', 'options'); ?></a>
+						<a href="tel:<?php the_field('attendance_phone', 'options'); ?>"><i class="fa fa-phone-square"></i> <span class="d-none d-sm-inline-block"><?php _e('Attendance','csdschools'); ?></span> <?php the_field('attendance_phone', 'options'); ?></a>
 					<?php endif; ?>
 				</div>
-				<div class="col-5 col-md-4 col-lg-6 col-xl-7 d-flex justify-content-end">
+				<div class="col-auto col-md-4 col-lg-6 col-xl-7 d-flex justify-content-end">
 					<div class="d-none d-xl-block">
 						<?php wp_nav_menu( array('theme_location' => 'header-toplinks', 'items_wrap' => '<ul class="list list-unstyled" aria-label="Top Links">%3$s</ul>' )); ?>
 					</div>
-					<div class="mr-1">
+					<div class="mr-1 d-none d-sm-block">
 						<a href="#" id="search-toggle"><i class="fa fa-search fa-lg"></i></a>
 					</div>
 					<div id="menu-top-language">
