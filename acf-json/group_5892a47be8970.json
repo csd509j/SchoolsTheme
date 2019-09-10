@@ -191,6 +191,33 @@
                     "ui_off_text": ""
                 },
                 {
+                    "key": "field_5d77b546fb49e",
+                    "label": "Type",
+                    "name": "calendar_type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "10",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Regular": "Regular",
+                        "Block": "Block"
+                    },
+                    "default_value": [
+                        "regular"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
                     "key": "field_5b2bff6c35e6f",
                     "label": "Calendar Address",
                     "name": "calendar_address",
@@ -199,7 +226,7 @@
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "34",
+                        "width": "24",
                         "class": "",
                         "id": ""
                     },
@@ -218,7 +245,7 @@
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "34",
+                        "width": "24",
                         "class": "",
                         "id": ""
                     },
@@ -267,5 +294,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1546280667
+    "modified": 1568126535
 }
