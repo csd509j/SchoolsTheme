@@ -400,6 +400,59 @@
             "append": ""
         },
         {
+            "key": "field_5d8fd3ab754ae",
+            "label": "Athletic Director\/Assistant Principal",
+            "name": "athletic_director",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c2a5a694fb64",
+                        "operator": "==",
+                        "value": "High School"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d8fd3d5754af",
+            "label": "Athletic Director\/Assistant Principal Email",
+            "name": "athletic_director_email",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c2a5a694fb64",
+                        "operator": "==",
+                        "value": "High School"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_5c4b54e6dd0a6",
             "label": "Office Manager",
             "name": "office_manager",
@@ -470,5 +523,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1558629661
+    "modified": 1569707314
 }

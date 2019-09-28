@@ -10,35 +10,70 @@
 									<strong><?php _e('Phone','csdschools'); ?>:</strong> <?php the_field('primary_phone', 'options'); ?><br/>
 									<strong><?php _e('Fax','csdschools'); ?>:</strong> <?php the_field('fax_number', 'options'); ?><br/>
 									<strong><?php _e('Attendance','csdschools'); ?>:</strong> <?php the_field('attendance_phone', 'options'); ?><br/>
-									<?php if(get_field('attendance_email', 'options')): ?>
+									
+									<?php if ( get_field('attendance_email', 'options') ): ?>
+									
 										<strong><?php _e('Attendance Email','csdschools'); ?>:</strong> <a href="mailto:<?php the_field('attendance_email', 'options'); ?>"><?php the_field('attendance_email', 'options'); ?></a><br/>
+									
 									<?php endif; ?>
-									<?php if(get_field('athletics_hotline', 'options')): ?>
+									
+									<?php if ( get_field('athletics_hotline', 'options') ): ?>
+										
 										<strong><?php _e('Athletics Hotline','csdschools'); ?>:</strong> <?php the_field('athletics_hotline', 'options'); ?><br/>
+									
 									<?php endif; ?>
-									<?php if(get_field('email', 'options')): ?>
+									
+									<?php if ( get_field('email', 'options') ): ?>
+									
 										<strong><?php _e('Email','csdschools'); ?>:</strong> <a href="mailto:<?php the_field('email', 'options'); ?>"><?php the_field('email', 'options'); ?></a><br/>
+									
 									<?php endif; ?>
+									
 									<strong><?php _e('Address','csdschools'); ?>:</strong> <?php the_field('street_address', 'options'); ?>
 								</p>
 								<p><strong><?php _e('Principal','csdschools'); ?>:</strong>
 								<br/>
-								<?php the_field('principal', 'options'); ?><?php if(get_field('principal_email', 'options')): ?>, <a href="mailto:<?php the_field('principal_email', 'options'); ?>"><?php the_field('principal_email', 'options'); ?></a><?php endif; ?>
-								<?php if(get_field('assistant_principal_1', 'options')): ?>
+								
+								<?php the_field('principal', 'options'); ?><?php if ( get_field('principal_email', 'options') ): ?>, <a href="mailto:<?php the_field('principal_email', 'options'); ?>"><?php the_field('principal_email', 'options'); ?></a><?php endif; ?>
+								
+								<?php if ( get_field('assistant_principal_1', 'options') ): ?>
+								
 									<br/>
 									<strong><?php _e('Assistant Principal','csdschools'); ?>:</strong>
 									<br>
-									<?php the_field('assistant_principal_1', 'options'); ?><?php if(get_field('assistant_principal_1_email', 'options')): ?>, <a href="mailto:<?php the_field('assistant_principal_1_email', 'options'); ?>"><?php the_field('assistant_principal_1_email', 'options'); ?></a><?php endif; ?>
-									<?php if(get_field('assistant_principal_2', 'options')): ?>
-										<br>	
-										<strong><?php _e('Assistant Principal','csdschools'); ?>:</strong><br><?php the_field('assistant_principal_2', 'option'); ?><?php if(get_field('assistant_principal_2_email', 'options')): ?>, <a href="mailto:<?php the_field('assistant_principal_2_email', 'options'); ?>"><?php the_field('assistant_principal_2_email', 'options'); ?></a><?php endif; ?>
-									<?php endif; ?>
+									
+									<?php the_field('assistant_principal_1', 'options'); ?><?php if ( get_field('assistant_principal_1_email', 'options') ): ?>, <a href="mailto:<?php the_field('assistant_principal_1_email', 'options'); ?>"><?php the_field('assistant_principal_1_email', 'options'); ?></a><?php endif; ?>
+								
 								<?php endif; ?>
-								<?php if(get_field('office_manager', 'options')): ?>
+									
+								<?php if ( get_field('assistant_principal_2', 'options') ): ?>
+								
+										<br>	
+										<strong><?php _e('Assistant Principal','csdschools'); ?>:</strong>
+										<br>
+										
+										<?php the_field('assistant_principal_2', 'options'); ?><?php if ( get_field('assistant_principal_2_email', 'options') ): ?>, <a href="mailto:<?php the_field('assistant_principal_2_email', 'options'); ?>"><?php the_field('assistant_principal_2_email', 'options'); ?></a><?php endif; ?>
+								
+								<?php endif; ?>
+									
+								<?php if ( get_field('athletic_director', 'options') ): ?>
+									
+											<br>	
+											<strong><?php _e('Athletic Director/Assistant Principal','csdschools'); ?>:</strong>
+											<br>
+											
+											<?php the_field('athletic_director', 'options'); ?><?php if ( get_field('athletic_director_email', 'options') ): ?>, <a href="mailto:<?php the_field('athletic_director_email', 'options'); ?>"><?php the_field('athletic_director_email', 'options'); ?></a><?php endif; ?>
+									
+								<?php endif; ?>
+								
+								<?php if ( get_field('office_manager', 'options') ): ?>
+									
 									<br/>
 									<strong><?php _e('Office Manager','csdschools'); ?>:</strong>
 									<br>
-									<?php the_field('office_manager', 'options'); ?><?php if(get_field('office_manager_email', 'options')): ?>, <a href="mailto:<?php the_field('office_manager_email', 'options'); ?>"><?php the_field('office_manager_email', 'options'); ?></a><?php endif; ?>
+									
+									<?php the_field('office_manager', 'options'); ?><?php if ( get_field('office_manager_email', 'options') ): ?>, <a href="mailto:<?php the_field('office_manager_email', 'options'); ?>"><?php the_field('office_manager_email', 'options'); ?></a><?php endif; ?>
+								
 								<?php endif; ?>
 							</div>
 							<div class="col-md-6">
@@ -52,7 +87,9 @@
 										</div>
 									</div>
 								</div>
+								
 								<?php render_list_view(); ?>
+								
 								<div class="d-none d-md-block d-lg-none mt-1">
 									<a href="<?php echo home_url('/calendar'); ?>"><?php _e('View Calendar','csdschools'); ?></a>
 								</div>
@@ -118,7 +155,9 @@
 				</section>
 			</div>
 		</div>
+		
 		<?php wp_footer(); ?>
+		
 		<div id="google_translate_element" class="d-none"></div>
 		<script type="text/javascript">
 			function googleTranslateElementInit() {
