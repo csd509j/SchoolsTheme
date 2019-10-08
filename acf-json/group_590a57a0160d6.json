@@ -401,7 +401,7 @@
         },
         {
             "key": "field_5d8fd3ab754ae",
-            "label": "Athletic Director\/Assistant Principal",
+            "label": "Assistant Principal\/Athletic Director",
             "name": "athletic_director",
             "type": "text",
             "instructions": "",
@@ -428,7 +428,7 @@
         },
         {
             "key": "field_5d8fd3d5754af",
-            "label": "Athletic Director\/Assistant Principal Email",
+            "label": "Assistant Principal\/Athletic Director Email",
             "name": "athletic_director_email",
             "type": "email",
             "instructions": "",
@@ -523,5 +523,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1569707314
+    "modified": 1570563797
 }
