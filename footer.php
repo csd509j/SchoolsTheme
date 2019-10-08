@@ -59,7 +59,7 @@
 								<?php if ( get_field('athletic_director', 'options') ): ?>
 									
 											<br>	
-											<strong><?php _e('Athletic Director/Assistant Principal','csdschools'); ?>:</strong>
+											<strong><?php _e('Assistant Principal/Athletic Director','csdschools'); ?>:</strong>
 											<br>
 											
 											<?php the_field('athletic_director', 'options'); ?><?php if ( get_field('athletic_director_email', 'options') ): ?>, <a href="mailto:<?php the_field('athletic_director_email', 'options'); ?>"><?php the_field('athletic_director_email', 'options'); ?></a><?php endif; ?>
