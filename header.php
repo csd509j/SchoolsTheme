@@ -36,10 +36,11 @@
 			<div class="row justify-content-between">
 				<div class="col-auto col-md-8 col-lg-6 col-xl-5 menu-top-block-container">				
 					<?php if (get_field('school_type', 'options') != 'Elementary'): ?>
-						<?php render_block_calendar(get_field('block_calendar', 'options')); ?>
-					<?php else: ?>
-						<a href="tel:<?php the_field('attendance_phone', 'options'); ?>"><i class="fa fa-phone-square"></i> <span class="d-none d-sm-inline-block"><?php _e('Attendance','csdschools'); ?></span> <?php the_field('attendance_phone', 'options'); ?></a>
+						<div class="d-none d-md-inline-block">
+							<?php render_block_calendar(get_field('block_calendar', 'options')); ?>
+						</div>					
 					<?php endif; ?>
+					<a href="tel:<?php the_field('attendance_phone', 'options'); ?>"><?php _e('Attendance','csdschools'); ?>: <?php the_field('attendance_phone', 'options'); ?></a>
 				</div>
 				<div class="col-auto col-md-4 col-lg-6 col-xl-7 d-flex justify-content-end">
 					<div class="d-none d-xl-block">
