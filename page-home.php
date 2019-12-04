@@ -17,44 +17,65 @@ get_header(); ?>
 
 			$images = get_field('carousel_images');
 
-			if( $images ): ?>
+			if ( $images ): ?>
 			
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
-					<?php for($i = 0; $i < count($images); ++$i){ ?>
+					
+					<?php for ( $i = 0; $i < count($images); ++$i ): ?>
+					
 							<li data-target="#carousel" data-slide-to="<?php echo $i; ?>" <?php if ($i == 0): ?>class="active"<?php endif; ?>></li>
-					<?php } ?>
+					
+					<?php endfor; ?>
+				
 				</ol>
 				
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
+					
 					<?php 
 					
 					$x = 0;	
 					
-					foreach( $images as $image ): ?>
+					foreach ( $images as $image ): ?>
 						
-						<div class="carousel-item <?php if ($x == 0): ?>active<?php endif; ?>">
-							<?php if (get_field('link', $image['id'])): ?>
-								<a href="<?php the_field('link', $image['id']); ?>" class="headline-link">
+						<div class="carousel-item <?php if ( $x == 0 ): ?>active<?php endif; ?>">
+							
+							<?php if ( get_field('link', $image['id']) ): ?>
+							
+								<?php $link = get_field('link', $image['id']); ?>
+							
+								<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" class="headline-link">
+							
 							<?php endif; ?>
-					  		<?php echo wp_get_attachment_image($image['id'], 'Home Slider', false, array('class'=>'d-block w-100 img-fluid')); ?>
+					  		
+					  		<?php echo wp_get_attachment_image( $image['id'], 'Home Slider', false, array('class'=>'d-block w-100 img-fluid') ); ?>
+					  		
 					  		<?php if ( $image['title'] || $image['caption'] ): ?>
+						  	
 						  		<div class="carousel-caption">
 							  		<div class="carousel-title">
 							  			<h3><?php echo $image['title']; ?></h3>
 							  		</div>
+							
 							  		<?php if ( $image['caption'] ): ?>
+							
 							  		<div class="carousel-caption-bg">
 						  				<p><?php echo $image['caption']; ?></p>
 						  			</div>
+						  	
 						  			<?php endif; ?>
+						  	
 						  		</div>
+						  	
 						  	<?php endif; ?>
 
-					  		<?php if (get_field('link', $image['id'])): ?>
+					  		<?php if ( get_field('link', $image['id']) ): ?>
+							
 								</a>
+							
 							<?php endif; ?>
+							
 						</div>
 					<?php 
 					
@@ -70,8 +91,10 @@ get_header(); ?>
 				<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="sr-only">Next</span>
-				</a>												
+				</a>	
+															
 			<?php endif; ?>
+			
 		</div>
 	</section>
 	<!-- Carousel Section End -->	
@@ -106,15 +129,22 @@ get_header(); ?>
 					$featured_ids[] = $post->ID;
 					
 					if ( get_field('featured_img', $post->ID) ) {
+						
 						$image = get_field('featured_img', $post->ID);
 						$imageID = $image['id'];
+					
 					} else {
+					
 						// For legacy images added by ACF-Crop
-						if ( is_array(get_field('featured_image')) ) {
+						if ( is_array( get_field('featured_image') ) ) {
+					
 							$image = get_field('featured_image');
 							$imageID = $image['id'];
+					
 						} else {
-							$imageID = get_string_between(get_field('featured_image', $post->ID), '"cropped_image":', '}');
+					
+							$imageID = get_string_between( get_field('featured_image', $post->ID), '"cropped_image":', '}' );
+					
 						}					
 					}
 					
@@ -124,12 +154,14 @@ get_header(); ?>
 						<div class="row">
 							<div class="col-3 col-md-12 pb-1 news-img">
 								<a href="<?php the_permalink(); ?>">
-									<?php echo wp_get_attachment_image($imageID, 'News Image Small', 0, array('class' => 'img-fluid w-100')); ?>
+									<?php echo wp_get_attachment_image( $imageID, 'News Image Small', 0, array('class' => 'img-fluid w-100') ); ?>
 								</a>
 							</div>
 							<div class="col-9 col-md-12 news-content">
 								<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+								
 								<?php the_field('featured_text', $post->ID); ?>
+							
 							</div>
 						</div>
 					</div> 
@@ -159,17 +191,29 @@ get_header(); ?>
 						$loop = new WP_Query( $args );
 
 						while ( $loop->have_posts() ) : $loop->the_post();
-							if ( get_field('news_post_source', $post->ID ) == 'External' ):
+							
+							if ( get_field('news_post_source', $post->ID ) == 'External' ) {
+							
 								$link = get_field('external_news_link', $post->ID );
-							else: 
+							
+							} else {
+							
 								$link = get_permalink();
-							endif;
+							
+							}
+							
 						?>
 							<li><span class="fa-li" ><i class="fas fa-chevron-right fa-xs"></i></span>
 								<a href="<?php echo $link; ?>" <?php if ( get_field('news_post_source', $post->ID) == 'External' ): ?> target="_blank" <?php endif; ?>><?php the_title(); ?></a>
 							</li>
 						
-						<?php endwhile; wp_reset_query();?>
+						<?php 
+							
+						endwhile; 
+						
+						wp_reset_query();
+						
+						?>
 						
 						</ul>
 						<small><a href="<?php home_url(); ?>/news"><?php _e('More Updates','csdschools'); ?></a></small>	
@@ -187,26 +231,41 @@ get_header(); ?>
 				</div>
 				<div id="quick-links">
 					<div class="row">
-					<?php for( $x = 1; $x < 5; $x++ ): ?>
+					
+					<?php for ( $x = 1; $x < 5; $x++ ): ?>
+					
 						<div class="quick-link col-sm-6 col-md-12"> 
+					
 								<?php if ( get_field('home_quick_link_' . $x . '_type') == "External Link" ): ?>
+					
 									<a href="<?php the_field('home_quick_link_' . $x . '_link'); ?>" target="_blank" class="btn btn-secondary btn-block btn-lg">
+					
 								<?php elseif ( get_field('home_quick_link_' . $x . '_type') == "Media File" ): ?>
+					
 									<a href="<?php the_field('home_quick_link_' . $x . '_media'); ?>" target="_blank" class="btn btn-secondary btn-block btn-lg">
+					
 								<?php elseif ( get_field('home_quick_link_' . $x . '_type') == "Page" ): ?>
+					
 									<a href="<?php the_field('home_quick_link_' . $x . '_page'); ?>" class="btn btn-secondary btn-block btn-lg">
+					
 								<?php endif; ?>
+					
 								<h4><?php the_field('home_quick_link_' . $x . '_text'); ?></h4>
 							</a>
 						</div>
+						
 					<?php endfor; ?>
+					
 					</div>
 				</div>			
  			</div>			
 		</div>
 	</section>
+	
 	<!-- News Section End -->
-	<?php if(get_field('include_video_section')): ?>
+	
+	<?php if ( get_field('include_video_section') ): ?>
+	
 		<!-- Video Section Start -->
 		<section id="cta" class="bg-primary text-white">
 			<div class="container">
@@ -216,8 +275,11 @@ get_header(); ?>
 							<h2 class="text-white mb-1"><?php the_field('video_section_heading'); ?></h2>
 							<p class="lead"><?php the_field('video_section_text'); ?></p>
 							<div class="embed-responsive embed-responsive-16by9">
+							
 								<?php $video_url = get_field('video_url'); ?>
-								<?php $v = substr($video_url, strpos($video_url, "v=") + 2); ?>
+							
+								<?php $v = substr( $video_url, strpos($video_url, "v=") + 2 ); ?>
+							
 								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $v; ?>?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 							</div>
 						</div>
@@ -226,6 +288,9 @@ get_header(); ?>
 			</div>
 		</section>
 		<!-- Video Section End -->
+	
 	<?php endif; ?>
+
 </div>
+
 <?php get_footer(); ?>

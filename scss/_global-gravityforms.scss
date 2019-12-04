@@ -1,0 +1,392 @@
+//
+//	Folkhack's Gravity Forms styling
+//
+//	Table of Contents:
+//	- Variables/configuration
+//	- General fixes
+//	- Required *
+//	- input, select, and textarea elemnt extends
+//	- Button extend
+//	- Error/notification messages handling
+//	- Gravity Forms complex containers
+//	- Weird-ass clear-multi shit
+//	- Date fields
+//	- Lists
+//	- General Datepicker
+//	- Folkhack's jQuery UI Datepicker: (DEPRECIATED!)
+//  - Validation container
+//
+//
+//	Based on:
+//	- http://roots.io/style-gravity-forms-with-bootstrap/
+//	- https://gist.github.com/Gavrisimo/8406309
+//	- https://gist.github.com/spigists/6796258
+//
+//	TODO:
+//	- Clean this up once Gravity Forms more-or-less gets their shit more together
+//	- Rip apart provided Gravity Forms CSS and implement all specific feature-sets
+//	- Better handling of date-fields, currently drop-down dates are AOK to use
+//
+
+
+//
+//	Variables/configuration:
+//
+
+// Enables/disables jQuery UI datepicker (jQuery UI can go die in a fire...IMHO)
+$fh_gf_jqueryui_datepicker_enabled: false !default;
+// Setup a reasonable responsive break-point for complex fields
+$fh_gf_responsive_break_at: grid-breakpoints('sm') !default;
+
+
+//
+//	General fixes:
+//
+
+// Field/form container styling:
+.gform_wrapper ul { @extend .list-unstyled; }
+.gform_wrapper li { @extend .form-group; }
+.gform_wrapper form { margin-bottom: 0;  }
+
+// Field container clear
+.gfield { clear: both; }
+
+// Form description
+.gform_heading .gform_description {
+	display: block;
+	margin: 0 0 10px 0;
+}
+
+// Radios/checks
+.gfield_checkbox,
+.gfield_radio {
+	margin: 0 0 0 10px;
+	label {
+		font-weight: normal;
+		margin-left: 10px;
+	}
+	li { margin-bottom: 0px; }
+}
+
+// Multiple select and textarea height fixes
+.ginput_container select[multiple] { height: auto; }
+.ginput_container textarea { height: auto; }
+
+
+//
+//	Required *:
+//
+.gform_wrapper .gfield_required {
+	color: $state-danger-text;
+	padding-left: 1px;
+}
+
+
+//
+//	input, select, and textarea elemnt extends:
+//
+.ginput_container input[type=text],
+.ginput_container input[type=email],
+.ginput_container input[type=number],
+.ginput_container input[type=url],
+.ginput_container input[type=tel],
+.ginput_container input[type=date],
+.ginput_container input[type=password],
+.ginput_container select,
+.ginput_container textarea {
+	@extend .form-control;
+	color: $text-color;
+	font-size: $h4-font-size;
+	line-height: $headings-line-height;
+	font-weight: $headings-font-weight;
+    font-family: $font-family-sans-serif;
+    border-radius: 0; 
+    padding: 20px;
+}
+
+
+//
+//	Button extend:
+//
+.gform_button {
+	@extend .btn;
+	@extend .btn-primary;
+	border-radius: 0; 
+	font-size: $h4-font-size;
+	line-height: $headings-line-height;
+	font-weight: $headings-font-weight;
+    font-family: $font-family-sans-serif;
+    padding: 20px 60px;
+}
+
+
+//
+//	Error/notification messages handling:
+//
+.gform_wrapper .gfield_error {
+	.gfield_label { color: $state-danger-text; }
+	input,
+	select,
+	textarea {
+		background-color: $alert-danger-bg;
+		border-color: $alert-danger-border;
+		color: $alert-danger-text;
+// 		@include form-control-focus();
+	}
+}
+.validation_error {
+	@extend .alert;
+	@extend .alert-danger;
+}
+.validation_message {
+	font-style: italic;
+	margin-top: 5px;
+}
+#gforms_confirmation_message { @extend .alert; }
+
+
+//
+//	Gravity Forms complex containers:
+//	- based on discussion from http://roots.io/style-gravity-forms-with-bootstrap/
+//	- HELLA refactored to SCSS/responsive sanity =/
+//
+.ginput_complex {
+
+
+	display: block;
+	padding: 10px 0 0 0;
+
+	input {
+		margin-bottom: 20px;
+	}
+	// Fix label font weight and top spacing
+	label {
+		font-weight: normal;
+		margin: 5px 0 15px 0;
+	}
+	span:last-of-type label { margin: 5px 0 0 0; }
+
+	// Full-width container
+	.ginput_full { width: 100%; }
+
+	// Left/right containers (ex: first/last name)
+	.ginput_left,
+	.ginput_right {
+		float: left;
+		width: 50%;
+	}
+
+	// Inputs and labels
+	.ginput_full {
+		input,
+		label {
+			width: 100% !important;
+		}
+	}
+	.ginput_left {
+		input,
+		select,
+		textarea,
+		label {
+			width: 95% !important;
+		}
+	}
+
+	// Responsive break for full-width input fields
+	@media screen and ( max-width: $fh_gf_responsive_break_at ) {
+		.ginput_full,
+		.ginput_left,
+		.ginput_right {
+			float: none;
+			width: 100% !important;
+			input { width: 100% !important; }
+			label { width: 100% !important; }
+		}
+	}
+}
+
+// Add BS3 clearfix
+.gf_clear_complex { @extend .clearfix; }
+
+
+//
+//	Weird-ass clear-multi shit:
+//
+.clear-multi {
+
+	display: table;
+
+	// Add BS3 clearfix
+	@extend .clearfix;
+
+	// Time/date fields
+	// - consider refactoring to be wrapped in .gfield_time_* and .gfield_date_*
+	//   keeping non-wrapped due to compiled CSS bloat. Keep an eye on this!
+	.ginput_container {
+		display: table-cell;
+		padding-left: 5px;
+		input { width: 70px; }
+		select { width: 80px; }
+		// Disable the labels for time (yeahhh no need really)
+		label { display: none; }
+	}
+	.ginput_container:first-child { padding-left: 0; }
+
+	// This is hack-y but fixes a rendering bug on Chrome
+	// TODO: clean this up
+	.gfield_time_hour,
+	.gfield_time_minute,
+	.gfield_time_ampm {
+		float: left;
+	}
+
+	// Inline block so that input element aligns properly with ":"
+	.gfield_time_hour input { display: inline-block; }
+
+	//
+	//	Date fields
+	//
+	.gfield_date_month,
+	.gfield_date_day,
+	.gfield_date_year {
+		// Re-enable the date field labels
+		label {
+			display: block;
+			font-weight: normal;
+		}
+	}
+}
+
+
+//
+//	Lists:
+//
+.gfield_list {
+	// Offset the top padding for the cell spacing
+	margin-top: -5px;
+	tr .gfield_list_cell { padding: 5px 0; }
+	.gfield_list_icons {
+		vertical-align: middle !important;
+		width: 60px;
+		img { float: left; }
+	}
+}
+
+
+//
+//	General Datepicker:
+//
+.gfield .datepicker {
+	display: inline-block !important;
+	width: 170px !important;
+}
+
+//
+//	Folkhack's jQuery UI Datepicker: (DEPRECIATED!)
+//	- hide jQuery UI datepicker in lieu of using the HTML type="date" option
+//	- left this around just-in-case
+//
+@if( $fh_gf_jqueryui_datepicker_enabled ) {
+
+	// Local defaults from "Folkhack's Boilerplate"
+	//	* Allows for stand-alone use
+	//	* TODO: nix this ... I think I'm totally done f'n with jQuery UI
+	$k_black:      #000000 !default;
+	$k_white:      #FFFFFF !default;
+	$k_mineshaft:  #303030 !default;
+	$k_silver:     #CCCCCC !default;
+	$k_whitesmoke: #F5F5F5 !default;
+
+	.ui-datepicker-trigger {
+		display: inline-block;
+		margin-left: 5px;
+	}
+	.ui-widget {
+		background: $k_mineshaft;
+		box-shadow: 1px 4px 9px $k_silver;
+	}
+	.ui-datepicker {
+		font-family: Verdana, sans-serif;
+		font-size: 90% !important;
+		padding: 0;
+		a:hover { text-decoration: none; }
+		.ui-datepicker-header {
+			background: transparent;
+			border: none;
+			font-weight: normal;
+			padding: 3px;
+			a {
+				color: $k_white;
+				text-transform: uppercase;
+			}
+		}
+		.ui-datepicker-header .ui-datepicker-title { text-align: center; }
+		.ui-datepicker-month {
+			margin-right: 5px;
+		}
+		.ui-datepicker-next {
+			float: right;
+			right: 2px;
+		}
+		.ui-datepicker-prev {
+			float: left;
+			left: 2px;
+		}
+		.ui-datepicker-next,
+		.ui-datepicker-prev {
+			cursor: pointer;
+			top: 3px;
+			span {
+				font-size: 10px;
+				font-weight: normal;
+				margin-top: 0;
+				position: relative;
+				top: 0;
+			}
+		}
+		table { margin: 0; }
+		th {
+			border-top: 1px solid $k_silver;
+			border: none;
+			color: $k_silver;
+			font-size: 13px;
+			font-weight: normal;
+			padding: 3px 0;
+			text-align: center;
+		}
+		td {
+			background: $k_whitesmoke;
+			border: none;
+			color: $k_mineshaft;
+			padding: 0;
+			text-align: center;
+		}
+		td .ui-state-default {
+			background: transparent;
+			border: none;
+			display: block;
+			margin: 0;
+			padding: .5em;
+			text-align: center;
+		}
+		td .ui-state-active,
+		td .ui-state-hover {
+			background: $k_white;
+		}
+		.ui-state-disabled  { opacity: 1; }
+	}
+
+} @else {
+
+	// Hide jQuery UI datepicker
+	.ui-datepicker,
+	.ui-datepicker-trigger { display: none !important; }
+}
+
+
+// Honeypot validation container
+// - hides .gform_validation_container
+
+.gform_validation_container {
+  display: none;
+}
