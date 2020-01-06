@@ -25,9 +25,14 @@ jQuery(function ($) {
 	$('#searchform').submit(function(e){
 		e.preventDefault(); // stop form submission
 	});
-  
-});
+	
+	// External Link pop-up
+	var currentDomain = document.location.protocol + '//' + document.location.hostname;
+	
+	$('a[href^="http"]:not([href*="' + currentDomain + '"])').on('click', function (e) {
+		e.preventDefault();
+		$('#externalLink').attr('href', $(this).attr('href'));
+		$('#modalNotification').modal('show');
+	});
 
-//function print_screen() {
-  //  window.print();
-//}
+});
