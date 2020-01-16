@@ -164,7 +164,9 @@
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
-					<div class="modal-body"><p><?php the_field('external_link_notification', 'options'); ?></p></div>
+					<div class="modal-body">
+						<p class="mb-0"><?php the_field('external_link_notification', 'options'); ?></p>
+					</div>
 					<div class="modal-footer">
 						<a id="externalLink" href="#" class="btn btn-primary btn-block"><?php _e('Proceed','csdschools'); ?></a>
 					</div>
