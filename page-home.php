@@ -39,6 +39,8 @@ get_header(); ?>
 					
 					foreach ( $images as $image ): ?>
 						
+						<?php $image_src = wp_get_attachment_image_src($image['id'], 'Home Slider', false); ?>
+						
 						<div class="carousel-item <?php if ( $x == 0 ): ?>active<?php endif; ?>">
 							
 							<?php if ( get_field('link', $image['id']) ): ?>
@@ -49,7 +51,7 @@ get_header(); ?>
 							
 							<?php endif; ?>
 					  		
-					  		<?php echo wp_get_attachment_image( $image['id'], 'Home Slider', false, array('class'=>'d-block w-100 img-fluid') ); ?>
+					  		<img src="<?php echo $image_src[0]; ?>" class="d-block w-100" />
 					  		
 					  		<?php if ( $image['title'] || $image['caption'] ): ?>
 						  	

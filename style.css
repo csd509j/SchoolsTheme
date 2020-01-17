@@ -8225,9 +8225,6 @@ body ul.page-numbers span.current {
   border-top: none; }
 
 @media (max-width: 991px) {
-  .carousel-wrap .carousel-item img {
-    max-height: 215px;
-    overflow: hidden; }
   .carousel-wrap .carousel-item .carousel-caption {
     width: auto;
     left: 0;
