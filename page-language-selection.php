@@ -5,10 +5,11 @@
  * @package WordPress
  * @subpackage CSD Schools
  * @since CSD Schools 1.7.5
+ * @updated CSD Schools 3.6.4
  */
  
-if (isset($_GET['referrer'])) {
-	$referrer = $_GET['referrer'];
+if (isset($_GET['redirect'])) {
+	$referrer = $_GET['redirect'];
 } else {
 	$referrer = home_url();
 }
