@@ -32,25 +32,35 @@
 	<?php get_template_part('template-parts/content','alert'); ?>
 	
 	<div id="header-top-global">
-		<div class="container">
-			<div class="row justify-content-between">
-				<div class="col-auto col-md-8 col-lg-6 col-xl-5 menu-top-block-container">				
-					<?php if (get_field('school_type', 'options') != 'Elementary'): ?>
-						<div class="d-none d-md-inline-block">
-							<?php render_block_calendar(get_field('block_calendar', 'options')); ?>
-						</div>					
-					<?php endif; ?>
-					<a href="tel:<?php the_field('attendance_phone', 'options'); ?>"><?php _e('Attendance','csdschools'); ?>: <?php the_field('attendance_phone', 'options'); ?></a>
+		<div class="container h-100">
+			<div class="row justify-content-between h-100">
+				<div class="col-auto menu-top-block-container">
+					<div class="row no-gutters h-100">
+						<div class="col-auto align-self-center mr-1 d-none d-md-block">		
+							
+							<?php if (get_field('school_type', 'options') != 'Elementary'): ?>
+								
+								<?php render_block_calendar(get_field('block_calendar', 'options')); ?>
+													
+							<?php endif; ?>
+						
+						</div>
+						<div class="col-auto align-self-center">
+							<a class="d-block" href="tel:<?php the_field('attendance_phone', 'options'); ?>"><?php _e('Attendance','csdschools'); ?>: <?php the_field('attendance_phone', 'options'); ?></a>
+						</div>
+					</div>
 				</div>
-				<div class="col-auto col-md-4 col-lg-6 col-xl-7 d-flex justify-content-end">
-					<div class="d-none d-xl-block">
-						<?php wp_nav_menu( array('theme_location' => 'header-toplinks', 'items_wrap' => '<ul class="list list-unstyled" aria-label="Top Links">%3$s</ul>' )); ?>
-					</div>
-					<div class="mr-1 d-none d-sm-block">
-						<a href="#" id="search-toggle"><i class="fa fa-search fa-lg"></i></a>
-					</div>
-					<div id="menu-top-language">
-						<?php languages_toggle(); ?>
+				<div class="col-auto">
+					<div class="row no-gutters h-100">
+						<div class="col-auto align-self-center d-none d-lg-block">
+							<?php wp_nav_menu( array('theme_location' => 'header-toplinks', 'items_wrap' => '<ul class="list list-unstyled" aria-label="Top Links">%3$s</ul>' )); ?>
+						</div>
+						<div class="col-auto align-self-center d-none d-sm-block mr-1">
+							<a href="#" id="search-toggle"><i class="fa fa-search fa-lg"></i></a>
+						</div>
+						<div class="col-auto h-100" id="menu-top-language">
+							<?php languages_toggle(); ?>
+						</div>
 					</div>
 				</div>
 			</div>

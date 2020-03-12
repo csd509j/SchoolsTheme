@@ -4,7 +4,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 3.6.4
+Version: 3.6.5
 Text Domain: csdschools
 */
 /*!
@@ -7461,70 +7461,68 @@ a:focus, a:active {
   #search-bar .fa {
     font-size: 1.4rem; }
 
-#header-top-global .btn, #header-top-global .gform_button, #header-top-global #header-global .menu-btn .btn, #header-global .menu-btn #header-top-global .btn, #header-top-global #loginform #wp-submit, #loginform #header-top-global #wp-submit, #header-top-global .acf-form .acf-button, .acf-form #header-top-global .acf-button {
-  padding: 0 10px;
+#header-top-global {
   height: 35px; }
-
-#header-top-global ul {
-  margin: 0;
-  line-height: 100%; }
-
-#header-top-global a {
-  line-height: 35px;
-  height: 35px;
-  font-size: 12px;
-  text-transform: uppercase; }
-
-#header-top-global a:hover, #header-top-global a:active, #header-top-global a:focus {
-  text-decoration: none; }
-
-#header-top-global li {
-  padding: 0 .6em; }
-
-#header-top-global .list-inline li {
-  padding: 0;
-  height: 35px;
-  line-height: 35px; }
-
-#header-top-global .fa-calendar, #header-top-global .fa-phone-square {
-  margin-left: 0;
-  padding-right: 2px; }
-
-#header-top-global .fa-lg {
-  font-size: 13px; }
-
-#header-top-global #calendar-block-header {
-  text-transform: uppercase; }
-  #header-top-global #calendar-block-header li:hover, #header-top-global #calendar-block-header .fa:hover {
-    background-color: transparent; }
-  #header-top-global #calendar-block-header .fc-list-view {
-    border: none; }
-  #header-top-global #calendar-block-header .fc-scroller {
-    height: auto !important; }
-  #header-top-global #calendar-block-header .fc-list-heading {
-    display: none; }
-  #header-top-global #calendar-block-header #calendar-block-wrap.list-inline li {
-    padding-right: 10px;
+  #header-top-global .btn, #header-top-global .gform_button, #header-top-global #header-global .menu-btn .btn, #header-global .menu-btn #header-top-global .btn, #header-top-global #loginform #wp-submit, #loginform #header-top-global #wp-submit, #header-top-global .acf-form .acf-button, .acf-form #header-top-global .acf-button {
+    padding: 0 10px; }
+  #header-top-global ul {
+    margin: 0;
+    line-height: 100%; }
+  #header-top-global a {
+    font-size: 12px;
+    text-transform: uppercase; }
+  #header-top-global a:hover, #header-top-global a:active, #header-top-global a:focus {
+    text-decoration: none; }
+  #header-top-global li {
+    padding: 0 .6em; }
+  #header-top-global .list-inline li {
+    padding: 0;
+    height: 35px;
+    line-height: 35px; }
+  #header-top-global .fa-calendar, #header-top-global .fa-phone-square {
+    margin-left: 0;
+    padding-right: 2px; }
+  #header-top-global .fa-lg {
+    font-size: 13px;
+    line-height: 1em;
+    vertical-align: 0;
+    display: block; }
+  #header-top-global #calendar-block-header {
+    text-transform: uppercase; }
+    #header-top-global #calendar-block-header li:hover, #header-top-global #calendar-block-header .fa:hover {
+      background-color: transparent; }
+    #header-top-global #calendar-block-header .fc-list-view {
+      border: none; }
+    #header-top-global #calendar-block-header .fc-scroller {
+      height: auto !important;
+      overflow: hidden !important; }
+    #header-top-global #calendar-block-header .fc-list-heading {
+      display: none; }
+    #header-top-global #calendar-block-header #calendar-block-wrap.list-inline li {
+      padding-right: 10px;
+      font-size: 12px; }
+  #header-top-global #calendar-block-header.fc-unthemed .fc-list-empty {
+    background-color: transparent;
+    display: block;
+    text-align: left;
     font-size: 12px; }
-
-#header-top-global #calendar-block-header.fc-unthemed .fc-list-empty {
-  background-color: transparent; }
-
-#header-top-global #calendar-block-header.fc-unthemed .fc-list-empty-wrap2 {
-  position: relative; }
-
-#header-top-global .fc-list-empty {
-  display: block;
-  padding-top: 8px;
-  text-align: left;
-  font-size: 12px; }
-
-#header-top-global .ubermenu {
-  margin-right: .5em; }
-  #header-top-global .ubermenu .ubermenu-target-text {
-    vertical-align: top; }
-  #header-top-global .ubermenu .ubermenu-target {
-    padding: 0; }
+  #header-top-global #calendar-block-header.fc-unthemed .fc-list-empty-wrap1, #header-top-global #calendar-block-header.fc-unthemed .fc-list-empty-wrap2 {
+    position: relative;
+    display: block; }
+  #header-top-global .ubermenu {
+    height: 100%; }
+    #header-top-global .ubermenu .ubermenu-nav {
+      height: 100%; }
+      #header-top-global .ubermenu .ubermenu-nav li {
+        height: 100%; }
+    #header-top-global .ubermenu .ubermenu-target-text {
+      vertical-align: top; }
+    #header-top-global .ubermenu .ubermenu-target {
+      padding: 0; }
+  #header-top-global .translated-btn, #header-top-global .translated-btn .dropdown, #header-top-global .translated-btn .btn, #header-top-global .translated-btn .gform_button, #header-top-global .translated-btn #loginform #wp-submit, #loginform #header-top-global .translated-btn #wp-submit, #header-top-global .translated-btn .acf-form .acf-button, .acf-form #header-top-global .translated-btn .acf-button {
+    height: 100%; }
+  #header-top-global li:hover, #header-top-global .fa:hover {
+    background-color: transparent !important; }
 
 @media (max-width: 767px) {
   #header-top-global {

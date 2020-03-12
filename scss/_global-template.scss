@@ -242,17 +242,16 @@ a:focus, a:active {
 //
 //##
 #header-top-global {
+	height: 35px;
+	
 	.btn {
 		padding: 0 10px;
-		height: 35px;
 	}
 	ul {
 		margin: 0;
 		line-height: 100%;
 	}
 	a {
-		line-height: 35px;
-		height: 35px;
 		font-size: 12px;
 		text-transform: uppercase;
 	}
@@ -273,9 +272,13 @@ a:focus, a:active {
 	}
 	.fa-lg {
 		font-size: 13px;
+		line-height: 1em;
+		vertical-align: 0;
+		display: block;
 	}
 	#calendar-block-header  {
 		text-transform: uppercase;
+		
 		li:hover, .fa:hover {
 			background-color: transparent;
 		}
@@ -284,6 +287,7 @@ a:focus, a:active {
 		}
 		.fc-scroller {
 			height: auto !important;
+			overflow: hidden !important;
 		}
 		.fc-list-heading {
 			display: none;
@@ -296,25 +300,37 @@ a:focus, a:active {
 	#calendar-block-header.fc-unthemed {
 		.fc-list-empty {
 			background-color: transparent;
+			display: block;
+			text-align: left;
+			font-size: 12px;
 		}
-		.fc-list-empty-wrap2 {
+		.fc-list-empty-wrap1, .fc-list-empty-wrap2 {
 			position: relative;
+			display: block;
 		}
-	}
-	.fc-list-empty {
-		display: block;
-		padding-top: 8px;
-		text-align: left;
-		font-size: 12px;
 	}
 	.ubermenu {
-		margin-right: .5em;
+		height: 100%;
+		
+		.ubermenu-nav {
+			height: 100%;
+			
+			li {
+				height: 100%;
+			}
+		}
 		.ubermenu-target-text {
 			vertical-align: top;
 		}
 		.ubermenu-target {
 			padding: 0;
 		}
+	}
+	.translated-btn, .translated-btn .dropdown, .translated-btn .btn  {
+		height: 100%;
+	}
+	li:hover, .fa:hover {
+		background-color: transparent !important;	
 	}
 }
 @media (max-width: 767px) {
