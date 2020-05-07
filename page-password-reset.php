@@ -12,8 +12,8 @@ get_header(); ?>
 <div id="primary" class="content-area py-2">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-sm-6 bg-light mb-1">
-				<h2 class="text-center"><?php _e('Password Reset','csdschools'); ?></h2>		
+			<div class="col-sm-6 bg-light py-2">
+				<h2 class="text-center mb-1"><?php _e('Password Reset','csdschools'); ?></h2>		
 					<?php
 					
 					global $wpdb;
@@ -89,8 +89,9 @@ get_header(); ?>
 						<input type="text" name="user_login" id="user_login" class="form-control" value="<?php echo $user_login; ?>" />
 					</div>
 					<input type="hidden" name="action" value="reset" />
-					<input type="submit" value="<?php __('Get New Password','csdschools'); ?>" class="btn btn-primary" id="submit" />
+					<input type="submit" value="<?php _e('Get New Password','csdschools'); ?>" class="btn btn-primary btn-lg btn-block" id="submit" />
 				</form>
+				<p class="meta text-center pt-2 mb-0"><a href="<?php echo home_url('/login'); ?>">Back to Login</a></p>
 			</div>
 		</div>			
 	</div>		

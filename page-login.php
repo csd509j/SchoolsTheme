@@ -26,7 +26,7 @@ get_header(); ?>
 					
 					?>
 					
-					<h2 class="text-center pb-1"><?php _e('Sign in','csdschools'); ?></h2>
+					<h2 class="text-center mb-1"><?php _e('Sign in','csdschools'); ?></h2>
 					
 					<?php if(isset($_GET['login']) && $_GET['login'] == 'failed'): ?>
 					
