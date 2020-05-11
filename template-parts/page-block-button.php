@@ -4,27 +4,27 @@
 		<?php
 			while ( have_rows('button') ) : the_row();	
 			
-				if ( get_sub_field('internal_page') ) {
+				if ( get_sub_field('link_type') == 'Internal Page' ) {
 			
 					$link = get_sub_field('internal_page');
 			
-				} else if ( get_sub_field('internal_media') ) {
+				} else if ( get_sub_field('link_type') == 'Internal Media' ) {
 			
 					$link = get_sub_field('internal_media');
 			
-				} else if ( get_sub_field('external_link') ) {
+				} else if ( get_sub_field('link_type') == 'External' ) {
 			
 					$link = get_sub_field('external_link');
 			
 				}
 				
-				if ( get_sub_field('button_type') == "Primary" ) {
+				if ( get_sub_field('button_type') == 'Primary' ) {
 					
-					$class = "btn-primary";
+					$class = 'btn-primary';
 					
 				} else {
 					
-					$class = "btn-secondary";
+					$class = 'btn-secondary';
 					
 				}
 		?>	
