@@ -4,7 +4,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 3.6.8
+Version: 3.6.9
 Text Domain: csdschools
 */
 /*!
@@ -380,9 +380,9 @@ mark,
   padding-left: 0;
   list-style: none; }
 
-.list-inline-item {
+.list-inline-item, #full-width-nav li {
   display: inline-block; }
-  .list-inline-item:not(:last-child) {
+  .list-inline-item:not(:last-child), #full-width-nav li:not(:last-child) {
     margin-right: 0.5rem; }
 
 .initialism {
@@ -7263,6 +7263,10 @@ a:focus,
 .btn-container a:hover {
   text-decoration: none; }
 
+.btn-white {
+  background-color: white;
+  color: #333333; }
+
 .modal {
   text-align: center;
   padding: 0 !important; }
@@ -7289,6 +7293,13 @@ a:focus,
 .ginput_container select:focus,
 .ginput_container textarea:focus, #loginform input[type="text"]:focus, #loginform input[type="password"]:focus, .acf-form .acf-input-wrap input:focus {
   border: 1px solid #ced4da; }
+
+.hr-sm {
+  width: 20%;
+  margin: auto; }
+
+.hr-center {
+  margin: 1.5em auto; }
 
 body {
   font-family: "proxima-nova", Arial, sans-serif; }
@@ -8217,6 +8228,287 @@ body ul.page-numbers span.current {
 
 #login {
   background-color: #cccccc; }
+
+#full-width-nav a:hover,
+#full-width-nav a:active,
+#full-width-nav a:focus {
+  text-decoration: none; }
+
+#full-width-nav li {
+  padding-left: 0px;
+  padding-right: 30px; }
+
+#full-width-nav .current_page_item:after {
+  content: '';
+  position: relative;
+  left: -50%;
+  top: 49px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #c36714;
+  clear: both; }
+
+.full-width-container {
+  background-color: #eee; }
+  .full-width-container a {
+    font-weight: bold; }
+  .full-width-container .btn, .full-width-container .gform_button, .full-width-container #header-global .menu-btn .btn, #header-global .menu-btn .full-width-container .btn, .full-width-container #loginform #wp-submit, #loginform .full-width-container #wp-submit, .full-width-container .acf-form .acf-button, .acf-form .full-width-container .acf-button, .full-width-container .gform_button {
+    font-weight: normal; }
+  .full-width-container .full-width-block {
+    padding: 70px 120px;
+    background-color: white; }
+  .full-width-container .headline {
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.2em;
+    border-bottom: 0;
+    font-size: 36px; }
+  .full-width-container .headline:after,
+  .full-width-container .headline:before {
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    width: 50%;
+    border-bottom: 2px solid #dddddd;
+    margin: 0 2% 0 -55%; }
+  .full-width-container .headline:after {
+    margin: 0 -55% 0 2%; }
+
+#tabs-block .nav-tabs li {
+  cursor: pointer;
+  position: relative; }
+  #tabs-block .nav-tabs li a {
+    padding: 20px 30px; }
+
+#tabs-block .nav-tabs li:before {
+  display: none; }
+
+#tabs-block .nav-tabs > li > a,
+#tabs-block .nav-tabs > li > a.active,
+#tabs-block .nav-tabs > li > a.active:hover,
+#tabs-block .nav-tabs > li > a.active:focus {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none; }
+
+#tabs-block .button-group {
+  background-color: #eee;
+  padding: 2em 1.75em;
+  text-align: center;
+  min-height: 182px; }
+
+#tabs-block .button-group-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 1.5em; }
+
+#tabs-block .button-group-content .btn, #tabs-block .button-group-content .gform_button, #tabs-block .button-group-content #loginform #wp-submit, #loginform #tabs-block .button-group-content #wp-submit, #tabs-block .button-group-content .acf-form .acf-button, .acf-form #tabs-block .button-group-content .acf-button, #tabs-block .button-group-content .gform_button {
+  width: 75%; }
+
+#tabs-block #tabs-list-header {
+  padding: 1em 2em 0 2em;
+  background-color: white; }
+
+#tabs-block .tab-header-color {
+  text-align: center; }
+  #tabs-block .tab-header-color h2, #tabs-block .tab-header-color .gform_title {
+    margin-bottom: 1em;
+    color: #c36714; }
+  #tabs-block .tab-header-color .nav-tabs {
+    border: none; }
+  #tabs-block .tab-header-color .nav-tabs > li > a {
+    color: #333;
+    border: none;
+    cursor: pointer; }
+  #tabs-block .tab-header-color .nav > li > a:hover,
+  #tabs-block .tab-header-color .nav > li > a:focus {
+    background-color: transparent; }
+  #tabs-block .tab-header-color .nav-tabs > li > a.active,
+  #tabs-block .tab-header-color .nav-tabs > li > a.active:hover,
+  #tabs-block .tab-header-color .nav-tabs > li > a.active:focus {
+    color: #333;
+    background-color: #eee; }
+  #tabs-block .tab-header-color .nav-tabs > li > a:hover {
+    border: none;
+    color: #333; }
+  #tabs-block .tab-header-color.bg-gray-lighten .nav-tabs > li > a {
+    color: #333; }
+
+#tabs-block .tab-list-item {
+  background-color: #eee;
+  padding: 30px;
+  margin-bottom: 1em; }
+  #tabs-block .tab-list-item p:last-child {
+    margin-bottom: 0; }
+  #tabs-block .tab-list-item:last-child {
+    margin-bottom: 0; }
+
+#tabs-block .small {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333; }
+
+.text-block-wrap {
+  display: flex;
+  width: 100%;
+  background-color: white; }
+
+.text-block-content {
+  -ms-flex: 1;
+  flex: 1;
+  padding: 70px 120px;
+  width: 100%; }
+
+.text-block-image {
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  height: auto; }
+
+#table-block .table th {
+  border-bottom: 3px solid #666;
+  border-right: 5px solid #fff;
+  text-align: left;
+  padding: 5px 10px;
+  color: #333;
+  font-weight: 700; }
+
+#table-block .table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-right: 5px solid #fff; }
+
+#contact-block {
+  padding: 70px 120px;
+  background-color: white; }
+  #contact-block #contact-block-content .row {
+    margin-bottom: 2em; }
+  #contact-block #contact-block-content .row:last-child {
+    margin-bottom: 0; }
+  #contact-block #contact-block-content ul:last-child {
+    margin-bottom: 0; }
+
+#cta-block ul {
+  margin-bottom: 0; }
+
+#cta-block h2,
+#cta-block .gform_title {
+  font-size: 1.8rem;
+  line-height: 32px; }
+
+#cta-block #cta-block-button {
+  text-align: center; }
+  #cta-block #cta-block-button li {
+    vertical-align: middle; }
+
+#cta-block .gform_wrapper {
+  background: transparent;
+  border: none;
+  padding: 0; }
+
+#cta-block .gfield_description,
+#cta-block .gfield_checkbox label,
+#cta-block .gfield_radio label {
+  color: white; }
+
+#cta-block .ginput_container input[type=email],
+#cta-block .ginput_container input[type=text],
+#cta-block .ginput_container select,
+#cta-block .ginput_container textarea {
+  border: none; }
+
+#cta-block .gf_simple_horizontal_wrapper .gform_body,
+#cta-block .gf_simple_horizontal_wrapper .gform_footer {
+  display: inline-block; }
+
+#cta-block .gf_simple_horizontal_wrapper .gform_body {
+  width: 85%; }
+
+#cta-block .gf_simple_horizontal_wrapper .gform_footer {
+  width: 14%;
+  vertical-align: top; }
+
+#cta-block .gf_simple_horizontal_wrapper ul,
+#cta-block .gf_simple_horizontal_wrapper li {
+  margin-bottom: 0; }
+
+#cta-block .gf_simple_horizontal_wrapper .gform_confirmation_message {
+  padding-top: 10px; }
+
+#cta-block .gform_footer .gform_button {
+  line-height: 1.3; }
+
+#cta-block .gform_footer .gform_button,
+#cta-block .gform_footer .gform_button:hover {
+  background-color: white; }
+
+#cta-block .gform_confirmation_message {
+  color: white;
+  font-size: 18px; }
+
+@media only screen and (min-width: 1024px) {
+  .text-block-image img {
+    width: 100%;
+    height: 100%;
+    min-width: 370px;
+    object-fit: cover;
+    font-family: 'object-fit: cover;'; } }
+
+@media (max-width: 991px) {
+  .full-width-container .headline {
+    font-size: 25px; }
+  .full-width-container .full-width-block {
+    padding: 1em; }
+    .full-width-container .full-width-block .tab-content h2,
+    .full-width-container .full-width-block .tab-content .gform_title {
+      margin-top: 1em; }
+  .full-width-container #tabs-list-header {
+    display: none; }
+  .full-width-container #tabs-block .nav-tabs {
+    display: none; }
+  .full-width-container #tabs-block .tab-pane {
+    display: block;
+    opacity: 1; }
+  .full-width-container #tabs-block .button-group {
+    padding: 1.75em .75em;
+    min-height: inherit; }
+  .full-width-container #tabs-block .button-group-title {
+    margin-bottom: .75em; }
+  .full-width-container #tabs-block .tab-list-item {
+    padding: .75em; }
+  .full-width-container #contact-block {
+    padding: 1em; }
+  .full-width-container .text-block-wrap {
+    display: block; }
+    .full-width-container .text-block-wrap .text-block-image {
+      display: block;
+      flex: none;
+      max-height: 350px;
+      overflow: hidden; }
+      .full-width-container .text-block-wrap .text-block-image img {
+        width: 100%;
+        height: auto; }
+    .full-width-container .text-block-wrap .text-block-content {
+      display: block;
+      padding: 2em; } }
+
+@media (max-width: 767px) {
+  #cta-block h2,
+  #cta-block .gform_title {
+    text-align: center;
+    margin-bottom: .5em; }
+  #cta-block .gf_simple_horizontal_wrapper .gform_body,
+  #cta-block .gf_simple_horizontal_wrapper .gform_footer {
+    width: 100%; }
+  #cta-block .gf_simple_horizontal_wrapper .gform_footer {
+    text-align: center;
+    margin-top: 1em; }
+  #cta-block #cta-block-button {
+    text-align: center; } }
 
 .acf-form .acf-fields > .acf-field {
   padding: 0;

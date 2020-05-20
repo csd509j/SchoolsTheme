@@ -23,6 +23,10 @@ a:focus,
 		text-decoration: none;
 	}
 }
+.btn-white {
+	background-color: white;
+	color: $text-color;
+}
 .modal {
   	text-align: center;
   	padding: 0!important;
@@ -43,6 +47,13 @@ a:focus,
 }
 .form-control:focus {
 	border: 1px solid $input-border-color;
+}
+.hr-sm {
+    width: 20%;
+    margin: auto;
+}
+.hr-center {
+    margin: 1.5em auto;
 }
 //******************
 // Global Typography
@@ -1296,6 +1307,390 @@ body ul.page-numbers span.current {
 	@extend .btn-block;
 }
 
+//**********
+// Full Width Page Template
+//**********
+#full-width-nav {
+	a:hover,
+	a:active,
+	a:focus {
+		text-decoration: none;
+	}
+	li {
+		@extend .list-inline-item;
+	    padding-left: 0px;
+	    padding-right: 30px;
+	}
+	.current_page_item:after {
+	    content: '';
+	    position: relative;
+	    left: -50%;
+	    top: 49px;
+	    width: 0;
+	    height: 0;
+	    border-left: 10px solid transparent;
+	    border-right: 10px solid transparent;
+	    border-top: 10px solid $primary;
+	    clear: both;
+	}
+}
+.full-width-container {
+	background-color: #eee;
+	a {
+		font-weight: bold;
+	}
+	.btn, .gform_button {
+		font-weight: normal;
+	}
+	.full-width-block {
+	    padding: 70px 120px;
+	    background-color: white;
+	}
+	.headline {
+	    margin: 20px auto;
+	    overflow: hidden;
+	    text-align: center;
+	    line-height: 1.2em;
+	    border-bottom: 0;
+	    font-size: 36px;
+	}
+	.headline:after,
+	.headline:before {
+	    content: "";
+	    vertical-align: middle;
+	    display: inline-block;
+	    width: 50%;
+	    border-bottom: 2px solid #dddddd;
+	    margin: 0 2% 0 -55%;
+	}
+	.headline:after {
+	    margin: 0 -55% 0 2%;
+	}
+}
+
+//**********
+// Full Width Block - Tabbed Content
+//**********
+#tabs-block {
+	.nav-tabs {
+		li {
+			cursor: pointer;
+			position: relative;
+			
+			a {
+			    padding: 20px 30px;
+			}
+		}
+		li:before {
+			display: none;
+		}
+		>li>a,
+		>li>a.active,
+		>li>a.active:hover,
+		>li>a.active:focus {
+		    color: #333;
+		    font-weight: bold;
+		    text-decoration: none;
+		}
+	}
+	.button-group {
+	    background-color: #eee;
+	    padding: 2em 1.75em;
+	    text-align: center;
+	    min-height: 182px;
+	}
+	.button-group-title {
+	    font-size: 20px;
+	    font-weight: 500;
+	    line-height: 24px;
+	    margin-bottom: 1.5em;
+	}
+	.button-group-content {
+		.btn, .gform_button {
+			width: 75%;
+		}
+	}
+	#tabs-list-header {
+	    padding: 1em 2em 0 2em;
+	    background-color: white;
+	}
+	.tab-header-color {
+	    text-align: center;
+	    
+	    h2, .gform_title {
+			margin-bottom: 1em;
+			color: #c36714;		    
+	    }
+	    .nav-tabs {
+		    border: none;
+		}
+		.nav-tabs>li>a {
+		    color: #333;
+		    border: none;
+		    cursor: pointer;
+		}
+		.nav>li>a:hover,
+		.nav>li>a:focus {
+		    background-color: transparent;
+		}
+		.nav-tabs>li>a.active,
+		.nav-tabs>li>a.active:hover,
+		.nav-tabs>li>a.active:focus {
+		    color: #333;
+		    background-color: #eee;
+		}
+		
+		.nav-tabs>li>a:hover {
+		    border: none;
+		    color: #333;
+		}
+		&.bg-gray-lighten .nav-tabs>li>a {
+		    color: #333;
+		}
+
+	}
+	.tab-list-item {
+	    background-color: #eee;
+	    padding: 30px;
+	    margin-bottom: 1em;
+	    
+		p:last-child {
+		    margin-bottom: 0;
+		}
+		&:last-child {
+		    margin-bottom: 0;
+		}
+	}
+	.small {
+		font-size: 24px;
+		font-weight: bold;
+		color: $text-color;
+	}
+}
+
+//**********
+// Full Width Block - Text
+//**********
+.text-block-wrap {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.text-block-content {
+    -ms-flex: 1;
+    flex: 1;
+    padding: 70px 120px;
+    width: 100%;
+}
+
+.text-block-image {
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+
+//**********
+// Full Width Block - Table
+//**********
+#table-block .table th {
+    border-bottom: 3px solid #666;
+    border-right: 5px solid #fff;
+    text-align: left;
+    padding: 5px 10px;
+    color: #333;
+    font-weight: 700;
+}
+#table-block .table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-right: 5px solid #fff;
+}
+
+//**********
+// Full Width Block - Contact
+//**********
+#contact-block {
+	padding: 70px 120px;
+	background-color: white;
+	
+	#contact-block-content {
+		.row {
+	    	margin-bottom: 2em;
+		}
+		.row:last-child {
+	    	margin-bottom: 0;
+		}
+		ul:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+//**********
+// Full Width Block - CTA
+//**********
+#cta-block {
+	ul {
+    	margin-bottom: 0;
+	}
+	h2,
+	.gform_title {
+	    font-size: 1.8rem;
+	    line-height: 32px;
+	}
+
+	#cta-block-button {
+    	text-align: center;
+		
+		li {
+			vertical-align: middle;
+		}
+	}
+	.gform_wrapper {
+	    background: transparent;
+	    border: none;
+	    padding: 0;
+	}
+	.gfield_description,
+	.gfield_checkbox label,
+	.gfield_radio label {
+    	color: white;
+	}
+	.ginput_container input[type=email],
+	.ginput_container input[type=text],
+	.ginput_container select,
+	.ginput_container textarea {
+    	border: none;
+	}
+	.gf_simple_horizontal_wrapper {
+		.gform_body,
+		.gform_footer {
+    		display: inline-block;
+		}
+		.gform_body {
+	    	width: 85%;
+		}
+		.gform_footer {
+	    	width: 14%;
+			vertical-align: top;
+		}
+		ul,
+		li {
+		    margin-bottom: 0;
+		}
+		.gform_confirmation_message {
+			padding-top: 10px;
+		}
+	}
+
+	.gform_footer {
+		.gform_button {
+			line-height: 1.3;
+		}
+		.gform_button,
+		.gform_button:hover {
+		    background-color: white;
+		}
+	}
+	.gform_confirmation_message {
+    	color: white;
+		font-size: 18px;
+	}
+}
+@media only screen and (min-width: 1024px) {
+    .text-block-image img {
+        width: 100%;
+        height: 100%;
+        min-width: 370px;
+        object-fit: cover;
+        font-family: 'object-fit: cover;';
+    }
+}
+@media (max-width: 991px) {
+    .full-width-container {
+	    .headline {
+        	font-size: 25px;
+    	}
+		.full-width-block {
+        	padding: 1em;
+			
+			.tab-content  {
+				h2,
+				.gform_title {
+					margin-top: 1em;
+    			}
+    		}
+    	}
+		#tabs-list-header {
+        	display: none;
+    	}
+		#tabs-block {
+			.nav-tabs {
+				display: none;
+    		}
+			.tab-pane {
+	        	display: block;
+				opacity: 1;
+	    	}
+			.button-group {
+		        padding: 1.75em .75em;
+		        min-height: inherit;
+    		}
+			.button-group-title {
+				margin-bottom: .75em;
+    		}
+			.tab-list-item {
+				padding: .75em;
+    		}
+		}
+		#contact-block {
+			padding: 1em;
+		}
+		.text-block-wrap {
+			display: block;
+			
+			.text-block-image {
+		        display: block;
+		        flex: none;
+		        max-height: 350px;
+		        overflow: hidden;
+				
+				img {
+			        width: 100%;
+			        height: auto;
+			    }
+			}
+			.text-block-content {
+		        display: block;
+		        padding: 2em;
+		    }
+		}
+	}
+}
+@media (max-width: 767px) {
+    #cta-block {
+	    h2,
+		.gform_title {
+	        text-align: center;
+	        margin-bottom: .5em;
+	    }
+		.gf_simple_horizontal_wrapper {
+			.gform_body,
+			.gform_footer {
+				width: 100%;
+    		}
+			.gform_footer {
+		        text-align: center;
+		        margin-top: 1em;
+		    }
+		}
+	    #cta-block-button {
+	        text-align: center;
+	    }
+	}
+}
 //**********
 // ACF Form
 //**********

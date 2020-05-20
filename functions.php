@@ -352,3 +352,41 @@ function get_string_between($string, $start, $end){
 	$len = strpos($string, $end, $ini) - $ini;
 	return substr($string, $ini, $len);
 }
+
+/**
+* Get pages for full-width subnav
+*
+* @since CSD Schools 3.6.9
+*/
+function get_full_width_children_pages($post) {
+	if($post->post_parent) {
+		$parent_id = get_topmost_parent($post->id);
+			  				  	
+		$children = wp_list_pages( array(
+		    'title_li' => '',
+		    'child_of' => $parent_id,
+		    'echo'	=> 0,
+		    'sort_column' => 'post_title',
+		));
+	} else {
+		$parent_id = $post->ID;
+		
+		$children = wp_list_pages( array (
+			'title_li' => '',
+			'depth' => 1,
+			'child_of' => $post->ID,
+			'echo' => 0,
+			'sort_column' => 'post_title',
+		));
+	}
+
+	if ($children) {
+		$pages = array(
+			'parent' => $parent_id,
+			'children' => $children,
+		);
+		return($pages);
+	} else {
+		return false;
+	}
+}
