@@ -19,7 +19,10 @@ $myUpdateChecker->setBranch('master');
  * @since CSD Schools 2.0
  */
 
+add_action( 'wp_enqueue_scripts', 'csd_enqueue_style', 100 );
+
 function csd_enqueue_style() {
+	
 	wp_enqueue_style( 'csd-fonts', 'https://use.typekit.net/iqq6yaa.css' );
 	
 	wp_enqueue_style( 'print.css', get_template_directory_uri() . '/assets/stylesheets/print.css' ); 
@@ -27,15 +30,17 @@ function csd_enqueue_style() {
 	wp_enqueue_style( 'ie10-viewport-bug-workaround.css', get_template_directory_uri() . '/assets/stylesheets/ie10-viewport-bug-workaround.css' ); 
 
 	wp_enqueue_style( 'font-awesome-5', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css' ); 
+	
 }
-add_action( 'wp_enqueue_scripts', 'csd_enqueue_style', 100 );
 
 /*
  * Enqueue Scripts
  *
  * @since CSD Schools 2.0
  */
- 
+
+add_action( 'wp_enqueue_scripts', 'csd_enqueue_script' );
+
 function csd_enqueue_script() {
 	
 	wp_deregister_script('jquery');
@@ -58,7 +63,6 @@ function csd_enqueue_script() {
 			
 	}	
 }
-add_action( 'wp_enqueue_scripts', 'csd_enqueue_script' );
 
 /*
  * Add image sizes
@@ -88,7 +92,9 @@ add_image_size('Text Block', 530, 640, true);
  *
  * @since CSD Schools 1.0
  */
- 
+
+add_action( 'init', 'register_my_menus' );
+
 function register_my_menus() {
 	
 	register_nav_menus( array(
@@ -97,14 +103,15 @@ function register_my_menus() {
     ) );
     
 }
-add_action( 'init', 'register_my_menus' );
 
 /*
  * Register sidebar widget areas
  *
  * @since CSD Schools 1.0
  */
- 
+
+add_action( 'widgets_init', 'csd_widgets_init' );
+
 function csd_widgets_init() {
 	
     register_sidebar( array(
@@ -125,14 +132,15 @@ function csd_widgets_init() {
     ) );
     
 }
-add_action( 'widgets_init', 'csd_widgets_init' );
-
 
 /*
  * Custom Wordpress admin css
  *
  * @since CSD Schools 1.0
  */
+
+add_action('admin_head', 'custom_admin_css');
+
 function custom_admin_css() {
   echo '<style>
     #wp-admin-bar-wpfc-toolbar-parent > .ab-empty-item::before { content: ""; padding: 0; margin:0; }
@@ -147,62 +155,65 @@ function custom_admin_css() {
 	}
   </style>';
 }
-add_action('admin_head', 'custom_admin_css');
 
 /*
  * Setup custom excerpt length
  *
  * @since CSD Schools 1.0
  */
- 
+
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 function custom_excerpt_length( $length ) {
 	
 	return 10;
 
 }
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 /*
  * Remove excerpt more label
  *
  * @since CSD Schools 1.0
  */
- 
+
+add_filter('excerpt_more', 'new_excerpt_more');
+
 function new_excerpt_more( $more ) {
 	
 	return '';
 
 }
-add_filter('excerpt_more', 'new_excerpt_more');
 
 /*
  * Custom pagination function
  *
  * @since CSD Schools 1.2.6
  */
-function show_pagination_links()
-{
-    global $wp_query;
+ 
+function show_pagination_links() {
+   
+	global $wp_query;
 
-    $page_tot   = $wp_query->max_num_pages;
-    $page_cur   = get_query_var( 'paged' );
-    $big        = 999999999;
-
-    if ( $page_tot == 1 ) return;
-
-    echo paginate_links( array(
-            'base'      => str_replace( $big, '%#%',get_pagenum_link( 999999999, false ) ), // need an unlikely integer cause the url can contains a number
-            'format'    => '?paged=%#%',
-            'current'   => max( 1, $page_cur ),
-            'total'     => $page_tot,
-            'prev_next' => true,
+	$page_tot   = $wp_query->max_num_pages;
+	$page_cur   = get_query_var( 'paged' );
+	$big        = 999999999;
+	
+	if ( $page_tot == 1 ) return;
+	
+	echo paginate_links( array(
+	        'base'      => str_replace( $big, '%#%',get_pagenum_link( 999999999, false ) ), // need an unlikely integer cause the url can contains a number
+	        'format'    => '?paged=%#%',
+	        'current'   => max( 1, $page_cur ),
+	        'total'     => $page_tot,
+	        'prev_next' => true,
 			'prev_text'    => __('&lsaquo; Previous', 'csdschools'),
 			'next_text'    => __('Next &rsaquo;', 'csdschools'),
-            'end_size'  => 1,
-            'mid_size'  => 2,
-            'type'      => 'list'
-        )
-    );
+	        'end_size'  => 1,
+	        'mid_size'  => 2,
+	        'type'      => 'list'
+	    )
+	);
+	
 }
 
 /**
@@ -210,18 +221,22 @@ function show_pagination_links()
  *
  * @since CSD Schools 1.0
  */
-if( function_exists('acf_add_options_page') ) {
+
+if ( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page();
 	
 }
-if( function_exists('acf_add_options_sub_page') ) {
+
+if ( function_exists('acf_add_options_sub_page') ) {
+    
     acf_add_options_sub_page( 'General' );
     acf_add_options_sub_page( 'Pages' );
     acf_add_options_sub_page( 'Calendar' );
     acf_add_options_sub_page( 'Footer' );
     acf_add_options_sub_page( '404 Page' );
     acf_add_options_sub_page( 'Google Analytics' );
+
 }
 
 /**
@@ -229,35 +244,45 @@ if( function_exists('acf_add_options_sub_page') ) {
  *
  * @since CSD Schools 1.7.1
  */
+
 add_filter('acf/settings/save_json', function() {
+
 	return get_stylesheet_directory() . '/acf-json';
+
 });
 
 add_filter('acf/settings/load_json', function($paths) {
-  $paths = array();
+	
+	$paths = array();
 
-  if(is_child_theme()) {
-    $paths[] = get_stylesheet_directory() . '/acf-json';
-  }
-  $paths[] = get_template_directory() . '/acf-json';
-
-  return $paths;
+	if ( is_child_theme() ) {
+		
+		$paths[] = get_stylesheet_directory() . '/acf-json';
+		
+	}
+	
+	$paths[] = get_template_directory() . '/acf-json';
+	
+	return $paths;
+	
 });
+
 /**
  * Load sidebar select fields with callout blocks from options
  *
  * @since CSD Schools 1.0
  */
+ 
 function acf_load_sidebar_callout_blocks_field_choices( $field ) {
     
     // reset choices
     $field['choices'] = array();
 
     // if has rows
-    if( have_rows('callout_blocks', 'option') ) {
+    if ( have_rows('callout_blocks', 'option') ) {
         
         // while has rows
-        while( have_rows('callout_blocks', 'option') ) {
+        while ( have_rows('callout_blocks', 'option') ) {
             
             // instantiate row
             the_row();
@@ -278,23 +303,26 @@ function acf_load_sidebar_callout_blocks_field_choices( $field ) {
     return $field;
     
 } 
-add_filter('acf/load_field/name=sidebar_callout_blocks', 'acf_load_sidebar_callout_blocks_field_choices');
+
 
 /**
  * Load sidebar select fields with contact blocks from options
  *
  * @since CSD Schools 1.0
  */
+
+add_filter('acf/load_field/name=sidebar_contact_block', 'acf_load_sidebar_contact_blocks_field_choices');
+
 function acf_load_sidebar_contact_blocks_field_choices( $field ) {
     
     // reset choices
     $field['choices'] = array();
 
     // if has rows
-    if( have_rows('contact_blocks', 'option') ) {
+    if ( have_rows('contact_blocks', 'option') ) {
         
         // while has rows
-        while( have_rows('contact_blocks', 'option') ) {
+        while ( have_rows('contact_blocks', 'option') ) {
             
             // instantiate row
             the_row();
@@ -315,7 +343,6 @@ function acf_load_sidebar_contact_blocks_field_choices( $field ) {
     return $field;
     
 } 
-add_filter('acf/load_field/name=sidebar_contact_block', 'acf_load_sidebar_contact_blocks_field_choices');
 
 /**
  * Set featured image from ACF field
@@ -323,34 +350,53 @@ add_filter('acf/load_field/name=sidebar_contact_block', 'acf_load_sidebar_contac
  * @since CSD Schools 1.0
  * @updated CSD Schools 3.1.9
  */
+ 
+add_filter( 'acf/update_value/name=featured_img', 'acf_set_featured_image', 10, 3 );
+
 function acf_set_featured_image( $value, $post_id, $field  ){
 	
 	update_post_meta( $post_id, '_thumbnail_id', $value );
 	
 	return $value;
+	
 }
-add_filter( 'acf/update_value/name=featured_img', 'acf_set_featured_image', 10, 3 );
 
 /**
  * Control the number of posts for news
  *
  * @since CSD Schools 3.1.3
  */
-function news_query( $query ) {
-	if ( $query->is_archive('news') && $query->is_main_query() && !is_admin() ) {
-		$query->set( 'posts_per_page', 15 );
-	}
-}
+
 add_action( 'pre_get_posts', 'news_query' );
 
-// Helper function to help migrate away from ACF-Crop
-function get_string_between($string, $start, $end){
+function news_query( $query ) {
+
+	if ( $query->is_archive('news') && $query->is_main_query() && !is_admin() ) {
+
+		$query->set( 'posts_per_page', 15 );
+
+	}
+
+}
+
+/**
+ * Helper function to help migrate away from ACF-Crop
+ *
+ * @since CSD Schools 3.1.3
+ */
+
+function get_string_between( $string, $start, $end ) {
+	
 	$string = ' ' . $string;
 	$ini = strpos($string, $start);
-	if ($ini == 0) return '';
+	
+	if ( $ini == 0 ) return '';
+	
 	$ini += strlen($start);
 	$len = strpos($string, $end, $ini) - $ini;
+	
 	return substr($string, $ini, $len);
+
 }
 
 /**
@@ -358,8 +404,11 @@ function get_string_between($string, $start, $end){
 *
 * @since CSD Schools 3.6.9
 */
-function get_full_width_children_pages($post) {
-	if($post->post_parent) {
+
+function get_full_width_children_pages( $post ) {
+	
+	if ( $post->post_parent ) {
+		
 		$parent_id = get_topmost_parent($post->id);
 			  				  	
 		$children = wp_list_pages( array(
@@ -368,7 +417,9 @@ function get_full_width_children_pages($post) {
 		    'echo'	=> 0,
 		    'sort_column' => 'post_title',
 		));
+		
 	} else {
+		
 		$parent_id = $post->ID;
 		
 		$children = wp_list_pages( array (
@@ -378,15 +429,57 @@ function get_full_width_children_pages($post) {
 			'echo' => 0,
 			'sort_column' => 'post_title',
 		));
+		
 	}
 
-	if ($children) {
+	if ( $children ) {
+		
 		$pages = array(
 			'parent' => $parent_id,
 			'children' => $children,
 		);
+		
 		return($pages);
+		
 	} else {
+		
 		return false;
+		
 	}
+	
+}
+
+/**
+* Return calendars from CSD API
+*
+* @since CSD Schools 3.7.1
+*/
+
+function get_calendars() {
+
+	$response = wp_remote_get( 'https://www.csd509j.net/wp-json/acf/v3/options/options/calendar_downloads' );
+
+	if ( is_wp_error( $response ) ) {
+		
+		return;
+	}
+
+	$all_calendars = json_decode( wp_remote_retrieve_body( $response ) );
+	
+	$school_calendars = array();
+	
+	$school_type = get_field('school_type', 'options');
+
+	foreach ( $all_calendars->calendar_downloads as $calendar ) {
+
+		if ( $calendar->grade_level == $school_type || $calendar->grade_level == 'All Grades' ) {
+
+			$school_calendars[] = array( 'name' => $calendar->calendar_name, 'url' => $calendar->calendar_file );
+			
+		}
+		
+	}
+
+	return $school_calendars;
+	
 }
