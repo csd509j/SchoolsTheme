@@ -104,123 +104,21 @@ get_header(); ?>
 	<section class="container py-2 py-xl-3">
 		<div class="row">
 			<div id="news" class="col-md-9">
+
 				<div class="headline">
-					<h2><?php _e('Latest News','csdschools'); ?></h2>
-				</div>
-				<div class="row">
-				
-				<?php 
-				
-				$args = array( 
-					'post_type' => 'news', 
-					'posts_per_page' => '2', 
-					'meta_query' => array(
-						array(
-							'key'    => 'news_post_type',
-							'value'    => 'featured',
-						),
-					), 
-				);
-
-				$loop = new WP_Query( $args );
-				
-				$featured_ids = array();
-
- 				while ( $loop->have_posts() ) : $loop->the_post();
-					
-					$featured_ids[] = $post->ID;
-					
-					if ( get_field('featured_img', $post->ID) ) {
-						
-						$image = get_field('featured_img', $post->ID);
-						$imageID = $image['id'];
-					
-					} else {
-					
-						// For legacy images added by ACF-Crop
-						if ( is_array( get_field('featured_image') ) ) {
-					
-							$image = get_field('featured_image');
-							$imageID = $image['id'];
-					
-						} else {
-					
-							$imageID = get_string_between( get_field('featured_image', $post->ID), '"cropped_image":', '}' );
-					
-						}					
-					}
-					
-				?>
-				
-					<div class="col-md-6 col-xl-4 news-item">
-						<div class="row">
-							<div class="col-3 col-md-12 pb-1 news-img">
-								<a href="<?php the_permalink(); ?>">
-									<?php echo wp_get_attachment_image( $imageID, 'News Image Small', 0, array('class' => 'img-fluid w-100') ); ?>
-								</a>
-							</div>
-							<div class="col-9 col-md-12 news-content">
-								<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-								
-								<?php the_field('featured_text', $post->ID); ?>
+					<div class="d-flex justify-content-between">
+						<div class="align-self-center">
+							<h2><?php _e('Latest News','csdschools'); ?></h2>
 							
-							</div>
 						</div>
-					</div> 
-					
-		 			<?php 
-		 			
-		 			endwhile; 
-		 			
-		 			wp_reset_query(); 
-		 			
-		 			?>
-	 				
-	 				<div id="news-more" class="col-xl-4 mt-2 mt-xl-0">
-	 					<div class="subhead">
-	 						<h5><?php _e('School Updates','csdschools'); ?></h5>
-	 					</div>
-	 					<ul class="fa-ul">
-	 					
-	 					<?php 
+						<div class="mb-1">
+							<small><a class="btn btn-primary" href="https://www.parentsquare.com/schools/<?php the_field('parentsquare_id', 'options'); ?>/feeds"><?php _e('More Updates','csdschools'); ?></a></small>	
+						</div>
+					</div>
+				</div>
 
-						$args = array(
-							'post_type' => 'news', 
-							'posts_per_page' => 5,  
-							'post__not_in' => $featured_ids
-						);
-						
-						$loop = new WP_Query( $args );
-
-						while ( $loop->have_posts() ) : $loop->the_post();
-							
-							if ( get_field('news_post_source', $post->ID ) == 'External' ) {
-							
-								$link = get_field('external_news_link', $post->ID );
-							
-							} else {
-							
-								$link = get_permalink();
-							
-							}
-							
-						?>
-							<li><span class="fa-li" ><i class="fas fa-chevron-right fa-xs"></i></span>
-								<a href="<?php echo $link; ?>" <?php if ( get_field('news_post_source', $post->ID) == 'External' ): ?> target="_blank" <?php endif; ?>><?php the_title(); ?></a>
-							</li>
-						
-						<?php 
-							
-						endwhile; 
-						
-						wp_reset_query();
-						
-						?>
-						
-						</ul>
-						<small><a href="<?php home_url(); ?>/news"><?php _e('More Updates','csdschools'); ?></a></small>	
-	 				</div>
-	 			</div>
+				<iframe src="https://www.parentsquare.com/schools/<?php the_field('parentsquare_id', 'options'); ?>/rss_widget" title="New School Posts From ParentSquare" height="441px" scrolling="no" frameborder="0" width="100%" style="border:none;overflow:hidden;"></iframe>
+			
  			</div>
  			<div class="col-md-3">
  				<div id="secondary-search">

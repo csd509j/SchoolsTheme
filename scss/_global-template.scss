@@ -1286,6 +1286,40 @@ body ul.page-numbers span.current {
 		}
 	}
 }
+
+//***********
+// Pagination
+//***********
+
+.page-numbers {
+	margin: 20px 0px;
+	text-align: center;
+	background-color: white;
+	
+	li {    
+		margin: 0px;
+		padding: 0px;
+		display: inline;
+		text-transform: uppercase;
+	}
+	span.current {
+    	cursor: default;
+	}
+	span, a, .view-more {
+	    text-decoration: none;
+	    line-height: 1;
+	    cursor: pointer;
+	    display: inline-block;
+	    padding: 14px 18px;
+	    font-size: 85%;
+	    font-weight: 700;
+	    -webkit-border-radius: 4px;
+	    -moz-border-radius: 4px;
+	    border-radius: 4px;
+	    margin-right: 6px;
+	}
+}
+
 //***********
 // Login Form
 //***********
@@ -2086,4 +2120,9 @@ body ul.page-numbers span.current {
 			}
 		}
 	}
+}
+
+/* ParentSquare Embed */
+#rss-widget-header {
+	display: none !important;
 }

@@ -373,7 +373,7 @@ function news_query( $query ) {
 
 	if ( $query->is_archive('news') && $query->is_main_query() && !is_admin() ) {
 
-		$query->set( 'posts_per_page', 15 );
+		$query->set( 'posts_per_page', 3 );
 
 	}
 

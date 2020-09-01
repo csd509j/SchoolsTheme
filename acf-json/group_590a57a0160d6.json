@@ -56,6 +56,25 @@
             "endpoint": 0
         },
         {
+            "key": "field_5f4e6cb3aea38",
+            "label": "ParentSquare ID",
+            "name": "parentsquare_id",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5c2a5a694fb64",
             "label": "School Type",
             "name": "school_type",
@@ -521,7 +540,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1570563797
+    "modified": 1598975176
 }
