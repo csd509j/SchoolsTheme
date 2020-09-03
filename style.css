@@ -4,7 +4,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 3.7.2
+Version: 3.7.3
 Text Domain: csdschools
 */
 /*!
@@ -8624,6 +8624,35 @@ body ul.page-numbers span.current {
   border-top: 10px solid #c36714;
   clear: both; }
 
+#full-width-nav .navbar {
+  padding: 0; }
+  @media (max-width: 1200px) {
+    #full-width-nav .navbar li {
+      line-height: 1.2em; } }
+#full-width-nav .navbar-light .navbar-toggler {
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 1rem 1.05rem;
+  text-transform: uppercase;
+  font-size: 1.3em; }
+  #full-width-nav .navbar-light .navbar-toggler:focus {
+    outline: 0; }
+  #full-width-nav .navbar-light .navbar-toggler .fas {
+    margin-right: .6rem; }
+
+#full-width-nav #subpage-nav-mobile {
+  padding-left: 2.7rem; }
+  #full-width-nav #subpage-nav-mobile .navbar-nav > li {
+    padding: 5px 0; }
+  #full-width-nav #subpage-nav-mobile a {
+    color: #c36714; }
+  #full-width-nav #subpage-nav-mobile .current_page_item {
+    font-weight: bold; }
+  #full-width-nav #subpage-nav-mobile .current_page_item:after {
+    display: none; }
+
 .full-width-container {
   background-color: #eee; }
   .full-width-container a {
@@ -9140,6 +9169,5 @@ body ul.page-numbers span.current {
     width: 75%;
     max-width: 75%; } }
 
-/* ParentSquare Embed */
 #rss-widget-header {
   display: none !important; }

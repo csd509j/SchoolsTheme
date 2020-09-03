@@ -48,8 +48,8 @@ if (isset($_GET['redirect'])) {
 	</head>
 	<body id="page-language" <?php body_class(); ?>>
 		<div class="container">
-			<div class="modal" id="lang-splash" tabindex="-1" role="dialog" aria-labelledby="lang-splash" aria-hidden="false">
-				<div class="modal-dialog">
+			<div class="modal" id="lang-splash" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
 			    	<div class="modal-content">
 				    	<div class="modal-header d-flex">
 					    	<div class="d-flex justify-content-start">
