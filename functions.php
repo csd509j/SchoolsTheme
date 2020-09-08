@@ -372,14 +372,10 @@ add_action( 'pre_get_posts', 'news_query' );
 
 function news_query( $query ) {
 
-	if ( $query->is_archive('news') && !$query->is_main_query() && !is_admin() ) {
+	if ( $query->is_archive('news') && !$query->is_main_query() && !is_admin() && !is_page('home') ) {
 
 		$query->set( 'posts_per_page', 3 );
 
-	} else {
-		
-		$query->set( 'posts_per_page', 10 );
-	
 	}
 
 }
