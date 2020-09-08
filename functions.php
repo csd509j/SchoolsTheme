@@ -365,16 +365,21 @@ function acf_set_featured_image( $value, $post_id, $field  ){
  * Control the number of posts for news
  *
  * @since CSD Schools 3.1.3
+ * @updated CSD Schools 3.7.3
  */
 
 add_action( 'pre_get_posts', 'news_query' );
 
 function news_query( $query ) {
 
-	if ( $query->is_archive('news') && $query->is_main_query() && !is_admin() ) {
+	if ( $query->is_archive('news') && !$query->is_main_query() && !is_admin() ) {
 
 		$query->set( 'posts_per_page', 3 );
 
+	} else {
+		
+		$query->set( 'posts_per_page', 10 );
+	
 	}
 
 }
