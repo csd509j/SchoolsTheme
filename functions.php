@@ -272,7 +272,9 @@ add_filter('acf/settings/load_json', function($paths) {
  *
  * @since CSD Schools 1.0
  */
- 
+
+add_filter('acf/load_field/name=sidebar_callout_blocks', 'acf_load_sidebar_callout_blocks_field_choices');
+
 function acf_load_sidebar_callout_blocks_field_choices( $field ) {
     
     // reset choices

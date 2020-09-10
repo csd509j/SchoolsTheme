@@ -960,13 +960,6 @@
                 "id": ""
             },
             "choices": {
-                "School Year Calendar & Daily Schedules": "School Year Calendar & Daily Schedules",
-                "Reporting a Safety Concern": "Reporting a Safety Concern",
-                "Dual Immersion": "Dual Immersion",
-                "Emergency Alerts and Notifications": "Emergency Alerts and Notifications",
-                "Special Education Support": "Special Education Support",
-                "Follow CSD Food & Nutrition Services on Facebook": "Follow CSD Food & Nutrition Services on Facebook",
-                "What do I do if my child is dealing with bullying- including online (cyber) bullying": "What do I do if my child is dealing with bullying- including online (cyber) bullying"
             },
             "default_value": [],
             "allow_null": 0,
@@ -990,15 +983,6 @@
                 "id": ""
             },
             "choices": {
-                "Main Office": "Main Office",
-                "LPMS Administration": "LPMS Administration",
-                "Counseling Staff": "Counseling Staff",
-                "Music Education": "Music Education",
-                "Dual Language Program (DL)": "Dual Language Program (DL)",
-                "Student Records": "Student Records",
-                "Cross Country Coaches (Fall)": "Cross Country Coaches (Fall)",
-                "Track and Field Coaches (Spring)": "Track and Field Coaches (Spring)",
-                "Linus Pauling Middle School Library": "Linus Pauling Middle School Library"
             },
             "default_value": [],
             "allow_null": 1,
