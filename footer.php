@@ -7,6 +7,13 @@
 									<h2><?php _e('Contact Us','csdschools'); ?></h2>
 								</div>
 								<p class="mb-1">
+									
+									<?php if ( get_field('office_hours', 'options') ): ?>
+									
+										<strong><?php _e('Office Hours','csdschools'); ?>:</strong> <?php the_field('office_hours', 'options'); ?><br/>
+									
+									<?php endif; ?>
+									
 									<strong><?php _e('Phone','csdschools'); ?>:</strong> <?php the_field('primary_phone', 'options'); ?><br/>
 									<strong><?php _e('Fax','csdschools'); ?>:</strong> <?php the_field('fax_number', 'options'); ?><br/>
 									<strong><?php _e('Attendance','csdschools'); ?>:</strong> <?php the_field('attendance_phone', 'options'); ?><br/>

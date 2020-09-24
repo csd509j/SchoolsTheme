@@ -101,6 +101,25 @@
             "placeholder": ""
         },
         {
+            "key": "field_5f6cc729953b7",
+            "label": "Office Hours",
+            "name": "office_hours",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_590a57a87bcce",
             "label": "Primary Phone",
             "name": "primary_phone",
@@ -542,5 +561,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1598975176
+    "modified": 1600964410
 }

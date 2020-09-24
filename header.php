@@ -36,6 +36,7 @@
 			<div class="row justify-content-between h-100">
 				<div class="col-auto menu-top-block-container">
 					<div class="row no-gutters h-100">
+<!--
 						<div class="col-auto align-self-center mr-1 d-none d-md-block">		
 							
 							<?php if (get_field('school_type', 'options') != 'Elementary'): ?>
@@ -45,6 +46,7 @@
 							<?php endif; ?>
 						
 						</div>
+-->
 						<div class="col-auto align-self-center">
 							<a class="d-block" href="tel:<?php the_field('attendance_phone', 'options'); ?>"><?php _e('Attendance','csdschools'); ?>: <?php the_field('attendance_phone', 'options'); ?></a>
 						</div>
