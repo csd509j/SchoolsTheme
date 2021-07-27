@@ -1,6 +1,6 @@
 {
     "key": "group_5be47728c9e9a",
-    "title": "Full Width Page Builder",
+    "title": "Builder - Full Page",
     "fields": [
         {
             "key": "field_5ec5b56816e68",
@@ -24,7 +24,7 @@
             "name": "title",
             "type": "text",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -1341,6 +1341,57 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_610084b0ce440": {
+                    "key": "layout_610084b0ce440",
+                    "name": "blog_posts",
+                    "label": "Blog Posts",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_610084bece441",
+                            "label": "Post List Heading",
+                            "name": "post_list_heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_610084c6ce442",
+                            "label": "Post List Category",
+                            "name": "post_list_category",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "news-category",
+                            "field_type": "select",
+                            "allow_null": 0,
+                            "add_term": 0,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "multiple": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Content",
@@ -1376,7 +1427,7 @@
         "tags",
         "send-trackbacks"
     ],
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1590016119
+    "modified": 1627424392
 }

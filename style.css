@@ -4,7 +4,7 @@ Theme URI: https://abidewebdesign.com
 Author: Abide Web Design
 Author URI: https://abidewebdesign.com
 Description: The official theme for schools in the Corvallis School District
-Version: 3.7.6
+Version: 3.7.7
 Text Domain: csdschools
 */
 /*!
@@ -1898,15 +1898,15 @@ textarea.form-control {
       transition: none; } }
   .btn:hover, .acf-form .acf-button:hover, #loginform #wp-submit:hover, #header-global .menu-btn .btn:hover, #header-global .menu-btn .acf-form .acf-button:hover, .acf-form #header-global .menu-btn .acf-button:hover, #header-global .menu-btn .gform_button:hover, .gform_button:hover, .btn:focus, .acf-form .acf-button:focus, #loginform #wp-submit:focus, #header-global .menu-btn .btn:focus, #header-global .menu-btn .acf-form .acf-button:focus, .acf-form #header-global .menu-btn .acf-button:focus, #header-global .menu-btn .gform_button:focus, .gform_button:focus {
     text-decoration: none; }
-  .btn:focus, .acf-form .acf-button:focus, #loginform #wp-submit:focus, #header-global .menu-btn .btn:focus, #header-global .menu-btn .acf-form .acf-button:focus, .acf-form #header-global .menu-btn .acf-button:focus, #header-global .menu-btn .gform_button:focus, .gform_button:focus, .btn.focus, .acf-form .focus.acf-button, #loginform #wp-submit.focus, #header-global .menu-btn .focus.btn, #header-global .menu-btn .acf-form .focus.acf-button, .acf-form #header-global .menu-btn .focus.acf-button, #header-global .menu-btn .focus.gform_button, .focus.gform_button {
+  .btn:focus, .acf-form .acf-button:focus, #loginform #wp-submit:focus, #header-global .menu-btn .btn:focus, #header-global .menu-btn .acf-form .acf-button:focus, .acf-form #header-global .menu-btn .acf-button:focus, #header-global .menu-btn .gform_button:focus, .gform_button:focus, .btn.focus, .acf-form .focus.acf-button, #loginform .focus#wp-submit, #header-global .menu-btn .focus.btn, #header-global .menu-btn .acf-form .focus.acf-button, .acf-form #header-global .menu-btn .focus.acf-button, #header-global .menu-btn .focus.gform_button, .focus.gform_button {
     outline: 0;
     box-shadow: none; }
-  .btn.disabled, .acf-form .disabled.acf-button, #loginform #wp-submit.disabled, #header-global .menu-btn .disabled.btn, #header-global .menu-btn .acf-form .disabled.acf-button, .acf-form #header-global .menu-btn .disabled.acf-button, #header-global .menu-btn .disabled.gform_button, .disabled.gform_button, .btn:disabled, .acf-form .acf-button:disabled, #loginform #wp-submit:disabled, #header-global .menu-btn .btn:disabled, #header-global .menu-btn .acf-form .acf-button:disabled, .acf-form #header-global .menu-btn .acf-button:disabled, #header-global .menu-btn .gform_button:disabled, .gform_button:disabled {
+  .btn.disabled, .acf-form .disabled.acf-button, #loginform .disabled#wp-submit, #header-global .menu-btn .disabled.btn, #header-global .menu-btn .acf-form .disabled.acf-button, .acf-form #header-global .menu-btn .disabled.acf-button, #header-global .menu-btn .disabled.gform_button, .disabled.gform_button, .btn:disabled, .acf-form .acf-button:disabled, #loginform #wp-submit:disabled, #header-global .menu-btn .btn:disabled, #header-global .menu-btn .acf-form .acf-button:disabled, .acf-form #header-global .menu-btn .acf-button:disabled, #header-global .menu-btn .gform_button:disabled, .gform_button:disabled {
     opacity: 0.65; }
   .btn:not(:disabled):not(.disabled), .acf-form .acf-button:not(:disabled):not(.disabled), #loginform #wp-submit:not(:disabled):not(.disabled), #header-global .menu-btn .btn:not(:disabled):not(.disabled), #header-global .menu-btn .acf-form .acf-button:not(:disabled):not(.disabled), .acf-form #header-global .menu-btn .acf-button:not(:disabled):not(.disabled), #header-global .menu-btn .gform_button:not(:disabled):not(.disabled), .gform_button:not(:disabled):not(.disabled) {
     cursor: pointer; }
 
-a.btn.disabled, .acf-form a.disabled.acf-button, #loginform a#wp-submit.disabled, #header-global .menu-btn a.disabled.btn, #header-global .menu-btn .acf-form .disabled.acf-button, .acf-form #header-global .menu-btn .disabled.acf-button, #header-global .menu-btn #loginform #wp-submit.disabled, #loginform #header-global .menu-btn #wp-submit.disabled, #header-global .menu-btn a.disabled.gform_button, a.disabled.gform_button,
+a.btn.disabled, .acf-form a.disabled.acf-button, #loginform a.disabled#wp-submit, #header-global .menu-btn a.disabled.btn, #header-global .menu-btn .acf-form .disabled.acf-button, .acf-form #header-global .menu-btn .disabled.acf-button, #header-global .menu-btn #loginform .disabled#wp-submit, #loginform #header-global .menu-btn .disabled#wp-submit, #header-global .menu-btn a.disabled.gform_button, a.disabled.gform_button,
 fieldset:disabled a.btn,
 fieldset:disabled .acf-form a.acf-button,
 .acf-form fieldset:disabled a.acf-button,
@@ -1931,17 +1931,17 @@ fieldset:disabled a.gform_button {
     color: #fff;
     background-color: #a05510;
     border-color: #954f0f; }
-  .btn-primary:focus, .acf-form .acf-button:focus, #loginform #wp-submit:focus, .gform_button:focus, .btn-primary.focus, .acf-form .focus.acf-button, #loginform #wp-submit.focus, .focus.gform_button {
+  .btn-primary:focus, .acf-form .acf-button:focus, #loginform #wp-submit:focus, .gform_button:focus, .btn-primary.focus, .acf-form .focus.acf-button, #loginform .focus#wp-submit, .focus.gform_button {
     box-shadow: 0 0 0 0.2rem rgba(195, 103, 20, 0.5); }
-  .btn-primary.disabled, .acf-form .disabled.acf-button, #loginform #wp-submit.disabled, .disabled.gform_button, .btn-primary:disabled, .acf-form .acf-button:disabled, #loginform #wp-submit:disabled, .gform_button:disabled {
+  .btn-primary.disabled, .acf-form .disabled.acf-button, #loginform .disabled#wp-submit, .disabled.gform_button, .btn-primary:disabled, .acf-form .acf-button:disabled, #loginform #wp-submit:disabled, .gform_button:disabled {
     color: #fff;
     background-color: #c36714;
     border-color: #c36714; }
-  .btn-primary:not(:disabled):not(.disabled):active, .acf-form .acf-button:not(:disabled):not(.disabled):active, #loginform #wp-submit:not(:disabled):not(.disabled):active, .gform_button:not(:disabled):not(.disabled):active, .btn-primary.active:not(:disabled):not(.disabled), .acf-form .acf-button.active:not(:disabled):not(.disabled), #loginform #wp-submit.active:not(:disabled):not(.disabled), .gform_button.active:not(:disabled):not(.disabled), .show > .btn-primary.dropdown-toggle, .acf-form .show > .dropdown-toggle.acf-button, #loginform .show > #wp-submit.dropdown-toggle, .show > .dropdown-toggle.gform_button {
+  .btn-primary:not(:disabled):not(.disabled):active, .acf-form .acf-button:not(:disabled):not(.disabled):active, #loginform #wp-submit:not(:disabled):not(.disabled):active, .gform_button:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .acf-form .acf-button:not(:disabled):not(.disabled).active, #loginform #wp-submit:not(:disabled):not(.disabled).active, .gform_button:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle, .acf-form .show > .dropdown-toggle.acf-button, #loginform .show > .dropdown-toggle#wp-submit, .show > .dropdown-toggle.gform_button {
     color: #fff;
     background-color: #954f0f;
     border-color: #89480e; }
-    .btn-primary:not(:disabled):not(.disabled):active:focus, .acf-form .acf-button:not(:disabled):not(.disabled):active:focus, #loginform #wp-submit:not(:disabled):not(.disabled):active:focus, .gform_button:not(:disabled):not(.disabled):active:focus, .btn-primary.active:not(:disabled):not(.disabled):focus, .acf-form .acf-button.active:not(:disabled):not(.disabled):focus, #loginform #wp-submit.active:not(:disabled):not(.disabled):focus, .gform_button.active:not(:disabled):not(.disabled):focus, .show > .btn-primary.dropdown-toggle:focus, .acf-form .show > .dropdown-toggle.acf-button:focus, #loginform .show > #wp-submit.dropdown-toggle:focus, .show > .dropdown-toggle.gform_button:focus {
+    .btn-primary:not(:disabled):not(.disabled):active:focus, .acf-form .acf-button:not(:disabled):not(.disabled):active:focus, #loginform #wp-submit:not(:disabled):not(.disabled):active:focus, .gform_button:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .acf-form .acf-button:not(:disabled):not(.disabled).active:focus, #loginform #wp-submit:not(:disabled):not(.disabled).active:focus, .gform_button:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus, .acf-form .show > .dropdown-toggle.acf-button:focus, #loginform .show > .dropdown-toggle#wp-submit:focus, .show > .dropdown-toggle.gform_button:focus {
       box-shadow: 0 0 0 0.2rem rgba(195, 103, 20, 0.5); }
 
 .btn-secondary {
@@ -1958,11 +1958,11 @@ fieldset:disabled a.gform_button {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d; }
-  .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary.active:not(:disabled):not(.disabled), .show > .btn-secondary.dropdown-toggle {
+  .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
     color: #fff;
     background-color: #545b62;
     border-color: #4e555b; }
-    .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary.active:not(:disabled):not(.disabled):focus, .show > .btn-secondary.dropdown-toggle:focus {
+    .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); }
 
 .btn-success {
@@ -1979,11 +1979,11 @@ fieldset:disabled a.gform_button {
     color: #fff;
     background-color: #8a9140;
     border-color: #8a9140; }
-  .btn-success:not(:disabled):not(.disabled):active, .btn-success.active:not(:disabled):not(.disabled), .show > .btn-success.dropdown-toggle {
+  .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle {
     color: #fff;
     background-color: #686e30;
     border-color: #60652c; }
-    .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success.active:not(:disabled):not(.disabled):focus, .show > .btn-success.dropdown-toggle:focus {
+    .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(138, 145, 64, 0.5); }
 
 .btn-info {
@@ -2000,11 +2000,11 @@ fieldset:disabled a.gform_button {
     color: #fff;
     background-color: #17a2b8;
     border-color: #17a2b8; }
-  .btn-info:not(:disabled):not(.disabled):active, .btn-info.active:not(:disabled):not(.disabled), .show > .btn-info.dropdown-toggle {
+  .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle {
     color: #fff;
     background-color: #117a8b;
     border-color: #10707f; }
-    .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info.active:not(:disabled):not(.disabled):focus, .show > .btn-info.dropdown-toggle:focus {
+    .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .show > .btn-info.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); }
 
 .btn-warning {
@@ -2021,11 +2021,11 @@ fieldset:disabled a.gform_button {
     color: #212529;
     background-color: #ffc107;
     border-color: #ffc107; }
-  .btn-warning:not(:disabled):not(.disabled):active, .btn-warning.active:not(:disabled):not(.disabled), .show > .btn-warning.dropdown-toggle {
+  .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle {
     color: #212529;
     background-color: #d39e00;
     border-color: #c69500; }
-    .btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning.active:not(:disabled):not(.disabled):focus, .show > .btn-warning.dropdown-toggle:focus {
+    .btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-warning.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5); }
 
 .btn-danger {
@@ -2042,11 +2042,11 @@ fieldset:disabled a.gform_button {
     color: #fff;
     background-color: #dc3545;
     border-color: #dc3545; }
-  .btn-danger:not(:disabled):not(.disabled):active, .btn-danger.active:not(:disabled):not(.disabled), .show > .btn-danger.dropdown-toggle {
+  .btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle {
     color: #fff;
     background-color: #bd2130;
     border-color: #b21f2d; }
-    .btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger.active:not(:disabled):not(.disabled):focus, .show > .btn-danger.dropdown-toggle:focus {
+    .btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5); }
 
 .btn-light {
@@ -2063,11 +2063,11 @@ fieldset:disabled a.gform_button {
     color: #212529;
     background-color: #f8f9fa;
     border-color: #f8f9fa; }
-  .btn-light:not(:disabled):not(.disabled):active, .btn-light.active:not(:disabled):not(.disabled), .show > .btn-light.dropdown-toggle {
+  .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle {
     color: #212529;
     background-color: #dae0e5;
     border-color: #d3d9df; }
-    .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light.active:not(:disabled):not(.disabled):focus, .show > .btn-light.dropdown-toggle:focus {
+    .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
 
 .btn-dark {
@@ -2084,11 +2084,11 @@ fieldset:disabled a.gform_button {
     color: #fff;
     background-color: #343a40;
     border-color: #343a40; }
-  .btn-dark:not(:disabled):not(.disabled):active, .btn-dark.active:not(:disabled):not(.disabled), .show > .btn-dark.dropdown-toggle {
+  .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .show > .btn-dark.dropdown-toggle {
     color: #fff;
     background-color: #1d2124;
     border-color: #171a1d; }
-    .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark.active:not(:disabled):not(.disabled):focus, .show > .btn-dark.dropdown-toggle:focus {
+    .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .btn-outline-primary {
@@ -2105,11 +2105,11 @@ fieldset:disabled a.gform_button {
   .btn-outline-primary.disabled, .btn-outline-primary:disabled {
     color: #c36714;
     background-color: transparent; }
-  .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary.active:not(:disabled):not(.disabled), .show > .btn-outline-primary.dropdown-toggle {
+  .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
     color: #fff;
     background-color: #c36714;
     border-color: #c36714; }
-    .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+    .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(195, 103, 20, 0.5); }
 
 .btn-outline-secondary {
@@ -2126,11 +2126,11 @@ fieldset:disabled a.gform_button {
   .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
     color: #6c757d;
     background-color: transparent; }
-  .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary.active:not(:disabled):not(.disabled), .show > .btn-outline-secondary.dropdown-toggle {
+  .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d; }
-    .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-secondary.dropdown-toggle:focus {
+    .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-secondary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); }
 
 .btn-outline-success {
@@ -2147,11 +2147,11 @@ fieldset:disabled a.gform_button {
   .btn-outline-success.disabled, .btn-outline-success:disabled {
     color: #8a9140;
     background-color: transparent; }
-  .btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success.active:not(:disabled):not(.disabled), .show > .btn-outline-success.dropdown-toggle {
+  .btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle {
     color: #fff;
     background-color: #8a9140;
     border-color: #8a9140; }
-    .btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-success.dropdown-toggle:focus {
+    .btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-success.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(138, 145, 64, 0.5); }
 
 .btn-outline-info {
@@ -2168,11 +2168,11 @@ fieldset:disabled a.gform_button {
   .btn-outline-info.disabled, .btn-outline-info:disabled {
     color: #17a2b8;
     background-color: transparent; }
-  .btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info.active:not(:disabled):not(.disabled), .show > .btn-outline-info.dropdown-toggle {
+  .btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .show > .btn-outline-info.dropdown-toggle {
     color: #fff;
     background-color: #17a2b8;
     border-color: #17a2b8; }
-    .btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-info.dropdown-toggle:focus {
+    .btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-info.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); }
 
 .btn-outline-warning {
@@ -2189,11 +2189,11 @@ fieldset:disabled a.gform_button {
   .btn-outline-warning.disabled, .btn-outline-warning:disabled {
     color: #ffc107;
     background-color: transparent; }
-  .btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning.active:not(:disabled):not(.disabled), .show > .btn-outline-warning.dropdown-toggle {
+  .btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .show > .btn-outline-warning.dropdown-toggle {
     color: #212529;
     background-color: #ffc107;
     border-color: #ffc107; }
-    .btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-warning.dropdown-toggle:focus {
+    .btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-warning.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5); }
 
 .btn-outline-danger {
@@ -2210,11 +2210,11 @@ fieldset:disabled a.gform_button {
   .btn-outline-danger.disabled, .btn-outline-danger:disabled {
     color: #dc3545;
     background-color: transparent; }
-  .btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger.active:not(:disabled):not(.disabled), .show > .btn-outline-danger.dropdown-toggle {
+  .btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .show > .btn-outline-danger.dropdown-toggle {
     color: #fff;
     background-color: #dc3545;
     border-color: #dc3545; }
-    .btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-danger.dropdown-toggle:focus {
+    .btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-danger.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5); }
 
 .btn-outline-light {
@@ -2231,11 +2231,11 @@ fieldset:disabled a.gform_button {
   .btn-outline-light.disabled, .btn-outline-light:disabled {
     color: #f8f9fa;
     background-color: transparent; }
-  .btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light.active:not(:disabled):not(.disabled), .show > .btn-outline-light.dropdown-toggle {
+  .btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .show > .btn-outline-light.dropdown-toggle {
     color: #212529;
     background-color: #f8f9fa;
     border-color: #f8f9fa; }
-    .btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-light.dropdown-toggle:focus {
+    .btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-light.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
 
 .btn-outline-dark {
@@ -2252,11 +2252,11 @@ fieldset:disabled a.gform_button {
   .btn-outline-dark.disabled, .btn-outline-dark:disabled {
     color: #343a40;
     background-color: transparent; }
-  .btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark.active:not(:disabled):not(.disabled), .show > .btn-outline-dark.dropdown-toggle {
+  .btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .show > .btn-outline-dark.dropdown-toggle {
     color: #fff;
     background-color: #343a40;
     border-color: #343a40; }
-    .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-dark.dropdown-toggle:focus {
+    .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
 .btn-link {
@@ -2294,11 +2294,11 @@ fieldset:disabled a.gform_button {
   .btn-block + .btn-block, #loginform #wp-submit + .btn-block, #loginform .btn-block + #wp-submit, #loginform #wp-submit + #wp-submit {
     margin-top: 0.5rem; }
 
-input.btn-block[type="submit"], #loginform #wp-submit[type="submit"],
-input.btn-block[type="reset"],
-#loginform #wp-submit[type="reset"],
-input.btn-block[type="button"],
-#loginform #wp-submit[type="button"] {
+input[type="submit"].btn-block, #loginform [type="submit"]#wp-submit,
+input[type="reset"].btn-block,
+#loginform [type="reset"]#wp-submit,
+input[type="button"].btn-block,
+#loginform [type="button"]#wp-submit {
   width: 100%; }
 
 .fade {
@@ -2522,7 +2522,7 @@ input.btn-block[type="button"],
     #header-global .menu-btn .btn-group-vertical > .gform_button:hover,
     .btn-group-vertical > .gform_button:hover {
       z-index: 1; }
-    .btn-group > .btn:focus, .acf-form .btn-group > .acf-button:focus, #loginform .btn-group > #wp-submit:focus, #header-global .menu-btn .btn-group > .btn:focus, #header-global .menu-btn .acf-form .btn-group > .acf-button:focus, .acf-form #header-global .menu-btn .btn-group > .acf-button:focus, #loginform #header-global .menu-btn .btn-group > #wp-submit:focus, #header-global .menu-btn .btn-group > .gform_button:focus, .btn-group > .gform_button:focus, .btn-group > .btn:active, .acf-form .btn-group > .acf-button:active, #loginform .btn-group > #wp-submit:active, #header-global .menu-btn .btn-group > .btn:active, #header-global .menu-btn .acf-form .btn-group > .acf-button:active, .acf-form #header-global .menu-btn .btn-group > .acf-button:active, #loginform #header-global .menu-btn .btn-group > #wp-submit:active, #header-global .menu-btn .btn-group > .gform_button:active, .btn-group > .gform_button:active, .btn-group > .btn.active, .acf-form .btn-group > .active.acf-button, #loginform .btn-group > #wp-submit.active, #header-global .menu-btn .btn-group > .active.btn, #header-global .menu-btn .acf-form .btn-group > .active.acf-button, .acf-form #header-global .menu-btn .btn-group > .active.acf-button, #loginform #header-global .menu-btn .btn-group > #wp-submit.active, #header-global .menu-btn .btn-group > .active.gform_button, .btn-group > .active.gform_button,
+    .btn-group > .btn:focus, .acf-form .btn-group > .acf-button:focus, #loginform .btn-group > #wp-submit:focus, #header-global .menu-btn .btn-group > .btn:focus, #header-global .menu-btn .acf-form .btn-group > .acf-button:focus, .acf-form #header-global .menu-btn .btn-group > .acf-button:focus, #loginform #header-global .menu-btn .btn-group > #wp-submit:focus, #header-global .menu-btn .btn-group > .gform_button:focus, .btn-group > .gform_button:focus, .btn-group > .btn:active, .acf-form .btn-group > .acf-button:active, #loginform .btn-group > #wp-submit:active, #header-global .menu-btn .btn-group > .btn:active, #header-global .menu-btn .acf-form .btn-group > .acf-button:active, .acf-form #header-global .menu-btn .btn-group > .acf-button:active, #loginform #header-global .menu-btn .btn-group > #wp-submit:active, #header-global .menu-btn .btn-group > .gform_button:active, .btn-group > .gform_button:active, .btn-group > .btn.active, .acf-form .btn-group > .active.acf-button, #loginform .btn-group > .active#wp-submit, #header-global .menu-btn .btn-group > .active.btn, #header-global .menu-btn .acf-form .btn-group > .active.acf-button, .acf-form #header-global .menu-btn .btn-group > .active.acf-button, #loginform #header-global .menu-btn .btn-group > .active#wp-submit, #header-global .menu-btn .btn-group > .active.gform_button, .btn-group > .active.gform_button,
     .btn-group-vertical > .btn:focus,
     .acf-form .btn-group-vertical > .acf-button:focus,
     #loginform .btn-group-vertical > #wp-submit:focus,
@@ -2543,11 +2543,11 @@ input.btn-block[type="button"],
     .btn-group-vertical > .gform_button:active,
     .btn-group-vertical > .btn.active,
     .acf-form .btn-group-vertical > .active.acf-button,
-    #loginform .btn-group-vertical > #wp-submit.active,
+    #loginform .btn-group-vertical > .active#wp-submit,
     #header-global .menu-btn .btn-group-vertical > .active.btn,
     #header-global .menu-btn .acf-form .btn-group-vertical > .active.acf-button,
     .acf-form #header-global .menu-btn .btn-group-vertical > .active.acf-button,
-    #loginform #header-global .menu-btn .btn-group-vertical > #wp-submit.active,
+    #loginform #header-global .menu-btn .btn-group-vertical > .active#wp-submit,
     #header-global .menu-btn .btn-group-vertical > .active.gform_button,
     .btn-group-vertical > .active.gform_button {
       z-index: 1; }
@@ -7775,7 +7775,7 @@ a:focus, a:active {
   border-radius: 0;
   white-space: normal; }
 
-.btn:focus, .acf-form .acf-button:focus, #loginform #wp-submit:focus, #header-global .menu-btn .btn:focus, #header-global .menu-btn .acf-form .acf-button:focus, .acf-form #header-global .menu-btn .acf-button:focus, #header-global .menu-btn .gform_button:focus, .gform_button:focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle, .acf-form .open > .dropdown-toggle.acf-button, #loginform .open > #wp-submit.dropdown-toggle, .open > .dropdown-toggle.gform_button, .btn-primary:active:hover, .acf-form .acf-button:active:hover, #loginform #wp-submit:active:hover, .gform_button:active:hover, .btn-primary:active:focus, .btn:active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary.active:not(:disabled):not(.disabled):focus, .show > .btn-secondary.dropdown-toggle:focus {
+.btn:focus, .acf-form .acf-button:focus, #loginform #wp-submit:focus, #header-global .menu-btn .btn:focus, #header-global .menu-btn .acf-form .acf-button:focus, .acf-form #header-global .menu-btn .acf-button:focus, #header-global .menu-btn .gform_button:focus, .gform_button:focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle, .acf-form .open > .dropdown-toggle.acf-button, #loginform .open > .dropdown-toggle#wp-submit, .open > .dropdown-toggle.gform_button, .btn-primary:active:hover, .acf-form .acf-button:active:hover, #loginform #wp-submit:active:hover, .gform_button:active:hover, .btn-primary:active:focus, .btn:active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: none;
   outline: none;
   color: white; }
