@@ -10,11 +10,9 @@ html, body {
     overflow-x: hidden;
     font-size: $font-size-base; 
 }
-html:lang(sp) {
-	#news {
-		iframe {
-			display: none;
-		}
+html:lang(es-ES) {
+	.es-none {
+		display: none;
 	}
 }
 a:active,
