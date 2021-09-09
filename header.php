@@ -30,26 +30,16 @@
 </head>
 <body <?php body_class(); ?>>
 	<?php get_template_part('template-parts/content','alert'); ?>
-	
 	<div id="header-top-global">
 		<div class="container h-100">
 			<div class="row justify-content-between h-100">
 				<div class="col-auto menu-top-block-container">
 					<div class="row no-gutters h-100">
-<!--
-						<div class="col-auto align-self-center mr-1 d-none d-md-block">		
-							
-							<?php if (get_field('school_type', 'options') != 'Elementary'): ?>
-								
-								<?php render_block_calendar(get_field('block_calendar', 'options')); ?>
-													
-							<?php endif; ?>
-						
-						</div>
--->
+					<?php if ( get_field('attendance_phone', 'options') ): ?>
 						<div class="col-auto align-self-center">
 							<a class="d-block" href="tel:<?php the_field('attendance_phone', 'options'); ?>"><?php _e('Attendance','csdschools'); ?>: <?php the_field('attendance_phone', 'options'); ?></a>
 						</div>
+					<?php endif; ?>
 					</div>
 				</div>
 				<div class="col-auto">
