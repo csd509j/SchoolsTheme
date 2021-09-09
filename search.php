@@ -32,7 +32,7 @@ get_header();
 			</div>
 		</div>
 		<div class="row justify-content-center">
-			<div class="col-md-9">
+			<div class="col-md-9 order-2 order-md-1">
 				<?php 
 
 				if ( have_posts() ) :
@@ -61,7 +61,16 @@ get_header();
 				endif;
 			?>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 order-1 order-md-2">
+				<div class="bg-gray p-1 mb-2">
+					<h3>Popular Search Results</h3>
+					<?php $links = get_field('popular_resources_list', 'options'); ?>
+					<ul class="list list-flush mb-0">
+					<?php foreach ( $links as $link ): ?>
+						<li class="text-sm"><a href="<?php echo $link->guid; ?>"><?php echo $link->post_title; ?></a></li>
+					<?php endforeach; ?>
+					</ul>
+				</div>
 				<div class="bg-gray p-1 mt-2 mt-md-0 text-center">
 					<h3><?php the_field('search_sidebar_title', 'options'); ?></h3>
 					<p class="small mb-1"><?php the_field('search_sidebar_text', 'options'); ?></p>

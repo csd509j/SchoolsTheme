@@ -57,9 +57,6 @@
 						<div class="col-auto align-self-center d-none d-lg-block">
 							<?php wp_nav_menu( array('theme_location' => 'header-toplinks', 'items_wrap' => '<ul class="list list-unstyled" aria-label="Top Links">%3$s</ul>' )); ?>
 						</div>
-						<div class="col-auto align-self-center d-none d-sm-block mr-1">
-							<a href="#" id="search-toggle"><i class="fa fa-search fa-lg"></i></a>
-						</div>
 						<div class="col-auto h-100" id="menu-top-language">
 							<?php languages_toggle(); ?>
 						</div>
@@ -102,7 +99,10 @@
 						</div>
 						<div class="col-2 col-lg-8 d-flex justify-content-end">
 							<div class="d-none d-lg-block">
-								<?php wp_nav_menu( array('theme_location' => 'header-menu', 'items_wrap' => '<ul class="nav navbar-nav pull-right" aria-label="primary navigation">%3$s</ul>' )); ?>						
+								<div class="d-flex">
+									<div class="mr-1"><?php wp_nav_menu( array('theme_location' => 'header-menu', 'items_wrap' => '<ul class="nav navbar-nav pull-right" aria-label="primary navigation">%3$s</ul>' )); ?></div>
+									<div class="align-self-center"><a href="#" id="search-toggle"><i class="fa fa-search fa-lg"></i></a></div>
+								</div>			
 							</div>
 							<div class="d-lg-none">
 								<?php shiftnav_toggle( 'shiftnav-main' , '' , array( 'icon' => 'bars' , 'class' => 'shiftnav-toggle-button') ); ?>

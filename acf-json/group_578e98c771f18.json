@@ -1,6 +1,6 @@
 {
     "key": "group_578e98c771f18",
-    "title": "Options - 404 Page",
+    "title": "Options - 404\/Search Page",
     "fields": [
         {
             "key": "field_578e992cb1a62",
@@ -71,7 +71,7 @@
             "label": "Popular Resources List",
             "name": "popular_resources_list",
             "type": "post_object",
-            "instructions": "",
+            "instructions": "Used on 404 page as well as search page sidebar.",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -80,12 +80,14 @@
                 "id": ""
             },
             "post_type": [
-                "attachment"
+                "attachment",
+                "page",
+                "news"
             ],
             "taxonomy": "",
             "allow_null": 0,
             "multiple": 1,
-            "return_format": "id",
+            "return_format": "object",
             "ui": 1
         },
         {
@@ -115,7 +117,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options-404-page"
+                "value": "acf-options-404-search"
             }
         ]
     ],
@@ -125,7 +127,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1554500010
+    "modified": 1631210452
 }
