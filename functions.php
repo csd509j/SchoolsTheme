@@ -1,11 +1,5 @@
 <?php 
 /*
- * Theme update checker and auto update 
- *
- * @since CSD Schools 1.1
- */
-
-/*
  * Enqueue styles
  *
  * @since CSD Schools 2.0
