@@ -43,11 +43,14 @@ a:focus,
   	vertical-align: middle;
   	margin-right: -4px;
 }
-
 .modal-dialog {
   	display: inline-block;
   	text-align: left;
   	vertical-align: middle;
+  	
+  	.modal-content, .modal-header, .modal-footer {
+	  	border-radius: 0;
+  	}
 }
 .form-control:focus {
 	border: 1px solid $input-border-color;

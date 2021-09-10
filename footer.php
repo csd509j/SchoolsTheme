@@ -167,6 +167,21 @@
 				</section>
 			</div>
 		</div>
+		<div class="modal fade" id="modalNotification" tabindex="-1" role="dialog" aria-labelledby="modalNotification" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header py-3">
+						<div class="d-flex w-100 h-100 justify-content-center">
+							<i class="fa fa-external-link fa-3x text-white"></i>
+						</div>
+					</div>
+					<div class="modal-body p-2 text-center"><h3 class="mb-0"><?php the_field('external_link_notification', 'options'); ?></h3></div>
+					<div class="modal-footer">
+						<a id="externalLink" href="#" class="btn btn-lg btn-block"><?php _e('Proceed','csdschools'); ?></a>
+					</div>
+				</div>
+			</div>
+		</div>
 		
 		<?php wp_footer(); ?>
 		

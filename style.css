@@ -7440,6 +7440,12 @@ body ul.page-numbers span, body ul.page-numbers a, .view-more {
 .news-item-list {
   border-bottom: 1px solid #eeeeee; }
 
+.modal-header, #externalLink {
+  background-color: #004D8E; }
+
+#externalLink {
+  color: white; }
+
 .gform_wrapper form {
   margin-bottom: 0; }
 
@@ -7636,6 +7642,8 @@ a:focus,
   display: inline-block;
   text-align: left;
   vertical-align: middle; }
+  .modal-dialog .modal-content, .modal-dialog .modal-header, .modal-dialog .modal-footer {
+    border-radius: 0; }
 
 .form-control:focus, .acf-form .acf-input-wrap input:focus, #loginform input[type="text"]:focus, #loginform input[type="password"]:focus, .ginput_container input[type=text]:focus,
 .ginput_container input[type=email]:focus,

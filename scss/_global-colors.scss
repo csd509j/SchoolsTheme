@@ -321,3 +321,13 @@ body ul.page-numbers span, body ul.page-numbers a, .view-more {
 .news-item-list {
 	border-bottom: 1px solid $gray-lighter;
 }
+
+//== Modal Popup
+// 
+//##
+.modal-header, #externalLink {
+	background-color: $csd-primary-color;
+}
+#externalLink {
+	color: white;
+}
