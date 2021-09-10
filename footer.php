@@ -175,7 +175,7 @@
 							<i class="fa fa-external-link fa-3x text-white"></i>
 						</div>
 					</div>
-					<div class="modal-body p-2 text-center"><h3 class="mb-0"><?php the_field('external_link_notification', 'options'); ?></h3></div>
+					<div class="modal-body p-2 text-center"><h3 class="mb-0"><?php the_field('external_notification', 'options'); ?></h3></div>
 					<div class="modal-footer">
 						<a id="externalLink" href="#" class="btn btn-lg btn-block"><?php _e('Proceed','csdschools'); ?></a>
 					</div>
