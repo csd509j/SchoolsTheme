@@ -216,6 +216,7 @@ if ( function_exists('acf_add_options_sub_page') ) {
     
     acf_add_options_sub_page( 'General' );
     acf_add_options_sub_page( 'Pages' );
+    acf_add_options_sub_page( 'Quick Links' );
     acf_add_options_sub_page( 'Calendar' );
     acf_add_options_sub_page( 'Footer' );
     acf_add_options_sub_page( '404/Search' );
