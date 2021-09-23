@@ -183,6 +183,7 @@
 			</div>
 		</div>
 		
+		<?php get_template_part('template-parts/content', 'pop-up'); ?>
 		<?php wp_footer(); ?>
 		
 		<div id="google_translate_element" class="d-none"></div>

@@ -46,6 +46,7 @@ function csd_enqueue_script() {
 		wp_enqueue_script( 'addthis_widget.js', '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56c3954e3471722a' );	
 			
 	}	
+	
 }
 
 /*
@@ -230,13 +231,13 @@ if ( function_exists('acf_add_options_sub_page') ) {
  * @since CSD Schools 1.7.1
  */
 
-add_filter('acf/settings/save_json', function() {
+add_filter( 'acf/settings/save_json', function() {
 
 	return get_stylesheet_directory() . '/acf-json';
 
-});
+} );
 
-add_filter('acf/settings/load_json', function($paths) {
+add_filter( 'acf/settings/load_json', function( $paths ) {
 	
 	$paths = array();
 
@@ -250,7 +251,7 @@ add_filter('acf/settings/load_json', function($paths) {
 	
 	return $paths;
 	
-});
+} );
 
 /**
  * Load sidebar select fields with callout blocks from options
@@ -451,6 +452,61 @@ function get_calendars() {
 
 	return $school_calendars;
 	
+}
+
+/**
+* Return Alerts from CSD API
+*
+* @since CSD Schools 3.8.4
+*/
+
+function get_alerts() {
+	
+	$response = wp_remote_get( 'https://www.csd509j.net/wp-json/acf/v3/emergency-alert/', array( 'sslverify' => false ) );
+
+	if ( is_wp_error( $response ) ) {
+		
+		return;
+	}
+	
+	$alerts = json_decode( wp_remote_retrieve_body( $response ), true );
+
+	foreach( $alerts as $alert ) {
+		
+		if ( isset( $alert['acf']['sites'] ) ) {
+			
+			if ( in_array( get_bloginfo( 'name' ), $alert['acf']['sites'] ) ) {
+				
+				$tz = new DateTimeZone( 'America/Los_Angeles' );
+				
+				$date_now = new DateTime();
+				
+				$date_now->setTimezone( $tz );
+				
+				$start = new DateTime( $alert['acf']['start_time'] );
+				
+				$start->setTimezone( $tz );
+				
+				$end = new DateTime( $alert['acf']['end_time'] );
+				
+				$end->setTimezone( $tz );
+				
+				if ( $start->format('Y-m-d H:i:s') <= $date_now->format('Y-m-d H:i:s') && $end->format('Y-m-d H:i:s') >= $date_now->format('Y-m-d H:i:s') ) {
+					
+					wp_cache_set( 'alert', $alert );
+					
+					return ( $alert );
+				
+				}
+				
+			}
+			
+		}
+			
+	}
+	
+	return false;
+		
 }
 
 // Add search weight to more recently published entries in SearchWP.
