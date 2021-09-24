@@ -1,6 +1,6 @@
 <?php $alert = wp_cache_get( 'alert' ); ?>
 
-<?php if ( isset( $alert ) ): ?>
+<?php if ( $alert ): ?>
 
 	<script>
     	

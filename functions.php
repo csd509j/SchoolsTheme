@@ -462,7 +462,7 @@ function get_calendars() {
 
 function get_alerts() {
 	
-	$response = wp_remote_get( 'https://www.csd509j.net/wp-json/acf/v3/emergency-alert/', array( 'sslverify' => false ) );
+	$response = wp_remote_get( 'https://www.csd509j.net/wp-json/acf/v3/emergency-alert/' );
 
 	if ( is_wp_error( $response ) ) {
 		
@@ -494,7 +494,7 @@ function get_alerts() {
 				if ( $start->format('Y-m-d H:i:s') <= $date_now->format('Y-m-d H:i:s') && $end->format('Y-m-d H:i:s') >= $date_now->format('Y-m-d H:i:s') ) {
 					
 					wp_cache_set( 'alert', $alert );
-					
+
 					return ( $alert );
 				
 				}
@@ -504,7 +504,7 @@ function get_alerts() {
 		}
 			
 	}
-	
+
 	return false;
 		
 }
