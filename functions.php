@@ -27,11 +27,11 @@ add_action( 'wp_enqueue_scripts', 'csd_enqueue_script' );
 
 function csd_enqueue_script() {
 	
-	wp_deregister_script('jquery');
+	wp_deregister_script( 'jquery' );
 	
-	wp_register_script('jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', false, null);
+	wp_register_script( 'jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', false, null );
 	
-	wp_enqueue_script('jquery');
+	wp_enqueue_script( 'jquery' );
 	
 	wp_enqueue_script( 'popper.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', 'jquery', '', true );
 	
@@ -55,22 +55,22 @@ function csd_enqueue_script() {
  * @since CSD Schools 1.0
  */
  
-add_theme_support('post-thumbnails');
-add_image_size('square', 600, 600, true);
-add_image_size('Square Column 3', 295, 295, true);
-add_image_size('Square Column 4', 405, 405, true);
-add_image_size('News Image Small', 295, 175, true);
-add_image_size('News Image Medium', 410, 273, true);
-add_image_size('News Image Large', 750, 500, true);
-add_image_size('News Image Featured', 600, 356, true);
-add_image_size('Staff Directory', 326, 453, true);
-add_image_size('Callout Block', 586, 416, true);
-add_image_size('Page Builder Image', 945, 315, true);
-add_image_size('Parent Header', 1600, 314, true);
-add_image_size('Home Slider', 1600, 500, true);
-add_image_size('Full Width', 1300);
-add_image_size('card', 184, 184, true);
-add_image_size('Text Block', 530, 640, true);
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'square', 600, 600, true );
+add_image_size( 'Square Column 3', 295, 295, true );
+add_image_size( 'Square Column 4', 405, 405, true );
+add_image_size( 'News Image Small', 295, 175, true );
+add_image_size( 'News Image Medium', 410, 273, true );
+add_image_size( 'News Image Large', 750, 500, true );
+add_image_size( 'News Image Featured', 600, 356, true );
+add_image_size( 'Staff Directory', 326, 453, true );
+add_image_size( 'Callout Block', 586, 416, true );
+add_image_size( 'Page Builder Image', 945, 315, true );
+add_image_size( 'Parent Header', 1600, 314, true );
+add_image_size( 'Home Slider', 1600, 500, true );
+add_image_size( 'Full Width', 1300 );
+add_image_size( 'card', 184, 184, true );
+add_image_size( 'Text Block', 530, 640, true );
 
 /*
  * Register menus

@@ -56,13 +56,13 @@
 	
 			<div class="modal-content">
 	
-				<?php if ( $alert['acf']['alert_image_url'] ): ?>
+				<?php if ( $alert['acf']['pop_up_image_url'] ): ?>
 	
 					<div class="modal-header p-0">
 	
 						<div class="d-flex w-100 h-100 justify-content-center">
 	
-							<img src="<?php echo $alert['acf']['alert_image_url']; ?>" class="img-fluid w-100" />
+							<img src="<?php echo $alert['acf']['pop_up_image_url']; ?>" class="img-fluid w-100" />
 	
 						</div>
 	
@@ -102,7 +102,7 @@
 	
 						<div>
 	
-							<a href="<?php echo $alert['acf']['link']; ?>?csd_pop=<?php echo $alert['id']; ?>" class="btn-popup btn btn-primary btn-lg" <?php echo ( $alert['acf']['link_type'] == 'External' ? 'target="_blank"' : '' ); ?>><?php _e('Details','csdschools'); ?></a>
+							<a href="<?php echo $alert['acf']['link']; ?>?csd_pop=<?php echo $alert['id']; ?>" class="btn-popup btn btn-primary btn-lg" <?php echo ( $alert['acf']['link_type'] == 'External' ? 'target="_blank"' : '' ); ?>><?php _e( 'Details','csdschools' ); ?></a>
 	
 						</div>
 	
