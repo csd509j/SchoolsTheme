@@ -470,39 +470,43 @@ function get_alerts() {
 	}
 	
 	$alerts = json_decode( wp_remote_retrieve_body( $response ), true );
-
-	foreach( $alerts as $alert ) {
-		
-		if ( isset( $alert['acf']['sites'] ) ) {
+	
+	if ( $alerts ) {
+	
+		foreach( $alerts as $alert ) {
 			
-			if ( in_array( get_bloginfo( 'name' ), $alert['acf']['sites'] ) ) {
+			if ( isset( $alert['acf']['sites'] ) ) {
 				
-				$tz = new DateTimeZone( 'America/Los_Angeles' );
-				
-				$date_now = new DateTime();
-				
-				$date_now->setTimezone( $tz );
-				
-				$start = new DateTime( $alert['acf']['start_time'] );
-				
-				$start->setTimezone( $tz );
-				
-				$end = new DateTime( $alert['acf']['end_time'] );
-				
-				$end->setTimezone( $tz );
-				
-				if ( $start->format('Y-m-d H:i:s') <= $date_now->format('Y-m-d H:i:s') && $end->format('Y-m-d H:i:s') >= $date_now->format('Y-m-d H:i:s') ) {
+				if ( in_array( get_bloginfo( 'name' ), $alert['acf']['sites'] ) ) {
 					
-					wp_cache_set( 'alert', $alert );
-
-					return ( $alert );
-				
+					$tz = new DateTimeZone( 'America/Los_Angeles' );
+					
+					$date_now = new DateTime();
+					
+					$date_now->setTimezone( $tz );
+					
+					$start = new DateTime( $alert['acf']['start_time'] );
+					
+					$start->setTimezone( $tz );
+					
+					$end = new DateTime( $alert['acf']['end_time'] );
+					
+					$end->setTimezone( $tz );
+					
+					if ( $start->format('Y-m-d H:i:s') <= $date_now->format('Y-m-d H:i:s') && $end->format('Y-m-d H:i:s') >= $date_now->format('Y-m-d H:i:s') ) {
+						
+						wp_cache_set( 'alert', $alert );
+	
+						return ( $alert );
+					
+					}
+					
 				}
 				
 			}
-			
+				
 		}
-			
+		
 	}
 
 	return false;
