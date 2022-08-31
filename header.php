@@ -27,6 +27,50 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+   	<script type="text/javascript">
+	    window._monsido = window._monsido || {
+	        token: "Ba974TadvYL0bAReZ6EyRg",
+	        statistics: {
+	            enabled: true,
+	            documentTracking: {
+	                enabled: false,
+	                documentCls: "monsido_download",
+	                documentIgnoreCls: "monsido_ignore_download",
+	                documentExt: [],
+	            },
+	        },
+	        pageCorrect: {
+	            enabled: true,
+	        },
+	        pageAssistV2: {
+	            enabled: true,
+	            theme: "light",
+	            mainColor: "#783CE2",
+	            textColor: "#ffffff",
+	            linkColor: "#783CE2",
+	            buttonHoverColor: "#783CE2",
+	            mainDarkColor: "#052942",
+	            textDarkColor: "#ffffff",
+	            linkColorDark: "#FFCF4B",
+	            buttonHoverDarkColor: "#FFCF4B",
+	            greeting: "Discover your personalization options",
+	            direction: "leftbottom",
+	            coordinates: "undefined undefined undefined undefined",
+	            iconShape: "circle",
+	            title: "Personalization Options",
+	            titleText: "Welcome to PageAssist™ toolbar! Adjust the options below to cater the website to your accessibility needs.",
+	            iconPictureUrl: "logo",
+	            logoPictureUrl: "",
+	            logoPictureBase64: "",
+	            languages: ["en-US", "es-MX"],
+	            defaultLanguage: "en-US",
+	            skipTo: false,
+	            alwaysOnTop: false,
+	        },
+	    };
+	</script>
+	<script type="text/javascript" async src="https://app-script.monsido.com/v2/monsido-script.js"></script>
+
 </head>
 <body <?php body_class(); ?>>
 	<?php get_template_part('template-parts/content','alert'); ?>
