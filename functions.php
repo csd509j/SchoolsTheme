@@ -539,26 +539,3 @@ add_filter( 'searchwp\query\mods', function( $mods ) {
 
 	return $mods;
 } );
-
-// Return Monsido Token
-function get_monsido_token() {
-	
-	$theme = wp_get_theme();
-	
-	if ( $theme->name == 'Lincoln Elementary School' || $theme->name == 'Garfield Elementary School' || $theme->name == 'Linus Pauling Middle School' ) {
-		
-		global $sitepress;
-		
-		$current_lang = $sitepress->get_current_language();
-		
-		if ( $current_lang == 'es' ) {
-			
-			return get_field('monsido_token_spanish', 'options');
-			
-		}
-		
-	}
-	
-	return get_field('monsido_token', 'options');
-	
-}
