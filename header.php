@@ -29,7 +29,7 @@
     <![endif]-->
    	<script type="text/javascript">
 	    window._monsido = window._monsido || {
-	        token: "<?php the_field('monsido_token', 'options'); ?>",
+	        token: "<?php echo get_monsido_token(); ?>",
 	        statistics: {
 	            enabled: true,
 	            documentTracking: {
