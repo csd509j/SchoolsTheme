@@ -6,6 +6,7 @@
             "key": "field_586daa21333e9",
             "label": "Link",
             "name": "link",
+            "aria-label": "",
             "type": "link",
             "instructions": "",
             "required": 0,
@@ -23,7 +24,14 @@
             {
                 "param": "attachment",
                 "operator": "==",
-                "value": "all"
+                "value": "image\/png"
+            }
+        ],
+        [
+            {
+                "param": "attachment",
+                "operator": "==",
+                "value": "image\/jpeg"
             }
         ]
     ],
@@ -33,7 +41,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1575430664
+    "show_in_rest": 0,
+    "modified": 1686088718
 }

@@ -129,7 +129,7 @@ add_action('admin_head', 'custom_admin_css');
 function custom_admin_css() {
   echo '<style>
     #wp-admin-bar-wpfc-toolbar-parent > .ab-empty-item::before { content: ""; padding: 0; margin:0; }
-    #litespeed_meta_boxes,.installer-plugin-update-tr { display:none; }
+    .compat-field-wpmf_media_selection .wpmfjaoassign_row, .compat-field-wpmf_pdf_embed, .compat-field-wpmf_media_selection #litespeed_meta_boxes,.installer-plugin-update-tr { display:none; }
     
     
     /* 
