@@ -129,8 +129,9 @@ add_action('admin_head', 'custom_admin_css');
 function custom_admin_css() {
   echo '<style>
     #wp-admin-bar-wpfc-toolbar-parent > .ab-empty-item::before { content: ""; padding: 0; margin:0; }
-    .compat-field-wpmf_media_selection .wpmfjaoassign_row, .compat-field-wpmf_pdf_embed, #litespeed_meta_boxes, .installer-plugin-update-tr { display:none !important; }
-    
+    #searchwp_document_content, .compat-field-wpmf_media_selection .wpmfjaoassign_row, .compat-field-wpmf_pdf_embed, #litespeed_meta_boxes, .installer-plugin-update-tr { display:none !important; }
+    .post-type-attachment .wp_attachment_image .spinner { width: 0 !important; }
+	    
     
     /* 
 	** Plugin: ACF-Crop
