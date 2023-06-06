@@ -129,7 +129,7 @@ add_action('admin_head', 'custom_admin_css');
 function custom_admin_css() {
   echo '<style>
     #wp-admin-bar-wpfc-toolbar-parent > .ab-empty-item::before { content: ""; padding: 0; margin:0; }
-    .installer-plugin-update-tr { display:none; }
+    #litespeed_meta_boxes,.installer-plugin-update-tr { display:none; }
     
     
     /* 
