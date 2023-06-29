@@ -143,7 +143,7 @@
 								<ul class="social-media-links">
 									<p><?php _e('Connect with Us','csdschools'); ?></p>
 									<li>
-										<a href="https://www.twitter.com/SuptNoss" target="_blank" class="social">
+										<a href="https://www.twitter.com/csdnow" target="_blank" class="social">
 											<i class="fab fa-twitter-square fa-2x"></i>
 										</a>	
 									</li>
