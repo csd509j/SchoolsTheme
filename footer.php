@@ -127,10 +127,7 @@
 							</div>
 							<div class="col-sm-5">
 								<div class="footer-text text-white">
-									<p class="mb-0"><?php the_field('statement', 'options'); ?></p>
-									<p class="mb-0"><?php the_field('statement_contact_name', 'options'); ?></p>
-									<div><?php the_field('statement_contact_title', 'options'); ?></div>
-									<p class="mb-0"><a href="mailto:<?php the_field('statement_contact_email', 'options'); ?>" target="_blank"><?php the_field('statement_contact_email', 'options'); ?></a> <?php the_field('statement_contact_phone', 'options'); ?></p>
+									<div class="footer-text"><?php the_field('non_discrimination_statement', 'options'); ?></div>
 								</div>
 							</div>
 						</div>
