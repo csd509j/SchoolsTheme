@@ -1,4 +1,6 @@
-<?php if ( $alert = get_alerts() ): ?>
+<?php $alert = wp_cache_get( 'alert' ); ?>
+
+<?php if ( $alert ): ?>
 
 	<div class="alert-emergency-body" style="background-color: #<?php echo $alert['acf']['alert_color']; ?>">
 		

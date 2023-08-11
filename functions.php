@@ -462,7 +462,13 @@ function get_calendars() {
 * @since CSD Schools 3.8.4
 */
 
-function get_alerts() {
+add_action( 'init', function() {
+	
+	add_action( 'csd_cron', 'csd_get_alerts' );
+		
+} );
+
+function csd_get_alerts() {
 	
 	$response = wp_remote_get( 'https://www.csd509j.net/wp-json/acf/v3/emergency-alert/' );
 
