@@ -555,8 +555,9 @@ function clearMediaCache( $infopath, $id ) {
 	
 	$file = $infopath['filename'];
 	$extension = $infopath['extension'];
-	$url = wp_get_attachment_url( $id ); 
-	$urllocal = explode( site_url(), $url )[1];
+	
+	$fileurl = wp_get_attachment_url( $id ); 
+	$urllocal = explode( site_url(), $fileurl )[1];
 	$urllocal = substr( $urllocal, 0, strrpos( $urllocal, '/' ) );
 	
 	$uri = 'https://gateway.stackpath.com/identity/v1/oauth2/token';
