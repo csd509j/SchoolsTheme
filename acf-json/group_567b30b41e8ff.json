@@ -1170,6 +1170,22 @@
                     "display": "table",
                     "sub_fields": [
                         {
+                            "key": "field_58f91da04dae8",
+                            "label": "Table",
+                            "name": "table",
+                            "aria-label": "",
+                            "type": "table",
+                            "instructions": "To create a link, you will need to include the HTML code in the form:\r\n<xmp><a href=\"http:\/\/google.com\">Link Text<\/a><\/xmp>",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "use_header": 0
+                        },
+                        {
                             "key": "field_65298c5728ec3",
                             "label": "Anchor",
                             "name": "anchor",
@@ -1188,22 +1204,6 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
-                        },
-                        {
-                            "key": "field_58f91da04dae8",
-                            "label": "Table",
-                            "name": "table",
-                            "aria-label": "",
-                            "type": "table",
-                            "instructions": "To create a link, you will need to include the HTML code in the form:\r\n<xmp><a href=\"http:\/\/google.com\">Link Text<\/a><\/xmp>",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "use_header": 0
                         }
                     ],
                     "min": "",
@@ -1468,5 +1468,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1697222087
+    "modified": 1697230575
 }
