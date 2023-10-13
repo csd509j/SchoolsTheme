@@ -59,8 +59,12 @@ if( have_rows('page_content_blocks') ):
 		endif;
 
 		if( get_row_layout() == 'button_group' ):
+		
+			echo ( get_sub_field('anchor') ? '<div id="'. get_sub_field('anchor') . '">' : '' );
 			
 			get_template_part( 'template-parts/page-block', 'button' );
+			
+			echo ( get_sub_field('anchor') ? '</div>' : '' ); 
 			
 		endif; 
 		
