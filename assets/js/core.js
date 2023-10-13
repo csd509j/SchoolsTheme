@@ -70,4 +70,28 @@ jQuery( function ( $ ) {
 				
 	} );
 	
+	function scrollToAnchor ( url ) {	
+		
+		var urlHash = url.split( '#' )[1];
+		
+		if ( urlHash &&  $( '#' + urlHash ).length ) {
+	    	
+	    	$( 'html' ).animate( {
+	        
+	            scrollTop: $( '#' + urlHash ).offset().top - 120
+	        
+	        }, 500 );
+	        
+	  	}
+	
+	}
+	
+	$( '.anchor' ).click(function (event) {
+		
+		event.preventDefault(); // stop the browser from snapping to the anchor
+		
+		scrollToAnchor(event.target.href);
+	
+	} );
+	
 } );

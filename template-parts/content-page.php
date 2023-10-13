@@ -14,6 +14,12 @@ if( have_rows('page_content_blocks') ):
 	
 	while( have_rows('page_content_blocks') ): the_row(); 
 		
+		if( get_row_layout() == 'table_of_contents' ):
+				
+			get_template_part( 'template-parts/page-block', 'table-of-contents' ); 
+			
+		endif;
+		
 		if( get_sub_field('lead_text_block') ): ?>
 			
 			<div class="entry-lead">
@@ -25,6 +31,8 @@ if( have_rows('page_content_blocks') ):
 		endif;
 		
 		if( get_row_layout() == 'text_block' ):
+		
+			echo ( get_sub_field('anchor') ? '<div id="'. get_sub_field('anchor') . '">' : '' ); 
 			
 			if( get_sub_field('heading') ): ?>
 	
@@ -39,6 +47,8 @@ if( have_rows('page_content_blocks') ):
 				the_sub_field('text'); 
 				
 			endif; 
+			
+			echo ( get_sub_field('anchor') ? '</div>' : '' ); 
 			
 		endif; 
 		
@@ -62,7 +72,11 @@ if( have_rows('page_content_blocks') ):
 		
 		if( get_row_layout() == 'card' ):
 		
+			echo ( get_sub_field('anchor') ? '<div id="'. get_sub_field('anchor') . '">' : '' );
+		
 			get_template_part( 'template-parts/page-block', 'card' );
+			
+			echo ( get_sub_field('anchor') ? '</div>' : '' ); 
 		
 		endif;
 		
@@ -74,8 +88,12 @@ if( have_rows('page_content_blocks') ):
 		
 		if( get_sub_field( 'form_select' ) ): 
 		
+			echo ( get_sub_field('anchor') ? '<div id="'. get_sub_field('anchor') . '">' : '' );
+			
 			$form_object = get_sub_field('form_select');
 			echo do_shortcode('[gravityform id="' . $form_object['id'] . '" title="true" description="true" ajax="true"]');
+		
+			echo ( get_sub_field('anchor') ? '</div>' : '' );
 		
 		endif;
 		
@@ -92,8 +110,12 @@ if( have_rows('page_content_blocks') ):
 		endif;
 		
 		if ( get_row_layout() == "table"): 
+		
+			echo ( get_sub_field('anchor') ? '<div id="'. get_sub_field('anchor') . '">' : '' );
 			
 			get_template_part( 'template-parts/page-block', 'table' );
+			
+			echo ( get_sub_field('anchor') ? '</div>' : '' ); 
 			
 		endif;
 		
