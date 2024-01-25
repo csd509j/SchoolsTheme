@@ -139,6 +139,9 @@ function custom_admin_css() {
 	.acf-field-image-crop {
 		display: none;
 	}
+	.acf-escaped-html-notice {
+		display: none !important;
+	}
   </style>';
 }
 
