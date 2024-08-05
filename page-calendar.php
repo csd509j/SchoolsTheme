@@ -28,15 +28,15 @@
 	
 	</div>
 	
-	<div class="bg-gray py-2">
+	<div class="page-content py-3">
 	
 		<div class="container">
 	
 			<div class="row">
 	
-				<div class="col-12">
+				<div class="col-lg-12">
 	
-					<p class="lead"><?php the_field('calendar_text', 'options'); ?></p>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>					
 	
 				</div>
 	
@@ -46,11 +46,19 @@
 	
 	</div>
 	
-	<div class="py-3">
+	<div class="py-3 bg-light">
 	
 		<div class="container">
 	
-			<?php render_calendar(); ?>
+			<div class="row">
+	
+				<div class="col-12">
+	
+					<?php render_calendar(); ?>
+	
+				</div>
+	
+			</div>
 	
 		</div>
 	
