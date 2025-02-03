@@ -6,6 +6,7 @@
             "key": "field_5773f32cefdd8",
             "label": "Carousel",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -15,13 +16,15 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
-            "endpoint": 0
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_565a215a6c15c",
             "label": "Carousel Images",
             "name": "carousel_images",
+            "aria-label": "",
             "type": "gallery",
             "instructions": "",
             "required": 1,
@@ -49,6 +52,7 @@
             "key": "field_5773f349efdd9",
             "label": "Quick Links",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -58,13 +62,15 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
-            "endpoint": 0
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_565a225006599",
             "label": "Home Quick Link 1 Type",
             "name": "home_quick_link_1_type",
+            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 1,
@@ -85,12 +91,15 @@
             "ui": 1,
             "ajax": 0,
             "return_format": "label",
-            "placeholder": ""
+            "placeholder": "",
+            "allow_custom": 0,
+            "search_placeholder": ""
         },
         {
             "key": "field_565a219b6c15d",
             "label": "Home Quick Link 1 Text",
             "name": "home_quick_link_1_text",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -110,6 +119,7 @@
             "key": "field_565a21b96c15e",
             "label": "Home Quick Link 1 Page",
             "name": "home_quick_link_1_page",
+            "aria-label": "",
             "type": "page_link",
             "instructions": "",
             "required": 1,
@@ -137,6 +147,7 @@
             "key": "field_565a22a20659b",
             "label": "Home Quick Link 1 Link",
             "name": "home_quick_link_1_link",
+            "aria-label": "",
             "type": "url",
             "instructions": "",
             "required": 1,
@@ -161,6 +172,7 @@
             "key": "field_565a22d90659c",
             "label": "Home Quick Link 1 Media",
             "name": "home_quick_link_1_media",
+            "aria-label": "",
             "type": "file",
             "instructions": "",
             "required": 1,
@@ -182,12 +194,14 @@
             "library": "all",
             "min_size": "",
             "max_size": "",
-            "mime_types": ""
+            "mime_types": "",
+            "uploader": ""
         },
         {
             "key": "field_565a230ee8b89",
             "label": "Home Quick Link 2 Type",
             "name": "home_quick_link_2_type",
+            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 1,
@@ -208,12 +222,15 @@
             "ui": 1,
             "ajax": 0,
             "return_format": "label",
-            "placeholder": ""
+            "placeholder": "",
+            "allow_custom": 0,
+            "search_placeholder": ""
         },
         {
             "key": "field_565a21dd6c15f",
             "label": "Home Quick Link 2 Text",
             "name": "home_quick_link_2_text",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -233,6 +250,7 @@
             "key": "field_565a21e66c160",
             "label": "Home Quick Link 2 Page",
             "name": "home_quick_link_2_page",
+            "aria-label": "",
             "type": "page_link",
             "instructions": "",
             "required": 1,
@@ -260,6 +278,7 @@
             "key": "field_565a234a3fe65",
             "label": "Home Quick Link 2 Link",
             "name": "home_quick_link_2_link",
+            "aria-label": "",
             "type": "url",
             "instructions": "",
             "required": 1,
@@ -284,6 +303,7 @@
             "key": "field_565a235b3fe66",
             "label": "Home Quick Link 2 Media",
             "name": "home_quick_link_2_media",
+            "aria-label": "",
             "type": "file",
             "instructions": "",
             "required": 1,
@@ -305,12 +325,14 @@
             "library": "all",
             "min_size": "",
             "max_size": "",
-            "mime_types": ""
+            "mime_types": "",
+            "uploader": ""
         },
         {
             "key": "field_565a236f3fe67",
             "label": "Home Quick Link 3 Type",
             "name": "home_quick_link_3_type",
+            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 1,
@@ -331,12 +353,15 @@
             "ui": 1,
             "ajax": 0,
             "return_format": "label",
-            "placeholder": ""
+            "placeholder": "",
+            "allow_custom": 0,
+            "search_placeholder": ""
         },
         {
             "key": "field_565a21f46c161",
             "label": "Home Quick Link 3 Text",
             "name": "home_quick_link_3_text",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -356,6 +381,7 @@
             "key": "field_565a21ff6c162",
             "label": "Home Quick Link 3 Page",
             "name": "home_quick_link_3_page",
+            "aria-label": "",
             "type": "page_link",
             "instructions": "",
             "required": 1,
@@ -383,6 +409,7 @@
             "key": "field_565a23873fe68",
             "label": "Home Quick Link 3 Link",
             "name": "home_quick_link_3_link",
+            "aria-label": "",
             "type": "url",
             "instructions": "",
             "required": 1,
@@ -407,6 +434,7 @@
             "key": "field_565a239d3fe69",
             "label": "Home Quick Link 3 Media",
             "name": "home_quick_link_3_media",
+            "aria-label": "",
             "type": "file",
             "instructions": "",
             "required": 1,
@@ -428,12 +456,14 @@
             "library": "all",
             "min_size": "",
             "max_size": "",
-            "mime_types": ""
+            "mime_types": "",
+            "uploader": ""
         },
         {
             "key": "field_565a23dcd3b63",
             "label": "Home Quick Link 4 Type",
             "name": "home_quick_link_4_type",
+            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 1,
@@ -454,12 +484,15 @@
             "ui": 1,
             "ajax": 0,
             "return_format": "label",
-            "placeholder": ""
+            "placeholder": "",
+            "allow_custom": 0,
+            "search_placeholder": ""
         },
         {
             "key": "field_565a2402d3b64",
             "label": "Home Quick Link 4 Text",
             "name": "home_quick_link_4_text",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -479,6 +512,7 @@
             "key": "field_565a240cd3b65",
             "label": "Home Quick Link 4 Page",
             "name": "home_quick_link_4_page",
+            "aria-label": "",
             "type": "page_link",
             "instructions": "",
             "required": 1,
@@ -506,6 +540,7 @@
             "key": "field_565a241ed3b66",
             "label": "Home Quick Link 4 Link",
             "name": "home_quick_link_4_link",
+            "aria-label": "",
             "type": "url",
             "instructions": "",
             "required": 1,
@@ -530,6 +565,7 @@
             "key": "field_565a244ad3b67",
             "label": "Home Quick Link 4 Media",
             "name": "home_quick_link_4_media",
+            "aria-label": "",
             "type": "file",
             "instructions": "",
             "required": 1,
@@ -551,12 +587,14 @@
             "library": "all",
             "min_size": "",
             "max_size": "",
-            "mime_types": ""
+            "mime_types": "",
+            "uploader": ""
         },
         {
             "key": "field_5c07f230caf4d",
             "label": "Video Section",
             "name": "",
+            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -566,13 +604,15 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
-            "endpoint": 0
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_5c07f23dcaf4e",
             "label": "Include Video Section",
             "name": "include_video_section",
+            "aria-label": "",
             "type": "true_false",
             "instructions": "",
             "required": 0,
@@ -592,6 +632,7 @@
             "key": "field_5c07f250caf4f",
             "label": "Video Section Heading",
             "name": "video_section_heading",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -619,6 +660,7 @@
             "key": "field_5c07f27ccaf50",
             "label": "Video Section Text",
             "name": "video_section_text",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -646,6 +688,7 @@
             "key": "field_5c07f43dcaf51",
             "label": "Video URL",
             "name": "video_url",
+            "aria-label": "",
             "type": "url",
             "instructions": "",
             "required": 1,
@@ -670,19 +713,43 @@
     "location": [
         [
             {
-                "param": "page_template",
+                "param": "page",
                 "operator": "==",
-                "value": "page-home.php"
+                "value": "188"
             }
         ]
     ],
     "menu_order": 0,
-    "position": "acf_after_title",
+    "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": 1,
+    "hide_on_screen": [
+        "permalink",
+        "block_editor",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
     "description": "",
-    "modified": 1579284579
+    "show_in_rest": 0,
+    "acfe_display_title": "Home Page",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1738596552
 }
