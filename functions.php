@@ -506,7 +506,7 @@ function csd_get_alerts() {
 					
 					if ( $start->format('Y-m-d H:i:s') <= $date_now->format('Y-m-d H:i:s') && $end->format('Y-m-d H:i:s') >= $date_now->format('Y-m-d H:i:s') ) {
 						
-						wp_cache_set( 'alert', $alert );
+						wp_cache_set( 'alert', $alert, '', 300 );
 	
 						return ( $alert );
 					
