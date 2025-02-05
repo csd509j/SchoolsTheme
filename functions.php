@@ -497,13 +497,9 @@ function csd_get_alerts() {
 					$date_now->setTimezone( $tz );
 					
 					$start = new DateTime( $alert['acf']['start_time'] );
-					
-					$start->setTimezone( $tz );
-					
+										
 					$end = new DateTime( $alert['acf']['end_time'] );
-					
-					$end->setTimezone( $tz );
-					
+										
 					if ( $start->format('Y-m-d H:i:s') <= $date_now->format('Y-m-d H:i:s') && $end->format('Y-m-d H:i:s') >= $date_now->format('Y-m-d H:i:s') ) {
 						
 						wp_cache_set( 'alert', $alert, '', 300 );
