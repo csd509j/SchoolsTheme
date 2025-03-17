@@ -592,6 +592,195 @@
             "uploader": ""
         },
         {
+            "key": "field_67d88bb01ff0e",
+            "label": "Include Quick Link 5",
+            "name": "home_quick_link_5_include",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_67d88ad5727d3",
+            "label": "Home Quick Link 5 Type",
+            "name": "home_quick_link_5_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67d88bb01ff0e",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Page": "Page",
+                "External Link": "External Link",
+                "Media File": "Media File"
+            },
+            "default_value": false,
+            "return_format": "label",
+            "multiple": 0,
+            "allow_custom": 0,
+            "search_placeholder": "",
+            "allow_null": 0,
+            "allow_in_bindings": 1,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_67d88ae1727d4",
+            "label": "Home Quick Link 5 Text",
+            "name": "home_quick_link_5_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67d88bb01ff0e",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67d88aed727d5",
+            "label": "Home Quick Link 5 Page",
+            "name": "home_quick_link_5_page",
+            "aria-label": "",
+            "type": "page_link",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67d88ad5727d3",
+                        "operator": "==",
+                        "value": "Page"
+                    },
+                    {
+                        "field": "field_67d88bb01ff0e",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": "",
+            "post_status": "",
+            "taxonomy": "",
+            "allow_archives": 1,
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 1
+        },
+        {
+            "key": "field_67d88afa727d6",
+            "label": "Home Quick Link 5 Link",
+            "name": "home_quick_link_5_link",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67d88ad5727d3",
+                        "operator": "==",
+                        "value": "External Link"
+                    },
+                    {
+                        "field": "field_67d88bb01ff0e",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "placeholder": ""
+        },
+        {
+            "key": "field_67d88b04727d7",
+            "label": "Home Quick Link 5 Media",
+            "name": "home_quick_link_5_media",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67d88ad5727d3",
+                        "operator": "==",
+                        "value": "Media File"
+                    },
+                    {
+                        "field": "field_67d88bb01ff0e",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "return_format": "url",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 1,
+            "library": "all"
+        },
+        {
             "key": "field_5c07f230caf4d",
             "label": "Video Section",
             "name": "",
@@ -752,5 +941,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1738597198
+    "modified": 1742245077
 }

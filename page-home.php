@@ -141,6 +141,17 @@ get_header(); ?>
 							</div>
 						</a>				
 					</div>
+					<?php if ( get_field('quick_link_5', 'options') ): ?>
+					
+						<?php $link = get_field('quick_link_5', 'options'); ?>
+						<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" class="btn btn-quick btn-quick-4 btn-block">
+							<div class="d-flex justify-content-center">
+								<div class="d-inline d-lg-none d-xl-inline"><?php echo wp_get_attachment_image( get_field('quick_link_icon_5', 'options'), 'thumbnail', false, array('class'=>'img-quick-icon img-fluid') ); ?></div>
+								<div class="d-flex align-self-center"><?php echo $link['title']; ?></div>
+							</div>
+						</a>	
+					
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>
@@ -178,7 +189,9 @@ get_header(); ?>
 				<div id="quick-links">
 					<div class="row">
 					
-					<?php for ( $x = 1; $x < 5; $x++ ): ?>
+					<?php $count = get_field('home_quick_link_5_include') ? 6 : 5; ?>
+					
+					<?php for ( $x = 1; $x < $count; $x++ ): ?>
 					
 						<div class="quick-link col-sm-6 col-md-12"> 
 					
