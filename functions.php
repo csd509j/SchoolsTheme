@@ -48,6 +48,20 @@ function csd_enqueue_script() {
 	}	
 	
 }
+add_action( 'wp_dashboard_setup', 'hide_plugin_dashboard_meta_boxes' );
+
+function hide_plugin_dashboard_meta_boxes() {
+ 
+ 	// Yoast
+    remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'normal' );
+    
+    remove_meta_box( 'wpseo-wincher-dashboard-overview', 'dashboard', 'normal' );
+    
+    // Postman
+    remove_meta_box( 'example_dashboard_widget', 'dashboard', 'normal' );
+    remove_meta_box( 'post_smtp_reports_widget_lite', 'dashboard', 'normal' );
+
+}
 
 /*
  * Add image sizes
