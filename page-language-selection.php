@@ -8,12 +8,14 @@
  * @updated CSD Schools 3.6.4
  */
  
+/*
 if (isset($_GET['redirect'])) {
 	$referrer = $_GET['redirect'];
 } else {
 	$referrer = home_url();
 }
-
+*/
+$current_url = home_url( add_query_arg( null, null ) ); // Current page URL
 ?>
 
 <!DOCTYPE html>
@@ -59,10 +61,10 @@ if (isset($_GET['redirect'])) {
 						<div class="modal-body">
 							<div class="d-flex border-bottom">
 								<div class="flex-fill border-right">
-									<a href="#" class="lang-link" data-id="en" data-referrer="<?php echo $referrer; ?>"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/american-flag.jpg'); ?>" width="45px" /> English</a>
+									<a href="<?php echo add_query_arg('lang','en', home_url() ); ?>" class="lang-link"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/american-flag.jpg'); ?>" width="45px" /> English</a>
 								</div>
 								<div class="flex-fill">
-									<a href="#" class="lang-link" data-id="es" data-referrer="<?php echo $referrer; ?>"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/mexico-flag.jpg'); ?>" width="45px" /> Spanish</a>
+									<a href="<?php echo add_query_arg('lang','es', home_url() ); ?>" class="lang-link"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/mexico-flag.jpg'); ?>" width="45px" /> Spanish</a>
 								</div>
 							</div>
 					   		<div class="my-1 text-center">
@@ -75,22 +77,4 @@ if (isset($_GET['redirect'])) {
 		</div>
 	</body>
 </html>
-<script>
-$(document).ready(function() {
-	$('.lang-link').click(function() {
-		var lang = $(this).data('id');
-		var referrer = $(this).data('referrer');
-
-		if(lang == 'en') {
-			$("#en").prop("checked", true);
-			Cookies.set('csd_translation_preference', 'en', { expires: 365 });
-		} else if (lang == 'es') {
-			$("#es").prop("checked", true);
-			Cookies.set('csd_translation_preference', 'es', { expires: 365 });
-		}
-		
-		window.location.href = referrer;
-	});
-});
-</script>
 <?php wp_footer(); ?>
