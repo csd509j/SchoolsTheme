@@ -76,7 +76,7 @@
 	<?php get_template_part('template-parts/content','alert'); ?>
 	<div id="header-top-global">
 		<div class="container h-100">
-			<div class="row justify-content-between h-100">
+			<div class="row justify-content-between no-gutters h-100">
 				<div class="col-auto menu-top-block-container">
 					<div class="row no-gutters h-100">
 					<?php if ( get_field('attendance_phone', 'options') ): ?>
