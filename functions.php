@@ -587,3 +587,45 @@ function custom_admin_bar_links() {
         ),
     ));
 }
+
+// Enforce persistent language based on cookie
+add_action( 'template_redirect', 'preferred_language_check', 0 );
+
+function preferred_language_check() {
+    
+    if ( ! defined( 'ICL_LANGUAGE_CODE' ) ) {
+    
+        return;
+    
+    }
+
+    // Only proceed if our persistent cookie exists
+    if ( isset( $_COOKIE['persistent_wpml_language'] ) ) {
+		
+		$chosen_lang = $_COOKIE['persistent_wpml_language'];
+
+        // If current page language differs from the cookie
+        if ( ICL_LANGUAGE_CODE !== $chosen_lang ) {
+          
+			// Get the translated URL for the current page
+            $translated_url = apply_filters( 'wpml_permalink', get_permalink(), $chosen_lang );
+
+            // Redirect if the URL differs from current request
+            if ( $translated_url && $translated_url !== $_SERVER['REQUEST_URI'] ) {
+             
+                // Set WPML cookie to chosen language for this request
+                setcookie( 'wp-wpml_current_language', $chosen_lang, time() + 365*24*60*60, COOKIEPATH, COOKIE_DOMAIN );
+                
+                $_COOKIE['wp-wpml_current_language'] = $chosen_lang;
+
+                wp_redirect( $translated_url );
+                
+                exit;
+                
+            }
+        
+        }
+    
+    }
+
+}

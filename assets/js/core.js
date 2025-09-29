@@ -94,4 +94,56 @@ jQuery( function ( $ ) {
 	
 	} );
 	
+	$( '.wpml-ls-statics-shortcode_actions a, .lang-link' ).on( 'click', function( e ) {
+        
+        e.preventDefault();
+
+        var href = $( this ).attr( 'href' );
+        
+        var lang = $( this ).data( 'lang' );
+
+        if ( ! lang ) {
+			
+			var li = $( this ).closest( 'li' );
+			
+			if ( li.length && li.attr( 'class' ) ) {
+			
+			    li.attr( 'class' ).split( /\s+/ ).forEach( function( c ) {
+			
+			        if ( c.indexOf( 'wpml-ls-item-' ) === 0 ) {
+			
+			            var code = c.replace( 'wpml-ls-item-', '' );
+						
+			            if( code.length === 2 ) {
+			
+			                lang = code;
+			
+			            }
+			
+			        }
+			
+			    } );
+			
+			}        
+		
+		}
+
+        if( ! lang ) {
+	        
+            lang = 'en';
+            
+        }
+
+        // Set persistent cookie for 1 year
+        document.cookie = "persistent_wpml_language=" + lang + "; path=/; max-age=" + ( 365*24*60*60 );
+
+        // Navigate after short delay
+        setTimeout( function() {
+			
+			window.location.href = href;
+        
+        }, 10 );
+    
+    } );
+
 } );
