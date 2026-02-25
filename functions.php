@@ -238,6 +238,7 @@ if ( function_exists('acf_add_options_sub_page') ) {
     acf_add_options_sub_page( 'Quick Links' );
     acf_add_options_sub_page( 'Calendar' );
     acf_add_options_sub_page( 'Footer' );
+	acf_add_options_sub_page( 'Alert' );
     acf_add_options_sub_page( '404/Search' );
     acf_add_options_sub_page( 'Google Analytics' );
     acf_add_options_sub_page( 'Monsido' );
@@ -471,67 +472,6 @@ function get_calendars() {
 
 	return $school_calendars;
 	
-}
-
-/**
-* Return Alerts from CSD API
-*
-* @since CSD Schools 3.8.4
-*/
-
-add_action( 'init', function() {
-	
-	add_action( 'csd_cron', 'csd_get_alerts' );
-		
-} );
-
-function csd_get_alerts() {
-	
-	$response = wp_remote_get( 'https://www.csd509j.net/wp-json/acf/v3/emergency-alert/' );
-
-	if ( is_wp_error( $response ) ) {
-		
-		return;
-	}
-	
-	$alerts = json_decode( wp_remote_retrieve_body( $response ), true );
-	
-	if ( $alerts ) {
-	
-		foreach( $alerts as $alert ) {
-			
-			if ( isset( $alert['acf']['sites'] ) ) {
-				
-				if ( in_array( get_bloginfo( 'name' ), $alert['acf']['sites'] ) ) {
-					
-					$tz = new DateTimeZone( 'America/Los_Angeles' );
-					
-					$date_now = new DateTime();
-					
-					$date_now->setTimezone( $tz );
-					
-					$start = new DateTime( $alert['acf']['start_time'] );
-										
-					$end = new DateTime( $alert['acf']['end_time'] );
-										
-					if ( $start->format('Y-m-d H:i:s') <= $date_now->format('Y-m-d H:i:s') && $end->format('Y-m-d H:i:s') >= $date_now->format('Y-m-d H:i:s') ) {
-						
-						wp_cache_set( 'alert', $alert, '', 300 );
-	
-						return ( $alert );
-					
-					}
-					
-				}
-				
-			}
-				
-		}
-		
-	}
-
-	return false;
-		
 }
 
 // Add search weight to more recently published entries in SearchWP.
