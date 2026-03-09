@@ -442,7 +442,7 @@ function get_full_width_children_pages( $post ) {
 /**
 * Return calendars from CSD API
 *
-* @since CSD Schools 3.7.1
+* @since CSD Schools 3.7.2
 */
 
 function get_calendars() {
