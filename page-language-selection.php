@@ -8,14 +8,18 @@
  * @updated CSD Schools 3.6.4
  */
  
-/*
-if (isset($_GET['redirect'])) {
+if ( isset( $_GET['redirect'] ) ) {
+
 	$referrer = $_GET['redirect'];
+
 } else {
+
 	$referrer = home_url();
+
 }
-*/
+
 $current_url = home_url( add_query_arg( null, null ) ); // Current page URL
+
 ?>
 
 <!DOCTYPE html>
@@ -27,9 +31,9 @@ $current_url = home_url( add_query_arg( null, null ) ); // Current page URL
 		<meta name="google-site-verification" content="" />
 		<?php
 		
-		if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false)) {
+		if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT'], 'MSIE' ) !== false ) ) {
 		
-			echo('<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">');
+			echo( '<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">' );
 			
 		} 
 		
@@ -40,7 +44,7 @@ $current_url = home_url( add_query_arg( null, null ) ); // Current page URL
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<link rel="shortcut icon" type="image/x-icon" href="<?php the_field('favicon', 'options'); ?>">
-		<?php get_template_part('template-parts/google', 'analytics'); ?>
+		<?php get_template_part( 'template-parts/google', 'analytics' ); ?>
 		<?php wp_head(); ?>
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
@@ -61,10 +65,10 @@ $current_url = home_url( add_query_arg( null, null ) ); // Current page URL
 						<div class="modal-body">
 							<div class="d-flex border-bottom">
 								<div class="flex-fill border-right">
-									<a href="<?php echo add_query_arg('lang','en', home_url() ); ?>" class="lang-link"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/american-flag.jpg'); ?>" width="45px" /> English</a>
+									<a href="<?php echo add_query_arg( 'lang','en', home_url() ); ?>" class="lang-link"><img src="<?php echo home_url( 'wp-content/themes/csdschools/assets/images/american-flag.jpg' ); ?>" width="45px" /> English</a>
 								</div>
 								<div class="flex-fill">
-									<a href="<?php echo add_query_arg('lang','es', home_url() ); ?>" class="lang-link"><img src="<?php echo home_url('wp-content/themes/csdschools/assets/images/mexico-flag.jpg'); ?>" width="45px" /> Spanish</a>
+									<a href="<?php echo add_query_arg( 'lang','es', home_url() ); ?>" class="lang-link"><img src="<?php echo home_url( 'wp-content/themes/csdschools/assets/images/mexico-flag.jpg' ); ?>" width="45px" /> Spanish</a>
 								</div>
 							</div>
 					   		<div class="my-1 text-center">

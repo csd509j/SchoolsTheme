@@ -3,9 +3,11 @@
 <h3 class="mt-1"><?php _e('Calendar Downloads','csdschools'); ?></h3>
 
 <div class="table-responsive">
-	
+
 	<table class="table table-white table-bordered">
-	
+
+		<?php if ( $calendars ): ?>
+
 		<?php foreach ( $calendars as $calendar ): ?>
 			
 			<tr>
@@ -37,7 +39,9 @@
 			<?php endwhile; ?>
 			
 		<?php endif; ?>
-	
+
+		<?php endif; ?>
+
 	</table>
 	
 </div>

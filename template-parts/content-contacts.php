@@ -59,7 +59,7 @@ if ( get_field('sidebar_contact_block') ):
 								
 								if ( get_sub_field('contact_mailing_address') ): ?>
 									
-									<?php _e('Mailing Address','csdschools'); ?>: <?php the_sub_field('contact_address'); ?>
+									<?php _e('Mailing Address','csdschools'); ?>: <?php the_sub_field('contact_mailing_address'); ?>
 								
 								<?php endif; ?>
 								

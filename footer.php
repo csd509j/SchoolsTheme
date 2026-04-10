@@ -137,28 +137,34 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-6 mb-1 mb-lg-0">
-								<ul class="social-media-links">
-									<p><?php _e('Connect with Us','csdschools'); ?></p>
+								<p class="mb-1"><?php _e('Connect with Us','csdschools'); ?></p>
+
+								<ul class="social-media-links p-0">
+
 									<li>
-										<a href="https://www.twitter.com/csdnow" target="_blank" class="social">
-											<i class="fab fa-twitter-square fa-2x"></i>
-										</a>	
-									</li>
-									<li>
-										<a href="https://www.facebook.com/csd509j" target="_blank" class="social">
-											<i class="fab fa-facebook-square fa-2x"></i>
+										<a href="https://www.twitter.com/csdnow" target="_blank" class="social" aria-label="<?php _e('Twitter (opens in new tab)','csdschools'); ?>">
+											<i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
 										</a>
 									</li>
+
 									<li>
-										<a href="https://www.instagram.com/corvallis.schools/" target="_blank" class="social">
-											<i class="fab fa-instagram fa-2x"></i>
+										<a href="https://www.facebook.com/csd509j" target="_blank" class="social" aria-label="<?php _e('Facebook (opens in new tab)','csdschools'); ?>">
+											<i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
 										</a>
 									</li>
+
 									<li>
-										<a href="https://www.linkedin.com/company/corvallis-school-district-509j" target="_blank" class="social">
-											<i class="fab fa-linkedin-square fa-2x"></i>
+										<a href="https://www.instagram.com/corvallis.schools/" target="_blank" class="social" aria-label="<?php _e('Instagram (opens in new tab)','csdschools'); ?>">
+											<i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
 										</a>
 									</li>
+
+									<li>
+										<a href="https://www.linkedin.com/company/corvallis-school-district-509j" target="_blank" class="social" aria-label="<?php _e('LinkedIn (opens in new tab)','csdschools'); ?>">
+											<i class="fab fa-linkedin-square fa-2x" aria-hidden="true"></i>
+										</a>
+									</li>
+
 								</ul>
 							</div>
 							<div id="credits" class="col-lg-6 text-center text-lg-right">
@@ -169,7 +175,7 @@
 				</section>
 			</div>
 		</div>
-		<div class="modal fade" id="modalNotification" tabindex="-1" role="dialog" aria-labelledby="modalNotification" aria-hidden="true">
+		<div class="modal fade" id="modalNotification" tabindex="-1" role="dialog" aria-labelledby="modalNotificationLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header py-3">
@@ -177,7 +183,7 @@
 							<i class="fa fa-external-link fa-3x text-white"></i>
 						</div>
 					</div>
-					<div class="modal-body p-2 text-center"><h3 class="mb-0"><?php the_field('external_notification', 'options'); ?></h3></div>
+					<div class="modal-body p-2 text-center"><h3 id="modalNotificationLabel" class="mb-0"><?php the_field('external_notification', 'options'); ?></h3></div>
 					<div class="modal-footer">
 						<a id="externalLink" href="#" class="btn btn-lg btn-block"><?php _e('Proceed','csdschools'); ?></a>
 					</div>

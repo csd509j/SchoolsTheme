@@ -11,5 +11,5 @@ if ( get_sub_field('type') == 'Vimeo' ) {
 
 ?>
 <div class="embed-responsive embed-responsive-16by9 my-2">
-	<iframe class="embed-responsive-item" src="<?php echo $url; ?>"></iframe>
+	<iframe class="embed-responsive-item" src="<?php echo $url; ?>" title="<?php echo esc_attr( get_sub_field('type') == 'Vimeo' ? __( 'Vimeo video player', 'csdschools' ) : __( 'YouTube video player', 'csdschools' ) ); ?>"></iframe>
 </div>

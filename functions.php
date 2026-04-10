@@ -396,10 +396,10 @@ function get_string_between( $string, $start, $end ) {
 */
 
 function get_full_width_children_pages( $post ) {
-	
+
 	if ( $post->post_parent ) {
-		
-		$parent_id = get_topmost_parent($post->id);
+
+		$parent_id = get_topmost_parent( $post->ID );
 			  				  	
 		$children = wp_list_pages( array(
 		    'title_li' => '',
@@ -501,11 +501,9 @@ add_filter( 'searchwp\query\mods', function( $mods ) {
 } );
 
 add_filter( 'acf/the_field/allow_unsafe_html', function( $allowed, $selector ) {
-    
-    return true;
-    
-    return $allowed;
-    
+
+	return true;
+
 }, 10, 2);
 
 /*

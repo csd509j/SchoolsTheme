@@ -3,7 +3,7 @@
 <head>
 
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="google-site-verification" content="" />
 	<?php
 	
@@ -113,7 +113,7 @@
 							<form role="search" id="sites-search" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 								 <label class="sr-only" for="search-text"><?php _e('Search...','csdschools'); ?></label>
 								 <input type="text" class="search-field" id="search-text" placeholder="<?php _e('Search...','csdschools'); ?>" value="<?php echo get_search_query(); ?>" name="s">
-								 <button type="submit" id="ss-icon"><i class="fa fa-search"></i></button>
+								 <button type="submit" id="ss-icon" aria-label="<?php _e('Search','csdschools'); ?>"><i class="fa fa-search" aria-hidden="true"></i></button>
 							</form>
 						</div>
 					</div>
@@ -135,7 +135,7 @@
 							<div class="d-none d-lg-block">
 								<div class="d-flex">
 									<div class="mr-1"><?php wp_nav_menu( array('theme_location' => 'header-menu', 'items_wrap' => '<ul class="nav navbar-nav pull-right" aria-label="primary navigation">%3$s</ul>' )); ?></div>
-									<div class="align-self-center"><a href="#" id="search-toggle"><i class="fa fa-search fa-lg"></i></a></div>
+									<div class="align-self-center"><a href="#" id="search-toggle" aria-label="<?php _e('Open search','csdschools'); ?>" aria-expanded="false" aria-controls="search-bar"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a></div>
 								</div>			
 							</div>
 							<div class="d-lg-none">

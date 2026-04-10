@@ -184,7 +184,7 @@ if ( $alerts ) {
 	  
 	</script>
 	
-	<div class="modal fade" id="modalPopup" tabindex="-1" role="dialog" aria-labelledby="modalPopup" aria-hidden="true">
+	<div class="modal fade" id="modalPopup" tabindex="-1" role="dialog" aria-labelledby="modalPopupLabel" aria-hidden="true">
 	
 		<div class="modal-dialog" role="document">
 	
@@ -196,7 +196,7 @@ if ( $alerts ) {
 	
 						<div class="d-flex w-100 h-100 justify-content-center">
 	
-							<img src="<?php echo esc_url( $alert['acf']['pop_up_image_url'] ); ?>" class="img-fluid w-100" />
+							<img src="<?php echo esc_url( $alert['acf']['pop_up_image_url'] ); ?>" class="img-fluid w-100" alt="" />
 	
 						</div>
 	
@@ -220,7 +220,7 @@ if ( $alerts ) {
 	
 					<h4 class="font-weight-bold text-uppercase text-primary"><?php echo esc_html( $alert['acf']['alert_sub_title'] ); ?></h4>
 
-					<h3 class="mb-0"><?php echo esc_html( $alert['acf']['alert_title'] ); ?></h3>
+					<h3 id="modalPopupLabel" class="mb-0"><?php echo esc_html( $alert['acf']['alert_title'] ); ?></h3>
 	
 				</div>
 	

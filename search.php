@@ -66,9 +66,11 @@ get_header();
 					<h3>Popular Search Results</h3>
 					<?php $links = get_field('popular_resources_list', 'options'); ?>
 					<ul class="list list-flush mb-0">
+					<?php if ( $links ): ?>
 					<?php foreach ( $links as $link ): ?>
 						<li class="text-sm"><a href="<?php echo $link->guid; ?>"><?php echo $link->post_title; ?></a></li>
 					<?php endforeach; ?>
+					<?php endif; ?>
 					</ul>
 				</div>
 				<div class="bg-gray p-1 mt-2 mt-md-0 text-center">

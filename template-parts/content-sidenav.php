@@ -6,9 +6,7 @@
 	  		$root_page_id = $post->post_parent;
 	  		$titlenamer = get_the_title($post->ID);
 	  	else:
-	  		$x = $post->ancestors;
-	  		end($x);
-	  		$root_page_id = prev($x);
+	  		$root_page_id = end($parents);
 	  		$titlenamer = get_the_title($root_page_id);
 	  	endif;
 	  		

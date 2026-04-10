@@ -31,7 +31,9 @@
 						<div class="row no-gutters">
 							<div class="col-12 col-sm-4 col-lg-12">
 								<div class="posts-image">
+									<?php if ( $image ): ?>
 									<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image($image['id'], 'News Image Medium', false, array('class' => 'img-fluid img-block w-100')); ?></a>
+									<?php endif; ?>
 								</div>
 							</div>
 							<div class="col-12 col-sm-8 col-lg-12">

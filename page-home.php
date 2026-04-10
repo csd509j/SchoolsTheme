@@ -142,15 +142,17 @@ get_header(); ?>
 						</a>				
 					</div>
 					<?php if ( get_field('quick_link_5', 'options') ): ?>
-					
-						<?php $link = get_field('quick_link_5', 'options'); ?>
-						<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" class="btn btn-quick btn-quick-4 btn-block">
-							<div class="d-flex justify-content-center">
-								<div class="d-inline d-lg-none d-xl-inline"><?php echo wp_get_attachment_image( get_field('quick_link_icon_5', 'options'), 'thumbnail', false, array('class'=>'img-quick-icon img-fluid') ); ?></div>
-								<div class="d-flex align-self-center"><?php echo $link['title']; ?></div>
-							</div>
-						</a>	
-					
+
+						<div class="col-12 col-md-5 col-lg-3 col-xl-auto align-self-center">
+							<?php $link = get_field('quick_link_5', 'options'); ?>
+							<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" class="btn btn-quick btn-quick-4 btn-block">
+								<div class="d-flex justify-content-center">
+									<div class="d-inline d-lg-none d-xl-inline"><?php echo wp_get_attachment_image( get_field('quick_link_icon_5', 'options'), 'thumbnail', false, array('class'=>'img-quick-icon img-fluid') ); ?></div>
+									<div class="d-flex align-self-center"><?php echo $link['title']; ?></div>
+								</div>
+							</a>
+						</div>
+
 					<?php endif; ?>
 				</div>
 			</div>
@@ -236,10 +238,26 @@ get_header(); ?>
 							<div class="embed-responsive embed-responsive-16by9">
 							
 								<?php $video_url = get_field('video_url'); ?>
-							
-								<?php $v = substr( $video_url, strpos($video_url, "v=") + 2 ); ?>
-							
-								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $v; ?>?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+								<?php
+								$v = '';
+
+								if ( $video_url ) {
+
+									$parsed_url = parse_url( $video_url );
+
+									if ( is_array( $parsed_url ) && isset( $parsed_url['query'] ) ) {
+
+										parse_str( $parsed_url['query'], $query_params );
+
+										$v = isset( $query_params['v'] ) ? $query_params['v'] : '';
+
+									}
+
+								}
+								?>
+
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo esc_attr( $v ); ?>?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="<?php _e( 'YouTube video player', 'csdschools' ); ?>"></iframe>
 							</div>
 						</div>
 					</div>
