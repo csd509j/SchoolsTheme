@@ -77,14 +77,10 @@
 	<div id="header-top-global">
 		<div class="container h-100">
 			<div class="row justify-content-between no-gutters">
-				<div class="col-auto menu-top-block-container">
-					<div class="row no-gutters">
+				<div class="col-auto menu-top-block-container align-self-center">
 					<?php if ( get_field('attendance_phone', 'options') ): ?>
-						<div class="col-auto align-self-center">
-							<a class="d-block" href="tel:<?php the_field('attendance_phone', 'options'); ?>"><?php _e('Attendance','csdschools'); ?>: <?php the_field('attendance_phone', 'options'); ?></a>
-						</div>
+						<a class="d-block" href="tel:<?php the_field('attendance_phone', 'options'); ?>"><?php _e('Attendance','csdschools'); ?>: <?php the_field('attendance_phone', 'options'); ?></a>
 					<?php endif; ?>
-					</div>
 				</div>
 				<div class="col-auto">
 					<div class="row no-gutters">
