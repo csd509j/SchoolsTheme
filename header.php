@@ -76,9 +76,9 @@
 	<?php get_template_part('template-parts/content','alert'); ?>
 	<div id="header-top-global">
 		<div class="container h-100">
-			<div class="row justify-content-between no-gutters h-100">
+			<div class="row justify-content-between no-gutters">
 				<div class="col-auto menu-top-block-container">
-					<div class="row no-gutters h-100">
+					<div class="row no-gutters">
 					<?php if ( get_field('attendance_phone', 'options') ): ?>
 						<div class="col-auto align-self-center">
 							<a class="d-block" href="tel:<?php the_field('attendance_phone', 'options'); ?>"><?php _e('Attendance','csdschools'); ?>: <?php the_field('attendance_phone', 'options'); ?></a>
@@ -87,11 +87,11 @@
 					</div>
 				</div>
 				<div class="col-auto">
-					<div class="row no-gutters h-100">
+					<div class="row no-gutters">
 						<div class="col-auto align-self-center d-none d-lg-block">
-							<?php wp_nav_menu( array('theme_location' => 'header-toplinks', 'items_wrap' => '<ul class="list list-unstyled" aria-label="Top Links">%3$s</ul>' )); ?>
+							<?php wp_nav_menu( array('theme_location' => 'header-toplinks', 'items_wrap' => '<ul class="list list-unstyled d-flex" aria-label="Top Links">%3$s</ul>' )); ?>
 						</div>
-						<div class="col-auto h-100" id="menu-top-language">
+						<div class="col-auto" id="menu-top-language">
 							<?php languages_toggle(); ?>
 						</div>
 					</div>
