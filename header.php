@@ -74,7 +74,7 @@
 </head>
 <body <?php body_class(); ?>>
 	<?php get_template_part('template-parts/content','alert'); ?>
-	<div id="header-top-global" class="py-1">
+	<div id="header-top-global">
 		<div class="container">
 			<div class="row justify-content-between no-gutters">
 				<div class="col-auto menu-top-block-container align-self-center">
