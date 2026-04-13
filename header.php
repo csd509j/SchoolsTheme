@@ -74,8 +74,8 @@
 </head>
 <body <?php body_class(); ?>>
 	<?php get_template_part('template-parts/content','alert'); ?>
-	<div id="header-top-global">
-		<div class="container h-100">
+	<div id="header-top-global" class="py-1">
+		<div class="container">
 			<div class="row justify-content-between no-gutters">
 				<div class="col-auto menu-top-block-container align-self-center">
 					<?php if ( get_field('attendance_phone', 'options') ): ?>
