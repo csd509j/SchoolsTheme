@@ -180,7 +180,7 @@ get_header(); ?>
 			
  			</div>
  			<div class="col-md-3">
- 				<div id="secondary-search">
+ 				<div id="secondary-search" class="mb-1">
 	 				<form role="search" id="sites-search" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 
 		 				<label class="sr-only" for="search-text"><?php _e('Search...','csdschools'); ?></label>
@@ -191,7 +191,7 @@ get_header(); ?>
 
 		 					<div class="input-group-append">
 
-		 						<button type="submit" class="btn btn-primary" aria-label="<?php _e('Search','csdschools'); ?>"><i class="fa fa-search" aria-hidden="true"></i></button>
+		 						<button type="submit" class="btn btn-sm btn-primary" aria-label="<?php _e('Search','csdschools'); ?>"><i class="fa fa-search" aria-hidden="true"></i></button>
 
 		 					</div>
 
