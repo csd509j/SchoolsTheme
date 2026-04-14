@@ -31,7 +31,7 @@ get_header(); ?>
 				</ol>
 				
 				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox" aria-label="<?php _e( 'Slideshow', 'csdschools' ); ?>">
+				<div class="carousel-inner">
 					
 					<?php 
 					
