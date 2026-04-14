@@ -51,7 +51,7 @@ get_header(); ?>
 							
 							<?php endif; ?>
 					  		
-					  		<img src="<?php echo $image_src[0]; ?>" class="d-block w-100" />
+					  		<img src="<?php echo $image_src[0]; ?>" class="d-block w-100" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
 					  		
 					  		<?php if ( $image['title'] || $image['caption'] ): ?>
 						  	
