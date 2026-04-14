@@ -872,6 +872,10 @@ body ul.page-numbers span.current {
 	#breadcrumbs {
 		border-bottom: 1px solid $gray-lighter;
 		margin-bottom: 1em;
+
+		a {
+			text-decoration: underline;
+		}
 	}
 }
 
