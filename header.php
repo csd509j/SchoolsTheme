@@ -74,6 +74,8 @@
 </head>
 <body <?php body_class(); ?>>
 	<?php get_template_part('template-parts/content','alert'); ?>
+	<header id="site-header" role="banner">
+
 	<div id="header-top-global">
 		<div class="container">
 			<div class="row justify-content-between no-gutters">
@@ -117,28 +119,31 @@
 			</div>
 		</div>
 	</div>
-	<div class="wrapper">
-		<div class="wrapper-inner">
-			<div id="header-global" class="my-2">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-10 col-lg-4">
-							<div id="logo" class="clearfix">
-								<a href="<?php echo get_home_url(); ?>"><img class="img-fluid" src="<?php the_field('logo', 'option'); ?>" alt="<?php bloginfo('name'); ?>" /></a>
-							</div>
-						</div>
-						<div class="col-2 col-lg-8 d-flex justify-content-end">
-							<div class="d-none d-lg-block">
-								<div class="d-flex">
-									<div class="mr-1"><?php wp_nav_menu( array('theme_location' => 'header-menu', 'items_wrap' => '<ul class="nav navbar-nav pull-right" aria-label="primary navigation">%3$s</ul>' )); ?></div>
-									<div class="align-self-center"><a href="#" id="search-toggle" aria-label="<?php _e('Open search','csdschools'); ?>" aria-expanded="false" aria-controls="search-bar"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a></div>
-								</div>			
-							</div>
-							<div class="d-lg-none">
-								<?php shiftnav_toggle( 'shiftnav-main' , '' , array( 'icon' => 'bars' , 'class' => 'shiftnav-toggle-button') ); ?>
-							</div>
-						</div>
-						
+	<div id="header-global" class="my-2">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-10 col-lg-4">
+					<div id="logo" class="clearfix">
+						<a href="<?php echo get_home_url(); ?>"><img class="img-fluid" src="<?php the_field('logo', 'option'); ?>" alt="<?php bloginfo('name'); ?>" /></a>
 					</div>
 				</div>
+				<div class="col-2 col-lg-8 d-flex justify-content-end">
+					<div class="d-none d-lg-block">
+						<div class="d-flex">
+							<div class="mr-1"><?php wp_nav_menu( array('theme_location' => 'header-menu', 'items_wrap' => '<ul class="nav navbar-nav pull-right" aria-label="primary navigation">%3$s</ul>' )); ?></div>
+							<div class="align-self-center"><a href="#" id="search-toggle" role="button" aria-label="<?php _e('Open search','csdschools'); ?>" aria-expanded="false" aria-controls="search-bar"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a></div>
+						</div>
+					</div>
+					<div class="d-lg-none">
+						<?php shiftnav_toggle( 'shiftnav-main' , '' , array( 'icon' => 'bars' , 'class' => 'shiftnav-toggle-button') ); ?>
+					</div>
+				</div>
+
 			</div>
+		</div>
+	</div>
+
+	</header>
+
+	<div class="wrapper">
+		<div class="wrapper-inner">

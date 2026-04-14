@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-<div id="content" role="main" tabindex="0">
+<main id="content">
 	<!-- Carousel Section Start -->
 	<section class="carousel-wrap mb-0">
 		<div id="carousel" class="carousel slide" data-ride="carousel">
@@ -20,11 +20,11 @@ get_header(); ?>
 			if ( $images ): ?>
 			
 				<!-- Indicators -->
-				<ol class="carousel-indicators">
+				<ol class="carousel-indicators" aria-label="<?php _e( 'Slideshow indicators', 'csdschools' ); ?>">
 					
 					<?php for ( $i = 0; $i < count($images); ++$i ): ?>
 					
-							<li data-target="#carousel" data-slide-to="<?php echo $i; ?>" <?php if ($i == 0): ?>class="active"<?php endif; ?>></li>
+							<li data-target="#carousel" data-slide-to="<?php echo $i; ?>" role="button" aria-label="<?php echo esc_attr( sprintf( __( 'Slide %d', 'csdschools' ), $i + 1 ) ); ?>" <?php if ($i == 0): ?>class="active"<?php endif; ?>></li>
 					
 					<?php endfor; ?>
 				
@@ -182,10 +182,21 @@ get_header(); ?>
  			<div class="col-md-3">
  				<div id="secondary-search">
 	 				<form role="search" id="sites-search" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
+
 		 				<label class="sr-only" for="search-text"><?php _e('Search...','csdschools'); ?></label>
-		 				<div class="form-group">
-		 					<input type="text" class="form-control" placeholder="<?php _e('Search Site...','csdschools'); ?>" value="<?php echo get_search_query(); ?>" name="s">
-	        			</div>
+
+		 				<div class="input-group">
+
+		 					<input type="text" class="form-control" id="search-text" placeholder="<?php _e('Search Site...','csdschools'); ?>" value="<?php echo get_search_query(); ?>" name="s">
+
+		 					<div class="input-group-append">
+
+		 						<button type="submit" class="btn btn-primary" aria-label="<?php _e('Search','csdschools'); ?>"><i class="fa fa-search" aria-hidden="true"></i></button>
+
+		 					</div>
+
+		 				</div>
+
 	 				</form>
 				</div>
 				<div id="quick-links">
@@ -268,6 +279,6 @@ get_header(); ?>
 	
 	<?php endif; ?>
 
-</div>
+</main>
 
 <?php get_footer(); ?>

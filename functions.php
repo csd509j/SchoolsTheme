@@ -1247,3 +1247,25 @@ function preferred_language_check() {
     }
 
 }
+
+/*
+ * Change UberMenu toplinks container from <nav> to <div>
+ * The toplinks bar is not a navigation landmark — it contains
+ * utility items (phone, social icons, etc.) not navigation links.
+ *
+ * @since CSD Schools 2.0
+ */
+
+add_filter( 'ubermenu_nav_menu_args', 'csd_ubermenu_toplinks_container' );
+
+function csd_ubermenu_toplinks_container( $args ) {
+
+	if ( isset( $args['theme_location'] ) && $args['theme_location'] === 'header-toplinks' ) {
+
+		$args['container'] = 'div';
+
+	}
+
+	return $args;
+
+}
