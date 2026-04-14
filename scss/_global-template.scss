@@ -875,13 +875,16 @@ body ul.page-numbers span.current {
 	}
 }
 
+.lead {
+	color: $black;
+}
+
 //****************
 // Lead Text Block
 //****************
 
 .entry-lead {
 	@extend .mb-2;
-	color: $gray-light;
 	
 	.lead {
 		line-height: 1.3em;
@@ -1230,10 +1233,13 @@ body ul.page-numbers span.current {
 	}
 	.sidebar-contact-staff {
 		margin-top: 20px;
-		
+
 		p:last-child {
 			margin-bottom: 0;
 		}
+	}
+	a {
+		text-decoration: underline;
 	}
 }
 #sidebar-mobile {
