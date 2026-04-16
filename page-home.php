@@ -8,7 +8,6 @@
  */
 
 get_header(); ?>
-<main id="content">
 	<!-- Carousel Section Start -->
 	<section class="carousel-wrap mb-0">
 		<div id="carousel" class="carousel slide" data-ride="carousel">
@@ -18,17 +17,6 @@ get_header(); ?>
 			$images = get_field('carousel_images');
 
 			if ( $images ): ?>
-			
-				<!-- Indicators -->
-				<ol class="carousel-indicators" aria-label="<?php _e( 'Slideshow indicators', 'csdschools' ); ?>">
-					
-					<?php for ( $i = 0; $i < count($images); ++$i ): ?>
-					
-							<li data-target="#carousel" data-slide-to="<?php echo $i; ?>" role="button" aria-label="<?php echo esc_attr( sprintf( __( 'Slide %d', 'csdschools' ), $i + 1 ) ); ?>" <?php if ($i == 0): ?>class="active"<?php endif; ?>></li>
-					
-					<?php endfor; ?>
-				
-				</ol>
 				
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
@@ -278,7 +266,5 @@ get_header(); ?>
 		<!-- Video Section End -->
 	
 	<?php endif; ?>
-
-</main>
 
 <?php get_footer(); ?>

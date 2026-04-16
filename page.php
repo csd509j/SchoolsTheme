@@ -7,7 +7,7 @@
  * @since CSD Schools 1.0
  */
 get_header(); ?>
-<div id="primary" class="pb-2">
+<main id="primary" class="pb-2">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3">
@@ -48,5 +48,5 @@ get_header(); ?>
 			</div>	
 		</div>
 	</div>
-</div>
+</main>
 <?php get_footer(); ?>

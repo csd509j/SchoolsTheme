@@ -144,6 +144,6 @@
 	</div>
 
 	</header>
-
-	<div class="wrapper">
-		<div class="wrapper-inner">
+	<main>
+		<div class="wrapper">
+			<div class="wrapper-inner">
