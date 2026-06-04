@@ -82,7 +82,7 @@ if ( get_field('sidebar_callout_blocks') ):
 								<div class="col-12 col-sm-4 col-md-5 col-lg-12">
 									<div class="sidebar-callout-image pb-2 pb-sm-0 pb-md-0 pb-lg-1">
 									
-										<?php if ($link): ?>
+										<?php if ( isset( $link ) && $link ): ?>
 										
 											<a <?php if ( get_sub_field('callout_block_link_type') == 'External' ): ?> target="_blank" <?php endif; ?> href="<?php echo $link; ?>"><?php echo wp_get_attachment_image($image['id'], 'Callout Block', 0, array('class' => 'img-fluid')); ?></a>
 										
@@ -100,7 +100,7 @@ if ( get_field('sidebar_callout_blocks') ):
 								<div class="col-12 col-sm-8 col-md-7 col-lg-12 align-self-center">
 									<div class="sidebar-callout-inner">
 										
-										<?php if ($link): ?>
+										<?php if ( isset( $link ) && $link ): ?>
 										
 											<a <?php if ( get_sub_field('callout_block_link_type') == 'External' ): ?> target="_blank" <?php endif; ?> href="<?php echo $link; ?>"><h4><?php the_sub_field('callout_block_heading'); ?></h4></a>
 										
