@@ -644,7 +644,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "<ul><li>Link 1<\/li><\/ul>",
+                            "default_value": "<ul><li>Link 1</li></ul>",
                             "tabs": "all",
                             "toolbar": "full",
                             "media_upload": 1,
@@ -664,7 +664,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "<ul><li>Link 1<\/li><\/ul>",
+                            "default_value": "<ul><li>Link 1</li></ul>",
                             "tabs": "all",
                             "toolbar": "full",
                             "media_upload": 1,
@@ -1108,7 +1108,7 @@
                             "name": "video_id",
                             "aria-label": "",
                             "type": "text",
-                            "instructions": "For Vimeo, this is the number that follows the \"\/\" for Youtube, this is the string that follows \"\/watch?v=\".",
+                            "instructions": "For Vimeo, this is the number that follows the \"/\" for Youtube, this is the string that follows \"/watch?v=\".",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1174,7 +1174,7 @@
                             "name": "table",
                             "aria-label": "",
                             "type": "table",
-                            "instructions": "To create a link, you will need to include the HTML code in the form:\r\n<xmp><a href=\"http:\/\/google.com\">Link Text<\/a><\/xmp>",
+                            "instructions": "To create a link, you will need to include the HTML code in the form:\r\n<xmp><a href=\"http://google.com\">Link Text</a></xmp>",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1186,6 +1186,130 @@
                         },
                         {
                             "key": "field_65298c5728ec3",
+                            "label": "Anchor",
+                            "name": "anchor",
+                            "aria-label": "",
+                            "type": "acfe_slug",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_modal_edit_size": false,
+                    "acfe_flexible_category": false
+                },
+                "layout_6893c1a7d4f10": {
+                    "key": "layout_6893c1a7d4f10",
+                    "name": "collapsible_content",
+                    "label": "Collapsible Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6893c1a7d4f11",
+                            "label": "Heading",
+                            "name": "collapsible_heading",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6893c1a7d4f12",
+                            "label": "Items",
+                            "name": "collapsible_items",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "field_6893c1a7d4f13",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Add Item",
+                            "rows_per_page": 20,
+                            "acfe_repeater_stylised_button": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_6893c1a7d4f13",
+                                    "label": "Title",
+                                    "name": "item_title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": "",
+                                    "parent_repeater": "field_6893c1a7d4f12"
+                                },
+                                {
+                                    "key": "field_6893c1a7d4f14",
+                                    "label": "Content",
+                                    "name": "item_content",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "parent_repeater": "field_6893c1a7d4f12"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_6893c1a7d4f15",
                             "label": "Anchor",
                             "name": "anchor",
                             "aria-label": "",
@@ -1375,7 +1499,7 @@
             },
             "choices": {
                 "School Year Calendar & Daily Schedules": "School Year Calendar & Daily Schedules",
-                "Student Records\/Transcripts": "Student Records\/Transcripts",
+                "Student Records/Transcripts": "Student Records/Transcripts",
                 "Student Government": "Student Government",
                 "Reporting a Safety Concern": "Reporting a Safety Concern",
                 "CSD Theater Productions": "CSD Theater Productions",
@@ -1496,5 +1620,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1722890223
+    "modified": 1783958308
 }

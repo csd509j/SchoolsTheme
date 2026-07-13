@@ -123,7 +123,17 @@ if( have_rows('page_content_blocks') ):
 			
 		endif;
 		
-		if ( get_row_layout() == "divider"): 
+		if ( get_row_layout() == "collapsible_content"):
+
+			echo ( get_sub_field('anchor') ? '<div id="'. get_sub_field('anchor') . '">' : '' );
+
+			get_template_part( 'template-parts/page-block', 'collapsible' );
+
+			echo ( get_sub_field('anchor') ? '</div>' : '' );
+
+		endif;
+
+		if ( get_row_layout() == "divider"):
 			
 			get_template_part( 'template-parts/page-block', 'divider' );
 			

@@ -2277,3 +2277,48 @@ body ul.page-numbers span.current {
 #rss-widget-header {
 	display: none !important;
 }
+
+//********************
+// Collapsible Content
+//********************
+
+.collapsible-block {
+	.collapsible-item {
+		border: 1px solid $gray-lighten;
+		margin-bottom: .5em;
+	}
+	.collapsible-toggle {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: .75em 1em;
+		border: 0;
+		background-color: $gray-lighter;
+		color: $body-color;
+		font-size: 1.125rem;
+		text-align: left;
+		&:hover {
+			background-color: darken($gray-lighter, 5%);
+			text-decoration: none;
+		}
+		&:focus, &:active {
+			outline: 0;
+			box-shadow: none;
+		}
+		.fas {
+			margin-left: 1em;
+			font-size: .875rem;
+			transition: transform .2s ease-in-out;
+		}
+		&[aria-expanded="true"] .fas {
+			transform: rotate(180deg);
+		}
+	}
+	.collapsible-content {
+		padding: 1em;
+		> *:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
