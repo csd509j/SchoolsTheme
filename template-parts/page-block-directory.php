@@ -40,10 +40,25 @@
 				$website = '';
 				
 				if ( get_field('profile_img', get_the_ID()) ) {
-					
+
 					$image = get_field('profile_img', get_the_ID());
-					$imageID = $image['id'];
-					
+
+					if ( is_array($image) ) {
+
+						$imageID = $image['id'];
+
+					} elseif ( is_numeric($image) ) {
+
+						$imageID = (int) $image;
+
+					} else {
+
+						// Field returned a URL string, so render it directly
+
+						$imageID = '';
+
+					}
+
 				} elseif ( get_field('profile_image', get_the_ID()) ) {
 					
 					// For legacy images added by ACF-Crop
