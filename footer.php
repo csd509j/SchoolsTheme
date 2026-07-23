@@ -144,7 +144,6 @@
 							<p class="mb-1"><?php _e('Connect with Us','csdschools'); ?></p>
 
 							<ul class="social-media-links p-0">
-
 								<li>
 									<a href="https://www.facebook.com/csd509j" target="_blank" class="social" aria-label="<?php _e('Facebook (opens in new tab)','csdschools'); ?>">
 										<i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
