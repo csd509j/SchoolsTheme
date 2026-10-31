@@ -65,10 +65,10 @@ $current_url = home_url( add_query_arg( null, null ) ); // Current page URL
 						<div class="modal-body">
 							<div class="d-flex border-bottom">
 								<div class="flex-fill border-right">
-									<a href="<?php echo add_query_arg( 'lang','en', home_url() ); ?>" class="lang-link"><img src="<?php echo home_url( 'wp-content/themes/csdschools/assets/images/american-flag.jpg' ); ?>" width="45px" /> English</a>
+									<a href="<?php echo esc_url( add_query_arg( array( 'lang' => 'en', 'redirect' => $referrer ), home_url() ) ); ?>" class="lang-link"><img src="<?php echo home_url( 'wp-content/themes/csdschools/assets/images/american-flag.jpg' ); ?>" width="45px" /> English</a>
 								</div>
 								<div class="flex-fill">
-									<a href="<?php echo add_query_arg( 'lang','es', home_url() ); ?>" class="lang-link"><img src="<?php echo home_url( 'wp-content/themes/csdschools/assets/images/mexico-flag.jpg' ); ?>" width="45px" /> Spanish</a>
+									<a href="<?php echo esc_url( add_query_arg( array( 'lang' => 'es', 'redirect' => $referrer ), home_url() ) ); ?>" class="lang-link"><img src="<?php echo home_url( 'wp-content/themes/csdschools/assets/images/mexico-flag.jpg' ); ?>" width="45px" /> Spanish</a>
 								</div>
 							</div>
 					   		<div class="my-1 text-center">
