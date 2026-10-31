@@ -1,0 +1,7 @@
+# Development-only paths. `git archive` leaves these out, so bin/deploy.sh never
+# ships them — and its rsync --delete removes any copies already on the server.
+# Everything else ships, matching what DeployHQ deployed.
+# Before adding a path, confirm nothing loads it at runtime.
+/bin                        export-ignore
+/.gitattributes             export-ignore
+*.md                        export-ignore
