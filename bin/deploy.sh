@@ -282,10 +282,17 @@ else
 fi
 
 echo "→ health check"
-CODE=$(curl -s -o "$WORK/health.html" -w '%{http_code}' --max-time 30 "$URL?deploy=$STAMP" || true)
 
-if [ "$CODE" != 200 ] || grep -q 'There has been a critical error' "$WORK/health.html"; then
-	rollback "$URL answered $CODE after the deploy"
+# A CDN edge can stall one request right after a purge, so retry once before rolling back.
+healthy() {
+	CODE=$(curl -s -o "$WORK/health.html" -w '%{http_code}' --max-time 30 "$URL?deploy=$STAMP-$1" || true)
+	[ "$CODE" = 200 ] && ! grep -q 'There has been a critical error' "$WORK/health.html"
+}
+
+if ! healthy 1; then
+	echo "  $URL answered $CODE, retrying in 10 s"
+	sleep 10
+	healthy 2 || rollback "$URL answered $CODE after the deploy"
 fi
 
 "${SSH[@]}" "$HOST" "echo '$STAMP ${SHA:0:7} $(whoami) $THEME $TARGET' >> ~/deploy-backups/deploy.log"
@@ -293,7 +300,7 @@ fi
 echo "✓ $TARGET is on ${SHA:0:7}  (snapshot ~/$SNAP)"
 
 # Theme CSS/JS carry filemtime() versions, so only cached HTML can be stale.
-EDGE=$(curl -sI --max-time 15 "$URL" | tr -d '\r' | awk -F': ' 'tolower($1) == "server" { print tolower($2) }')
+EDGE=$(curl -sI --max-time 15 "$URL" | tr -d '\r' | awk -F': ' 'tolower($1) == "server" { print tolower($2) }' || true)
 
 case $EDGE in
 	cloudflare)
